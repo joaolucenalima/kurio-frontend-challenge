@@ -18,7 +18,7 @@ Adote arquitetura modular por domínio. A escolha prioriza coesão das regras de
 | `src/shared`  | Componentes genéricos/shadcn/ui, infraestrutura Axios e Socket.IO, configuração e utilitários sem regras de negócio |
 | `src/mocks`   | Handlers MSW, fixtures, persistência simulada, eventos e cenários reproduzíveis                                     |
 
-- Cada módulo concentra UI, contratos, chamadas REST, queries, mutations e regras do domínio. Crie subdivisões internas somente quando necessárias; não gere pastas vazias ou abstrações antecipadas.
+- Cada módulo concentra UI, contratos, chamadas REST, queries, mutations e regras do domínio. Organize seu interior em segmentos semelhantes aos de uma slice do FSD: `ui` para componentes e telas, `model` para tipos, contratos, estado e regras do domínio e `api` para transporte REST, queries e mutations. Crie segmentos adicionais somente quando necessários; não gere pastas vazias ou abstrações antecipadas. Essa organização interna não altera a arquitetura modular por domínio nem introduz camadas FSD globais.
 - Exponha interfaces públicas explícitas por módulo. Outros módulos não devem importar seus arquivos internos. Evite dependências circulares; componha fluxos entre domínios nas rotas ou na aplicação.
 - Mantenha regras de negócio no domínio responsável, sem transformá-las em utilitários genéricos de `shared`. A infraestrutura Socket.IO é compartilhada; a interpretação dos eventos pertence aos domínios e sua composição à aplicação.
 - Mocks reutilizam contratos dos domínios. Código de produção não deve importar implementações dos mocks; a inicialização pode carregar a camada de simulação condicionalmente por configuração.
