@@ -8,6 +8,7 @@ import { Button } from '#/shared/components/ui/button'
 import { Carousel, CarouselContent, CarouselItem } from '#/shared/components/ui/carousel'
 import type { CarouselApi } from '#/shared/components/ui/carousel'
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from '#/shared/components/ui/dialog'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '#/shared/components/ui/tabs'
 import { catalogQueries } from '../api/queries'
 import { collectionOptions } from '../model/contracts'
 import type { Nft } from '../model/contracts'
@@ -241,7 +242,6 @@ function ReviewSummary({ count }: { count: number }) {
 function DetailContent({ nft }: { nft: Nft }) {
   const [editionId, setEditionId] = useState(nft.editions[0]?.id)
   const [quantity, setQuantity] = useState(1)
-  const [activeSection, setActiveSection] = useState<'details' | 'reviews'>('details')
 
   const edition = nft.editions.find((item) => item.id === editionId) ?? nft.editions[0]
   const collection =
@@ -250,13 +250,17 @@ function DetailContent({ nft }: { nft: Nft }) {
   return (
     <>
       <nav aria-label="Caminho de navegação" className="mb-6 hidden text-sm font-bold md:block">
-        <Link to="/" search={{ sort: 'featured', page: 1 }} className="hover:text-accent">
+        <Link
+          to="/"
+          search={{ ranking: 'all', sort: 'featured', page: 1 }}
+          className="hover:text-accent"
+        >
           Início
         </Link>
         <span aria-hidden="true"> / </span>
         <Link
           to="/"
-          search={{ sort: 'featured', page: 1 }}
+          search={{ ranking: 'all', sort: 'featured', page: 1 }}
           hash="catalog"
           className="hover:text-accent"
         >
@@ -272,7 +276,7 @@ function DetailContent({ nft }: { nft: Nft }) {
           className="rounded-full"
           aria-label="Voltar ao mercado"
         >
-          <Link to="/" search={{ sort: 'featured', page: 1 }} hash="catalog">
+          <Link to="/" search={{ ranking: 'all', sort: 'featured', page: 1 }} hash="catalog">
             <ChevronLeft aria-hidden="true" />
           </Link>
         </Button>
@@ -451,28 +455,28 @@ function DetailContent({ nft }: { nft: Nft }) {
       </div>
 
       <section className="mt-16 md:mt-20" aria-labelledby="details-title">
-        <div className="flex flex-wrap items-end gap-x-8 gap-y-3 border-b border-border">
-          <h2 id="details-title">
-            <button
-              type="button"
-              aria-pressed={activeSection === 'details'}
-              onClick={() => setActiveSection('details')}
-              className="cursor-pointer border-b-[3px] border-transparent pb-3 hover:text-accent aria-pressed:border-primary aria-pressed:font-bold aria-pressed:text-accent"
+        <h2 id="details-title" className="sr-only">
+          Informações do NFT
+        </h2>
+        <Tabs defaultValue="details" className="gap-0">
+          <TabsList
+            aria-label="Informações do NFT"
+            className="flex w-full flex-wrap items-end gap-x-8 gap-y-3 border-b border-border"
+          >
+            <TabsTrigger
+              value="details"
+              className="min-h-0 cursor-pointer justify-start border-b-[3px] px-0 pb-3 text-base font-normal text-foreground hover:text-accent data-[state=active]:border-primary data-[state=active]:font-bold data-[state=active]:text-accent"
             >
               Detalhes do NFT
-            </button>
-          </h2>
-          <button
-            type="button"
-            aria-pressed={activeSection === 'reviews'}
-            onClick={() => setActiveSection('reviews')}
-            className="cursor-pointer border-b-[3px] border-transparent pb-3 hover:text-accent aria-pressed:border-primary aria-pressed:font-bold aria-pressed:text-accent"
-          >
-            Avaliações de colecionadores ({nft.reviewCount})
-          </button>
-        </div>
-        {activeSection === 'details' ? (
-          <div className="flex flex-col gap-6">
+            </TabsTrigger>
+            <TabsTrigger
+              value="reviews"
+              className="min-h-0 cursor-pointer justify-start border-b-[3px] px-0 pb-3 text-base font-normal text-foreground hover:text-accent data-[state=active]:border-primary data-[state=active]:font-bold data-[state=active]:text-accent"
+            >
+              Avaliações de colecionadores ({nft.reviewCount})
+            </TabsTrigger>
+          </TabsList>
+          <TabsContent value="details" className="flex flex-col gap-6">
             <p className="mt-6 text-sm leading-6 text-muted-foreground">{nft.description}</p>
             <div>
               <h3 className="text-sm font-bold">Rede:</h3>
@@ -488,10 +492,11 @@ function DetailContent({ nft }: { nft: Nft }) {
               <h3 className=" text-sm font-bold">Direitos autorais:</h3>
               <p className="text-sm leading-8 text-muted-foreground">{nft.details.copyright}</p>
             </div>
-          </div>
-        ) : (
-          <NftReviews nft={nft} />
-        )}
+          </TabsContent>
+          <TabsContent value="reviews">
+            <NftReviews nft={nft} />
+          </TabsContent>
+        </Tabs>
       </section>
       <RelatedNfts id={nft.id} />
     </>
@@ -530,7 +535,7 @@ export function NftDetailPage({ id }: { id: string }) {
                   </Button>
                 )}
                 <Button asChild variant="outline">
-                  <Link to="/" search={{ sort: 'featured', page: 1 }}>
+                  <Link to="/" search={{ ranking: 'all', sort: 'featured', page: 1 }}>
                     Voltar ao catálogo
                   </Link>
                 </Button>

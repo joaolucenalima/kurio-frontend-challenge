@@ -3,6 +3,8 @@ import { ethToWei, parseCatalogSearch } from '#/modules/catalog'
 import type { CatalogApiError, CatalogResponse } from '#/modules/catalog'
 import { initialNfts, reviewsForNft } from './fixtures'
 
+const fixtureOrder = new Map(initialNfts.map(({ id }, index) => [id, index]))
+
 export const scenarios = ['success', 'empty', 'slow', 'transient-error', 'out-of-order'] as const
 export type Scenario = (typeof scenarios)[number]
 let scenario: Scenario = 'success'
@@ -75,17 +77,34 @@ export const handlers = [
         (!search.maxPrice || ethToWei(nft.priceEth) <= ethToWei(search.maxPrice)),
     )
 
-    if (search.sort === 'name')
-      items.sort((a, b) => a.name.localeCompare(b.name, 'pt-BR') || a.id.localeCompare(b.id))
+    items.sort((a, b) => {
+      const rankingComparison =
+        search.ranking === 'new-releases'
+          ? b.releaseDate.localeCompare(a.releaseDate)
+          : search.ranking === 'trending'
+            ? b.salesCount - a.salesCount
+            : 0
+      if (rankingComparison !== 0) return rankingComparison
 
-    if (search.sort === 'price-asc' || search.sort === 'price-desc') {
-      const direction = search.sort === 'price-asc' ? 1 : -1
-      items.sort((a, b) => {
+      if (search.sort === 'name') {
+        const nameComparison = a.name.localeCompare(b.name, 'pt-BR')
+        if (nameComparison !== 0) return nameComparison
+      }
+
+      if (search.sort === 'price-asc' || search.sort === 'price-desc') {
+        const direction = search.sort === 'price-asc' ? 1 : -1
         const first = ethToWei(a.priceEth)
         const second = ethToWei(b.priceEth)
-        return first === second ? a.id.localeCompare(b.id) : (first < second ? -1 : 1) * direction
-      })
-    }
+        if (first !== second) return (first < second ? -1 : 1) * direction
+      }
+
+      if (search.sort === 'featured') {
+        const fixtureComparison = (fixtureOrder.get(a.id) ?? 0) - (fixtureOrder.get(b.id) ?? 0)
+        if (fixtureComparison !== 0) return fixtureComparison
+      }
+
+      return a.id.localeCompare(b.id)
+    })
 
     const pageSize = 9
 

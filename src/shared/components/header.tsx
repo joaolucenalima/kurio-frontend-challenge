@@ -17,7 +17,7 @@ export function Header() {
       >
         <Link
           to="/"
-          search={{ sort: 'featured', page: 1 }}
+          search={{ ranking: 'all', sort: 'featured', page: 1 }}
           activeOptions={{ exact: true, includeSearch: false }}
           className="cursor-pointer transition-colors duration-200 ease-out hover:text-accent focus-visible:text-accent aria-[current=page]:border-b-4 aria-[current=page]:border-primary aria-[current=page]:font-bold aria-[current=page]:text-accent aria-[current=page]:hover:text-primary"
         >
@@ -25,7 +25,7 @@ export function Header() {
         </Link>
         <Link
           to="/"
-          search={{ sort: 'featured', page: 1 }}
+          search={{ ranking: 'all', sort: 'featured', page: 1 }}
           hash="catalog"
           className="cursor-pointer transition-colors duration-200 ease-out hover:text-accent focus-visible:text-accent aria-[current=page]:border-b-4 aria-[current=page]:border-primary aria-[current=page]:font-bold aria-[current=page]:text-accent aria-[current=page]:hover:text-primary"
         >
@@ -50,7 +50,7 @@ export function Header() {
           className="size-5 rounded-none p-0"
           aria-label="Buscar NFTs"
         >
-          <Link to="/" search={{ sort: 'featured', page: 1 }} hash="catalog">
+          <Link to="/" search={{ ranking: 'all', sort: 'featured', page: 1 }} hash="catalog">
             <Search className="size-5" aria-hidden="true" />
           </Link>
         </Button>

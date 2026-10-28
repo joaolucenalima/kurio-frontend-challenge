@@ -34,6 +34,10 @@ O build de demonstração inclui o Service Worker e os snapshots. Hospedagem req
 
 Os snapshots são estáveis: build, reset e refresh não consultam OpenSea. Para atualizar a seleção, faça nova coleta pelo MCP e confira identidade, contagens e assets Figma nos arquivos atualizados. Ainda não há um comando automatizado de validação dos snapshots.
 
+### Ranking do catálogo
+
+`GET /api/nfts` aceita `ranking=all|new-releases|trending`. O valor padrão é `all`, que respeita a ordenação selecionada; `new-releases` ordena primariamente por data de lançamento decrescente e `trending` ordena primariamente pela quantidade de vendas decrescente. Busca, filtros, ordenação secundária e paginação continuam combináveis e são preservados na URL da aplicação.
+
 ## Cenários e reset
 
 Defina `VITE_MOCK_SCENARIO` em `.env.local` ou `.env.demo.local` e reinicie o servidor, ou use o console do navegador:

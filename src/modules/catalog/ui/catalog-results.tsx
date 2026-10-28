@@ -1,9 +1,12 @@
 import { useQuery } from '@tanstack/react-query'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button } from '#/shared/components/ui/button'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '#/shared/components/ui/tabs'
 import { catalogQueries } from '../api/queries'
-import type { CatalogSearch } from '../model/contracts'
+import type { CatalogRanking, CatalogSearch } from '../model/contracts'
 import { NftCard } from './nft-card'
+
+const catalogTabClassName = 'flex-1 cursor-pointer px-2 text-[15px] md:flex-none md:px-3'
 
 export function CatalogResults({
   search,
@@ -18,28 +21,8 @@ export function CatalogResults({
   const firstPage = Math.max(1, Math.min(search.page - 1, pages - 3))
   const visiblePages = Array.from({ length: Math.min(4, pages) }, (_, index) => firstPage + index)
 
-  return (
-    <div className="min-w-0 flex-1">
-      <div className="flex flex-wrap items-center justify-between gap-4">
-        <h2 id="catalog-title" className="text-sm font-bold text-primary">
-          Todos os NFTs
-        </h2>
-        <label className="flex max-w-full flex-wrap items-center gap-2 text-xs text-muted-foreground">
-          Ordenar por:
-          <select
-            value={search.sort}
-            onChange={(event) =>
-              onChange({ ...search, sort: event.target.value as CatalogSearch['sort'], page: 1 })
-            }
-            className="min-w-0 rounded-md border border-input bg-background p-2 text-foreground"
-          >
-            <option value="featured">Destaques</option>
-            <option value="price-asc">Menor preço</option>
-            <option value="price-desc">Maior preço</option>
-            <option value="name">Nome</option>
-          </select>
-        </label>
-      </div>
+  const panel = (
+    <>
       {query.isError && (
         <div role="alert" className="mt-6 rounded-lg border border-border p-5">
           <p>Não foi possível carregar o catálogo.</p>
@@ -86,7 +69,7 @@ export function CatalogResults({
                 <Button
                   className="mt-4"
                   variant="outline"
-                  onClick={() => onChange({ sort: 'featured', page: 1 })}
+                  onClick={() => onChange({ ranking: 'all', sort: 'featured', page: 1 })}
                 >
                   Voltar ao catálogo
                 </Button>
@@ -139,6 +122,53 @@ export function CatalogResults({
           </>
         )
       )}
-    </div>
+    </>
+  )
+
+  return (
+    <Tabs
+      value={search.ranking}
+      onValueChange={(ranking) =>
+        onChange({ ...search, ranking: ranking as CatalogRanking, page: 1 })
+      }
+      className="min-w-0 flex-1"
+    >
+      <div className="flex flex-wrap items-center justify-between gap-4">
+        <h2 id="catalog-title" className="sr-only">
+          Catálogo de NFTs
+        </h2>
+        <TabsList aria-label="Visualização do catálogo" className="w-full md:w-auto">
+          <TabsTrigger value="all" className={catalogTabClassName}>
+            Todos os NFTs
+          </TabsTrigger>
+          <TabsTrigger value="new-releases" className={catalogTabClassName}>
+            Novos lançamentos
+          </TabsTrigger>
+          <TabsTrigger value="trending" className={catalogTabClassName}>
+            Em alta
+          </TabsTrigger>
+        </TabsList>
+        <label className="flex max-w-full flex-wrap items-center gap-2 text-xs text-muted-foreground">
+          Ordenar por:
+          <select
+            value={search.sort}
+            onChange={(event) =>
+              onChange({ ...search, sort: event.target.value as CatalogSearch['sort'], page: 1 })
+            }
+            className="min-w-0 rounded-md border border-input bg-background p-2 text-foreground"
+          >
+            <option value="featured">Destaques</option>
+            <option value="price-asc">Menor preço</option>
+            <option value="price-desc">Maior preço</option>
+            <option value="name">Nome</option>
+          </select>
+        </label>
+      </div>
+      <TabsContent value="all">{search.ranking === 'all' ? panel : null}</TabsContent>
+      <TabsContent value="new-releases">
+        {search.ranking === 'new-releases' ? panel : null}
+      </TabsContent>
+      <TabsContent value="trending">{search.ranking === 'trending' ? panel : null}</TabsContent>
+    </Tabs>
   )
 }
