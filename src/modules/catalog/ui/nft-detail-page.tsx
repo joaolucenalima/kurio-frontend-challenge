@@ -7,7 +7,6 @@ import { Header } from '#/shared/components/header'
 import { Button } from '#/shared/components/ui/button'
 import { Carousel, CarouselContent, CarouselItem } from '#/shared/components/ui/carousel'
 import type { CarouselApi } from '#/shared/components/ui/carousel'
-import { Dialog, DialogContent, DialogTitle, DialogTrigger } from '#/shared/components/ui/dialog'
 import { catalogQueries } from '../api/queries'
 import { collectionOptions } from '../model/contracts'
 import type { Nft } from '../model/contracts'
@@ -28,6 +27,23 @@ function Artwork({ nft, className }: { nft: Nft; className: string }) {
 
 function Gallery({ nft }: { nft: Nft }) {
   const [zoomed, setZoomed] = useState(false)
+  const [position, setPosition] = useState<{ x: number; y: number } | null>(null)
+
+  function moveZoom(event: React.PointerEvent<HTMLDivElement>) {
+    const image = event.currentTarget.querySelector('img')
+    if (!image) return
+    const bounds = image.getBoundingClientRect()
+    const naturalRatio = image.naturalWidth / image.naturalHeight
+    if (!naturalRatio) return
+    const width = Math.min(bounds.width, bounds.height * naturalRatio)
+    const height = width / naturalRatio
+    const left = bounds.left + (bounds.width - width) / 2
+    const top = bounds.top + (bounds.height - height) / 2
+    setPosition({
+      x: Math.max(0, Math.min(1, (event.clientX - left) / width)),
+      y: Math.max(0, Math.min(1, (event.clientY - top) / height)),
+    })
+  }
 
   return (
     <div className="flex min-w-0 flex-col-reverse gap-4 md:flex-row md:items-start md:gap-7">
@@ -44,46 +60,39 @@ function Gallery({ nft }: { nft: Nft }) {
           <Artwork nft={nft} className="size-full object-cover" />
         </button>
       </div>
-      <div className="relative flex aspect-square min-w-0 flex-1 items-center justify-center rounded-lg bg-card p-3 md:max-w-111 md:p-4">
+      <div
+        className={`relative flex aspect-square min-w-0 flex-1 items-center justify-center rounded-lg bg-card p-3 md:max-w-111 md:p-4 ${zoomed ? 'cursor-crosshair' : ''}`}
+        onPointerMove={zoomed ? moveZoom : undefined}
+        onPointerLeave={() => setPosition(null)}
+      >
         <Artwork nft={nft} className="size-full rounded-xl object-contain" />
-        <Dialog
-          onOpenChange={(open) => {
-            if (!open) setZoomed(false)
+        <Button
+          type="button"
+          variant="secondary"
+          size="icon"
+          aria-label={`${zoomed ? 'Desativar zoom' : 'Ampliar imagem'} de ${nft.name}`}
+          aria-pressed={zoomed}
+          onClick={() => {
+            setZoomed((value) => !value)
+            setPosition(null)
           }}
+          className="absolute top-2 right-2 rounded-full aria-pressed:bg-accent aria-pressed:text-accent-foreground"
         >
-          <DialogTrigger asChild>
-            <Button
-              type="button"
-              variant="secondary"
-              size="icon"
-              aria-label={`Ampliar imagem de ${nft.name}`}
-              className="absolute top-2 right-2 rounded-full"
-            >
-              <ZoomIn aria-hidden="true" />
-            </Button>
-          </DialogTrigger>
-          <DialogContent>
-            <DialogTitle className="mb-3 max-w-[calc(100%-2rem)] truncate text-sm font-bold">
-              {nft.name} · Imagem
-            </DialogTitle>
-            <Button
-              type="button"
-              variant="outline"
-              size="sm"
-              onClick={() => setZoomed((value) => !value)}
-              aria-pressed={zoomed}
-              className="mb-3"
-            >
-              <ZoomIn aria-hidden="true" /> {zoomed ? 'Ajustar' : 'Ampliar'}
-            </Button>
-            <div className="max-h-[78vh] overflow-auto rounded-lg bg-card text-center">
-              <Artwork
-                nft={nft}
-                className={`${zoomed ? 'mx-auto min-w-[150%] max-w-none' : 'mx-auto max-h-[72vh] max-w-full'} object-contain`}
-              />
-            </div>
-          </DialogContent>
-        </Dialog>
+          <ZoomIn aria-hidden="true" />
+        </Button>
+        {zoomed && position && (
+          <div
+            role="img"
+            aria-label={`Detalhe ampliado de ${nft.name}`}
+            className="pointer-events-none absolute top-0 left-full z-30 ml-4 aspect-square w-full max-w-111 overflow-hidden rounded-lg border border-primary bg-card shadow-xl max-lg:left-0 max-lg:top-full max-lg:ml-0 max-lg:mt-4"
+            style={{
+              backgroundImage: `url(${nft.displayImageUrl})`,
+              backgroundSize: '250% 250%',
+              backgroundPosition: `${position.x * 100}% ${position.y * 100}%`,
+              backgroundRepeat: 'no-repeat',
+            }}
+          />
+        )}
       </div>
     </div>
   )
