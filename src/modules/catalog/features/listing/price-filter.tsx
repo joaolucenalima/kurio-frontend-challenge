@@ -1,8 +1,8 @@
 import { useId, useState } from 'react'
 import { Button } from '#/shared/components/ui/button'
 import { Slider } from '#/shared/components/ui/slider'
-import { ethToWei } from '../model/contracts'
-import type { CatalogSearch } from '../model/contracts'
+import { ethToWei } from '../../model/contracts'
+import type { CatalogSearch } from '../../model/contracts'
 
 const weiPerCent = 10n ** 16n
 const lowerLimit = 2

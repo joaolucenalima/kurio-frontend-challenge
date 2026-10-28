@@ -1,9 +1,9 @@
 import { useQuery } from '@tanstack/react-query'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button } from '#/shared/components/ui/button'
-import { catalogQueries } from '../api/queries'
-import type { CatalogSearch } from '../model/contracts'
-import { NftCard } from './nft-card'
+import { catalogQueries } from '../../api/queries'
+import type { CatalogSearch } from '../../model/contracts'
+import { NftCard } from '../../ui/nft-card'
 
 export function CatalogResults({
   search,

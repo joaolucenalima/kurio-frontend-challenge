@@ -2,7 +2,7 @@ import { Button } from '#/shared/components/ui/button'
 import { Header } from '#/shared/components/header'
 import { CatalogFilters } from './catalog-filters'
 import { CatalogResults } from './catalog-results'
-import type { CatalogSearch } from '../model/contracts'
+import type { CatalogSearch } from '../../model/contracts'
 
 export function CatalogPage({
   search,
