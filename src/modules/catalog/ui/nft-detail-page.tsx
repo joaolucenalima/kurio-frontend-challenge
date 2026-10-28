@@ -181,14 +181,12 @@ function RelatedNfts({ id }: { id: string }) {
 function NftReviews({ nft }: { nft: Nft }) {
   const query = useQuery(catalogQueries.reviews(nft.id))
 
-  console.log(query)
-
   if (query.isPending) {
     return (
       <output className="mt-6 block text-sm text-muted-foreground">Carregando avaliações...</output>
     )
   }
-  if (query.isError) {
+  if (query.isError || !Array.isArray(query.data)) {
     return (
       <div role="alert" className="mt-6">
         <p>Não foi possível carregar as avaliações.</p>
@@ -203,7 +201,7 @@ function NftReviews({ nft }: { nft: Nft }) {
       </div>
     )
   }
-  if (!query.data?.length) {
+  if (!query.data.length) {
     return (
       <p className="mt-6 text-sm text-muted-foreground">Este NFT ainda não recebeu avaliações.</p>
     )
@@ -320,30 +318,35 @@ function DetailContent({ nft }: { nft: Nft }) {
             </div>
           </fieldset>
           <div className="mt-5 hidden flex-wrap items-center justify-between gap-5 md:flex">
-            <div className="flex items-center gap-2" aria-label="Quantidade">
-              <Button
-                type="button"
-                size="icon-sm"
-                className="rounded-full"
-                aria-label="Diminuir quantidade"
-                disabled={quantity <= 1}
-                onClick={() => setQuantity((value) => value - 1)}
-              >
-                <Minus aria-hidden="true" />
-              </Button>
-              <output aria-live="polite" className="min-w-6 text-center">
-                {quantity}
-              </output>
-              <Button
-                type="button"
-                size="icon-sm"
-                className="rounded-full"
-                aria-label="Aumentar quantidade"
-                disabled={!edition || quantity >= edition.available}
-                onClick={() => setQuantity((value) => value + 1)}
-              >
-                <Plus aria-hidden="true" />
-              </Button>
+            <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2" aria-label="Quantidade">
+                <Button
+                  type="button"
+                  size="icon-sm"
+                  className="rounded-full"
+                  aria-label="Diminuir quantidade"
+                  disabled={quantity <= 1}
+                  onClick={() => setQuantity((value) => value - 1)}
+                >
+                  <Minus aria-hidden="true" />
+                </Button>
+                <output aria-live="polite" className="min-w-6 text-center">
+                  {quantity}
+                </output>
+                <Button
+                  type="button"
+                  size="icon-sm"
+                  className="rounded-full"
+                  aria-label="Aumentar quantidade"
+                  disabled={!edition || quantity >= edition.available}
+                  onClick={() => setQuantity((value) => value + 1)}
+                >
+                  <Plus aria-hidden="true" />
+                </Button>
+              </div>
+              <span className="text-sm text-muted-foreground" aria-live="polite">
+                {edition ? `${edition.available} disponíveis` : 'Indisponível'}
+              </span>
             </div>
             <div className="flex gap-2">
               <Button
@@ -411,6 +414,13 @@ function DetailContent({ nft }: { nft: Nft }) {
             >
               <Plus aria-hidden="true" />
             </Button>
+            <span
+              className="whitespace-nowrap text-xs text-muted-foreground"
+              aria-label={edition ? `${edition.available} disponíveis` : 'Indisponível'}
+              aria-live="polite"
+            >
+              {edition ? `${edition.available} disp.` : 'Indisp.'}
+            </span>
           </div>
           <span className="font-bold text-accent">{nft.priceEth} ETH</span>
         </div>

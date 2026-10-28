@@ -64,6 +64,33 @@ export interface NftReview {
   language: 'pt-BR' | 'en'
 }
 
+export function parseNftReviews(input: unknown): NftReview[] {
+  if (
+    !Array.isArray(input) ||
+    input.some(
+      (review) =>
+        !review ||
+        typeof review !== 'object' ||
+        !('id' in review) ||
+        typeof review.id !== 'string' ||
+        !('author' in review) ||
+        typeof review.author !== 'string' ||
+        !('rating' in review) ||
+        !Number.isInteger(review.rating) ||
+        Number(review.rating) < 1 ||
+        Number(review.rating) > 5 ||
+        !('content' in review) ||
+        typeof review.content !== 'string' ||
+        !('language' in review) ||
+        (review.language !== 'pt-BR' && review.language !== 'en'),
+    )
+  ) {
+    throw new Error('A API retornou uma resposta inválida para as avaliações')
+  }
+
+  return input as NftReview[]
+}
+
 export type NftInput = Omit<NftRecord, 'description'> & {
   description?: string | null
   details?: Partial<NftDetails>

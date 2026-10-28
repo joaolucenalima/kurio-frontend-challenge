@@ -1,7 +1,7 @@
 import { queryOptions } from '@tanstack/react-query'
 import { httpClient } from '#/shared/api/http'
-import { normalizeNft, parseCatalogResponse } from '../model/contracts'
-import type { CatalogSearch, NftInput, NftReview } from '../model/contracts'
+import { normalizeNft, parseCatalogResponse, parseNftReviews } from '../model/contracts'
+import type { CatalogSearch, NftInput } from '../model/contracts'
 
 export const catalogQueries = {
   list: (search: CatalogSearch) =>
@@ -26,8 +26,10 @@ export const catalogQueries = {
     queryOptions({
       queryKey: ['catalog', 'reviews', id],
       queryFn: async ({ signal }) =>
-        (await httpClient.get<NftReview[]>(`/nfts/${encodeURIComponent(id)}/reviews`, { signal }))
-          .data,
+        parseNftReviews(
+          (await httpClient.get<unknown>(`/nfts/${encodeURIComponent(id)}/reviews`, { signal }))
+            .data,
+        ),
       staleTime: 30_000,
     }),
   related: (id: string) =>
