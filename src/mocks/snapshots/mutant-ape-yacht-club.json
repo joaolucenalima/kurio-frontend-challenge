@@ -1,0 +1,782 @@
+{
+  "source": "OpenSea MCP get_items",
+  "collectedAt": "2026-10-28T17:12:05.004Z",
+  "collection": "mutant-ape-yacht-club",
+  "network": "ethereum",
+  "items": [
+    {
+      "identifier": "14667",
+      "collection": "mutant-ape-yacht-club",
+      "contract": "0x60e4d786628fea6478f785a6d7e704777c86a7c6",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/3a7331b53fb47b17b65e42a169b82b/8b3a7331b53fb47b17b65e42a169b82b.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/3a7331b53fb47b17b65e42a169b82b/8b3a7331b53fb47b17b65e42a169b82b.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://boredapeyachtclub.com/api/mutants/14667",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/14667?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:10:27.600247",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmRb4hyovDn1f77h8be8tXjrnKH1bLiX6SFAVE9NrqqSpa",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Blue"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Cowboy Hat"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Bored"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Grin Gold Grill"
+        },
+        {
+          "traitType": "Earring",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Diamond Stud"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Blue"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x5fa0d75fdf94ff9b958377c045c9b7d502acbe7a",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 1770
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "14667",
+      "contractAddress": "0x60e4d786628fea6478f785a6d7e704777c86a7c6"
+    },
+    {
+      "identifier": "13994",
+      "collection": "mutant-ape-yacht-club",
+      "contract": "0x60e4d786628fea6478f785a6d7e704777c86a7c6",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/7f1c632a5589b3a47954eb1690bb2b/d47f1c632a5589b3a47954eb1690bb2b.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/7f1c632a5589b3a47954eb1690bb2b/d47f1c632a5589b3a47954eb1690bb2b.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://boredapeyachtclub.com/api/mutants/13994",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/13994?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:31.479013",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://Qma2Pb7i4cP2b6DUP6T52yvKeD3TG8mAKheGuNZYfQqS8A",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Brown"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Sea Captain's Hat"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Crazy"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Small Grin"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Sailor Shirt"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Gray"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x2382407bd2d0087b340ffc9ca1ee79baaec0f178",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 12386
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "13994",
+      "contractAddress": "0x60e4d786628fea6478f785a6d7e704777c86a7c6"
+    },
+    {
+      "identifier": "29790",
+      "collection": "mutant-ape-yacht-club",
+      "contract": "0x60e4d786628fea6478f785a6d7e704777c86a7c6",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/e0d5e6242329bd1d127d348c20591f/76e0d5e6242329bd1d127d348c20591f.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/e0d5e6242329bd1d127d348c20591f/76e0d5e6242329bd1d127d348c20591f.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://boredapeyachtclub.com/api/mutants/29790",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/29790?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:31.484694",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmapcZhEj9HGt9iaHAuMtKwPcQHe43oEbcx4cQ2sUYTgvQ",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Blue"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Horns"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Cyborg"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Dumbfounded"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Hip Hop"
+        },
+        {
+          "traitType": "Earring",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Silver Hoop"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Blue"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0xf6ee20144045c6ace11055066fdcb521dfc1b2ee",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 3441
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "29790",
+      "contractAddress": "0x60e4d786628fea6478f785a6d7e704777c86a7c6"
+    },
+    {
+      "identifier": "22068",
+      "collection": "mutant-ape-yacht-club",
+      "contract": "0x60e4d786628fea6478f785a6d7e704777c86a7c6",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/a2b240edb7e9f9b01d114b4d6013e8/7aa2b240edb7e9f9b01d114b4d6013e8.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/a2b240edb7e9f9b01d114b4d6013e8/7aa2b240edb7e9f9b01d114b4d6013e8.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://boredapeyachtclub.com/api/mutants/22068",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/22068?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:10:36.142174",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmRXX7Wc8iwYdtGQEhBq1fW93AtdmGv1BC34CsxA2hNNc7",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Brown"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Blue Beams"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Grin"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Tweed Suit"
+        },
+        {
+          "traitType": "Earring",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Silver Stud"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Purple"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x5fa0d75fdf94ff9b958377c045c9b7d502acbe7a",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 8775
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "22068",
+      "contractAddress": "0x60e4d786628fea6478f785a6d7e704777c86a7c6"
+    },
+    {
+      "identifier": "22069",
+      "collection": "mutant-ape-yacht-club",
+      "contract": "0x60e4d786628fea6478f785a6d7e704777c86a7c6",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/caec3c70abb67f9d741f909d1faa08/a1caec3c70abb67f9d741f909d1faa08.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/caec3c70abb67f9d741f909d1faa08/a1caec3c70abb67f9d741f909d1faa08.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://boredapeyachtclub.com/api/mutants/22069",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/22069?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:06:43.681504",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://Qmb7nVMofeNHqdfS4zLbYV5P9krjjUHbf5uXt8m36C8ejU",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Brown"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Blue Beams"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Grin"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Tweed Suit"
+        },
+        {
+          "traitType": "Earring",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Silver Stud"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Purple"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x5fa0d75fdf94ff9b958377c045c9b7d502acbe7a",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 1924
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "22069",
+      "contractAddress": "0x60e4d786628fea6478f785a6d7e704777c86a7c6"
+    },
+    {
+      "identifier": "18779",
+      "collection": "mutant-ape-yacht-club",
+      "contract": "0x60e4d786628fea6478f785a6d7e704777c86a7c6",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/7ea7d662d0cf75cbeb188e62cf600e/057ea7d662d0cf75cbeb188e62cf600e.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/7ea7d662d0cf75cbeb188e62cf600e/057ea7d662d0cf75cbeb188e62cf600e.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://boredapeyachtclub.com/api/mutants/18779",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/18779?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:08:58.910851",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmTW19SqnB5RmA6jaBvYxwc7YnBA699GAn8euEPYrz8B3J",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 White"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Fisherman's Hat"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Blindfold"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Grin Multicolored"
+        },
+        {
+          "traitType": "Earring",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Gold Hoop"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Gray"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x58867fa928b92ca3dc1c709d058ea1bfa1fc28d5",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 1255
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "18779",
+      "contractAddress": "0x60e4d786628fea6478f785a6d7e704777c86a7c6"
+    },
+    {
+      "identifier": "15916",
+      "collection": "mutant-ape-yacht-club",
+      "contract": "0x60e4d786628fea6478f785a6d7e704777c86a7c6",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/5f357c0fa27c473660756f1b3e4451/5f5f357c0fa27c473660756f1b3e4451.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/5f357c0fa27c473660756f1b3e4451/5f5f357c0fa27c473660756f1b3e4451.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://boredapeyachtclub.com/api/mutants/15916",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/15916?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:31.510007",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmQW5p4cTt2cCjrVHuP9QgFhdetyVMNkGL62PSfyLdhi4S",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Cheetah"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Bloodshot"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Bored"
+        },
+        {
+          "traitType": "Earring",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Silver Hoop"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Yellow"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0xfd1bb396095f77db248981a32ba1509206bc7c7f",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 18677
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "15916",
+      "contractAddress": "0x60e4d786628fea6478f785a6d7e704777c86a7c6"
+    },
+    {
+      "identifier": "16361",
+      "collection": "mutant-ape-yacht-club",
+      "contract": "0x60e4d786628fea6478f785a6d7e704777c86a7c6",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/87f0583f6e4c30f1b205de915839c8/f687f0583f6e4c30f1b205de915839c8.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/87f0583f6e4c30f1b205de915839c8/f687f0583f6e4c30f1b205de915839c8.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://boredapeyachtclub.com/api/mutants/16361",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/16361?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:06:48.899634",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmX3YQhEyT1TV5oNA4rrHCaML7LBnVVX4bdVQuXDJ1seG4",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Brown"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Bayc Hat Red"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Holographic"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Bored Unshaven"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Bandolier"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 New Punk Blue"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x4bed55ac51253b7361c2de4392010590a9c9bc5d",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 2579
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "16361",
+      "contractAddress": "0x60e4d786628fea6478f785a6d7e704777c86a7c6"
+    },
+    {
+      "identifier": "13436",
+      "collection": "mutant-ape-yacht-club",
+      "contract": "0x60e4d786628fea6478f785a6d7e704777c86a7c6",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/3f1dc9b07f7df8749b421d5fa9ca07/233f1dc9b07f7df8749b421d5fa9ca07.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/3f1dc9b07f7df8749b421d5fa9ca07/233f1dc9b07f7df8749b421d5fa9ca07.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://boredapeyachtclub.com/api/mutants/13436",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/13436?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:31.522475",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmQtzfvSA6taoEa61wetoHpnwA66do5C844RR1QpkEtKH9",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Brown"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Bloodshot"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Tongue Out"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Hawaiian"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M1 Gray"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0xb006743bb2245c785110babeeee50b4899abe3b9",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 17165
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "13436",
+      "contractAddress": "0x60e4d786628fea6478f785a6d7e704777c86a7c6"
+    },
+    {
+      "identifier": "12887",
+      "collection": "mutant-ape-yacht-club",
+      "contract": "0x60e4d786628fea6478f785a6d7e704777c86a7c6",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/3ea3c80782dd8b796381f062f0aea3/593ea3c80782dd8b796381f062f0aea3.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/3ea3c80782dd8b796381f062f0aea3/593ea3c80782dd8b796381f062f0aea3.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://boredapeyachtclub.com/api/mutants/12887",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/12887?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:31.519978",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmVHW2yD1wo9jMqNL4WGuCXLfg4s87y1Akg1qtXHMPPqdA",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Dark Brown"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Bowler"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Eyepatch"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Bored Unshaven"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 Sleeveless Logo T"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "M2 New Punk Blue"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x9e43b9c91b2945bdbae174876a66aeb3bcff2807",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 3265
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "12887",
+      "contractAddress": "0x60e4d786628fea6478f785a6d7e704777c86a7c6"
+    }
+  ]
+}

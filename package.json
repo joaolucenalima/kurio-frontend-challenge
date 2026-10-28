@@ -9,6 +9,7 @@
     "dev": "vite dev --port 3000",
     "generate-routes": "tsr generate",
     "build": "vite build",
+    "build:demo": "vite build --mode demo",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "lint": "oxlint .",
@@ -20,11 +21,14 @@
     "@radix-ui/react-slot": "^1.5.0",
     "@tailwindcss/vite": "^4.1.18",
     "@tanstack/react-devtools": "0.10.13",
+    "@tanstack/react-query": "^5.105.0",
     "@tanstack/react-router": "1.170.46",
     "@tanstack/react-router-devtools": "1.167.2",
+    "axios": "^1.21.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^1.62.0",
+    "msw": "^3.0.3",
     "radix-ui": "^1.8.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
@@ -44,5 +48,10 @@
     "oxlint": "^1.90.0",
     "typescript": "^6.0.2",
     "vite": "^8.0.0"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
   }
 }

@@ -1,0 +1,2311 @@
+{
+  "source": "OpenSea MCP get_items",
+  "collectedAt": "2026-10-28T16:15:07.391Z",
+  "collection": "boredapeyachtclub",
+  "items": [
+    {
+      "identifier": "0",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/83dac8699f759e6d6ffa961c04e1e5/ad83dac8699f759e6d6ffa961c04e1e5.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/83dac8699f759e6d6ffa961c04e1e5/ad83dac8699f759e6d6ffa961c04e1e5.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/0",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/0?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:11:29.183948",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmRRPWG96cmgTn2qSzjwr2qvfNEuhunv6FNeMFGa9bx6mQ",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Robot"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "X Eyes"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Discomfort"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Striped Tee"
+        },
+        {
+          "traitType": "Earring",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Silver Hoop"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Orange"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0xf7801b8115f3fe46ac55f8c0fdb5243726bdb66a",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 2276
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "0",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "1",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/399ac6f35935d93930b68fa64cd307/5d399ac6f35935d93930b68fa64cd307.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/399ac6f35935d93930b68fa64cd307/5d399ac6f35935d93930b68fa64cd307.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/1",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/1?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:12:21.793902",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmPbxeGcXhYQQNgsC6a36dDyYUcHgMLnGKnF8pVFmGsvqi",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Robot"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Blue Beams"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Grin"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Vietnam Jacket"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Orange"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x46efbaedc92067e6d60e84ed6395099723252496",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 2664
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "1",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "2",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/77e0ec6c81f5e588c6b46c864f95c2/7a77e0ec6c81f5e588c6b46c864f95c2.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/77e0ec6c81f5e588c6b46c864f95c2/7a77e0ec6c81f5e588c6b46c864f95c2.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/2",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/2?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:12:25.705254",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmcJYkCKK7QPmYWjp4FD2e3Lv5WCGFuHNUByvGKBaytif4",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Robot"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Sea Captain's Hat"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "3d"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bored Cigarette"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Aquamarine"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0xc5c7b46843014b1591e9af24de797156cde67f08",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 6496
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "2",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "3",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/9d1dcd85e1d8b66f4e6732851958e6/509d1dcd85e1d8b66f4e6732851958e6.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/9d1dcd85e1d8b66f4e6732851958e6/509d1dcd85e1d8b66f4e6732851958e6.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/3",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/3?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:13:59.401255",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmYxT4LnK8sqLupjbS6eRvu1si7Ly2wFQAqFebxhWntcf6",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Cheetah"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bored"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Tongue Out"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bone Necklace"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Purple"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x2474a7227877f2b65185f09468af7c6577fa207c",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 6894
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "3",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "4",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/f02c980fd402659a08b5c362ea03ea/cbf02c980fd402659a08b5c362ea03ea.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/f02c980fd402659a08b5c362ea03ea/cbf02c980fd402659a08b5c362ea03ea.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/4",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/4?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:13:44.254921",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmSg9bPzW9anFYc3wWU5KnvymwkxQTpmqcRSfYj7UmiBa7",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Golden Brown"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Party Hat 2"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Closed"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Phoneme L"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Navy Striped Tee"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Blue"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x3b0c3da5da1041400ce8917b698a0fb83a0b4467",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 3589
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "4",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "5",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/2b4b264338a0d97c61d0495e6f9e9e/862b4b264338a0d97c61d0495e6f9e9e.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/2b4b264338a0d97c61d0495e6f9e9e/862b4b264338a0d97c61d0495e6f9e9e.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/5",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/5?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:14:34.677088",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmNwbd7ctEhGpVkP8nZvBBQfiNeFKRdxftJAxxEdkUKLcQ",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Brown"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bayc Flipped Brim"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "X Eyes"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Dumbfounded"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bayc T Red"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Army Green"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x7eb413211a9de1cd2fe8b8bb6055636c43f7d206",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 3791
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "5",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "6",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/34186c8c41631bff187d1b8810bc36/8d34186c8c41631bff187d1b8810bc36.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/34186c8c41631bff187d1b8810bc36/8d34186c8c41631bff187d1b8810bc36.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/6",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/6?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:14:34.677778",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmWBgfBhyVmHNhBfEQ7p1P4Mpn7pm5b8KgSab2caELnTuV",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Cream"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "S&m Hat"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Crazy"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bored"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Tweed Suit"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Yellow"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x046bf094791e28aa7fc22c8ecc81b65a24b48219",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 6057
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "6",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "7",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/a9709dc8467059eafecdd6cf17e1e4/fea9709dc8467059eafecdd6cf17e1e4.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/a9709dc8467059eafecdd6cf17e1e4/fea9709dc8467059eafecdd6cf17e1e4.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/7",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/7?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:14:34.714578",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmRsJLrg27GQ1ZWyrXZFuJFdU5bapfzsyBfm3CAX1V1bw6",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Golden Brown"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Stuntman Helmet"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Angry"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bored"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Wool Turtleneck"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Gray"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x137024fca6cd542e9597d5a551ebb1bd12dcc703",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 6609
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "7",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "8",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/f6e4aa8d29d45f9ad0b22000b68897/f6f6e4aa8d29d45f9ad0b22000b68897.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/f6e4aa8d29d45f9ad0b22000b68897/f6f6e4aa8d29d45f9ad0b22000b68897.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/8",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/8?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:14:23.052454",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmXEqPbvM4aq1SQSXN8DSuEcSo5SseYW1izYQbsGB8yn9x",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Zombie"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Beanie"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Robot"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bored"
+        },
+        {
+          "traitType": "Earring",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Gold Stud"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Aquamarine"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0xa37fbd2264b48ed56dd7de8b9b83db35561700ef",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 5716
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "8",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "9",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/255505b78cae1b52485c3c0cd62d29/a0255505b78cae1b52485c3c0cd62d29.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/255505b78cae1b52485c3c0cd62d29/a0255505b78cae1b52485c3c0cd62d29.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/9",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/9?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:13:01.630537",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmUQgKka8EW7exiUHnMwZ4UoXA11wV7NFjHAogVAbasSYy",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Brown"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Seaman's Hat"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Sleepy"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Small Grin"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Stunt Jacket"
+        },
+        {
+          "traitType": "Earring",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Silver Stud"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Purple"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0xc67db0df922238979da0fd00d46016e8ae14cecb",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 1684
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "9",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "10",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/c5c1cacc3f816402eb8225be88777e/46c5c1cacc3f816402eb8225be88777e.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/c5c1cacc3f816402eb8225be88777e/46c5c1cacc3f816402eb8225be88777e.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/10",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/10?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:14:31.736139",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmPQdVU1riwzijhCs1Lk6CHmDo4LpmwPPLuDauY3i8gSzL",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Dmt"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bayc Hat Red"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Eyepatch"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bored"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Navy Striped Tee"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Aquamarine"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0xc883a79e8e4594c4f89434edb754a10da2311139",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 4055
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "10",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "11",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/f4e2a5cd6ed7310efbd3d6c54d9e51/46f4e2a5cd6ed7310efbd3d6c54d9e51.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/f4e2a5cd6ed7310efbd3d6c54d9e51/46f4e2a5cd6ed7310efbd3d6c54d9e51.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/11",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/11?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:10:30.519227",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmVvdAbabZ2awja88uUhYHFuq67iEiroFuwLGM6HyiWcc8",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Dark Brown"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Laurel Wreath"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bloodshot"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bored Unshaven Cigarette"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Smoking Jacket"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Gray"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x4e613d6ab29892cd14544dc600b5cc301f371e20",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 4288
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "11",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "12",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/28d937dcc36c3c6100f7a5bb895c79/f728d937dcc36c3c6100f7a5bb895c79.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/28d937dcc36c3c6100f7a5bb895c79/f728d937dcc36c3c6100f7a5bb895c79.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/12",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/12?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:14:36.755666",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmexFWUtmFNGQwVuRN8dLLwcucSFoLYjeHkv2uAyan5H8t",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Brown"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Seaman's Hat"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Wide Eyed"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Discomfort"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Black Holes T"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Army Green"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x50ef16a9167661dc2500ddde8f83937c1ba4cd5f",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 5335
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "12",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "13",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/31423afab192a4b8cac09a13e68e9f/2f31423afab192a4b8cac09a13e68e9f.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/31423afab192a4b8cac09a13e68e9f/2f31423afab192a4b8cac09a13e68e9f.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/13",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/13?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:13:08.410197",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmaZLhanFj41yfXY3Ux1JNv6ZAnzsWXfbJmo7qbJzZjh4s",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Black"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Police Motorcycle Helmet"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Coins"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bored"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bone Tee"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Yellow"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0xa1be3e603acc2fd5d25fab20268f674b45f30bbe",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 7329
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "13",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "14",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/e95923c32a1f8be70c8a05990d0411/3be95923c32a1f8be70c8a05990d0411.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/e95923c32a1f8be70c8a05990d0411/3be95923c32a1f8be70c8a05990d0411.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/14",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/14?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:12:00.812744",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmbcWzteFsAvdwiaZyC1YJVNsApDaPRmqkQDyrYAvP4u48",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Cheetah"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "3d"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Small Grin"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Tanktop"
+        },
+        {
+          "traitType": "Earring",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Diamond Stud"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Orange"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x417e13295a9e263305c02127fdbf06cb0f509173",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 1714
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "14",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "15",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/b496f5c04a2e015045ec8372b94c88/06b496f5c04a2e015045ec8372b94c88.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/b496f5c04a2e015045ec8372b94c88/06b496f5c04a2e015045ec8372b94c88.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/15",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/15?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:14:36.759069",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmeGWaFNJyVpkr1LmkKye7qfUGwK9jTRW2sMxKnMDrJKtr",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Gray"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Girl's Hair Pink"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Zombie"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Phoneme L"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Black T"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Gray"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x3819cfdfc11fac899c091f96ac0db1e701db5758",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 1968
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "15",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "16",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/953e15318fcc146cc6ed78d599f545/6e953e15318fcc146cc6ed78d599f545.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/953e15318fcc146cc6ed78d599f545/6e953e15318fcc146cc6ed78d599f545.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/16",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/16?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:13:04.883515",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmapGf8z7u7f1SQv7P9r1LhjZh9B2BmmmCUS68kBjR8Fsa",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Dark Brown"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Horns"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bored"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Dumbfounded"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bone Necklace"
+        },
+        {
+          "traitType": "Earring",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Silver Hoop"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Purple"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x8e87d8aa61795339cbb0f081a76b7074016b4568",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 2886
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "16",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "17",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/e16892445887e7e77ea5c80bc18cda/b7e16892445887e7e77ea5c80bc18cda.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/e16892445887e7e77ea5c80bc18cda/b7e16892445887e7e77ea5c80bc18cda.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/17",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/17?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:11:50.115838",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmdLhb2BktLpSuTYyWRywRoJMFpy3hQG8RA1KJtVXj7wUf",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Tan"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Commie Hat"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Closed"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bored Unshaven"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bayc T Black"
+        },
+        {
+          "traitType": "Earring",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Gold Stud"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "New Punk Blue"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x21587b4030e875e9d9b70f38e314e8e2a8b29b9a",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 1769
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "17",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "18",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/55db0e563f2b3e67c78c8e2194e14a/8055db0e563f2b3e67c78c8e2194e14a.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/55db0e563f2b3e67c78c8e2194e14a/8055db0e563f2b3e67c78c8e2194e14a.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/18",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/18?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:09:50.813174",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmbUzseZbeM3nU6SUTQm979q7FGCMNWEqDKSZvaNUTodDk",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Robot"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Cyborg"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bored Cigarette"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Vietnam Jacket"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Purple"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x944a79aaf88c2e9ebc647a3314712bda4d0f331e",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 3697
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "18",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "19",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/a73e85c8c2b4eb1022d9ac7db693e2/40a73e85c8c2b4eb1022d9ac7db693e2.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/a73e85c8c2b4eb1022d9ac7db693e2/40a73e85c8c2b4eb1022d9ac7db693e2.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/19",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/19?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:13:29.557559",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmRcuopgwX16miSpLtEkY5kzZS96iwwNMWjMUaqUeyA619",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Tan"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bayc Hat Black"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Eyepatch"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Rage"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Army Green"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x14656e6fc27d9c7b1b54aa4ad82a037fa1a58183",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 5016
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "19",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "20",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/770fd8b85b9fde2236639615bc50b0/94770fd8b85b9fde2236639615bc50b0.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/770fd8b85b9fde2236639615bc50b0/94770fd8b85b9fde2236639615bc50b0.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/20",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/20?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:10:59.063922",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmXkLGoGKXswr4YwkgPVfL7wmbvkRKabmh7WXmkACrgi68",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Gray"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Beanie"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "3d"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Phoneme Vuh"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bandolier"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Blue"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x9fe9e92012e97f6f0c884fee5436d4f07b505517",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 4298
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "20",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "21",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/a5ab39c33a20af13baa9a920da6011/30a5ab39c33a20af13baa9a920da6011.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/a5ab39c33a20af13baa9a920da6011/30a5ab39c33a20af13baa9a920da6011.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/21",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/21?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:14:38.795503",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmadJMqL3WWr7SdtXzNUEvusy9o3uxedTbCuXNFHQxpsNZ",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Black"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bored"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Phoneme  ooo"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Black Holes T"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Orange"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0xa69f62a2e45baa788b1063e34b9ceaa0cdf693be",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 8876
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "21",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "22",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/74751cbe4a08af77d3bcbe7176b913/2174751cbe4a08af77d3bcbe7176b913.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/74751cbe4a08af77d3bcbe7176b913/2174751cbe4a08af77d3bcbe7176b913.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/22",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/22?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:10:53.738951",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmSdGMvowFxFFHJr3EajE8RNsPpPyKd5mh4yNaZZegPYqn",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Zombie"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "S&m Hat"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Sleepy"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bored Unshaven"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Tuxedo Tee"
+        },
+        {
+          "traitType": "Earring",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Gold Stud"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "New Punk Blue"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0xeb5ce9fd4ab6cca2515adfe54b58efa3fe9ebca7",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 1142
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "22",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "23",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/6d0109c0f3a4230e8a74f75b43ef07/4a6d0109c0f3a4230e8a74f75b43ef07.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/6d0109c0f3a4230e8a74f75b43ef07/4a6d0109c0f3a4230e8a74f75b43ef07.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/23",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/23?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:14:38.809458",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmadJd1GgsSgXn7RtrcL8FePionDyf4eQEsREcvdqh6eQe",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Trippy"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Beanie"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bored"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bored Pipe"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Aquamarine"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x250dc85178fb6859e9ee02c925d46aab946a55e7",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 4645
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "23",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "24",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/743ead25ba719f144a75ad1bf4ebf0/98743ead25ba719f144a75ad1bf4ebf0.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/743ead25ba719f144a75ad1bf4ebf0/98743ead25ba719f144a75ad1bf4ebf0.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/24",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/24?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:11:47.223879",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmczjnjjYDfydfKQmAiUAu17cZ8rTCjrPe47Zdu7tEppGd",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Black"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Fez"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Hypnotized"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Dumbfounded"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bayc T Black"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Aquamarine"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x16a7c3c15df7ad6a8f1b4c33420ca57c156c67cc",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 4988
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "24",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "25",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/d854a67335aecdc54a0605b8c2c7da/d3d854a67335aecdc54a0605b8c2c7da.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/d854a67335aecdc54a0605b8c2c7da/d3d854a67335aecdc54a0605b8c2c7da.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/25",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/25?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:14:38.805275",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmSR1aCRtn6cGrJaWNog586943N8BgfrXLKzAavCfjSuzE",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Brown"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Closed"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bored Cigarette"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Guayabera"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Blue"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x5ed0f666e6c20f5eeb2214514b56df2adc47a0b2",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 9207
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "25",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "26",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/098912079e5a8d46f5526b7cf20ecb/a0098912079e5a8d46f5526b7cf20ecb.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/098912079e5a8d46f5526b7cf20ecb/a0098912079e5a8d46f5526b7cf20ecb.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/26",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/26?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:14:38.845787",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmXzHn4rnSBdjMpwB3Psty49BbNon6AixUm5DhifxjPRv3",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Dark Brown"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Stuntman Helmet"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "3d"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bored Cigarette"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Stunt Jacket"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Aquamarine"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x0eeffea78e89a75f6baf1d345f16b185ee75a815",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 5302
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "26",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "27",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/efac0ea05e18bb739ebd95cfbfebc0/49efac0ea05e18bb739ebd95cfbfebc0.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/efac0ea05e18bb739ebd95cfbfebc0/49efac0ea05e18bb739ebd95cfbfebc0.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/27",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/27?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:11:44.642658",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmfNyXX3x7HYBpbJseB3pDFvV1W456tYjXxqdsba7WrEuU",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Gray"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Army Hat"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bored"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bored"
+        },
+        {
+          "traitType": "Clothes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Sleeveless T"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Orange"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x22294555b8b1ae51219d8cffb8500c95eb126d2c",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 9047
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "27",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "28",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/e48d81c1e6c7b6378ac8f84c963ec4/bbe48d81c1e6c7b6378ac8f84c963ec4.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/e48d81c1e6c7b6378ac8f84c963ec4/bbe48d81c1e6c7b6378ac8f84c963ec4.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/28",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/28?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:13:55.196815",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmV7rPa4s29yq3ahVD3aEN85Kv6DhCeARHnhqB3F6QP54j",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Tan"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bayc Flipped Brim"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "X Eyes"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bored Cigarette"
+        },
+        {
+          "traitType": "Earring",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Silver Stud"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Purple"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x8069cbc475d530be7c3b31b903c00ddcae73d996",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 3864
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "28",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    },
+    {
+      "identifier": "29",
+      "collection": "boredapeyachtclub",
+      "contract": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d",
+      "tokenStandard": "erc721",
+      "name": "",
+      "description": "",
+      "imageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/287dafd3463a2a8ebdf90345ea6e70/34287dafd3463a2a8ebdf90345ea6e70.png",
+      "displayImageUrl": "https://i2c.seadn.io/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/287dafd3463a2a8ebdf90345ea6e70/34287dafd3463a2a8ebdf90345ea6e70.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmeSjSinHpPnmXmspMjwiXyN6zS4E9zccariGR3jxcaWtq/29",
+      "openseaUrl": "https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/29?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T16:14:38.859814",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "ipfs://QmQnps7UF7zCBk2bsANKTuXeeuhVRhxcgWfc3AHq2B6gcc",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Tan"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Robot"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bored Unshaven"
+        },
+        {
+          "traitType": "Background",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Blue"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "0x363b85dfabc4837cf696e2d0b1c3606c8408fd53",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 8156
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "29",
+      "contractAddress": "0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d"
+    }
+  ]
+}

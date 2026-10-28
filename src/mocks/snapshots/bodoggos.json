@@ -1,0 +1,1382 @@
+{
+  "source": "OpenSea MCP get_items",
+  "collectedAt": "2026-10-28T17:12:08.315Z",
+  "collection": "bodoggos",
+  "network": "solana",
+  "items": [
+    {
+      "identifier": "E12R8jypsuNwffzEGw7VMmZDpXcMFiJkowrgpghmdNWy",
+      "collection": "bodoggos",
+      "contract": "E12R8jypsuNwffzEGw7VMmZDpXcMFiJkowrgpghmdNWy",
+      "tokenStandard": "programmable_nft",
+      "name": "#7367",
+      "description": "A Community Brand Capturing the Spirit of Perseverance and Ambition, in Style.",
+      "imageUrl": "https://i2c.seadn.io/solana/E12R8jypsuNwffzEGw7VMmZDpXcMFiJkowrgpghmdNWy/2c8f0740b1447058cd2f55bee67337/012c8f0740b1447058cd2f55bee67337.png",
+      "displayImageUrl": "https://i2c.seadn.io/solana/E12R8jypsuNwffzEGw7VMmZDpXcMFiJkowrgpghmdNWy/2c8f0740b1447058cd2f55bee67337/012c8f0740b1447058cd2f55bee67337.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmasVYPJuqq38uuckrxsXPWvdcb27MLej8LUgVnZUPDGWp/7367.json",
+      "openseaUrl": "https://opensea.io/assets/solana/E12R8jypsuNwffzEGw7VMmZDpXcMFiJkowrgpghmdNWy/E12R8jypsuNwffzEGw7VMmZDpXcMFiJkowrgpghmdNWy?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:57.870919",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "https://ipfs.io/ipfs/QmQ5TWTtXoKeupMucMUuss8pCbt3ZyyfV3frCKPjzzJXQf/7367.png",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Snow"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Backwards Ballcap"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Skeptic"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Sweet"
+        },
+        {
+          "traitType": "Outfit",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Bones"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "3Th8szzvDzqJ3xB6dia9iFzSTaPV7p5K34nchwQa3hzY",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 6259
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "E12R8jypsuNwffzEGw7VMmZDpXcMFiJkowrgpghmdNWy",
+      "contractAddress": "E12R8jypsuNwffzEGw7VMmZDpXcMFiJkowrgpghmdNWy"
+    },
+    {
+      "identifier": "9LPwngsL9iQqJPrCCtHWVDaCWFggPwdFXo79Dt8fTRnB",
+      "collection": "bodoggos",
+      "contract": "9LPwngsL9iQqJPrCCtHWVDaCWFggPwdFXo79Dt8fTRnB",
+      "tokenStandard": "programmable_nft",
+      "name": "#4196",
+      "description": "A Community Brand Capturing the Spirit of Perseverance and Ambition, in Style.",
+      "imageUrl": "https://i2c.seadn.io/solana/9LPwngsL9iQqJPrCCtHWVDaCWFggPwdFXo79Dt8fTRnB/52a1580138e5956b12296290e59efb/2952a1580138e5956b12296290e59efb.png",
+      "displayImageUrl": "https://i2c.seadn.io/solana/9LPwngsL9iQqJPrCCtHWVDaCWFggPwdFXo79Dt8fTRnB/52a1580138e5956b12296290e59efb/2952a1580138e5956b12296290e59efb.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmasVYPJuqq38uuckrxsXPWvdcb27MLej8LUgVnZUPDGWp/4196.json",
+      "openseaUrl": "https://opensea.io/assets/solana/9LPwngsL9iQqJPrCCtHWVDaCWFggPwdFXo79Dt8fTRnB/9LPwngsL9iQqJPrCCtHWVDaCWFggPwdFXo79Dt8fTRnB?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:57.867812",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "https://ipfs.io/ipfs/QmQ5TWTtXoKeupMucMUuss8pCbt3ZyyfV3frCKPjzzJXQf/4196.png",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Cinnamon"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Black Shades"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Clean Smile"
+        },
+        {
+          "traitType": "Outfit",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Hooper"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "CP6ed4yjMs7Muj9N3izpwyA9k3YXoTmyhfohc5AtSurV",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 6949
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "9LPwngsL9iQqJPrCCtHWVDaCWFggPwdFXo79Dt8fTRnB",
+      "contractAddress": "9LPwngsL9iQqJPrCCtHWVDaCWFggPwdFXo79Dt8fTRnB"
+    },
+    {
+      "identifier": "3N7JRDvZVSyiwThX6HyC3HgQUYJEdq2PTFF9oAbGM4zN",
+      "collection": "bodoggos",
+      "contract": "3N7JRDvZVSyiwThX6HyC3HgQUYJEdq2PTFF9oAbGM4zN",
+      "tokenStandard": "programmable_nft",
+      "name": "#2051",
+      "description": "A Community Brand Capturing the Spirit of Perseverance and Ambition, in Style.",
+      "imageUrl": "https://i2c.seadn.io/solana/3N7JRDvZVSyiwThX6HyC3HgQUYJEdq2PTFF9oAbGM4zN/ce0a0b7993949b02db2ce63e8a6496/47ce0a0b7993949b02db2ce63e8a6496.png",
+      "displayImageUrl": "https://i2c.seadn.io/solana/3N7JRDvZVSyiwThX6HyC3HgQUYJEdq2PTFF9oAbGM4zN/ce0a0b7993949b02db2ce63e8a6496/47ce0a0b7993949b02db2ce63e8a6496.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmasVYPJuqq38uuckrxsXPWvdcb27MLej8LUgVnZUPDGWp/2051.json",
+      "openseaUrl": "https://opensea.io/assets/solana/3N7JRDvZVSyiwThX6HyC3HgQUYJEdq2PTFF9oAbGM4zN/3N7JRDvZVSyiwThX6HyC3HgQUYJEdq2PTFF9oAbGM4zN?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:57.881323",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "https://ipfs.io/ipfs/QmQ5TWTtXoKeupMucMUuss8pCbt3ZyyfV3frCKPjzzJXQf/2051.png",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Cinnamon"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "ODAAT"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Aviators"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Sweet"
+        },
+        {
+          "traitType": "Outfit",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Tour '98"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "DL3N7PeNSubqtkhYtF7tPZWdmfPsaDg4HfarhtgAefQx",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 6700
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "3N7JRDvZVSyiwThX6HyC3HgQUYJEdq2PTFF9oAbGM4zN",
+      "contractAddress": "3N7JRDvZVSyiwThX6HyC3HgQUYJEdq2PTFF9oAbGM4zN"
+    },
+    {
+      "identifier": "YP9rBU4vFBpnsrTWuiNrnBEKC43Z9gcsX7ShEMdSL2i",
+      "collection": "bodoggos",
+      "contract": "YP9rBU4vFBpnsrTWuiNrnBEKC43Z9gcsX7ShEMdSL2i",
+      "tokenStandard": "programmable_nft",
+      "name": "#1589",
+      "description": "A Community Brand Capturing the Spirit of Perseverance and Ambition, in Style.",
+      "imageUrl": "https://i2c.seadn.io/solana/YP9rBU4vFBpnsrTWuiNrnBEKC43Z9gcsX7ShEMdSL2i/93cc7abf2048f6a13e7fc6e104b627/5a93cc7abf2048f6a13e7fc6e104b627.png",
+      "displayImageUrl": "https://i2c.seadn.io/solana/YP9rBU4vFBpnsrTWuiNrnBEKC43Z9gcsX7ShEMdSL2i/93cc7abf2048f6a13e7fc6e104b627/5a93cc7abf2048f6a13e7fc6e104b627.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmasVYPJuqq38uuckrxsXPWvdcb27MLej8LUgVnZUPDGWp/1589.json",
+      "openseaUrl": "https://opensea.io/assets/solana/YP9rBU4vFBpnsrTWuiNrnBEKC43Z9gcsX7ShEMdSL2i/YP9rBU4vFBpnsrTWuiNrnBEKC43Z9gcsX7ShEMdSL2i?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:57.875712",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "https://ipfs.io/ipfs/QmQ5TWTtXoKeupMucMUuss8pCbt3ZyyfV3frCKPjzzJXQf/1589.png",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Snow"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Pro Shops"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Air Frame"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Chill"
+        },
+        {
+          "traitType": "Outfit",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Hawaiian Sand"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "DL3N7PeNSubqtkhYtF7tPZWdmfPsaDg4HfarhtgAefQx",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 4664
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "YP9rBU4vFBpnsrTWuiNrnBEKC43Z9gcsX7ShEMdSL2i",
+      "contractAddress": "YP9rBU4vFBpnsrTWuiNrnBEKC43Z9gcsX7ShEMdSL2i"
+    },
+    {
+      "identifier": "5BvXCjQ6ZG4GMsnntnNNXVyA1twj8WfV9GsBkh6aEsPb",
+      "collection": "bodoggos",
+      "contract": "5BvXCjQ6ZG4GMsnntnNNXVyA1twj8WfV9GsBkh6aEsPb",
+      "tokenStandard": "programmable_nft",
+      "name": "#2102",
+      "description": "A Community Brand Capturing the Spirit of Perseverance and Ambition, in Style.",
+      "imageUrl": "https://i2c.seadn.io/solana/5BvXCjQ6ZG4GMsnntnNNXVyA1twj8WfV9GsBkh6aEsPb/47d97c08d45eb0ea9e4b9b47ff48b2/8b47d97c08d45eb0ea9e4b9b47ff48b2.png",
+      "displayImageUrl": "https://i2c.seadn.io/solana/5BvXCjQ6ZG4GMsnntnNNXVyA1twj8WfV9GsBkh6aEsPb/47d97c08d45eb0ea9e4b9b47ff48b2/8b47d97c08d45eb0ea9e4b9b47ff48b2.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmasVYPJuqq38uuckrxsXPWvdcb27MLej8LUgVnZUPDGWp/2102.json",
+      "openseaUrl": "https://opensea.io/assets/solana/5BvXCjQ6ZG4GMsnntnNNXVyA1twj8WfV9GsBkh6aEsPb/5BvXCjQ6ZG4GMsnntnNNXVyA1twj8WfV9GsBkh6aEsPb?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:57.874108",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "https://ipfs.io/ipfs/QmQ5TWTtXoKeupMucMUuss8pCbt3ZyyfV3frCKPjzzJXQf/2102.png",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Brindle"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Teddy"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Circle Full"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Squeaky Clean"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "DL3N7PeNSubqtkhYtF7tPZWdmfPsaDg4HfarhtgAefQx",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 6999
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "5BvXCjQ6ZG4GMsnntnNNXVyA1twj8WfV9GsBkh6aEsPb",
+      "contractAddress": "5BvXCjQ6ZG4GMsnntnNNXVyA1twj8WfV9GsBkh6aEsPb"
+    },
+    {
+      "identifier": "7BhM6Ne1TsAjJfBmJUtc4g6ftZMKS3bETEncwy1VbGHw",
+      "collection": "bodoggos",
+      "contract": "7BhM6Ne1TsAjJfBmJUtc4g6ftZMKS3bETEncwy1VbGHw",
+      "tokenStandard": "programmable_nft",
+      "name": "#3832",
+      "description": "A Community Brand Capturing the Spirit of Perseverance and Ambition, in Style.",
+      "imageUrl": "https://i2c.seadn.io/solana/7BhM6Ne1TsAjJfBmJUtc4g6ftZMKS3bETEncwy1VbGHw/f7437ceecadc9c01ff92460e27c405/3bf7437ceecadc9c01ff92460e27c405.png",
+      "displayImageUrl": "https://i2c.seadn.io/solana/7BhM6Ne1TsAjJfBmJUtc4g6ftZMKS3bETEncwy1VbGHw/f7437ceecadc9c01ff92460e27c405/3bf7437ceecadc9c01ff92460e27c405.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmasVYPJuqq38uuckrxsXPWvdcb27MLej8LUgVnZUPDGWp/3832.json",
+      "openseaUrl": "https://opensea.io/assets/solana/7BhM6Ne1TsAjJfBmJUtc4g6ftZMKS3bETEncwy1VbGHw/7BhM6Ne1TsAjJfBmJUtc4g6ftZMKS3bETEncwy1VbGHw?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:57.890578",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "https://ipfs.io/ipfs/QmQ5TWTtXoKeupMucMUuss8pCbt3ZyyfV3frCKPjzzJXQf/3832.png",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Brindle"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Proper"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Chill"
+        },
+        {
+          "traitType": "Outfit",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Merch Tee"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "DL3N7PeNSubqtkhYtF7tPZWdmfPsaDg4HfarhtgAefQx",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 7105
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "7BhM6Ne1TsAjJfBmJUtc4g6ftZMKS3bETEncwy1VbGHw",
+      "contractAddress": "7BhM6Ne1TsAjJfBmJUtc4g6ftZMKS3bETEncwy1VbGHw"
+    },
+    {
+      "identifier": "F2S7e1cTfF3UNnZbTiLXwmVHnehaKesPmdrqHmuPCrYC",
+      "collection": "bodoggos",
+      "contract": "F2S7e1cTfF3UNnZbTiLXwmVHnehaKesPmdrqHmuPCrYC",
+      "tokenStandard": "programmable_nft",
+      "name": "#4412",
+      "description": "A Community Brand Capturing the Spirit of Perseverance and Ambition, in Style.",
+      "imageUrl": "https://i2c.seadn.io/solana/F2S7e1cTfF3UNnZbTiLXwmVHnehaKesPmdrqHmuPCrYC/c47036f394175bf7da2199b30016ed/86c47036f394175bf7da2199b30016ed.png",
+      "displayImageUrl": "https://i2c.seadn.io/solana/F2S7e1cTfF3UNnZbTiLXwmVHnehaKesPmdrqHmuPCrYC/c47036f394175bf7da2199b30016ed/86c47036f394175bf7da2199b30016ed.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmasVYPJuqq38uuckrxsXPWvdcb27MLej8LUgVnZUPDGWp/4412.json",
+      "openseaUrl": "https://opensea.io/assets/solana/F2S7e1cTfF3UNnZbTiLXwmVHnehaKesPmdrqHmuPCrYC/F2S7e1cTfF3UNnZbTiLXwmVHnehaKesPmdrqHmuPCrYC?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:57.934188",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "https://ipfs.io/ipfs/QmQ5TWTtXoKeupMucMUuss8pCbt3ZyyfV3frCKPjzzJXQf/4412.png",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Brindle"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Merch Cap"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Gold Specs"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Smirk"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "DL3N7PeNSubqtkhYtF7tPZWdmfPsaDg4HfarhtgAefQx",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 4804
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "F2S7e1cTfF3UNnZbTiLXwmVHnehaKesPmdrqHmuPCrYC",
+      "contractAddress": "F2S7e1cTfF3UNnZbTiLXwmVHnehaKesPmdrqHmuPCrYC"
+    },
+    {
+      "identifier": "FFV8aTnoLPJGFUD3zRRsp5eMc61QXeEomZdQKnDKGSsN",
+      "collection": "bodoggos",
+      "contract": "FFV8aTnoLPJGFUD3zRRsp5eMc61QXeEomZdQKnDKGSsN",
+      "tokenStandard": "programmable_nft",
+      "name": "#4576",
+      "description": "A Community Brand Capturing the Spirit of Perseverance and Ambition, in Style.",
+      "imageUrl": "https://i2c.seadn.io/solana/FFV8aTnoLPJGFUD3zRRsp5eMc61QXeEomZdQKnDKGSsN/b849fd054778702b095e1cac8efdaa/cbb849fd054778702b095e1cac8efdaa.png",
+      "displayImageUrl": "https://i2c.seadn.io/solana/FFV8aTnoLPJGFUD3zRRsp5eMc61QXeEomZdQKnDKGSsN/b849fd054778702b095e1cac8efdaa/cbb849fd054778702b095e1cac8efdaa.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmasVYPJuqq38uuckrxsXPWvdcb27MLej8LUgVnZUPDGWp/4576.json",
+      "openseaUrl": "https://opensea.io/assets/solana/FFV8aTnoLPJGFUD3zRRsp5eMc61QXeEomZdQKnDKGSsN/FFV8aTnoLPJGFUD3zRRsp5eMc61QXeEomZdQKnDKGSsN?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:57.932502",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "https://ipfs.io/ipfs/QmQ5TWTtXoKeupMucMUuss8pCbt3ZyyfV3frCKPjzzJXQf/4576.png",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Snow"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Merch Cap"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Rockstar"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Big Day"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "DL3N7PeNSubqtkhYtF7tPZWdmfPsaDg4HfarhtgAefQx",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 5500
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "FFV8aTnoLPJGFUD3zRRsp5eMc61QXeEomZdQKnDKGSsN",
+      "contractAddress": "FFV8aTnoLPJGFUD3zRRsp5eMc61QXeEomZdQKnDKGSsN"
+    },
+    {
+      "identifier": "9r8GTMFGGFhM8TuvBHZ7hCcRv1ciF97VpDTPzA8D4s6s",
+      "collection": "bodoggos",
+      "contract": "9r8GTMFGGFhM8TuvBHZ7hCcRv1ciF97VpDTPzA8D4s6s",
+      "tokenStandard": "programmable_nft",
+      "name": "#6332",
+      "description": "A Community Brand Capturing the Spirit of Perseverance and Ambition, in Style.",
+      "imageUrl": "https://i2c.seadn.io/solana/9r8GTMFGGFhM8TuvBHZ7hCcRv1ciF97VpDTPzA8D4s6s/596396d9e4d4ec6d999df60d826c9e/d4596396d9e4d4ec6d999df60d826c9e.png",
+      "displayImageUrl": "https://i2c.seadn.io/solana/9r8GTMFGGFhM8TuvBHZ7hCcRv1ciF97VpDTPzA8D4s6s/596396d9e4d4ec6d999df60d826c9e/d4596396d9e4d4ec6d999df60d826c9e.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmasVYPJuqq38uuckrxsXPWvdcb27MLej8LUgVnZUPDGWp/6332.json",
+      "openseaUrl": "https://opensea.io/assets/solana/9r8GTMFGGFhM8TuvBHZ7hCcRv1ciF97VpDTPzA8D4s6s/9r8GTMFGGFhM8TuvBHZ7hCcRv1ciF97VpDTPzA8D4s6s?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:57.945768",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "https://ipfs.io/ipfs/QmQ5TWTtXoKeupMucMUuss8pCbt3ZyyfV3frCKPjzzJXQf/6332.png",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Brindle"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Boho"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Air Frame"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Joy"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "DL3N7PeNSubqtkhYtF7tPZWdmfPsaDg4HfarhtgAefQx",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 6175
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "9r8GTMFGGFhM8TuvBHZ7hCcRv1ciF97VpDTPzA8D4s6s",
+      "contractAddress": "9r8GTMFGGFhM8TuvBHZ7hCcRv1ciF97VpDTPzA8D4s6s"
+    },
+    {
+      "identifier": "9RFgjF8UhFhthwygivVr6Lx7RZgbWPRgD2gTRDm88ton",
+      "collection": "bodoggos",
+      "contract": "9RFgjF8UhFhthwygivVr6Lx7RZgbWPRgD2gTRDm88ton",
+      "tokenStandard": "programmable_nft",
+      "name": "#8036",
+      "description": "A Community Brand Capturing the Spirit of Perseverance and Ambition, in Style.",
+      "imageUrl": "https://i2c.seadn.io/solana/9RFgjF8UhFhthwygivVr6Lx7RZgbWPRgD2gTRDm88ton/8801d82578d055a7a7ea276bc50e5d/f68801d82578d055a7a7ea276bc50e5d.png",
+      "displayImageUrl": "https://i2c.seadn.io/solana/9RFgjF8UhFhthwygivVr6Lx7RZgbWPRgD2gTRDm88ton/8801d82578d055a7a7ea276bc50e5d/f68801d82578d055a7a7ea276bc50e5d.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmasVYPJuqq38uuckrxsXPWvdcb27MLej8LUgVnZUPDGWp/8036.json",
+      "openseaUrl": "https://opensea.io/assets/solana/9RFgjF8UhFhthwygivVr6Lx7RZgbWPRgD2gTRDm88ton/9RFgjF8UhFhthwygivVr6Lx7RZgbWPRgD2gTRDm88ton?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:57.951793",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "https://ipfs.io/ipfs/QmQ5TWTtXoKeupMucMUuss8pCbt3ZyyfV3frCKPjzzJXQf/8036.png",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Cinnamon"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Shrewd"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Hey Hey"
+        },
+        {
+          "traitType": "Outfit",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Platinum"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "DL3N7PeNSubqtkhYtF7tPZWdmfPsaDg4HfarhtgAefQx",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 7296
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "9RFgjF8UhFhthwygivVr6Lx7RZgbWPRgD2gTRDm88ton",
+      "contractAddress": "9RFgjF8UhFhthwygivVr6Lx7RZgbWPRgD2gTRDm88ton"
+    },
+    {
+      "identifier": "92f7cdUydMWv6BbmGGihZy4mn5C2xrRrMvzdbhxfUkek",
+      "collection": "bodoggos",
+      "contract": "92f7cdUydMWv6BbmGGihZy4mn5C2xrRrMvzdbhxfUkek",
+      "tokenStandard": "programmable_nft",
+      "name": "#814",
+      "description": "A Community Brand Capturing the Spirit of Perseverance and Ambition, in Style.",
+      "imageUrl": "https://i2c.seadn.io/solana/92f7cdUydMWv6BbmGGihZy4mn5C2xrRrMvzdbhxfUkek/fc0dc3d67c400a5b42a0859b030813/c5fc0dc3d67c400a5b42a0859b030813.png",
+      "displayImageUrl": "https://i2c.seadn.io/solana/92f7cdUydMWv6BbmGGihZy4mn5C2xrRrMvzdbhxfUkek/fc0dc3d67c400a5b42a0859b030813/c5fc0dc3d67c400a5b42a0859b030813.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmasVYPJuqq38uuckrxsXPWvdcb27MLej8LUgVnZUPDGWp/814.json",
+      "openseaUrl": "https://opensea.io/assets/solana/92f7cdUydMWv6BbmGGihZy4mn5C2xrRrMvzdbhxfUkek/92f7cdUydMWv6BbmGGihZy4mn5C2xrRrMvzdbhxfUkek?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:59.877307",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "https://ipfs.io/ipfs/QmQ5TWTtXoKeupMucMUuss8pCbt3ZyyfV3frCKPjzzJXQf/814.png",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Saber"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Beatnik"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Grin"
+        },
+        {
+          "traitType": "Outfit",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Tour '98"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "DL3N7PeNSubqtkhYtF7tPZWdmfPsaDg4HfarhtgAefQx",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 4188
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "92f7cdUydMWv6BbmGGihZy4mn5C2xrRrMvzdbhxfUkek",
+      "contractAddress": "92f7cdUydMWv6BbmGGihZy4mn5C2xrRrMvzdbhxfUkek"
+    },
+    {
+      "identifier": "HT2RtNfZ8PErZBSSgPkfQ9rcaY9yd5JVuXuhNcnpu4AL",
+      "collection": "bodoggos",
+      "contract": "HT2RtNfZ8PErZBSSgPkfQ9rcaY9yd5JVuXuhNcnpu4AL",
+      "tokenStandard": "programmable_nft",
+      "name": "#5703",
+      "description": "A Community Brand Capturing the Spirit of Perseverance and Ambition, in Style.",
+      "imageUrl": "https://i2c.seadn.io/solana/HT2RtNfZ8PErZBSSgPkfQ9rcaY9yd5JVuXuhNcnpu4AL/4e790775d2954963ab7cf7bc83668e/f14e790775d2954963ab7cf7bc83668e.png",
+      "displayImageUrl": "https://i2c.seadn.io/solana/HT2RtNfZ8PErZBSSgPkfQ9rcaY9yd5JVuXuhNcnpu4AL/4e790775d2954963ab7cf7bc83668e/f14e790775d2954963ab7cf7bc83668e.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmasVYPJuqq38uuckrxsXPWvdcb27MLej8LUgVnZUPDGWp/5703.json",
+      "openseaUrl": "https://opensea.io/assets/solana/HT2RtNfZ8PErZBSSgPkfQ9rcaY9yd5JVuXuhNcnpu4AL/HT2RtNfZ8PErZBSSgPkfQ9rcaY9yd5JVuXuhNcnpu4AL?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:59.872907",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "https://ipfs.io/ipfs/QmQ5TWTtXoKeupMucMUuss8pCbt3ZyyfV3frCKPjzzJXQf/5703.png",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Snow"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Beatnik"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Spike"
+        },
+        {
+          "traitType": "Outfit",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Barker"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "CmiCBic2PrHEy2mSXwkxPcgGGyYKUg5oHNygeBt69pUM",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 7528
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "HT2RtNfZ8PErZBSSgPkfQ9rcaY9yd5JVuXuhNcnpu4AL",
+      "contractAddress": "HT2RtNfZ8PErZBSSgPkfQ9rcaY9yd5JVuXuhNcnpu4AL"
+    },
+    {
+      "identifier": "JDa6pkHrC73bPEDKM2F2Aat9NVsEuSioPvGGXTwyyyfL",
+      "collection": "bodoggos",
+      "contract": "JDa6pkHrC73bPEDKM2F2Aat9NVsEuSioPvGGXTwyyyfL",
+      "tokenStandard": "programmable_nft",
+      "name": "#7012",
+      "description": "A Community Brand Capturing the Spirit of Perseverance and Ambition, in Style.",
+      "imageUrl": "https://i2c.seadn.io/solana/JDa6pkHrC73bPEDKM2F2Aat9NVsEuSioPvGGXTwyyyfL/7da0dde3337813e8a1058fecbed5fb/857da0dde3337813e8a1058fecbed5fb.png",
+      "displayImageUrl": "https://i2c.seadn.io/solana/JDa6pkHrC73bPEDKM2F2Aat9NVsEuSioPvGGXTwyyyfL/7da0dde3337813e8a1058fecbed5fb/857da0dde3337813e8a1058fecbed5fb.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmasVYPJuqq38uuckrxsXPWvdcb27MLej8LUgVnZUPDGWp/7012.json",
+      "openseaUrl": "https://opensea.io/assets/solana/JDa6pkHrC73bPEDKM2F2Aat9NVsEuSioPvGGXTwyyyfL/JDa6pkHrC73bPEDKM2F2Aat9NVsEuSioPvGGXTwyyyfL?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:59.878463",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "https://ipfs.io/ipfs/QmQ5TWTtXoKeupMucMUuss8pCbt3ZyyfV3frCKPjzzJXQf/7012.png",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Stripes"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Pro Shops"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Red Shades"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Big Bone"
+        },
+        {
+          "traitType": "Outfit",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Red Puffer"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "CnscKiR6zZsxYizxbyY6bxiA8tmLrKJ5XHdcicHi1AGn",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 865
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "JDa6pkHrC73bPEDKM2F2Aat9NVsEuSioPvGGXTwyyyfL",
+      "contractAddress": "JDa6pkHrC73bPEDKM2F2Aat9NVsEuSioPvGGXTwyyyfL"
+    },
+    {
+      "identifier": "3EkvqAM6GtUboP3xrgfhwusoiCH7vEsKFBWF4KjkZCzL",
+      "collection": "bodoggos",
+      "contract": "3EkvqAM6GtUboP3xrgfhwusoiCH7vEsKFBWF4KjkZCzL",
+      "tokenStandard": "programmable_nft",
+      "name": "#7710",
+      "description": "A Community Brand Capturing the Spirit of Perseverance and Ambition, in Style.",
+      "imageUrl": "https://i2c.seadn.io/solana/3EkvqAM6GtUboP3xrgfhwusoiCH7vEsKFBWF4KjkZCzL/ffcfac46ecb795e57ac4c85dd62d08/a6ffcfac46ecb795e57ac4c85dd62d08.png",
+      "displayImageUrl": "https://i2c.seadn.io/solana/3EkvqAM6GtUboP3xrgfhwusoiCH7vEsKFBWF4KjkZCzL/ffcfac46ecb795e57ac4c85dd62d08/a6ffcfac46ecb795e57ac4c85dd62d08.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmasVYPJuqq38uuckrxsXPWvdcb27MLej8LUgVnZUPDGWp/7710.json",
+      "openseaUrl": "https://opensea.io/assets/solana/3EkvqAM6GtUboP3xrgfhwusoiCH7vEsKFBWF4KjkZCzL/3EkvqAM6GtUboP3xrgfhwusoiCH7vEsKFBWF4KjkZCzL?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:59.877995",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "https://ipfs.io/ipfs/QmQ5TWTtXoKeupMucMUuss8pCbt3ZyyfV3frCKPjzzJXQf/7710.png",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Snow"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "ODAAT"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Aviators"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Gold Fang"
+        },
+        {
+          "traitType": "Outfit",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Dropout"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "Cqvs84otAZUjrpEJtD2hPkmmr3xQAHRmcYLhR8w6EHqu",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 6122
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "3EkvqAM6GtUboP3xrgfhwusoiCH7vEsKFBWF4KjkZCzL",
+      "contractAddress": "3EkvqAM6GtUboP3xrgfhwusoiCH7vEsKFBWF4KjkZCzL"
+    },
+    {
+      "identifier": "HwX8JcLaPdtVwJ4mjWf7in1ZHe7LfCoc4kXNSomUbp47",
+      "collection": "bodoggos",
+      "contract": "HwX8JcLaPdtVwJ4mjWf7in1ZHe7LfCoc4kXNSomUbp47",
+      "tokenStandard": "programmable_nft",
+      "name": "#1029",
+      "description": "A Community Brand Capturing the Spirit of Perseverance and Ambition, in Style.",
+      "imageUrl": "https://i2c.seadn.io/solana/HwX8JcLaPdtVwJ4mjWf7in1ZHe7LfCoc4kXNSomUbp47/8a88ca5897aa72d2e3028a22ac3598/098a88ca5897aa72d2e3028a22ac3598.png",
+      "displayImageUrl": "https://i2c.seadn.io/solana/HwX8JcLaPdtVwJ4mjWf7in1ZHe7LfCoc4kXNSomUbp47/8a88ca5897aa72d2e3028a22ac3598/098a88ca5897aa72d2e3028a22ac3598.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmasVYPJuqq38uuckrxsXPWvdcb27MLej8LUgVnZUPDGWp/1029.json",
+      "openseaUrl": "https://opensea.io/assets/solana/HwX8JcLaPdtVwJ4mjWf7in1ZHe7LfCoc4kXNSomUbp47/HwX8JcLaPdtVwJ4mjWf7in1ZHe7LfCoc4kXNSomUbp47?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:59.881219",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "https://ipfs.io/ipfs/QmQ5TWTtXoKeupMucMUuss8pCbt3ZyyfV3frCKPjzzJXQf/1029.png",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "MooMoo"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Merch Cap"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Gold Specs"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Spike"
+        },
+        {
+          "traitType": "Outfit",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Fresh Pooch"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "3noTuHnQdHkat2w5rBx18vAACMzFUvB5LodEe5vMN98d",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 2788
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "HwX8JcLaPdtVwJ4mjWf7in1ZHe7LfCoc4kXNSomUbp47",
+      "contractAddress": "HwX8JcLaPdtVwJ4mjWf7in1ZHe7LfCoc4kXNSomUbp47"
+    },
+    {
+      "identifier": "6QNhgxuSSzFAh775YC9Lj8mDrpc86qf65yxQ4oma26Kf",
+      "collection": "bodoggos",
+      "contract": "6QNhgxuSSzFAh775YC9Lj8mDrpc86qf65yxQ4oma26Kf",
+      "tokenStandard": "programmable_nft",
+      "name": "#1761",
+      "description": "A Community Brand Capturing the Spirit of Perseverance and Ambition, in Style.",
+      "imageUrl": "https://i2c.seadn.io/solana/6QNhgxuSSzFAh775YC9Lj8mDrpc86qf65yxQ4oma26Kf/52cf3115d933f79605eec2dacac1bc/fa52cf3115d933f79605eec2dacac1bc.png",
+      "displayImageUrl": "https://i2c.seadn.io/solana/6QNhgxuSSzFAh775YC9Lj8mDrpc86qf65yxQ4oma26Kf/52cf3115d933f79605eec2dacac1bc/fa52cf3115d933f79605eec2dacac1bc.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmasVYPJuqq38uuckrxsXPWvdcb27MLej8LUgVnZUPDGWp/1761.json",
+      "openseaUrl": "https://opensea.io/assets/solana/6QNhgxuSSzFAh775YC9Lj8mDrpc86qf65yxQ4oma26Kf/6QNhgxuSSzFAh775YC9Lj8mDrpc86qf65yxQ4oma26Kf?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:59.880140",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "https://ipfs.io/ipfs/QmQ5TWTtXoKeupMucMUuss8pCbt3ZyyfV3frCKPjzzJXQf/1761.png",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "X-Ray"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Aviators"
+        },
+        {
+          "traitType": "Outfit",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Rebel"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "444444B1GTm7qDNJuHBPaFRkuWCWvNG2enHyyafHBHQW",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 250
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "6QNhgxuSSzFAh775YC9Lj8mDrpc86qf65yxQ4oma26Kf",
+      "contractAddress": "6QNhgxuSSzFAh775YC9Lj8mDrpc86qf65yxQ4oma26Kf"
+    },
+    {
+      "identifier": "6rtr2k1Q8CFKxBC1RBGSmR6Qb5kPerRZQRxte8gQjsHy",
+      "collection": "bodoggos",
+      "contract": "6rtr2k1Q8CFKxBC1RBGSmR6Qb5kPerRZQRxte8gQjsHy",
+      "tokenStandard": "programmable_nft",
+      "name": "#3935",
+      "description": "A Community Brand Capturing the Spirit of Perseverance and Ambition, in Style.",
+      "imageUrl": "https://i2c.seadn.io/solana/6rtr2k1Q8CFKxBC1RBGSmR6Qb5kPerRZQRxte8gQjsHy/5965fb3ee8687e9d0a0a714d56252e/5a5965fb3ee8687e9d0a0a714d56252e.png",
+      "displayImageUrl": "https://i2c.seadn.io/solana/6rtr2k1Q8CFKxBC1RBGSmR6Qb5kPerRZQRxte8gQjsHy/5965fb3ee8687e9d0a0a714d56252e/5a5965fb3ee8687e9d0a0a714d56252e.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmasVYPJuqq38uuckrxsXPWvdcb27MLej8LUgVnZUPDGWp/3935.json",
+      "openseaUrl": "https://opensea.io/assets/solana/6rtr2k1Q8CFKxBC1RBGSmR6Qb5kPerRZQRxte8gQjsHy/6rtr2k1Q8CFKxBC1RBGSmR6Qb5kPerRZQRxte8gQjsHy?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:59.940575",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "https://ipfs.io/ipfs/QmQ5TWTtXoKeupMucMUuss8pCbt3ZyyfV3frCKPjzzJXQf/3935.png",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Brindle"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Green Mohawk"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Circle Full"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Tongue"
+        },
+        {
+          "traitType": "Outfit",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Silver Armor"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "C7ts48R19YZ8qB6GFM8PgfPYXdG5WsRXfkTzQr5gzxaF",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 5760
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "6rtr2k1Q8CFKxBC1RBGSmR6Qb5kPerRZQRxte8gQjsHy",
+      "contractAddress": "6rtr2k1Q8CFKxBC1RBGSmR6Qb5kPerRZQRxte8gQjsHy"
+    },
+    {
+      "identifier": "7b5TMukRZaCqhrf1okb7eaf3VYoY5hRs1HbEazpT2Cw8",
+      "collection": "bodoggos",
+      "contract": "7b5TMukRZaCqhrf1okb7eaf3VYoY5hRs1HbEazpT2Cw8",
+      "tokenStandard": "programmable_nft",
+      "name": "#6246",
+      "description": "A Community Brand Capturing the Spirit of Perseverance and Ambition, in Style.",
+      "imageUrl": "https://i2c.seadn.io/solana/7b5TMukRZaCqhrf1okb7eaf3VYoY5hRs1HbEazpT2Cw8/d31def620b8d81657dad0c0d5362d5/f7d31def620b8d81657dad0c0d5362d5.png",
+      "displayImageUrl": "https://i2c.seadn.io/solana/7b5TMukRZaCqhrf1okb7eaf3VYoY5hRs1HbEazpT2Cw8/d31def620b8d81657dad0c0d5362d5/f7d31def620b8d81657dad0c0d5362d5.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmasVYPJuqq38uuckrxsXPWvdcb27MLej8LUgVnZUPDGWp/6246.json",
+      "openseaUrl": "https://opensea.io/assets/solana/7b5TMukRZaCqhrf1okb7eaf3VYoY5hRs1HbEazpT2Cw8/7b5TMukRZaCqhrf1okb7eaf3VYoY5hRs1HbEazpT2Cw8?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:59.941559",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "https://ipfs.io/ipfs/QmQ5TWTtXoKeupMucMUuss8pCbt3ZyyfV3frCKPjzzJXQf/6246.png",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Snow"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Green Beanie"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Proper"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Sucker"
+        },
+        {
+          "traitType": "Outfit",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Rebel"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "2hfYCFwPQNnpGo1QnrPpFv97zGcTRrCqUcshQ58KQrB1",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 2396
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "7b5TMukRZaCqhrf1okb7eaf3VYoY5hRs1HbEazpT2Cw8",
+      "contractAddress": "7b5TMukRZaCqhrf1okb7eaf3VYoY5hRs1HbEazpT2Cw8"
+    },
+    {
+      "identifier": "HoSZ2hsVg7Tc5hygedeiVHWK6jyKEEHvAbcjJjuHdk8F",
+      "collection": "bodoggos",
+      "contract": "HoSZ2hsVg7Tc5hygedeiVHWK6jyKEEHvAbcjJjuHdk8F",
+      "tokenStandard": "programmable_nft",
+      "name": "#6909",
+      "description": "A Community Brand Capturing the Spirit of Perseverance and Ambition, in Style.",
+      "imageUrl": "https://i2c.seadn.io/solana/HoSZ2hsVg7Tc5hygedeiVHWK6jyKEEHvAbcjJjuHdk8F/0901cfb2ac0929137ef17970f69bbf/7c0901cfb2ac0929137ef17970f69bbf.png",
+      "displayImageUrl": "https://i2c.seadn.io/solana/HoSZ2hsVg7Tc5hygedeiVHWK6jyKEEHvAbcjJjuHdk8F/0901cfb2ac0929137ef17970f69bbf/7c0901cfb2ac0929137ef17970f69bbf.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmasVYPJuqq38uuckrxsXPWvdcb27MLej8LUgVnZUPDGWp/6909.json",
+      "openseaUrl": "https://opensea.io/assets/solana/HoSZ2hsVg7Tc5hygedeiVHWK6jyKEEHvAbcjJjuHdk8F/HoSZ2hsVg7Tc5hygedeiVHWK6jyKEEHvAbcjJjuHdk8F?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:59.942106",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "https://ipfs.io/ipfs/QmQ5TWTtXoKeupMucMUuss8pCbt3ZyyfV3frCKPjzzJXQf/6909.png",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Cinnamon"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Ball Cap"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Focused"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Big Bone"
+        },
+        {
+          "traitType": "Outfit",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Ball Player"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "DL3N7PeNSubqtkhYtF7tPZWdmfPsaDg4HfarhtgAefQx",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 950
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "HoSZ2hsVg7Tc5hygedeiVHWK6jyKEEHvAbcjJjuHdk8F",
+      "contractAddress": "HoSZ2hsVg7Tc5hygedeiVHWK6jyKEEHvAbcjJjuHdk8F"
+    },
+    {
+      "identifier": "2Ezyc3eHSr2dnALSExfMbc6YJbPuT1jNFm7wHf2GZPP8",
+      "collection": "bodoggos",
+      "contract": "2Ezyc3eHSr2dnALSExfMbc6YJbPuT1jNFm7wHf2GZPP8",
+      "tokenStandard": "programmable_nft",
+      "name": "#6049",
+      "description": "A Community Brand Capturing the Spirit of Perseverance and Ambition, in Style.",
+      "imageUrl": "https://i2c.seadn.io/solana/2Ezyc3eHSr2dnALSExfMbc6YJbPuT1jNFm7wHf2GZPP8/0002cdd421cf7f08fc3623de5965dc/660002cdd421cf7f08fc3623de5965dc.png",
+      "displayImageUrl": "https://i2c.seadn.io/solana/2Ezyc3eHSr2dnALSExfMbc6YJbPuT1jNFm7wHf2GZPP8/0002cdd421cf7f08fc3623de5965dc/660002cdd421cf7f08fc3623de5965dc.png",
+      "displayAnimationUrl": null,
+      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmasVYPJuqq38uuckrxsXPWvdcb27MLej8LUgVnZUPDGWp/6049.json",
+      "openseaUrl": "https://opensea.io/assets/solana/2Ezyc3eHSr2dnALSExfMbc6YJbPuT1jNFm7wHf2GZPP8/2Ezyc3eHSr2dnALSExfMbc6YJbPuT1jNFm7wHf2GZPP8?os_ref=mcp-codex-mcp-client",
+      "updatedAt": "2026-10-28T17:11:59.938314",
+      "isDisabled": false,
+      "isNsfw": false,
+      "originalImageUrl": "https://ipfs.io/ipfs/QmQ5TWTtXoKeupMucMUuss8pCbt3ZyyfV3frCKPjzzJXQf/6049.png",
+      "originalAnimationUrl": null,
+      "traits": [
+        {
+          "traitType": "Fur",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Snow"
+        },
+        {
+          "traitType": "Hat",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Blue Mohawk"
+        },
+        {
+          "traitType": "Eyes",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Circle Full"
+        },
+        {
+          "traitType": "Mouth",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Tongue"
+        },
+        {
+          "traitType": "Outfit",
+          "displayType": null,
+          "maxValue": null,
+          "value": "Crossbody"
+        }
+      ],
+      "estimatedValueUsd": null,
+      "decimals": null,
+      "animationUrl": null,
+      "isSuspicious": false,
+      "creator": "",
+      "owners": [
+        {
+          "address": "Ahkf2Kp6HJ2h432XQTsdX6durhyLtcLr2rHGZhi8jVUD",
+          "quantity": 1,
+          "quantityString": "1"
+        }
+      ],
+      "rarity": {
+        "strategyId": "openrarity",
+        "strategyVersion": "1.0",
+        "rank": 7558
+      },
+      "subscription": null,
+      "agentBinding": null,
+      "agentMetadata": null,
+      "tokenId": "2Ezyc3eHSr2dnALSExfMbc6YJbPuT1jNFm7wHf2GZPP8",
+      "contractAddress": "2Ezyc3eHSr2dnALSExfMbc6YJbPuT1jNFm7wHf2GZPP8"
+    }
+  ]
+}
