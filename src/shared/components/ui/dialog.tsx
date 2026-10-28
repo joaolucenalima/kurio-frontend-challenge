@@ -16,20 +16,20 @@ function DialogContent({
 }: React.ComponentProps<typeof DialogPrimitive.Content>) {
   return (
     <DialogPrimitive.Portal>
-      <DialogPrimitive.Overlay className="fixed inset-0 z-50 bg-black/85 data-[state=open]:animate-in data-[state=closed]:animate-out" />
+      <DialogPrimitive.Overlay className="fixed inset-0 z-50 bg-black/75 data-[state=open]:animate-in data-[state=closed]:animate-out" />
       <DialogPrimitive.Content
         className={cn(
-          'fixed top-1/2 left-1/2 z-50 max-h-[95vh] w-[min(95vw,1000px)] -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-lg border border-border bg-background p-4 text-foreground shadow-xl focus:outline-none',
+          'fixed top-1/2 left-1/2 z-50 max-h-[95vh] w-[min(95vw,500px)] -translate-x-1/2 -translate-y-1/2 overflow-y-auto border-b-[10px] border-[#d28a4c] bg-[#241612] p-4 pb-6 text-foreground shadow-xl focus:outline-none',
           className,
         )}
         {...props}
       >
         {children}
         <DialogPrimitive.Close
-          className="absolute top-4 right-4 rounded-md text-muted-foreground hover:text-foreground focus-visible:outline-ring"
+          className="absolute top-3 right-3 rounded-sm text-[#d28a4c] hover:text-[#e9a66c] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#d28a4c]"
           aria-label="Fechar"
         >
-          <X className="size-5" aria-hidden="true" />
+          <X className="size-[18px]" aria-hidden="true" />
         </DialogPrimitive.Close>
       </DialogPrimitive.Content>
     </DialogPrimitive.Portal>
