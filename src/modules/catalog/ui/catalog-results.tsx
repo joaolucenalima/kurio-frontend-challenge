@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button } from '#/shared/components/ui/button'
 import { catalogQueries } from '../api/queries'
 import type { CatalogSearch, Nft } from '../model/contracts'
@@ -46,6 +47,8 @@ export function CatalogResults({
   const query = useQuery(catalogQueries.list(search))
 
   const pages = query.data ? Math.ceil(query.data.total / query.data.pageSize) : 0
+  const firstPage = Math.max(1, Math.min(search.page - 1, pages - 3))
+  const visiblePages = Array.from({ length: Math.min(4, pages) }, (_, index) => firstPage + index)
 
   return (
     <div className="min-w-0 flex-1">
@@ -124,24 +127,44 @@ export function CatalogResults({
             {pages > 1 && (
               <nav
                 aria-label="Paginação do catálogo"
-                className="mt-10 flex flex-wrap items-center justify-end gap-3"
+                className="mt-22 flex items-center justify-end gap-2"
               >
+                {search.page > 1 && (
+                  <Button
+                    type="button"
+                    variant="outline"
+                    size="icon"
+                    aria-label="Página anterior"
+                    className="size-8.75 rounded-sm p-0 shadow-none"
+                    onClick={() => onChange({ ...search, page: search.page - 1 })}
+                  >
+                    <ChevronLeft className="size-4.5" aria-hidden="true" />
+                  </Button>
+                )}
+                {visiblePages.map((page) => (
+                  <Button
+                    key={page}
+                    type="button"
+                    variant={page === search.page ? 'default' : 'outline'}
+                    size="icon"
+                    aria-label={`Página ${page} de ${pages}`}
+                    aria-current={page === search.page ? 'page' : undefined}
+                    className="size-8.75 rounded-sm p-0 text-lg leading-4 font-normal shadow-none aria-[current=page]:font-bold"
+                    onClick={() => onChange({ ...search, page })}
+                  >
+                    {page}
+                  </Button>
+                ))}
                 <Button
+                  type="button"
                   variant="outline"
-                  disabled={search.page <= 1}
-                  onClick={() => onChange({ ...search, page: search.page - 1 })}
-                >
-                  Anterior
-                </Button>
-                <span className="text-xs">
-                  Página {search.page} de {pages}
-                </span>
-                <Button
-                  variant="outline"
+                  size="icon"
+                  aria-label="Próxima página"
+                  className="size-8.75 rounded-sm p-0 shadow-none"
                   disabled={search.page >= pages}
                   onClick={() => onChange({ ...search, page: search.page + 1 })}
                 >
-                  Próxima
+                  <ChevronRight className="size-4.5" aria-hidden="true" />
                 </Button>
               </nav>
             )}

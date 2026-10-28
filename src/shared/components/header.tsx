@@ -18,7 +18,7 @@ export function Header() {
         <Link
           to="/"
           search={{ sort: 'featured', page: 1 }}
-          activeOptions={{ exact: true }}
+          activeOptions={{ exact: true, includeSearch: false }}
           className="cursor-pointer transition-colors duration-200 ease-out hover:text-accent focus-visible:text-accent aria-[current=page]:border-b-4 aria-[current=page]:border-primary aria-[current=page]:font-bold aria-[current=page]:text-accent aria-[current=page]:hover:text-primary"
         >
           Início

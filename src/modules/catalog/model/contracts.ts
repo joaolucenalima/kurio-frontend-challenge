@@ -74,6 +74,35 @@ export interface CatalogApiError {
   message: string
 }
 
+export function parseCatalogResponse(input: unknown): CatalogResponse {
+  if (
+    !input ||
+    typeof input !== 'object' ||
+    !('items' in input) ||
+    !Array.isArray(input.items) ||
+    !('total' in input) ||
+    !Number.isSafeInteger(input.total) ||
+    Number(input.total) < 0 ||
+    !('page' in input) ||
+    !Number.isSafeInteger(input.page) ||
+    Number(input.page) < 1 ||
+    !('pageSize' in input) ||
+    !Number.isSafeInteger(input.pageSize) ||
+    Number(input.pageSize) < 1 ||
+    !('counts' in input) ||
+    !input.counts ||
+    typeof input.counts !== 'object' ||
+    !('collections' in input.counts) ||
+    !input.counts.collections ||
+    !('networks' in input.counts) ||
+    !input.counts.networks
+  ) {
+    throw new Error('A API retornou uma resposta inválida para o catálogo')
+  }
+
+  return input as CatalogResponse
+}
+
 export interface NftUpdatedEvent {
   id: string
   type: 'nft.updated'
