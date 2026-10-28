@@ -1,6 +1,6 @@
 # Desafio Frontend — Marketplace de NFTs
 
-Implemente o **NFT Marketplace** em React e TypeScript, seguindo o [layout no Figma](https://www.figma.com/design/Ff0SksUi7UFtPWUO8kyNtw/Frontend-Challenge?node-id=0-1).
+Implemente o **NFT Marketplace** em React e TypeScript, seguindo o [layout no Figma](https://www.figma.com/design/c2OlP8DR2m76iAMKyBhUmL/Frontend-Challenge--Copy-?node-id=0-1&p=f&t=MJuOjUSD0Atok4RY-0).
 
 O desafio avalia fidelidade visual, qualidade das interações, integração com APIs, gerenciamento de estado assíncrono, tempo real, acessibilidade e performance.
 

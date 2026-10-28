@@ -3,7 +3,7 @@
 ## Fontes de referência e prioridades
 
 - Leia `scope/README.md` antes de desenvolver. Ele define os requisitos funcionais, a stack, os critérios de avaliação e a entrega; este documento destaca as regras e não substitui o enunciado completo.
-- A referência visual é o **Pen.dev, acessado via MCP**, conforme decisão do usuário. Essa orientação substitui as referências ao Figma no enunciado. Consulte as telas e os componentes correspondentes pelo MCP antes de implementar ou alterar a apresentação. Se o acesso estiver indisponível, informe a limitação; não invente uma referência alternativa.
+- A referência visual é o **Figma, acessado pelo MCP do Figma**, conforme o layout indicado em `scope/README.md`. Consulte as telas e os componentes correspondentes pelo MCP do Figma antes de implementar ou alterar a apresentação. Se o acesso estiver indisponível, informe a limitação; não invente uma referência alternativa.
 - Instruções explícitas do usuário prevalecem sobre as orientações deste arquivo.
 
 ## Arquitetura modular por domínio
@@ -25,6 +25,7 @@ Adote arquitetura modular por domínio. A escolha prioriza coesão das regras de
 - Mantenha as rotas enxutas e preserve o roteamento baseado em arquivos. Não edite manualmente `src/routeTree.gen.ts`.
 - Use pnpm e preserve o lockfile. Consulte `package.json` antes de executar comandos; comandos exigidos na entrega podem ainda não existir no scaffold.
 - Use Oxlint (`pnpm lint`, `pnpm lint:fix`) e Oxfmt (`pnpm format`, `pnpm format:check`). Respeite `.oxlintrc.json` e `.oxfmtrc.json`; mantenha aspas simples e ausência de ponto e vírgula no código. Não formate manualmente rotas geradas, lockfile ou o enunciado em `scope/`.
+- Leia e grave arquivos de texto em UTF-8 explicitamente, inclusive em scripts e comandos no Windows/PowerShell. Não dependa da codificação padrão do sistema nem faça conversões entre UTF-8, Latin-1 ou Windows-1252 em arquivos já corretos. Preserve acentos e símbolos; ao editar textos, confira o conteúdo real dos arquivos para distinguir corrupção de codificação de problemas de exibição do terminal. Após corrigir corrupção, verifique também os textos no build gerado.
 
 ## Commits
 
@@ -88,7 +89,9 @@ Páginas editoriais, suporte, atividade, ofertas e downloads estão fora da entr
 
 ## Interface, responsividade e acessibilidade
 
-- Use o Pen.dev via MCP para preservar tipografia, cores, espaçamentos, hierarquia, imagens, proporções e composição. Adapte shadcn/ui à identidade visual.
+- Use o Figma via MCP do Figma para preservar tipografia, cores, espaçamentos, hierarquia, imagens, proporções e composição. Adapte shadcn/ui à identidade visual.
+- Aplique os estilos diretamente nos componentes com classes Tailwind, incluindo estados de interação e variantes responsivas. Não crie arquivos `.css` para componentes, páginas ou módulos. Use o `src/shared/styles/globals.css` existente somente para a configuração global do Tailwind, fontes, estilos base e tokens/utilitários compartilhados; não transfira estilos específicos de componentes para esse arquivo. Estilos de uso único devem ser expressos diretamente com Tailwind no componente, sem criar receitas compartilhadas.
+- Padronize sempre tamanhos, espaçamentos, raios de borda e demais medidas visuais de elementos do mesmo nível hierárquico, reutilizando os mesmos tokens e estilos. Normalize pequenas variações do Figma para manter essa consistência. Se os valores do Figma forem muito discrepantes entre elementos equivalentes, informe ao usuário a diferença e os elementos afetados antes de implementar a exceção ou a padronização.
 - Todas as telas devem funcionar em desktop, tablet e mobile, inclusive perfil, carteiras e confirmação sem frame específico. Avalie larguras de 390, 768 e 1440 px.
 - Estados não desenhados devem seguir o padrão visual existente.
 - Use assets disponíveis na referência e mantenha imagens e fontes necessárias acessíveis na execução local.
