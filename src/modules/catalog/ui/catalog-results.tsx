@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { Link } from '@tanstack/react-router'
 import { Button } from '#/shared/components/ui/button'
 import { catalogQueries } from '../api/queries'
 import type { CatalogSearch, Nft } from '../model/contracts'
@@ -10,9 +11,14 @@ function NftCard({ nft }: { nft: Nft }) {
 
   return (
     <article className="min-w-0">
-      <div className="flex aspect-258/300 items-center bg-card p-1">
+      <Link
+        to="/nfts/$nftId"
+        params={{ nftId: nft.id }}
+        aria-label={`Ver detalhes de ${nft.name}`}
+        className="flex aspect-258/300 items-center bg-card p-1 focus-visible:outline-ring"
+      >
         <img
-          src={failed ? '/images/nft-placeholder.svg' : nft.imageUrl}
+          src={failed ? '/images/nft-placeholder.svg' : nft.displayImageUrl}
           alt={failed ? `Imagem indisponível: ${nft.name}` : nft.imageAlt}
           width="250"
           height="250"
@@ -22,8 +28,12 @@ function NftCard({ nft }: { nft: Nft }) {
           onError={() => setFailed(true)}
           className="aspect-square w-full rounded-xl object-cover"
         />
-      </div>
-      <h3 className="mt-3 wrap-break-word text-sm leading-5 md:text-base">{nft.name}</h3>
+      </Link>
+      <h3 className="mt-3 wrap-break-word text-sm leading-5 md:text-base">
+        <Link to="/nfts/$nftId" params={{ nftId: nft.id }} className="hover:text-accent">
+          {nft.name}
+        </Link>
+      </h3>
       <p className="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-sm font-bold text-accent md:text-lg">
         <span>{nft.priceEth} ETH</span>
         {nft.previousPriceEth && (
@@ -105,7 +115,7 @@ export function CatalogResults({
             {query.data.items.length ? (
               <div className="mt-5 grid grid-cols-2 gap-x-4 gap-y-10 md:grid-cols-3 lg:gap-x-8 lg:gap-y-18">
                 {query.data.items.map((nft) => (
-                  <NftCard key={`${nft.id}:${nft.imageUrl}`} nft={nft} />
+                  <NftCard key={`${nft.id}:${nft.displayImageUrl}`} nft={nft} />
                 ))}
               </div>
             ) : (

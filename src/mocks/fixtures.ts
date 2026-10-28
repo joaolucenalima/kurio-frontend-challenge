@@ -1,5 +1,6 @@
-import { collectionOptions } from '#/modules/catalog'
-import type { CollectionId, Network, Nft } from '#/modules/catalog'
+import { normalizeNft } from '#/modules/catalog'
+import type { Nft, NftRecord, NftReview } from '#/modules/catalog'
+import kurio from './snapshots/kurio.json'
 import bayc from './snapshots/boredapeyachtclub.json'
 import argonauts from './snapshots/argonauts.json'
 import suitedApes from './snapshots/suited-ape-society.json'
@@ -7,89 +8,166 @@ import mutantApes from './snapshots/mutant-ape-yacht-club.json'
 import bodoggos from './snapshots/bodoggos.json'
 import galacticGeckos from './snapshots/galactic-geckos-solana.json'
 
-const figma = [
-  ['emerald-ape', 'Emerald Ape #042', '1.19', '4:137', 'Macaco de jaqueta verde e óculos de sol'],
-  ['sage-nomad', 'Sage Nomad #009', '1.69', '4:162', 'Macaco com chapéu verde e moletom violeta'],
-  ['neon-vessel', 'Neon Vessel #552', '1.99', '4:164', 'Macaco de terno claro e gola verde'],
-  ['golden-beat', 'Golden Beat #207', '0.99', '4:286', 'Macaco dourado com fones verdes'],
-] as const
+const nftRecords = [
+  ...kurio,
+  ...bayc,
+  ...argonauts,
+  ...suitedApes,
+  ...mutantApes,
+  ...bodoggos,
+  ...galacticGeckos,
+] as NftRecord[]
 
-interface ImportedItem {
-  tokenId: string
-  contract: string
-  name: string
-  description: string
-  displayImageUrl: string | null
-  imageUrl: string | null
-  openseaUrl: string
-  traits: { traitType: string; value: unknown }[]
-}
+export const initialNfts: Nft[] = nftRecords.map(normalizeNft)
 
-function imported(
-  items: ImportedItem[],
-  collection: CollectionId,
-  baseCents: number,
-  network: Network = 'ethereum',
-): Nft[] {
-  const collectionName = collectionOptions.find(({ id }) => id === collection)!.name
-  return [...items]
-    .sort((a, b) => a.tokenId.localeCompare(b.tokenId, 'en', { numeric: true }))
-    .map((item, index) => {
-      const cents = baseCents + index
-      const name = item.name
-        ? item.name.startsWith('#')
-          ? `${collectionName} ${item.name}`
-          : item.name
-        : `${collectionName} #${item.tokenId}`
-      const contract = network === 'solana' ? item.contract : item.contract.toLowerCase()
-      return {
-        id: `${network}-${contract}-${item.tokenId}`,
-        name,
-        description: item.description,
-        imageUrl: item.displayImageUrl || item.imageUrl || '/images/nft-placeholder.svg',
-        imageAlt: name,
-        collection,
-        network,
-        priceEth: `${Math.floor(cents / 100)}.${String(cents % 100).padStart(2, '0')}`,
-        attributes: item.traits.map((trait) => ({
-          name: trait.traitType,
-          value: String(trait.value),
-        })),
-        editions: [{ id: 'original', name: 'Original', available: 1 }],
-        version: 1,
-        source: {
-          type: 'opensea',
-          contract: item.contract,
-          tokenId: item.tokenId,
-          url: item.openseaUrl,
-        },
-      }
-    })
-}
-
-export const initialNfts: Nft[] = [
-  ...figma.map(([id, name, priceEth, nodeId, imageAlt]): Nft => ({
-    id,
-    name,
-    priceEth,
-    imageAlt,
-    description: 'Obra da seleção Kurio. Condições de compra simuladas para demonstração.',
-    imageUrl: `/images/nfts/${id}.png`,
-    collection: 'kurio',
-    network: 'ethereum',
-    ...(id === 'neon-vessel' ? { previousPriceEth: '2.29' } : {}),
-    attributes: [],
-    editions: [
-      { id: 'limited', name: 'Edição limitada', available: 5 },
-      { id: 'artist', name: 'Edição do artista', available: 2 },
-    ],
-    version: 1,
-    source: { type: 'figma', nodeId },
-  })),
-  ...imported(bayc.items, 'boredapeyachtclub', 100),
-  ...imported(argonauts.items, 'argonauts', 50),
-  ...imported(suitedApes.items, 'suited-ape-society', 75, 'robinhood'),
-  ...imported(mutantApes.items, 'mutant-ape-yacht-club', 150),
-  ...imported(bodoggos.items, 'bodoggos', 25, 'solana'),
-  ...imported(galacticGeckos.items, 'galactic-geckos-solana', 40, 'solana'),
+export const reviewPool: NftReview[] = [
+  {
+    id: '1',
+    author: 'Ana M.',
+    rating: 5,
+    content: 'As cores e os detalhes chamam atenção em cada visita.',
+    language: 'pt-BR',
+  },
+  {
+    id: '2',
+    author: 'Liam R.',
+    rating: 4,
+    content: 'The artwork has a strong visual identity.',
+    language: 'en',
+  },
+  {
+    id: '3',
+    author: 'Marina C.',
+    rating: 5,
+    content: 'Gostei da composição e da variedade de atributos.',
+    language: 'pt-BR',
+  },
+  {
+    id: '4',
+    author: 'Noah K.',
+    rating: 3,
+    content: 'Interesting concept, though I expected more media options.',
+    language: 'en',
+  },
+  {
+    id: '5',
+    author: 'Rafa P.',
+    rating: 4,
+    content: 'A peça ficou ótima na minha coleção digital.',
+    language: 'pt-BR',
+  },
+  {
+    id: '6',
+    author: 'Sophie L.',
+    rating: 5,
+    content: 'Beautiful balance of color and character.',
+    language: 'en',
+  },
+  {
+    id: '7',
+    author: 'João V.',
+    rating: 3,
+    content: 'A arte é interessante; queria ver mais variações.',
+    language: 'pt-BR',
+  },
+  {
+    id: '8',
+    author: 'Ethan B.',
+    rating: 4,
+    content: 'The traits make this one easy to recognize.',
+    language: 'en',
+  },
+  {
+    id: '9',
+    author: 'Camila F.',
+    rating: 5,
+    content: 'É uma das minhas imagens favoritas da coleção.',
+    language: 'pt-BR',
+  },
+  {
+    id: '10',
+    author: 'Olivia S.',
+    rating: 4,
+    content: 'Clean presentation and memorable artwork.',
+    language: 'en',
+  },
+  {
+    id: '11',
+    author: 'Bruno A.',
+    rating: 4,
+    content: 'Os detalhes do personagem funcionam muito bem.',
+    language: 'pt-BR',
+  },
+  {
+    id: '12',
+    author: 'Maya D.',
+    rating: 5,
+    content: 'A lovely addition to my digital gallery.',
+    language: 'en',
+  },
+  {
+    id: '13',
+    author: 'Luiza T.',
+    rating: 3,
+    content: 'Visual bonito, mas prefiro outras peças da série.',
+    language: 'pt-BR',
+  },
+  {
+    id: '14',
+    author: 'Jack W.',
+    rating: 4,
+    content: 'Distinctive style and a nice set of traits.',
+    language: 'en',
+  },
+  {
+    id: '15',
+    author: 'Pedro N.',
+    rating: 5,
+    content: 'A paleta de cores ficou excelente.',
+    language: 'pt-BR',
+  },
+  {
+    id: '16',
+    author: 'Ava H.',
+    rating: 3,
+    content: 'Solid piece, with room for more detail.',
+    language: 'en',
+  },
+  {
+    id: '17',
+    author: 'Beatriz O.',
+    rating: 4,
+    content: 'Gostei do contraste e da expressão do personagem.',
+    language: 'pt-BR',
+  },
+  {
+    id: '18',
+    author: 'Lucas G.',
+    rating: 5,
+    content: 'The image looks great at full size.',
+    language: 'en',
+  },
+  {
+    id: '19',
+    author: 'Helena D.',
+    rating: 4,
+    content: 'Os traços dão personalidade à obra.',
+    language: 'pt-BR',
+  },
+  {
+    id: '20',
+    author: 'Theo J.',
+    rating: 5,
+    content: 'A standout piece in this collection.',
+    language: 'en',
+  },
 ]
+
+export function reviewsForNft(nft: Nft): NftReview[] {
+  const offset =
+    [...nft.id].reduce((sum, character) => sum + character.charCodeAt(0), 0) % reviewPool.length
+  return Array.from({ length: nft.reviewCount }, (_, index) => ({
+    ...reviewPool[(offset + index) % reviewPool.length],
+    id: `${nft.id}:${reviewPool[(offset + index) % reviewPool.length].id}`,
+  }))
+}

@@ -1,884 +1,302 @@
-{
-  "source": "OpenSea MCP get_items",
-  "collectedAt": "2026-10-28T17:12:10.860Z",
-  "collection": "galactic-geckos-solana",
-  "network": "solana",
-  "items": [
-    {
-      "identifier": "9jtBrpNHjHypccFqMxX35toYfhZEtS3YDmLRxoYzigMx",
-      "collection": "galactic-geckos-solana",
-      "contract": "9jtBrpNHjHypccFqMxX35toYfhZEtS3YDmLRxoYzigMx",
-      "tokenStandard": "programmable_nft",
-      "name": "Galactic Gecko #4663",
-      "description": "In the farthest reaches of the universe, the hearts of the gecko warriors of old beat within every Barada racer. You can feel their blood course through your veins as the Emperor Prime gives the signal: let the spaceship race begin.",
-      "imageUrl": "https://i2c.seadn.io/solana/9jtBrpNHjHypccFqMxX35toYfhZEtS3YDmLRxoYzigMx/fe73fd5a97089c3253cb7a349ff2a6/51fe73fd5a97089c3253cb7a349ff2a6.jpeg",
-      "displayImageUrl": "https://i2c.seadn.io/solana/9jtBrpNHjHypccFqMxX35toYfhZEtS3YDmLRxoYzigMx/fe73fd5a97089c3253cb7a349ff2a6/51fe73fd5a97089c3253cb7a349ff2a6.jpeg",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://arweave.net/H6OOEw241YZKibmlfsj8McOsbaP32q6LpzLSvBB4HJM",
-      "openseaUrl": "https://opensea.io/assets/solana/9jtBrpNHjHypccFqMxX35toYfhZEtS3YDmLRxoYzigMx/9jtBrpNHjHypccFqMxX35toYfhZEtS3YDmLRxoYzigMx?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:12:01.976210",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "https://www.arweave.net/H0KPQje3QjqoJKNd-4tkMqS41Saz5dvsWoDUHcFviHk?ext=jpeg",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Body",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Orange"
-        },
-        {
-          "traitType": "Ears",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Intergalactic Fins"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Creepy Peepers"
-        },
-        {
-          "traitType": "Armor",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Excess Hosing"
-        },
-        {
-          "traitType": "Mouth",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Pensive"
-        },
-        {
-          "traitType": "Helmet",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Identified Flying Object"
-        },
-        {
-          "traitType": "Faction",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Barada"
-        },
-        {
-          "traitType": "Attribute Count",
-          "displayType": null,
-          "maxValue": null,
-          "value": "7"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "EVquz5tTB2wPZDPACSXb69ytsZY26VWZ12kg4Vq1uert",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 3034
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "9jtBrpNHjHypccFqMxX35toYfhZEtS3YDmLRxoYzigMx",
-      "contractAddress": "9jtBrpNHjHypccFqMxX35toYfhZEtS3YDmLRxoYzigMx"
-    },
-    {
-      "identifier": "E4uQJFwmnoEgEJNrx7E6K2APHGiytuCrdtkZw57GsB7w",
-      "collection": "galactic-geckos-solana",
-      "contract": "E4uQJFwmnoEgEJNrx7E6K2APHGiytuCrdtkZw57GsB7w",
-      "tokenStandard": "programmable_nft",
-      "name": "Galactic Gecko #8657",
-      "description": "As a member of the Alura racing faction, you stand on the shoulders of the giants of the Interstellar Relay. But you can live up to the geckos who came before you: or at least, you'll try.",
-      "imageUrl": "https://i2c.seadn.io/solana/E4uQJFwmnoEgEJNrx7E6K2APHGiytuCrdtkZw57GsB7w/2d9bed033ebd66e0cf11b83c4771b3/402d9bed033ebd66e0cf11b83c4771b3.jpeg",
-      "displayImageUrl": "https://i2c.seadn.io/solana/E4uQJFwmnoEgEJNrx7E6K2APHGiytuCrdtkZw57GsB7w/2d9bed033ebd66e0cf11b83c4771b3/402d9bed033ebd66e0cf11b83c4771b3.jpeg",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://arweave.net/yUBLZLvY6Gp15mwxgSEI_NmiojIU1equ2YenUH_cV6w",
-      "openseaUrl": "https://opensea.io/assets/solana/E4uQJFwmnoEgEJNrx7E6K2APHGiytuCrdtkZw57GsB7w/E4uQJFwmnoEgEJNrx7E6K2APHGiytuCrdtkZw57GsB7w?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:12:01.982938",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "https://www.arweave.net/nMHj74J0Di_1Nn76a0EpFVik131prvRJbO_s9Zmsx3I?ext=jpeg",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Body",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Spectral Black"
-        },
-        {
-          "traitType": "Ears",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Sublimatic Surveyor"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Mixed Reality Grid"
-        },
-        {
-          "traitType": "Armor",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Racers Regalia"
-        },
-        {
-          "traitType": "Mouth",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Pleased"
-        },
-        {
-          "traitType": "Helmet",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Useless Compass"
-        },
-        {
-          "traitType": "Faction",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Alura"
-        },
-        {
-          "traitType": "Attribute Count",
-          "displayType": null,
-          "maxValue": null,
-          "value": "7"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "xC6Gx1ALXVVqLE8ovgGMbk47XNFmm22EAYTxaNAmvpm",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 518
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "E4uQJFwmnoEgEJNrx7E6K2APHGiytuCrdtkZw57GsB7w",
-      "contractAddress": "E4uQJFwmnoEgEJNrx7E6K2APHGiytuCrdtkZw57GsB7w"
-    },
-    {
-      "identifier": "7C6fVNxPasmagh11v548QZTiuZxwb8LatST8MgDhzifZ",
-      "collection": "galactic-geckos-solana",
-      "contract": "7C6fVNxPasmagh11v548QZTiuZxwb8LatST8MgDhzifZ",
-      "tokenStandard": "programmable_nft",
-      "name": "Galactic Gecko #5819",
-      "description": "As a member of the Alura racing faction, you stand on the shoulders of the giants of the Interstellar Relay. But you can live up to the geckos who came before you: or at least, you'll try.",
-      "imageUrl": "https://i2c.seadn.io/solana/7C6fVNxPasmagh11v548QZTiuZxwb8LatST8MgDhzifZ/11645659f7b6d6d91d2674e8126ca2/d211645659f7b6d6d91d2674e8126ca2.jpeg",
-      "displayImageUrl": "https://i2c.seadn.io/solana/7C6fVNxPasmagh11v548QZTiuZxwb8LatST8MgDhzifZ/11645659f7b6d6d91d2674e8126ca2/d211645659f7b6d6d91d2674e8126ca2.jpeg",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://arweave.net/WqBiCPJfmsmMjdtHWcV0Fyn_UhU_NNqkOARl5WQ7O7k",
-      "openseaUrl": "https://opensea.io/assets/solana/7C6fVNxPasmagh11v548QZTiuZxwb8LatST8MgDhzifZ/7C6fVNxPasmagh11v548QZTiuZxwb8LatST8MgDhzifZ?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:12:01.980726",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "https://www.arweave.net/AotuL1SHt-PmMywgttTzFzW5GcgNn2fcWEPG4Ii7xa0?ext=jpeg",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Body",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Light Pink"
-        },
-        {
-          "traitType": "Ears",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Decorative Bolt"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Vulgar Eyes"
-        },
-        {
-          "traitType": "Armor",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Frivolous Costume"
-        },
-        {
-          "traitType": "Mouth",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Pensive"
-        },
-        {
-          "traitType": "Helmet",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gibbous Blaster"
-        },
-        {
-          "traitType": "Faction",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Alura"
-        },
-        {
-          "traitType": "Attribute Count",
-          "displayType": null,
-          "maxValue": null,
-          "value": "7"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "A6euP4mLnsMFtrVtmzpgeup4h7cGzubdUFnaJqPBiiYT",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 3902
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "7C6fVNxPasmagh11v548QZTiuZxwb8LatST8MgDhzifZ",
-      "contractAddress": "7C6fVNxPasmagh11v548QZTiuZxwb8LatST8MgDhzifZ"
-    },
-    {
-      "identifier": "HPMG47rsBB92L4pycEudzYR99JkqACDm74mL1BDs4qUa",
-      "collection": "galactic-geckos-solana",
-      "contract": "HPMG47rsBB92L4pycEudzYR99JkqACDm74mL1BDs4qUa",
-      "tokenStandard": "programmable_nft",
-      "name": "Galactic Gecko #5385",
-      "description": "Eyeing the competition pulling up to the starting line, you feel deep within that you're the best gecko there - or, and this is no surprise for a Martu racer, the most cunning. Wait until your rival figures out what you did to their spaceship.",
-      "imageUrl": "https://i2c.seadn.io/solana/HPMG47rsBB92L4pycEudzYR99JkqACDm74mL1BDs4qUa/8cea690faa9fd190725b1e73d4128d/938cea690faa9fd190725b1e73d4128d.jpeg",
-      "displayImageUrl": "https://i2c.seadn.io/solana/HPMG47rsBB92L4pycEudzYR99JkqACDm74mL1BDs4qUa/8cea690faa9fd190725b1e73d4128d/938cea690faa9fd190725b1e73d4128d.jpeg",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://arweave.net/nro1tBax8S9yAGxRf6KqKrVO_9aGEBhdbxPrHcSo0Aw",
-      "openseaUrl": "https://opensea.io/assets/solana/HPMG47rsBB92L4pycEudzYR99JkqACDm74mL1BDs4qUa/HPMG47rsBB92L4pycEudzYR99JkqACDm74mL1BDs4qUa?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:12:01.979653",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "https://www.arweave.net/-OdIYyM95SkvhXU10RnwYOpKanZxqvSniBiFfs_qFrs?ext=jpeg",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Body",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Spotted Kiwi"
-        },
-        {
-          "traitType": "Ears",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Splendid Recorders"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Incisive Oglers"
-        },
-        {
-          "traitType": "Mouth",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Pleased"
-        },
-        {
-          "traitType": "Helmet",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Photon Harvester"
-        },
-        {
-          "traitType": "Faction",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Martu"
-        },
-        {
-          "traitType": "Attribute Count",
-          "displayType": null,
-          "maxValue": null,
-          "value": "6"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "3NKFbtbUt2QKD2De9ttG5cNcoUb6u3dLcfvRRcYW5NrL",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 5942
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "HPMG47rsBB92L4pycEudzYR99JkqACDm74mL1BDs4qUa",
-      "contractAddress": "HPMG47rsBB92L4pycEudzYR99JkqACDm74mL1BDs4qUa"
-    },
-    {
-      "identifier": "HwerTB8VUZ9aRBM5aEwKwSDVTonu5gKCgVyzC7Dmvvnp",
-      "collection": "galactic-geckos-solana",
-      "contract": "HwerTB8VUZ9aRBM5aEwKwSDVTonu5gKCgVyzC7Dmvvnp",
-      "tokenStandard": "programmable_nft",
-      "name": "Galactic Gecko #9856",
-      "description": "Eyeing the competition pulling up to the starting line, you feel deep within that you're the best gecko there - or, and this is no surprise for a Martu racer, the most cunning. Wait until your rival figures out what you did to their spaceship.",
-      "imageUrl": "https://i2c.seadn.io/solana/HwerTB8VUZ9aRBM5aEwKwSDVTonu5gKCgVyzC7Dmvvnp/1d64731e9e1e7cea547544cdc8c424/471d64731e9e1e7cea547544cdc8c424.jpeg",
-      "displayImageUrl": "https://i2c.seadn.io/solana/HwerTB8VUZ9aRBM5aEwKwSDVTonu5gKCgVyzC7Dmvvnp/1d64731e9e1e7cea547544cdc8c424/471d64731e9e1e7cea547544cdc8c424.jpeg",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://arweave.net/pqLpDmT-5jHhLNhyOKa7JKgdG2X6aD-W_0hSgSLEcI8",
-      "openseaUrl": "https://opensea.io/assets/solana/HwerTB8VUZ9aRBM5aEwKwSDVTonu5gKCgVyzC7Dmvvnp/HwerTB8VUZ9aRBM5aEwKwSDVTonu5gKCgVyzC7Dmvvnp?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:12:01.976986",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "https://www.arweave.net/_ftoJwQwzT07Ohux2reSibIewRxYq5fP3OEzEkZhChQ?ext=jpeg",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Body",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Orange"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Astral Projectors"
-        },
-        {
-          "traitType": "Armor",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Pedestrian Trappings"
-        },
-        {
-          "traitType": "Mouth",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Pleased"
-        },
-        {
-          "traitType": "Helmet",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Princely Helm"
-        },
-        {
-          "traitType": "Faction",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Martu"
-        },
-        {
-          "traitType": "Attribute Count",
-          "displayType": null,
-          "maxValue": null,
-          "value": "6"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "4b4k45wHHyJwiURGJp1Pvo7fCpQ2ccrHs9sCeZ8sLjPh",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 6003
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "HwerTB8VUZ9aRBM5aEwKwSDVTonu5gKCgVyzC7Dmvvnp",
-      "contractAddress": "HwerTB8VUZ9aRBM5aEwKwSDVTonu5gKCgVyzC7Dmvvnp"
-    },
-    {
-      "identifier": "4NwKxysJoSxjv4ww7kV2Arx6ZYngeqSC318jNjFA55MB",
-      "collection": "galactic-geckos-solana",
-      "contract": "4NwKxysJoSxjv4ww7kV2Arx6ZYngeqSC318jNjFA55MB",
-      "tokenStandard": "programmable_nft",
-      "name": "Galactic Gecko #2487",
-      "description": "With the help of your Targari brothers, you've calculated the magnetic fields, mapped the gamma ray bursts, and engineered your racing ship in your favor. May the best gecko win.",
-      "imageUrl": "https://i2c.seadn.io/solana/4NwKxysJoSxjv4ww7kV2Arx6ZYngeqSC318jNjFA55MB/d15d4024f9df1abe94ba7674a6c7c5/abd15d4024f9df1abe94ba7674a6c7c5.jpeg",
-      "displayImageUrl": "https://i2c.seadn.io/solana/4NwKxysJoSxjv4ww7kV2Arx6ZYngeqSC318jNjFA55MB/d15d4024f9df1abe94ba7674a6c7c5/abd15d4024f9df1abe94ba7674a6c7c5.jpeg",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://arweave.net/4KtPPq-gGTKfRmn395S8-jSuUrYJH5xa6BwsOs-HLtU",
-      "openseaUrl": "https://opensea.io/assets/solana/4NwKxysJoSxjv4ww7kV2Arx6ZYngeqSC318jNjFA55MB/4NwKxysJoSxjv4ww7kV2Arx6ZYngeqSC318jNjFA55MB?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:12:01.980032",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "https://www.arweave.net/Q5_QdUejnksb-PPYfBM5o4YoI__SjMl9vL62qnTfj70?ext=jpeg",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Body",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Spotted Turquoise"
-        },
-        {
-          "traitType": "Ears",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Nebular Amplifier"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Ocular Scanner"
-        },
-        {
-          "traitType": "Armor",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Lunar Robes"
-        },
-        {
-          "traitType": "Mouth",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Pleased"
-        },
-        {
-          "traitType": "Helmet",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Princely Helm"
-        },
-        {
-          "traitType": "Faction",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Targari"
-        },
-        {
-          "traitType": "Attribute Count",
-          "displayType": null,
-          "maxValue": null,
-          "value": "7"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "7mv3gj4A6Ja9tDSWZLSyZbyp3W9peKqydpd6eLiwDBke",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 2069
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "4NwKxysJoSxjv4ww7kV2Arx6ZYngeqSC318jNjFA55MB",
-      "contractAddress": "4NwKxysJoSxjv4ww7kV2Arx6ZYngeqSC318jNjFA55MB"
-    },
-    {
-      "identifier": "8Csa29KXhFEXCc3J7aAcQvoXwEKMhg9diJY9FTauVcCA",
-      "collection": "galactic-geckos-solana",
-      "contract": "8Csa29KXhFEXCc3J7aAcQvoXwEKMhg9diJY9FTauVcCA",
-      "tokenStandard": "programmable_nft",
-      "name": "Galactic Gecko #4379",
-      "description": "In the farthest reaches of the universe, the hearts of the gecko warriors of old beat within every Barada racer. You can feel their blood course through your veins as the Emperor Prime gives the signal: let the spaceship race begin.",
-      "imageUrl": "https://i2c.seadn.io/solana/8Csa29KXhFEXCc3J7aAcQvoXwEKMhg9diJY9FTauVcCA/8e02cdc24983e71296bfcc3bb368ad/068e02cdc24983e71296bfcc3bb368ad.jpeg",
-      "displayImageUrl": "https://i2c.seadn.io/solana/8Csa29KXhFEXCc3J7aAcQvoXwEKMhg9diJY9FTauVcCA/8e02cdc24983e71296bfcc3bb368ad/068e02cdc24983e71296bfcc3bb368ad.jpeg",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://arweave.net/_tw6AuxHYPa3Naqury7cXGKKmgv0ObZbH819PzePI34",
-      "openseaUrl": "https://opensea.io/assets/solana/8Csa29KXhFEXCc3J7aAcQvoXwEKMhg9diJY9FTauVcCA/8Csa29KXhFEXCc3J7aAcQvoXwEKMhg9diJY9FTauVcCA?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:12:02.043421",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "https://www.arweave.net/zxUYsmuMHl_PA7Aq0N0aX9jbzIiDJ99cujxk6r2qoTo?ext=jpeg",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Body",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Spotted Kiwi"
-        },
-        {
-          "traitType": "Ears",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gravity Dongal"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Sullen Eyes"
-        },
-        {
-          "traitType": "Mouth",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Wise"
-        },
-        {
-          "traitType": "Helmet",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Grabber"
-        },
-        {
-          "traitType": "Faction",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Barada"
-        },
-        {
-          "traitType": "Attribute Count",
-          "displayType": null,
-          "maxValue": null,
-          "value": "6"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "FP33Xr6FbZZ8ciFXyteFHZH6mzz2kqR5BHRiyQAXJWTh",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 5793
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "8Csa29KXhFEXCc3J7aAcQvoXwEKMhg9diJY9FTauVcCA",
-      "contractAddress": "8Csa29KXhFEXCc3J7aAcQvoXwEKMhg9diJY9FTauVcCA"
-    },
-    {
-      "identifier": "2TY68NmCnpkDTL6vRM1NuDN5T1fyYmdGQXyDmUYtX8GH",
-      "collection": "galactic-geckos-solana",
-      "contract": "2TY68NmCnpkDTL6vRM1NuDN5T1fyYmdGQXyDmUYtX8GH",
-      "tokenStandard": "programmable_nft",
-      "name": "Galactic Gecko #247",
-      "description": "Eyeing the competition pulling up to the starting line, you feel deep within that you're the best gecko there - or, and this is no surprise for a Martu racer, the most cunning. Wait until your rival figures out what you did to their spaceship.",
-      "imageUrl": "https://i2c.seadn.io/solana/2TY68NmCnpkDTL6vRM1NuDN5T1fyYmdGQXyDmUYtX8GH/e0cb5255fe526ea19300687db7e677/23e0cb5255fe526ea19300687db7e677.jpeg",
-      "displayImageUrl": "https://i2c.seadn.io/solana/2TY68NmCnpkDTL6vRM1NuDN5T1fyYmdGQXyDmUYtX8GH/e0cb5255fe526ea19300687db7e677/23e0cb5255fe526ea19300687db7e677.jpeg",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://arweave.net/CEWaQ6Hl_eGp7l_8QUSYkF1hZSojiZvyuXV-aU-h7Z4",
-      "openseaUrl": "https://opensea.io/assets/solana/2TY68NmCnpkDTL6vRM1NuDN5T1fyYmdGQXyDmUYtX8GH/2TY68NmCnpkDTL6vRM1NuDN5T1fyYmdGQXyDmUYtX8GH?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:12:02.045072",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "https://www.arweave.net/uCQDioc2nya8eRfNaGK4wZXVWo9514o_i-rG_poKqug?ext=jpeg",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Body",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Brick"
-        },
-        {
-          "traitType": "Ears",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Prismatic Sensor"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Galactic Sequencer"
-        },
-        {
-          "traitType": "Mouth",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Pensive"
-        },
-        {
-          "traitType": "Helmet",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Ionic Fizzler"
-        },
-        {
-          "traitType": "Faction",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Martu"
-        },
-        {
-          "traitType": "Attribute Count",
-          "displayType": null,
-          "maxValue": null,
-          "value": "6"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "FP33Xr6FbZZ8ciFXyteFHZH6mzz2kqR5BHRiyQAXJWTh",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 6735
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2TY68NmCnpkDTL6vRM1NuDN5T1fyYmdGQXyDmUYtX8GH",
-      "contractAddress": "2TY68NmCnpkDTL6vRM1NuDN5T1fyYmdGQXyDmUYtX8GH"
-    },
-    {
-      "identifier": "5dBV4bb1NkeEAifR8bqLXmhJNcgtwyv4FbkQCNvu1z4M",
-      "collection": "galactic-geckos-solana",
-      "contract": "5dBV4bb1NkeEAifR8bqLXmhJNcgtwyv4FbkQCNvu1z4M",
-      "tokenStandard": "programmable_nft",
-      "name": "Galactic Gecko #3259",
-      "description": "Eyeing the competition pulling up to the starting line, you feel deep within that you're the best gecko there - or, and this is no surprise for a Martu racer, the most cunning. Wait until your rival figures out what you did to their spaceship.",
-      "imageUrl": "https://i2c.seadn.io/solana/5dBV4bb1NkeEAifR8bqLXmhJNcgtwyv4FbkQCNvu1z4M/657e4721c13b0506a44391ca878882/05657e4721c13b0506a44391ca878882.jpeg",
-      "displayImageUrl": "https://i2c.seadn.io/solana/5dBV4bb1NkeEAifR8bqLXmhJNcgtwyv4FbkQCNvu1z4M/657e4721c13b0506a44391ca878882/05657e4721c13b0506a44391ca878882.jpeg",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://arweave.net/o7jgDGMxl1Pi8wVVVsG_X9BvvbtV8_5oj8ihmWvnfgY",
-      "openseaUrl": "https://opensea.io/assets/solana/5dBV4bb1NkeEAifR8bqLXmhJNcgtwyv4FbkQCNvu1z4M/5dBV4bb1NkeEAifR8bqLXmhJNcgtwyv4FbkQCNvu1z4M?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:12:02.040965",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "https://www.arweave.net/rnNTRJhMyvZSbAN_c4lYHWS4IImK4vUlUQB-vtBibqA?ext=jpeg",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Body",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Printed"
-        },
-        {
-          "traitType": "Ears",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Metallic Mesh"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Orbital Retinas"
-        },
-        {
-          "traitType": "Armor",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Excess Hosing"
-        },
-        {
-          "traitType": "Mouth",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Pensive"
-        },
-        {
-          "traitType": "Helmet",
-          "displayType": null,
-          "maxValue": null,
-          "value": "External Hard Drive"
-        },
-        {
-          "traitType": "Faction",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Martu"
-        },
-        {
-          "traitType": "Attribute Count",
-          "displayType": null,
-          "maxValue": null,
-          "value": "7"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "EVquz5tTB2wPZDPACSXb69ytsZY26VWZ12kg4Vq1uert",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 2298
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "5dBV4bb1NkeEAifR8bqLXmhJNcgtwyv4FbkQCNvu1z4M",
-      "contractAddress": "5dBV4bb1NkeEAifR8bqLXmhJNcgtwyv4FbkQCNvu1z4M"
-    },
-    {
-      "identifier": "Eyw8oPN4nuSdTAxatu34c5th81A2eSLQXoMLBcgX9qEx",
-      "collection": "galactic-geckos-solana",
-      "contract": "Eyw8oPN4nuSdTAxatu34c5th81A2eSLQXoMLBcgX9qEx",
-      "tokenStandard": "programmable_nft",
-      "name": "Galactic Gecko #5342",
-      "description": "In the farthest reaches of the universe, the hearts of the gecko warriors of old beat within every Barada racer. You can feel their blood course through your veins as the Emperor Prime gives the signal: let the spaceship race begin.",
-      "imageUrl": "https://i2c.seadn.io/solana/Eyw8oPN4nuSdTAxatu34c5th81A2eSLQXoMLBcgX9qEx/81d372efb7a42183b539c5a5982e35/2881d372efb7a42183b539c5a5982e35.jpeg",
-      "displayImageUrl": "https://i2c.seadn.io/solana/Eyw8oPN4nuSdTAxatu34c5th81A2eSLQXoMLBcgX9qEx/81d372efb7a42183b539c5a5982e35/2881d372efb7a42183b539c5a5982e35.jpeg",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://arweave.net/IXsMkrtf1EE9hB_2cKR-qBIp9385FZIm1eSaPLhHI7k",
-      "openseaUrl": "https://opensea.io/assets/solana/Eyw8oPN4nuSdTAxatu34c5th81A2eSLQXoMLBcgX9qEx/Eyw8oPN4nuSdTAxatu34c5th81A2eSLQXoMLBcgX9qEx?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:12:02.044412",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "https://www.arweave.net/qaSsiE4kET0MbJ9Jh-JHgq0t6ciMR9aMX_dhFuZla6I?ext=jpeg",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Body",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Striped Blue"
-        },
-        {
-          "traitType": "Ears",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Cooling Fan"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Prying Eyes"
-        },
-        {
-          "traitType": "Armor",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Brainy Undergarments"
-        },
-        {
-          "traitType": "Mouth",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Wise"
-        },
-        {
-          "traitType": "Helmet",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Taxidermied Space Pink"
-        },
-        {
-          "traitType": "Faction",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Barada"
-        },
-        {
-          "traitType": "Attribute Count",
-          "displayType": null,
-          "maxValue": null,
-          "value": "7"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "E8RxrSdqRyw2xUPeTPJszxoU29V31139RL36deALJCCE",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 1055
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "Eyw8oPN4nuSdTAxatu34c5th81A2eSLQXoMLBcgX9qEx",
-      "contractAddress": "Eyw8oPN4nuSdTAxatu34c5th81A2eSLQXoMLBcgX9qEx"
-    }
-  ]
-}
+[
+  {
+    "id": "solana-2TY68NmCnpkDTL6vRM1NuDN5T1fyYmdGQXyDmUYtX8GH-2TY68NmCnpkDTL6vRM1NuDN5T1fyYmdGQXyDmUYtX8GH",
+    "name": "Galactic Gecko #247",
+    "tokenId": "#247",
+    "collection": "galactic-geckos-solana",
+    "network": "solana",
+    "description": "Eyeing the competition pulling up to the starting line, you feel deep within that you're the best gecko there - or, and this is no surprise for a Martu racer, the most cunning. Wait until your rival figures out what you did to their spaceship.",
+    "contractAddress": "2TY68NmCnpkDTL6vRM1NuDN5T1fyYmdGQXyDmUYtX8GH",
+    "displayImageUrl": "https://i2c.seadn.io/solana/2TY68NmCnpkDTL6vRM1NuDN5T1fyYmdGQXyDmUYtX8GH/e0cb5255fe526ea19300687db7e677/23e0cb5255fe526ea19300687db7e677.jpeg",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": [
+      "https://www.arweave.net/uCQDioc2nya8eRfNaGK4wZXVWo9514o_i-rG_poKqug?ext=jpeg"
+    ],
+    "imageAlt": "Galactic Gecko #247",
+    "priceEth": "0.40",
+    "previousPriceEth": null,
+    "traits": ["Body", "Ears", "Eyes", "Mouth", "Helmet", "Faction", "Attribute Count"],
+    "rarityRank": 6735,
+    "releaseDate": "2026-03-30",
+    "salesCount": 392,
+    "reviewCount": 16,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 24
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "solana-4NwKxysJoSxjv4ww7kV2Arx6ZYngeqSC318jNjFA55MB-4NwKxysJoSxjv4ww7kV2Arx6ZYngeqSC318jNjFA55MB",
+    "name": "Galactic Gecko #2487",
+    "tokenId": "#2487",
+    "collection": "galactic-geckos-solana",
+    "network": "solana",
+    "description": "With the help of your Targari brothers, you've calculated the magnetic fields, mapped the gamma ray bursts, and engineered your racing ship in your favor. May the best gecko win.",
+    "contractAddress": "4NwKxysJoSxjv4ww7kV2Arx6ZYngeqSC318jNjFA55MB",
+    "displayImageUrl": "https://i2c.seadn.io/solana/4NwKxysJoSxjv4ww7kV2Arx6ZYngeqSC318jNjFA55MB/d15d4024f9df1abe94ba7674a6c7c5/abd15d4024f9df1abe94ba7674a6c7c5.jpeg",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": [
+      "https://www.arweave.net/Q5_QdUejnksb-PPYfBM5o4YoI__SjMl9vL62qnTfj70?ext=jpeg"
+    ],
+    "imageAlt": "Galactic Gecko #2487",
+    "priceEth": "0.41",
+    "previousPriceEth": null,
+    "traits": ["Body", "Ears", "Eyes", "Armor", "Mouth", "Helmet", "Faction", "Attribute Count"],
+    "rarityRank": 2069,
+    "releaseDate": "2024-04-29",
+    "salesCount": 281,
+    "reviewCount": 0,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 2
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "solana-5dBV4bb1NkeEAifR8bqLXmhJNcgtwyv4FbkQCNvu1z4M-5dBV4bb1NkeEAifR8bqLXmhJNcgtwyv4FbkQCNvu1z4M",
+    "name": "Galactic Gecko #3259",
+    "tokenId": "#3259",
+    "collection": "galactic-geckos-solana",
+    "network": "solana",
+    "description": "Eyeing the competition pulling up to the starting line, you feel deep within that you're the best gecko there - or, and this is no surprise for a Martu racer, the most cunning. Wait until your rival figures out what you did to their spaceship.",
+    "contractAddress": "5dBV4bb1NkeEAifR8bqLXmhJNcgtwyv4FbkQCNvu1z4M",
+    "displayImageUrl": "https://i2c.seadn.io/solana/5dBV4bb1NkeEAifR8bqLXmhJNcgtwyv4FbkQCNvu1z4M/657e4721c13b0506a44391ca878882/05657e4721c13b0506a44391ca878882.jpeg",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": [
+      "https://www.arweave.net/rnNTRJhMyvZSbAN_c4lYHWS4IImK4vUlUQB-vtBibqA?ext=jpeg"
+    ],
+    "imageAlt": "Galactic Gecko #3259",
+    "priceEth": "0.42",
+    "previousPriceEth": null,
+    "traits": ["Body", "Ears", "Eyes", "Armor", "Mouth", "Helmet", "Faction", "Attribute Count"],
+    "rarityRank": 2298,
+    "releaseDate": "2023-09-14",
+    "salesCount": 325,
+    "reviewCount": 6,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 25
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "solana-7C6fVNxPasmagh11v548QZTiuZxwb8LatST8MgDhzifZ-7C6fVNxPasmagh11v548QZTiuZxwb8LatST8MgDhzifZ",
+    "name": "Galactic Gecko #5819",
+    "tokenId": "#5819",
+    "collection": "galactic-geckos-solana",
+    "network": "solana",
+    "description": "As a member of the Alura racing faction, you stand on the shoulders of the giants of the Interstellar Relay. But you can live up to the geckos who came before you: or at least, you'll try.",
+    "contractAddress": "7C6fVNxPasmagh11v548QZTiuZxwb8LatST8MgDhzifZ",
+    "displayImageUrl": "https://i2c.seadn.io/solana/7C6fVNxPasmagh11v548QZTiuZxwb8LatST8MgDhzifZ/11645659f7b6d6d91d2674e8126ca2/d211645659f7b6d6d91d2674e8126ca2.jpeg",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": [
+      "https://www.arweave.net/AotuL1SHt-PmMywgttTzFzW5GcgNn2fcWEPG4Ii7xa0?ext=jpeg"
+    ],
+    "imageAlt": "Galactic Gecko #5819",
+    "priceEth": "0.43",
+    "previousPriceEth": null,
+    "traits": ["Body", "Ears", "Eyes", "Armor", "Mouth", "Helmet", "Faction", "Attribute Count"],
+    "rarityRank": 3902,
+    "releaseDate": "2025-01-08",
+    "salesCount": 406,
+    "reviewCount": 18,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 10
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "solana-8Csa29KXhFEXCc3J7aAcQvoXwEKMhg9diJY9FTauVcCA-8Csa29KXhFEXCc3J7aAcQvoXwEKMhg9diJY9FTauVcCA",
+    "name": "Galactic Gecko #4379",
+    "tokenId": "#4379",
+    "collection": "galactic-geckos-solana",
+    "network": "solana",
+    "description": "In the farthest reaches of the universe, the hearts of the gecko warriors of old beat within every Barada racer. You can feel their blood course through your veins as the Emperor Prime gives the signal: let the spaceship race begin.",
+    "contractAddress": "8Csa29KXhFEXCc3J7aAcQvoXwEKMhg9diJY9FTauVcCA",
+    "displayImageUrl": "https://i2c.seadn.io/solana/8Csa29KXhFEXCc3J7aAcQvoXwEKMhg9diJY9FTauVcCA/8e02cdc24983e71296bfcc3bb368ad/068e02cdc24983e71296bfcc3bb368ad.jpeg",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": [
+      "https://www.arweave.net/zxUYsmuMHl_PA7Aq0N0aX9jbzIiDJ99cujxk6r2qoTo?ext=jpeg"
+    ],
+    "imageAlt": "Galactic Gecko #4379",
+    "priceEth": "0.44",
+    "previousPriceEth": null,
+    "traits": ["Body", "Ears", "Eyes", "Mouth", "Helmet", "Faction", "Attribute Count"],
+    "rarityRank": 5793,
+    "releaseDate": "2026-01-15",
+    "salesCount": 186,
+    "reviewCount": 3,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 24
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "solana-9jtBrpNHjHypccFqMxX35toYfhZEtS3YDmLRxoYzigMx-9jtBrpNHjHypccFqMxX35toYfhZEtS3YDmLRxoYzigMx",
+    "name": "Galactic Gecko #4663",
+    "tokenId": "#4663",
+    "collection": "galactic-geckos-solana",
+    "network": "solana",
+    "description": "In the farthest reaches of the universe, the hearts of the gecko warriors of old beat within every Barada racer. You can feel their blood course through your veins as the Emperor Prime gives the signal: let the spaceship race begin.",
+    "contractAddress": "9jtBrpNHjHypccFqMxX35toYfhZEtS3YDmLRxoYzigMx",
+    "displayImageUrl": "https://i2c.seadn.io/solana/9jtBrpNHjHypccFqMxX35toYfhZEtS3YDmLRxoYzigMx/fe73fd5a97089c3253cb7a349ff2a6/51fe73fd5a97089c3253cb7a349ff2a6.jpeg",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": [
+      "https://www.arweave.net/H0KPQje3QjqoJKNd-4tkMqS41Saz5dvsWoDUHcFviHk?ext=jpeg"
+    ],
+    "imageAlt": "Galactic Gecko #4663",
+    "priceEth": "0.45",
+    "previousPriceEth": null,
+    "traits": ["Body", "Ears", "Eyes", "Armor", "Mouth", "Helmet", "Faction", "Attribute Count"],
+    "rarityRank": 3034,
+    "releaseDate": "2026-02-04",
+    "salesCount": 183,
+    "reviewCount": 6,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 5
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "solana-E4uQJFwmnoEgEJNrx7E6K2APHGiytuCrdtkZw57GsB7w-E4uQJFwmnoEgEJNrx7E6K2APHGiytuCrdtkZw57GsB7w",
+    "name": "Galactic Gecko #8657",
+    "tokenId": "#8657",
+    "collection": "galactic-geckos-solana",
+    "network": "solana",
+    "description": "As a member of the Alura racing faction, you stand on the shoulders of the giants of the Interstellar Relay. But you can live up to the geckos who came before you: or at least, you'll try.",
+    "contractAddress": "E4uQJFwmnoEgEJNrx7E6K2APHGiytuCrdtkZw57GsB7w",
+    "displayImageUrl": "https://i2c.seadn.io/solana/E4uQJFwmnoEgEJNrx7E6K2APHGiytuCrdtkZw57GsB7w/2d9bed033ebd66e0cf11b83c4771b3/402d9bed033ebd66e0cf11b83c4771b3.jpeg",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": [
+      "https://www.arweave.net/nMHj74J0Di_1Nn76a0EpFVik131prvRJbO_s9Zmsx3I?ext=jpeg"
+    ],
+    "imageAlt": "Galactic Gecko #8657",
+    "priceEth": "0.46",
+    "previousPriceEth": null,
+    "traits": ["Body", "Ears", "Eyes", "Armor", "Mouth", "Helmet", "Faction", "Attribute Count"],
+    "rarityRank": 518,
+    "releaseDate": "2023-02-23",
+    "salesCount": 68,
+    "reviewCount": 4,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 12
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "solana-Eyw8oPN4nuSdTAxatu34c5th81A2eSLQXoMLBcgX9qEx-Eyw8oPN4nuSdTAxatu34c5th81A2eSLQXoMLBcgX9qEx",
+    "name": "Galactic Gecko #5342",
+    "tokenId": "#5342",
+    "collection": "galactic-geckos-solana",
+    "network": "solana",
+    "description": "In the farthest reaches of the universe, the hearts of the gecko warriors of old beat within every Barada racer. You can feel their blood course through your veins as the Emperor Prime gives the signal: let the spaceship race begin.",
+    "contractAddress": "Eyw8oPN4nuSdTAxatu34c5th81A2eSLQXoMLBcgX9qEx",
+    "displayImageUrl": "https://i2c.seadn.io/solana/Eyw8oPN4nuSdTAxatu34c5th81A2eSLQXoMLBcgX9qEx/81d372efb7a42183b539c5a5982e35/2881d372efb7a42183b539c5a5982e35.jpeg",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": [
+      "https://www.arweave.net/qaSsiE4kET0MbJ9Jh-JHgq0t6ciMR9aMX_dhFuZla6I?ext=jpeg"
+    ],
+    "imageAlt": "Galactic Gecko #5342",
+    "priceEth": "0.47",
+    "previousPriceEth": null,
+    "traits": ["Body", "Ears", "Eyes", "Armor", "Mouth", "Helmet", "Faction", "Attribute Count"],
+    "rarityRank": 1055,
+    "releaseDate": "2023-03-23",
+    "salesCount": 29,
+    "reviewCount": 13,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 8
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "solana-HPMG47rsBB92L4pycEudzYR99JkqACDm74mL1BDs4qUa-HPMG47rsBB92L4pycEudzYR99JkqACDm74mL1BDs4qUa",
+    "name": "Galactic Gecko #5385",
+    "tokenId": "#5385",
+    "collection": "galactic-geckos-solana",
+    "network": "solana",
+    "description": "Eyeing the competition pulling up to the starting line, you feel deep within that you're the best gecko there - or, and this is no surprise for a Martu racer, the most cunning. Wait until your rival figures out what you did to their spaceship.",
+    "contractAddress": "HPMG47rsBB92L4pycEudzYR99JkqACDm74mL1BDs4qUa",
+    "displayImageUrl": "https://i2c.seadn.io/solana/HPMG47rsBB92L4pycEudzYR99JkqACDm74mL1BDs4qUa/8cea690faa9fd190725b1e73d4128d/938cea690faa9fd190725b1e73d4128d.jpeg",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": [
+      "https://www.arweave.net/-OdIYyM95SkvhXU10RnwYOpKanZxqvSniBiFfs_qFrs?ext=jpeg"
+    ],
+    "imageAlt": "Galactic Gecko #5385",
+    "priceEth": "0.48",
+    "previousPriceEth": null,
+    "traits": ["Body", "Ears", "Eyes", "Mouth", "Helmet", "Faction", "Attribute Count"],
+    "rarityRank": 5942,
+    "releaseDate": "2024-11-26",
+    "salesCount": 392,
+    "reviewCount": 19,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 13
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "solana-HwerTB8VUZ9aRBM5aEwKwSDVTonu5gKCgVyzC7Dmvvnp-HwerTB8VUZ9aRBM5aEwKwSDVTonu5gKCgVyzC7Dmvvnp",
+    "name": "Galactic Gecko #9856",
+    "tokenId": "#9856",
+    "collection": "galactic-geckos-solana",
+    "network": "solana",
+    "description": "Eyeing the competition pulling up to the starting line, you feel deep within that you're the best gecko there - or, and this is no surprise for a Martu racer, the most cunning. Wait until your rival figures out what you did to their spaceship.",
+    "contractAddress": "HwerTB8VUZ9aRBM5aEwKwSDVTonu5gKCgVyzC7Dmvvnp",
+    "displayImageUrl": "https://i2c.seadn.io/solana/HwerTB8VUZ9aRBM5aEwKwSDVTonu5gKCgVyzC7Dmvvnp/1d64731e9e1e7cea547544cdc8c424/471d64731e9e1e7cea547544cdc8c424.jpeg",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": [
+      "https://www.arweave.net/_ftoJwQwzT07Ohux2reSibIewRxYq5fP3OEzEkZhChQ?ext=jpeg"
+    ],
+    "imageAlt": "Galactic Gecko #9856",
+    "priceEth": "0.49",
+    "previousPriceEth": null,
+    "traits": ["Body", "Eyes", "Armor", "Mouth", "Helmet", "Faction", "Attribute Count"],
+    "rarityRank": 6003,
+    "releaseDate": "2024-01-17",
+    "salesCount": 283,
+    "reviewCount": 0,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 23
+      }
+    ],
+    "version": 1
+  }
+]

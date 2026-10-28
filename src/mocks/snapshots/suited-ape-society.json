@@ -1,3968 +1,1322 @@
-{
-  "source": "OpenSea MCP get_items",
-  "collectedAt": "2026-10-28T17:12:02.917Z",
-  "collection": "suited-ape-society",
-  "network": "robinhood",
-  "items": [
-    {
-      "identifier": "2222",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2222",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/8caaff04c98815018ba021945df8b1/3c8caaff04c98815018ba021945df8b1.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/8caaff04c98815018ba021945df8b1/3c8caaff04c98815018ba021945df8b1.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2222",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2222?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:28.085782",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2222",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Galaxy"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Side Eye"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "100"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "20"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Vape Pen"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bomber Jacket"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "18"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Apetropolis"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Farmer Hat"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Kongano"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Fund Manager"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "None"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Robinhood"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "52"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Associate"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x95e51cd45efe38a3cf06f9935888c83ba9866c97",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 998
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2222",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2221",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2221",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/9ddee9564a1c9c9b50b61c68ea7843/889ddee9564a1c9c9b50b61c68ea7843.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/9ddee9564a1c9c9b50b61c68ea7843/889ddee9564a1c9c9b50b61c68ea7843.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2221",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2221?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:28.104548",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2221",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Diamond"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Sleepy"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "26"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "18"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Smile"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Normal"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "5"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Strip"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Pirate Hat"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Kongano"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Attorney"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Diamond Chain Robinhood Logo"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Orange"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "66"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Inner Circle"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x8dfa9fdff11fe92d451e7019757ce569c1769463",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 734
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2221",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2220",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2220",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/9d0a40ccdf0d06c13a99c60a4ce6a4/f99d0a40ccdf0d06c13a99c60a4ce6a4.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/9d0a40ccdf0d06c13a99c60a4ce6a4/f99d0a40ccdf0d06c13a99c60a4ce6a4.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2220",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2220?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:28.105449",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2220",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Stone"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Sleepy"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "11"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "63"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Smirk"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Straightjacket"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "23"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Banana Street"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Trucker Hat"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bananov"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Ape Investment Banker"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Red Bag With Banana"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Blue"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "21"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Senior Partner"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x4579caf0346bbbecc46dae4c6f719535f175b3cb",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 602
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2220",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2219",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2219",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/e02fad600c648c631e2ba172f3e8fc/2de02fad600c648c631e2ba172f3e8fc.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/e02fad600c648c631e2ba172f3e8fc/2de02fad600c648c631e2ba172f3e8fc.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2219",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2219?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:28.091128",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2219",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Robinhood Green"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Normal"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "47"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "4"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Smirk"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Tuxedo"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "59"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Banana Hills"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Farmer Hat"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Monkecci"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Venture Capitalist"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "None"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Blue"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "100"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Banana Earner"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x820994cce3a277a703891038aa4300e29b05647e",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 398
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2219",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2218",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2218",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/b9675e439dc57ec208c499fe5b00ba/f1b9675e439dc57ec208c499fe5b00ba.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/b9675e439dc57ec208c499fe5b00ba/f1b9675e439dc57ec208c499fe5b00ba.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2218",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2218?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:28.081743",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2218",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Albino"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bloodshot"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "14"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "18"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Smile"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Astronaut"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "43"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Strip"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Pharaoh Headdress"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Monkecci"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Attorney"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gold Earring"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Blue"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "63"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Inner Circle"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xc30a68f698073fc9992f16b2cd07257546ebbcb0",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 624
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2218",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2217",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2217",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/396ba5c77967c23b331ee2dd809c3d/94396ba5c77967c23b331ee2dd809c3d.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/396ba5c77967c23b331ee2dd809c3d/94396ba5c77967c23b331ee2dd809c3d.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2217",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2217?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:28.086208",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2217",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gray"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Ski Goggles"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "31"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "17"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Smile"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Samurai Robe"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "9"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Paradise Island"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Normal"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Kongano"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Fund Manager"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "None"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Robinhood"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "9"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Apex Ape"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x1f00b89f92990b8b3a1708a59e11397dc5af0364",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 2077
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2217",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2216",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2216",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/b86ec8cebe85b3898a424af737cfca/fab86ec8cebe85b3898a424af737cfca.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/b86ec8cebe85b3898a424af737cfca/fab86ec8cebe85b3898a424af737cfca.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2216",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2216?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:28.149349",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2216",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Black"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Diamond Eyes"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "9"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "17"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Normal"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Wallstreet Business"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "26"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Strip"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Pink Punk Hair"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Kongano"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Attorney"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Red Bag With Banana"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Red"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "10"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Senior Partner"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xb7231a28187e22f44e1b22f8d26361fb5bad1265",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 1929
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2216",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2215",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2215",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/d2b2288153d5b4aaaea30ecd8bdadd/acd2b2288153d5b4aaaea30ecd8bdadd.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/d2b2288153d5b4aaaea30ecd8bdadd/acd2b2288153d5b4aaaea30ecd8bdadd.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2215",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2215?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:28.157236",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2215",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Glitch"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Laser Eyes"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "38"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "41"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Smile"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Samurai Robe"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "15"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Banana Street"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Normal"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Kongano"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Attorney"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "None"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gold"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "39"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Banana Earner"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x10212432b47830f51910a6a22458059a175059ad",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 901
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2215",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2214",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2214",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/862b0575661649c4075fc41a7d8f61/19862b0575661649c4075fc41a7d8f61.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/862b0575661649c4075fc41a7d8f61/19862b0575661649c4075fc41a7d8f61.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2214",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2214?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:28.151807",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2214",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Black"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gold Round Glasses"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "36"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "41"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Normal"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Racing Jacket"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "4"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Banana Street"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Normal"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bananov"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Private Equity Boss"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Red Bag With Banana"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Robinhood"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "39"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Apex Ape"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x9a0c4fdb1cea91fef322c37e5c305a523bd6a811",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 1998
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2214",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2213",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2213",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2765878df13bcd239dbbdc7bddf63c/c72765878df13bcd239dbbdc7bddf63c.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2765878df13bcd239dbbdc7bddf63c/c72765878df13bcd239dbbdc7bddf63c.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2213",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2213?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:28.155665",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2213",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Diamond"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Amber Eyes"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "37"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "25"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Smirk"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Casino Dealer"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "4"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Saigon Bay"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bandana RH"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Kongano"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Attorney"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Red Bag With Banana"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Cold"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "35"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Apex Ape"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xfc61d2a622cd3123b89bfb0168524cd26d4cacac",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 1052
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2213",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2212",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2212",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/83d960425cb1e2e3b0fdce9012b321/5e83d960425cb1e2e3b0fdce9012b321.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/83d960425cb1e2e3b0fdce9012b321/5e83d960425cb1e2e3b0fdce9012b321.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2212",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2212?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:29.236889",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2212",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gray"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Side Eye"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "52"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "21"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Poker Chip Bite"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Racing Jacket"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "12"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Hood"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Beanie"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Monkecci"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Banana Broker"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "None"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Blue"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "6"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Elite"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x81f71efd83c10707fc359003e0d8fcae32729ea2",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 1757
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2212",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2211",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2211",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/95fb921ae245e53abb7b8be8ac3775/3595fb921ae245e53abb7b8be8ac3775.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/95fb921ae245e53abb7b8be8ac3775/3595fb921ae245e53abb7b8be8ac3775.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2211",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2211?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:29.233545",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2211",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Albino"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Stoned Eyes"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "1"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "6"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Smile"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Escapee Jumpsuit"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "15"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Strip"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bandana RH"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Kongano"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Fund Manager"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gold Earring"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Purple"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "93"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Elite"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xce87db25952c12921773f157cde36132a6e6c22d",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 683
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2211",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2210",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2210",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/003d227d3d4f76306f41e6f247cadb/f6003d227d3d4f76306f41e6f247cadb.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/003d227d3d4f76306f41e6f247cadb/f6003d227d3d4f76306f41e6f247cadb.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2210",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2210?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:29.226785",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2210",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Leopard"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bloodshot"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "20"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "66"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Normal"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Cyber Jacket"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "19"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Banana Bay Island"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Samurai Hat"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Kongano"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Venture Capitalist"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Red Bag With Banana"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Blue"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "7"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Street Operator"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x7908d3a0c312f032f68f168c7a2d8c25f191cce0",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 884
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2210",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2209",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2209",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/c504232671bde92a3bbc91a98684bf/9bc504232671bde92a3bbc91a98684bf.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/c504232671bde92a3bbc91a98684bf/9bc504232671bde92a3bbc91a98684bf.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2209",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2209?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:29.232062",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2209",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gray"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Golden Glowing Eyes"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "45"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "4"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Smile"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Normal"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "62"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Apetropolis"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Cowboy Hat"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bananov"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Banana Market Maker"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gold Chain Robinhood Logo"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Aqua"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "31"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Royalty"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xc30a68f698073fc9992f16b2cd07257546ebbcb0",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 1024
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2209",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2208",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2208",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/6db922b6cc1b28654339877be6e908/c96db922b6cc1b28654339877be6e908.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/6db922b6cc1b28654339877be6e908/c96db922b6cc1b28654339877be6e908.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2208",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2208?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:29.230125",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2208",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gray"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Snake Eyes"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "33"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "5"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Smirk"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Straightjacket"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "39"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Strip"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bandana RH"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Monkecci"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "The Underboss"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Red Bag With Banana"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Aqua"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "64"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Apex Ape"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x00fabccb7fa7a6d419829a73b0a2c3fb6fb11285",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 695
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2208",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2207",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2207",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/f585061394cb1122b1ce526683cbe4/0ff585061394cb1122b1ce526683cbe4.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/f585061394cb1122b1ce526683cbe4/0ff585061394cb1122b1ce526683cbe4.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2207",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2207?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:29.231775",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2207",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gray"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Sleepy"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "10"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "22"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Normal"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Normal"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "9"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Paradise Island"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Farmer Hat"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Monkecci"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Fund Manager"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Diamond Chain Robinhood Logo"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Aqua"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "1"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Inner Circle"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x188e52c11c235f8e79a4c990e82d458ce5a46c6d",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 1687
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2207",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2206",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2206",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/18af269a24297ad2d9286097d85bf4/fd18af269a24297ad2d9286097d85bf4.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/18af269a24297ad2d9286097d85bf4/fd18af269a24297ad2d9286097d85bf4.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2206",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2206?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:29.291904",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2206",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gray"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bored"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "2"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "30"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Normal"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Black Hoodie"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "80"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Saigon Bay"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Black Spiky Hair"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bananov"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Venture Capitalist"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "None"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Red"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "74"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Inner Circle"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x01563d4f6e0392dd8f1b5656349d780dd8349193",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 922
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2206",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2205",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2205",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/e2cfe2d4f76958296f19f510e6520b/e9e2cfe2d4f76958296f19f510e6520b.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/e2cfe2d4f76958296f19f510e6520b/e9e2cfe2d4f76958296f19f510e6520b.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2205",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2205?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:29.292869",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2205",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Brown"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Side Eye"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "12"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "8"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Toothpick"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Black Ops Gear"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "15"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Strip"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Trucker Hat"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Kongano"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Consigliere"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gold Earring"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Orange"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "53"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Insider"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xc0e6efa19cff73aa5f1ef67109571c76d36ea77a",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 1261
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2205",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2204",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2204",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/4b4a4a507cfb4aa17b09509f604dcd/af4b4a4a507cfb4aa17b09509f604dcd.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/4b4a4a507cfb4aa17b09509f604dcd/af4b4a4a507cfb4aa17b09509f604dcd.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2204",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2204?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:06:31.289353",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2204",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Rainbow"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Sleepy"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "5"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "61"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gold Fang"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Racing Jacket"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "71"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "The Wildlands"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Headphones"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bananov"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Banana Street CEO"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gold Earring"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Orange"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "24"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Elite"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xa6661dd063400e922f9749eb1cd972bb9529a8fa",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 84
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2204",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2203",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2203",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/ccf877416f8cce64993ffe4b226411/40ccf877416f8cce64993ffe4b226411.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/ccf877416f8cce64993ffe4b226411/40ccf877416f8cce64993ffe4b226411.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2203",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2203?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:29.291815",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2203",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gray"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Yellow Tech Visor"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "13"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "62"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Normal"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Black Ops Gear"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "85"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Paradise Island"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Normal"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Monkecci"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Banana Market Maker"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "None"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Blue"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "80"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Senior Partner"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xa6661dd063400e922f9749eb1cd972bb9529a8fa",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 1095
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2203",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2202",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2202",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2456f2fd03d7b4243d4185454a72f9/1c2456f2fd03d7b4243d4185454a72f9.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2456f2fd03d7b4243d4185454a72f9/1c2456f2fd03d7b4243d4185454a72f9.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2202",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2202?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:30.342082",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2202",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gray"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Ski Goggles"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "12"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "8"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Normal"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Black Ops Gear"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "1"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Paradise Island"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Normal"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bananov"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Banana Market Maker"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Red Bag With Banana"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Robinhood"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "53"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Apex Ape"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x1f00b89f92990b8b3a1708a59e11397dc5af0364",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 2073
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2202",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2201",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2201",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/fbf456433f0f98d32eb2fb8ff6c52a/bffbf456433f0f98d32eb2fb8ff6c52a.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/fbf456433f0f98d32eb2fb8ff6c52a/bffbf456433f0f98d32eb2fb8ff6c52a.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2201",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2201?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:30.347145",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2201",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Black"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Amber Eyes"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "42"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "4"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Angry"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Normal"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "7"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Banana Hills"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Farmer Hat"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Kongano"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Banana Broker"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Diamond Chain Robinhood Logo"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Aqua"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "32"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Inner Circle"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x53bebd20781aaa3a831f45b3c6889010a706ff9f",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 1402
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2201",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2200",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2200",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/77f3d8491dd49d5835b0b5a32c0280/0377f3d8491dd49d5835b0b5a32c0280.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/77f3d8491dd49d5835b0b5a32c0280/0377f3d8491dd49d5835b0b5a32c0280.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2200",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2200?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:30.346073",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2200",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Blue"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Golden Glowing Eyes"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "19"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "1"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Smirk"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Black Hoodie"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "76"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Banana Hills"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Black Spiky Hair"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bananov"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Attorney"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gold Earring"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Purple"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "1"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Elite"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x95e51cd45efe38a3cf06f9935888c83ba9866c97",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 1295
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2200",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2199",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2199",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/3ddffc71abee8048cf5e874d6ee320/e63ddffc71abee8048cf5e874d6ee320.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/3ddffc71abee8048cf5e874d6ee320/e63ddffc71abee8048cf5e874d6ee320.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2199",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2199?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:30.349446",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2199",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Blue"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bored"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "1"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "36"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Cuban Cigar"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Escapee Jumpsuit"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "13"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Hood"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Headphones"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Monkecci"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Ape Investment Banker"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "None"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Robinhood"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "49"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Executive"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xa4c5a65376a59d33f14e5ba9629e2425b1e4d7c0",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 1478
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2199",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2198",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2198",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/555b3707e46431c5e010c20b9eba14/f9555b3707e46431c5e010c20b9eba14.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/555b3707e46431c5e010c20b9eba14/f9555b3707e46431c5e010c20b9eba14.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2198",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2198?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:30.370494",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2198",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Blue"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Cyan Cyber Eye"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "23"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "31"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Angry"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Robinhood Cape"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "22"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Strip"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Black Spiky Hair"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Kongano"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Attorney"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "None"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Orange"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "1"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Senior Partner"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x0531fb8e405c517e35bbab2690cd5a081035010e",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 1347
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2198",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2197",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2197",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/65f0ea98e86b451dc2cd4cbbadccea/2565f0ea98e86b451dc2cd4cbbadccea.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/65f0ea98e86b451dc2cd4cbbadccea/2565f0ea98e86b451dc2cd4cbbadccea.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2197",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2197?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:30.360237",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2197",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Blue"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Normal"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "16"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "29"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Toxic Smile"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Yakuza Suit"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "4"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Hood"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bucket Hat"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bananov"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "The Underboss"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "None"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Robinhood"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "100"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Power Broker"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x361ba0f5807091fb6e7ffba25a77006cd755eb8d",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 1405
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2197",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2196",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2196",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/eb53215ecde4e50235b86f5648a413/9aeb53215ecde4e50235b86f5648a413.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/eb53215ecde4e50235b86f5648a413/9aeb53215ecde4e50235b86f5648a413.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2196",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2196?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:06:56.085880",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2196",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Galaxy"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Terminator Eye"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "10"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "2"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Smirk"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Normal"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "15"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Strip"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bandana RH"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Monkecci"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Chairman"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Diamond Chain Robinhood Logo"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Robinhood"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "12"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Street Operator"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x4d23e4391072f9691589999d9ef824de47d43aa4",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 507
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2196",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2195",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2195",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2ed2f79c0f5d967fef839836e83d17/702ed2f79c0f5d967fef839836e83d17.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2ed2f79c0f5d967fef839836e83d17/702ed2f79c0f5d967fef839836e83d17.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2195",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2195?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:30.413515",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2195",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Galaxy"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bored"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "5"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "52"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Toxic Smile"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Normal"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "12"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Banana Street"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Black Spiky Hair"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Monkecci"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Ape Investment Banker"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Diamond Chain Robinhood Logo"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Robinhood"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "18"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Senior Partner"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x3ce50c61ebc2c152bfc74c768b33020fca8c0bc7",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 492
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2195",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2194",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2194",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/b74611333f5a0da3f2df1e0fb1949f/7ab74611333f5a0da3f2df1e0fb1949f.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/b74611333f5a0da3f2df1e0fb1949f/7ab74611333f5a0da3f2df1e0fb1949f.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2194",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2194?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:30.405179",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2194",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Brown"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Ski Goggles"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "25"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "52"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Smile"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Casino Dealer"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "9"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Strip"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Normal"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Monkecci"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "The Underboss"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gold Earring"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Blue"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "63"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Associate"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x1e3799551c6d48f09bf366bafd21639271b0bc39",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 1337
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2194",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    },
-    {
-      "identifier": "2193",
-      "collection": "suited-ape-society",
-      "contract": "0xe638f58c87258ece6c0eddc46f70327663635c69",
-      "tokenStandard": "erc721",
-      "name": "Ape#2193",
-      "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
-      "imageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/667aa4ce2b84484c928a6e105abd87/60667aa4ce2b84484c928a6e105abd87.png",
-      "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/667aa4ce2b84484c928a6e105abd87/60667aa4ce2b84484c928a6e105abd87.png",
-      "displayAnimationUrl": null,
-      "metadataUrl": "https://ipfs2.seadn.io/ipfs/QmbyN3sW4E5MDNmwCDU6tFu9HSHSw1rVFsiihjdt1hmML9/2193",
-      "openseaUrl": "https://opensea.io/assets/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2193?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T17:11:30.415081",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": "ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2193",
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Fur",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Blue"
-        },
-        {
-          "traitType": "Eyes",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Angry"
-        },
-        {
-          "traitType": "Power",
-          "displayType": null,
-          "maxValue": null,
-          "value": "37"
-        },
-        {
-          "traitType": "Speed",
-          "displayType": null,
-          "maxValue": null,
-          "value": "3"
-        },
-        {
-          "traitType": "Mouths",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gold Fang"
-        },
-        {
-          "traitType": "Outfits",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Astronaut"
-        },
-        {
-          "traitType": "Stamina",
-          "displayType": null,
-          "maxValue": null,
-          "value": "61"
-        },
-        {
-          "traitType": "District",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Banana Street"
-        },
-        {
-          "traitType": "Headwear",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Beanie"
-        },
-        {
-          "traitType": "Bloodline",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Kongano"
-        },
-        {
-          "traitType": "Occupation",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Jungle Chairman"
-        },
-        {
-          "traitType": "Accessories",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Red Bag With Banana"
-        },
-        {
-          "traitType": "Backgrounds",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Cold"
-        },
-        {
-          "traitType": "Intelligence",
-          "displayType": null,
-          "maxValue": null,
-          "value": "14"
-        },
-        {
-          "traitType": "Society Status",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Street Operator"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": null,
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x572ddbf21e0ee873494173963ffdd4df4ac519ca",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 121
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2193",
-      "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69"
-    }
-  ]
-}
+[
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2193",
+    "name": "Ape#2193",
+    "tokenId": "#2193",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/667aa4ce2b84484c928a6e105abd87/60667aa4ce2b84484c928a6e105abd87.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2193"],
+    "imageAlt": "Ape#2193",
+    "priceEth": "0.75",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 121,
+    "releaseDate": "2025-03-16",
+    "salesCount": 479,
+    "reviewCount": 0,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 2
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2194",
+    "name": "Ape#2194",
+    "tokenId": "#2194",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/b74611333f5a0da3f2df1e0fb1949f/7ab74611333f5a0da3f2df1e0fb1949f.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2194"],
+    "imageAlt": "Ape#2194",
+    "priceEth": "0.76",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 1337,
+    "releaseDate": "2025-08-24",
+    "salesCount": 120,
+    "reviewCount": 12,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 23
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2195",
+    "name": "Ape#2195",
+    "tokenId": "#2195",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2ed2f79c0f5d967fef839836e83d17/702ed2f79c0f5d967fef839836e83d17.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2195"],
+    "imageAlt": "Ape#2195",
+    "priceEth": "0.77",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 492,
+    "releaseDate": "2023-02-16",
+    "salesCount": 187,
+    "reviewCount": 10,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 14
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2196",
+    "name": "Ape#2196",
+    "tokenId": "#2196",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/eb53215ecde4e50235b86f5648a413/9aeb53215ecde4e50235b86f5648a413.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2196"],
+    "imageAlt": "Ape#2196",
+    "priceEth": "0.78",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 507,
+    "releaseDate": "2023-05-21",
+    "salesCount": 5,
+    "reviewCount": 15,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 22
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2197",
+    "name": "Ape#2197",
+    "tokenId": "#2197",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/65f0ea98e86b451dc2cd4cbbadccea/2565f0ea98e86b451dc2cd4cbbadccea.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2197"],
+    "imageAlt": "Ape#2197",
+    "priceEth": "0.79",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 1405,
+    "releaseDate": "2024-09-23",
+    "salesCount": 135,
+    "reviewCount": 14,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 12
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2198",
+    "name": "Ape#2198",
+    "tokenId": "#2198",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/555b3707e46431c5e010c20b9eba14/f9555b3707e46431c5e010c20b9eba14.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2198"],
+    "imageAlt": "Ape#2198",
+    "priceEth": "0.80",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 1347,
+    "releaseDate": "2025-03-30",
+    "salesCount": 422,
+    "reviewCount": 3,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 2
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2199",
+    "name": "Ape#2199",
+    "tokenId": "#2199",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/3ddffc71abee8048cf5e874d6ee320/e63ddffc71abee8048cf5e874d6ee320.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2199"],
+    "imageAlt": "Ape#2199",
+    "priceEth": "0.81",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 1478,
+    "releaseDate": "2024-11-07",
+    "salesCount": 256,
+    "reviewCount": 3,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 3
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2200",
+    "name": "Ape#2200",
+    "tokenId": "#2200",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/77f3d8491dd49d5835b0b5a32c0280/0377f3d8491dd49d5835b0b5a32c0280.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2200"],
+    "imageAlt": "Ape#2200",
+    "priceEth": "0.82",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 1295,
+    "releaseDate": "2024-06-07",
+    "salesCount": 124,
+    "reviewCount": 12,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 6
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2201",
+    "name": "Ape#2201",
+    "tokenId": "#2201",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/fbf456433f0f98d32eb2fb8ff6c52a/bffbf456433f0f98d32eb2fb8ff6c52a.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2201"],
+    "imageAlt": "Ape#2201",
+    "priceEth": "0.83",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 1402,
+    "releaseDate": "2024-05-28",
+    "salesCount": 457,
+    "reviewCount": 1,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 12
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2202",
+    "name": "Ape#2202",
+    "tokenId": "#2202",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2456f2fd03d7b4243d4185454a72f9/1c2456f2fd03d7b4243d4185454a72f9.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2202"],
+    "imageAlt": "Ape#2202",
+    "priceEth": "0.84",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 2073,
+    "releaseDate": "2025-05-04",
+    "salesCount": 456,
+    "reviewCount": 9,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 11
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2203",
+    "name": "Ape#2203",
+    "tokenId": "#2203",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/ccf877416f8cce64993ffe4b226411/40ccf877416f8cce64993ffe4b226411.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2203"],
+    "imageAlt": "Ape#2203",
+    "priceEth": "0.85",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 1095,
+    "releaseDate": "2025-07-04",
+    "salesCount": 90,
+    "reviewCount": 8,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 4
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2204",
+    "name": "Ape#2204",
+    "tokenId": "#2204",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/4b4a4a507cfb4aa17b09509f604dcd/af4b4a4a507cfb4aa17b09509f604dcd.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2204"],
+    "imageAlt": "Ape#2204",
+    "priceEth": "0.86",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 84,
+    "releaseDate": "2025-12-26",
+    "salesCount": 26,
+    "reviewCount": 3,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 4
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2205",
+    "name": "Ape#2205",
+    "tokenId": "#2205",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/e2cfe2d4f76958296f19f510e6520b/e9e2cfe2d4f76958296f19f510e6520b.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2205"],
+    "imageAlt": "Ape#2205",
+    "priceEth": "0.87",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 1261,
+    "releaseDate": "2025-03-25",
+    "salesCount": 219,
+    "reviewCount": 17,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 20
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2206",
+    "name": "Ape#2206",
+    "tokenId": "#2206",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/18af269a24297ad2d9286097d85bf4/fd18af269a24297ad2d9286097d85bf4.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2206"],
+    "imageAlt": "Ape#2206",
+    "priceEth": "0.88",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 922,
+    "releaseDate": "2023-04-23",
+    "salesCount": 365,
+    "reviewCount": 15,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 19
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2207",
+    "name": "Ape#2207",
+    "tokenId": "#2207",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/f585061394cb1122b1ce526683cbe4/0ff585061394cb1122b1ce526683cbe4.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2207"],
+    "imageAlt": "Ape#2207",
+    "priceEth": "0.89",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 1687,
+    "releaseDate": "2023-10-27",
+    "salesCount": 137,
+    "reviewCount": 5,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 4
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2208",
+    "name": "Ape#2208",
+    "tokenId": "#2208",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/6db922b6cc1b28654339877be6e908/c96db922b6cc1b28654339877be6e908.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2208"],
+    "imageAlt": "Ape#2208",
+    "priceEth": "0.90",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 695,
+    "releaseDate": "2023-02-22",
+    "salesCount": 464,
+    "reviewCount": 7,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 3
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2209",
+    "name": "Ape#2209",
+    "tokenId": "#2209",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/c504232671bde92a3bbc91a98684bf/9bc504232671bde92a3bbc91a98684bf.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2209"],
+    "imageAlt": "Ape#2209",
+    "priceEth": "0.91",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 1024,
+    "releaseDate": "2025-10-23",
+    "salesCount": 399,
+    "reviewCount": 18,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 10
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2210",
+    "name": "Ape#2210",
+    "tokenId": "#2210",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/003d227d3d4f76306f41e6f247cadb/f6003d227d3d4f76306f41e6f247cadb.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2210"],
+    "imageAlt": "Ape#2210",
+    "priceEth": "0.92",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 884,
+    "releaseDate": "2024-08-25",
+    "salesCount": 349,
+    "reviewCount": 15,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 10
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2211",
+    "name": "Ape#2211",
+    "tokenId": "#2211",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/95fb921ae245e53abb7b8be8ac3775/3595fb921ae245e53abb7b8be8ac3775.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2211"],
+    "imageAlt": "Ape#2211",
+    "priceEth": "0.93",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 683,
+    "releaseDate": "2026-02-19",
+    "salesCount": 367,
+    "reviewCount": 6,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 2
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2212",
+    "name": "Ape#2212",
+    "tokenId": "#2212",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/83d960425cb1e2e3b0fdce9012b321/5e83d960425cb1e2e3b0fdce9012b321.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2212"],
+    "imageAlt": "Ape#2212",
+    "priceEth": "0.94",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 1757,
+    "releaseDate": "2026-01-11",
+    "salesCount": 96,
+    "reviewCount": 19,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 7
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2213",
+    "name": "Ape#2213",
+    "tokenId": "#2213",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/2765878df13bcd239dbbdc7bddf63c/c72765878df13bcd239dbbdc7bddf63c.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2213"],
+    "imageAlt": "Ape#2213",
+    "priceEth": "0.95",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 1052,
+    "releaseDate": "2025-01-04",
+    "salesCount": 413,
+    "reviewCount": 14,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 11
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2214",
+    "name": "Ape#2214",
+    "tokenId": "#2214",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/862b0575661649c4075fc41a7d8f61/19862b0575661649c4075fc41a7d8f61.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2214"],
+    "imageAlt": "Ape#2214",
+    "priceEth": "0.96",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 1998,
+    "releaseDate": "2026-03-12",
+    "salesCount": 121,
+    "reviewCount": 18,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 18
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2215",
+    "name": "Ape#2215",
+    "tokenId": "#2215",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/d2b2288153d5b4aaaea30ecd8bdadd/acd2b2288153d5b4aaaea30ecd8bdadd.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2215"],
+    "imageAlt": "Ape#2215",
+    "priceEth": "0.97",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 901,
+    "releaseDate": "2023-08-14",
+    "salesCount": 93,
+    "reviewCount": 13,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 17
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2216",
+    "name": "Ape#2216",
+    "tokenId": "#2216",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/b86ec8cebe85b3898a424af737cfca/fab86ec8cebe85b3898a424af737cfca.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2216"],
+    "imageAlt": "Ape#2216",
+    "priceEth": "0.98",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 1929,
+    "releaseDate": "2025-12-05",
+    "salesCount": 343,
+    "reviewCount": 5,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 12
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2217",
+    "name": "Ape#2217",
+    "tokenId": "#2217",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/396ba5c77967c23b331ee2dd809c3d/94396ba5c77967c23b331ee2dd809c3d.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2217"],
+    "imageAlt": "Ape#2217",
+    "priceEth": "0.99",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 2077,
+    "releaseDate": "2025-09-13",
+    "salesCount": 169,
+    "reviewCount": 2,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 18
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2218",
+    "name": "Ape#2218",
+    "tokenId": "#2218",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/b9675e439dc57ec208c499fe5b00ba/f1b9675e439dc57ec208c499fe5b00ba.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2218"],
+    "imageAlt": "Ape#2218",
+    "priceEth": "1.00",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 624,
+    "releaseDate": "2025-06-07",
+    "salesCount": 368,
+    "reviewCount": 5,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 17
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2219",
+    "name": "Ape#2219",
+    "tokenId": "#2219",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/e02fad600c648c631e2ba172f3e8fc/2de02fad600c648c631e2ba172f3e8fc.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2219"],
+    "imageAlt": "Ape#2219",
+    "priceEth": "1.01",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 398,
+    "releaseDate": "2025-09-25",
+    "salesCount": 134,
+    "reviewCount": 13,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 18
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2220",
+    "name": "Ape#2220",
+    "tokenId": "#2220",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/9d0a40ccdf0d06c13a99c60a4ce6a4/f99d0a40ccdf0d06c13a99c60a4ce6a4.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2220"],
+    "imageAlt": "Ape#2220",
+    "priceEth": "1.02",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 602,
+    "releaseDate": "2023-04-12",
+    "salesCount": 494,
+    "reviewCount": 11,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 2
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2221",
+    "name": "Ape#2221",
+    "tokenId": "#2221",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/9ddee9564a1c9c9b50b61c68ea7843/889ddee9564a1c9c9b50b61c68ea7843.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2221"],
+    "imageAlt": "Ape#2221",
+    "priceEth": "1.03",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 734,
+    "releaseDate": "2024-08-06",
+    "salesCount": 451,
+    "reviewCount": 20,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 9
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "robinhood-0xe638f58c87258ece6c0eddc46f70327663635c69-2222",
+    "name": "Ape#2222",
+    "tokenId": "#2222",
+    "collection": "suited-ape-society",
+    "network": "robinhood",
+    "description": "A collection of 2,222 Suited Apes born on Robinhood Chain, featuring unique traits, districts, bloodlines, and utility across the Suited Ape ecosystem.",
+    "contractAddress": "0xe638f58c87258ece6c0eddc46f70327663635c69",
+    "displayImageUrl": "https://i2c.seadn.io/robinhood/0xe638f58c87258ece6c0eddc46f70327663635c69/8caaff04c98815018ba021945df8b1/3c8caaff04c98815018ba021945df8b1.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": ["ipfs://QmUAK9Jvx5xM78RoBYRMvAGJeKJPdvuhTgWKC2MhB7jQeR/2222"],
+    "imageAlt": "Ape#2222",
+    "priceEth": "1.04",
+    "previousPriceEth": null,
+    "traits": [
+      "Fur",
+      "Eyes",
+      "Power",
+      "Speed",
+      "Mouths",
+      "Outfits",
+      "Stamina",
+      "District",
+      "Headwear",
+      "Bloodline",
+      "Occupation",
+      "Accessories",
+      "Backgrounds",
+      "Intelligence",
+      "Society Status"
+    ],
+    "rarityRank": 998,
+    "releaseDate": "2024-07-21",
+    "salesCount": 448,
+    "reviewCount": 13,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 21
+      }
+    ],
+    "version": 1
+  }
+]

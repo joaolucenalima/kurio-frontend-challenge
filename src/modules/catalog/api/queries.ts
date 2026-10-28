@@ -1,7 +1,7 @@
 import { queryOptions } from '@tanstack/react-query'
 import { httpClient } from '#/shared/api/http'
-import { parseCatalogResponse } from '../model/contracts'
-import type { CatalogSearch, Nft } from '../model/contracts'
+import { normalizeNft, parseCatalogResponse } from '../model/contracts'
+import type { CatalogSearch, NftInput, NftReview } from '../model/contracts'
 
 export const catalogQueries = {
   list: (search: CatalogSearch) =>
@@ -17,7 +17,26 @@ export const catalogQueries = {
     queryOptions({
       queryKey: ['catalog', 'detail', id],
       queryFn: async ({ signal }) =>
-        (await httpClient.get<Nft>(`/nfts/${encodeURIComponent(id)}`, { signal })).data,
+        normalizeNft(
+          (await httpClient.get<NftInput>(`/nfts/${encodeURIComponent(id)}`, { signal })).data,
+        ),
+      staleTime: 30_000,
+    }),
+  reviews: (id: string) =>
+    queryOptions({
+      queryKey: ['catalog', 'reviews', id],
+      queryFn: async ({ signal }) =>
+        (await httpClient.get<NftReview[]>(`/nfts/${encodeURIComponent(id)}/reviews`, { signal }))
+          .data,
+      staleTime: 30_000,
+    }),
+  related: (id: string) =>
+    queryOptions({
+      queryKey: ['catalog', 'related', id],
+      queryFn: async ({ signal }) =>
+        (
+          await httpClient.get<NftInput[]>(`/nfts/${encodeURIComponent(id)}/related`, { signal })
+        ).data.map(normalizeNft),
       staleTime: 30_000,
     }),
 }

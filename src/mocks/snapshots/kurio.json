@@ -1,0 +1,134 @@
+[
+  {
+    "id": "emerald-ape",
+    "name": "Emerald Ape #042",
+    "tokenId": "#042",
+    "collection": "kurio",
+    "network": "ethereum",
+    "description": "Arte digital da seleção Kurio, apresentada nesta demonstração com metadados e disponibilidade simulados.",
+    "contractAddress": "0x7A420000000000000000000000000000000019E8",
+    "displayImageUrl": "/images/nfts/emerald-ape.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": [],
+    "imageAlt": "Macaco de jaqueta verde e óculos de sol",
+    "priceEth": "1.19",
+    "previousPriceEth": null,
+    "traits": ["Óculos", "Esmeralda", "Raro"],
+    "rarityRank": 1,
+    "releaseDate": "2024-05-03",
+    "salesCount": 191,
+    "reviewCount": 13,
+    "editions": [
+      {
+        "id": "limited",
+        "name": "Edição limitada",
+        "available": 13
+      },
+      {
+        "id": "artist",
+        "name": "Edição do artista",
+        "available": 5
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "sage-nomad",
+    "name": "Sage Nomad #009",
+    "tokenId": "#009",
+    "collection": "kurio",
+    "network": "ethereum",
+    "description": "Arte digital da seleção Kurio, apresentada nesta demonstração com metadados e disponibilidade simulados.",
+    "contractAddress": "0x7A420000000000000000000000000000000019E8",
+    "displayImageUrl": "/images/nfts/sage-nomad.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": [],
+    "imageAlt": "Macaco com chapéu verde e moletom violeta",
+    "priceEth": "1.69",
+    "previousPriceEth": null,
+    "traits": ["Chapéu", "Violeta", "Moletom"],
+    "rarityRank": 2,
+    "releaseDate": "2024-09-29",
+    "salesCount": 474,
+    "reviewCount": 18,
+    "editions": [
+      {
+        "id": "limited",
+        "name": "Edição limitada",
+        "available": 7
+      },
+      {
+        "id": "artist",
+        "name": "Edição do artista",
+        "available": 5
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "neon-vessel",
+    "name": "Neon Vessel #552",
+    "tokenId": "#552",
+    "collection": "kurio",
+    "network": "ethereum",
+    "description": "Arte digital da seleção Kurio, apresentada nesta demonstração com metadados e disponibilidade simulados.",
+    "contractAddress": "0x7A420000000000000000000000000000000019E8",
+    "displayImageUrl": "/images/nfts/neon-vessel.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": [],
+    "imageAlt": "Macaco de terno claro e gola verde",
+    "priceEth": "1.99",
+    "previousPriceEth": "2.29",
+    "traits": ["Terno", "Neon", "Gola"],
+    "rarityRank": 3,
+    "releaseDate": "2023-08-09",
+    "salesCount": 167,
+    "reviewCount": 1,
+    "editions": [
+      {
+        "id": "limited",
+        "name": "Edição limitada",
+        "available": 5
+      },
+      {
+        "id": "artist",
+        "name": "Edição do artista",
+        "available": 1
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "golden-beat",
+    "name": "Golden Beat #207",
+    "tokenId": "#207",
+    "collection": "kurio",
+    "network": "ethereum",
+    "description": "Arte digital da seleção Kurio, apresentada nesta demonstração com metadados e disponibilidade simulados.",
+    "contractAddress": "0x7A420000000000000000000000000000000019E8",
+    "displayImageUrl": "/images/nfts/golden-beat.png",
+    "displayAnimationUrl": null,
+    "additionalImageUrls": [],
+    "imageAlt": "Macaco dourado com fones verdes",
+    "priceEth": "0.99",
+    "previousPriceEth": null,
+    "traits": ["Dourado", "Fones", "Música"],
+    "rarityRank": 4,
+    "releaseDate": "2024-05-28",
+    "salesCount": 394,
+    "reviewCount": 2,
+    "editions": [
+      {
+        "id": "limited",
+        "name": "Edição limitada",
+        "available": 16
+      },
+      {
+        "id": "artist",
+        "name": "Edição do artista",
+        "available": 3
+      }
+    ],
+    "version": 1
+  }
+]

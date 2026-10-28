@@ -4,7 +4,7 @@ import { Button } from '#/shared/components/ui/button'
 
 export function Header() {
   return (
-    <header className="flex flex-wrap items-start justify-between gap-y-4 border-b border-primary">
+    <header className="flex flex-wrap items-start justify-between gap-y-4">
       <a
         href="/"
         className="cursor-pointer transition-colors duration-200 ease-out hover:text-accent focus-visible:text-accent flex h-9 items-center font-mono text-sm leading-5 font-bold tracking-widest lg:w-40"
@@ -23,12 +23,14 @@ export function Header() {
         >
           Início
         </Link>
-        <a
-          href="#catalog"
+        <Link
+          to="/"
+          search={{ sort: 'featured', page: 1 }}
+          hash="catalog"
           className="cursor-pointer transition-colors duration-200 ease-out hover:text-accent focus-visible:text-accent aria-[current=page]:border-b-4 aria-[current=page]:border-primary aria-[current=page]:font-bold aria-[current=page]:text-accent aria-[current=page]:hover:text-primary"
         >
           Mercado
-        </a>
+        </Link>
         <span
           aria-disabled="true"
           className="cursor-not-allowed"
@@ -48,9 +50,9 @@ export function Header() {
           className="size-5 rounded-none p-0"
           aria-label="Buscar NFTs"
         >
-          <a href="#catalog">
+          <Link to="/" search={{ sort: 'featured', page: 1 }} hash="catalog">
             <Search className="size-5" aria-hidden="true" />
-          </a>
+          </Link>
         </Button>
         <Button
           type="button"

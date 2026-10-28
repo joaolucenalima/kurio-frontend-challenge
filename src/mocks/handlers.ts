@@ -1,7 +1,7 @@
 import { delay, http, HttpResponse } from 'msw'
 import { ethToWei, parseCatalogSearch } from '#/modules/catalog'
 import type { CatalogApiError, CatalogResponse } from '#/modules/catalog'
-import { initialNfts } from './fixtures'
+import { initialNfts, reviewsForNft } from './fixtures'
 
 export const scenarios = ['success', 'empty', 'slow', 'transient-error', 'out-of-order'] as const
 export type Scenario = (typeof scenarios)[number]
@@ -103,5 +103,29 @@ export const handlers = [
     if (condition.failed) return error('TRANSIENT_ERROR', 'Falha temporária. Tente novamente.', 503)
     const nft = initialNfts.find(({ id }) => id === params.id)
     return nft ? HttpResponse.json(nft) : error('NOT_FOUND', 'NFT não encontrado', 404)
+  }),
+  http.get('/api/nfts/:id/reviews', async ({ params }) => {
+    const condition = await simulateNetwork()
+    if (condition.failed) return error('TRANSIENT_ERROR', 'Falha temporária. Tente novamente.', 503)
+    const nft = initialNfts.find(({ id }) => id === params.id)
+    return nft
+      ? HttpResponse.json(reviewsForNft(nft))
+      : error('NOT_FOUND', 'NFT não encontrado', 404)
+  }),
+  http.get('/api/nfts/:id/related', async ({ params }) => {
+    const condition = await simulateNetwork()
+    if (condition.failed) return error('TRANSIENT_ERROR', 'Falha temporária. Tente novamente.', 503)
+    const nft = initialNfts.find(({ id }) => id === params.id)
+    if (!nft) return error('NOT_FOUND', 'NFT não encontrado', 404)
+    const related = initialNfts.filter(
+      (item) => item.collection === nft.collection && item.id !== nft.id,
+    )
+    for (let index = related.length - 1; index > 0; index--) {
+      const randomIndex = Math.floor(Math.random() * (index + 1))
+      const selected = related[index]
+      related[index] = related[randomIndex]
+      related[randomIndex] = selected
+    }
+    return HttpResponse.json(related.slice(0, 8))
   }),
 ]

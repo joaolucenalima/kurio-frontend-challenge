@@ -1,2275 +1,842 @@
-{
-  "source": "OpenSea MCP get_items",
-  "collectedAt": "2026-10-28T16:15:12.793Z",
-  "collection": "argonauts",
-  "items": [
-    {
-      "identifier": "182",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #0182",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/c6d1cfa3322cd1ad78f7235d2405e6/5cc6d1cfa3322cd1ad78f7235d2405e6.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/c6d1cfa3322cd1ad78f7235d2405e6/5cc6d1cfa3322cd1ad78f7235d2405e6.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/ffce429e5ff02f629b68496774223c/85ffce429e5ff02f629b68496774223c.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/182?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:42.320613",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bone"
-        },
-        {
-          "traitType": "Crown",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Oarsman's Band"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Shades"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Violet"
-        },
-        {
-          "traitType": "Artifact",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Woodpipe"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/ffce429e5ff02f629b68496774223c/85ffce429e5ff02f629b68496774223c.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x21ca8b1b771fb330349f7bb386481b9c3369085b",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 8857
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "182",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "299",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #0299",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/3cf82adf09c37a31212ce4eeb06d95/683cf82adf09c37a31212ce4eeb06d95.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/3cf82adf09c37a31212ce4eeb06d95/683cf82adf09c37a31212ce4eeb06d95.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/ac4f9e5ee246aaf3ed749eee1d1e7d/58ac4f9e5ee246aaf3ed749eee1d1e7d.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/299?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:44.649667",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Prehistoric"
-        },
-        {
-          "traitType": "Crown",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Oarsman's Band"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Relic",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gold"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Digital"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "MuseGreen"
-        },
-        {
-          "traitType": "Artifact",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Woodpipe"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/ac4f9e5ee246aaf3ed749eee1d1e7d/58ac4f9e5ee246aaf3ed749eee1d1e7d.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x24cd92cbb96ee2b60d1ad1dfdfd37ccb1110d790",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 3385
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "299",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "853",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #0853",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/00689d49f74eac9784af54b2607567/f100689d49f74eac9784af54b2607567.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/00689d49f74eac9784af54b2607567/f100689d49f74eac9784af54b2607567.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/8638abd54bf17404d2910d1603c6f8/3d8638abd54bf17404d2910d1603c6f8.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/853?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:45.736693",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Petrified"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "3D Glasses"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Blush"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/8638abd54bf17404d2910d1603c6f8/3d8638abd54bf17404d2910d1603c6f8.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x95999c47c3e32a337ef108d657675c2757a606ed",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 2850
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "853",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "891",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #0891",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/817e0f612761bc1c90fdefae1235fe/40817e0f612761bc1c90fdefae1235fe.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/817e0f612761bc1c90fdefae1235fe/40817e0f612761bc1c90fdefae1235fe.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/554daa8bc12172673baec1e656e5a4/46554daa8bc12172673baec1e656e5a4.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/891?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:45.733585",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gold"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Blush"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/554daa8bc12172673baec1e656e5a4/46554daa8bc12172673baec1e656e5a4.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xf0d6999725115e3ead3d927eb3329d63afaec09b",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 70
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "891",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "1167",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #1167",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/2a3b0ff537cf12c67cfc12769e6204/9a2a3b0ff537cf12c67cfc12769e6204.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/2a3b0ff537cf12c67cfc12769e6204/9a2a3b0ff537cf12c67cfc12769e6204.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/d03117f3b1a543964e824f18233475/87d03117f3b1a543964e824f18233475.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/1167?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:42.307955",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Prehistoric"
-        },
-        {
-          "traitType": "Crown",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Aegean Blue Beanie"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gucci"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Blush"
-        },
-        {
-          "traitType": "Artifact",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Woodpipe"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/d03117f3b1a543964e824f18233475/87d03117f3b1a543964e824f18233475.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xf9c4d5f4a1ffc3d4c5c1ee7b91aa839dd2537d80",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 6165
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "1167",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "1196",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #1196",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/309670128dbf71a06d278e54a1f6c8/09309670128dbf71a06d278e54a1f6c8.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/309670128dbf71a06d278e54a1f6c8/09309670128dbf71a06d278e54a1f6c8.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/bfe5dfd301c06d996e94e45be8bdbe/aabfe5dfd301c06d996e94e45be8bdbe.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/1196?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:42.323592",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Prehistoric"
-        },
-        {
-          "traitType": "Cloak",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Death"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Relic",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gold"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Digital"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Lavender"
-        },
-        {
-          "traitType": "Artifact",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Vape (Dragon's Breath)"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/bfe5dfd301c06d996e94e45be8bdbe/aabfe5dfd301c06d996e94e45be8bdbe.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x08942872046fa44bc6456e491e8de11de8bae73e",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 187
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "1196",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "1226",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #1226",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/5a969e64ce633d67dc00a63e9e1030/245a969e64ce633d67dc00a63e9e1030.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/5a969e64ce633d67dc00a63e9e1030/245a969e64ce633d67dc00a63e9e1030.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/9b017ccf2a14b7696884090dbf2110/249b017ccf2a14b7696884090dbf2110.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/1226?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:45.741258",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Prehistoric"
-        },
-        {
-          "traitType": "Crown",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Oarsman's Band"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gucci"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Violet"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/9b017ccf2a14b7696884090dbf2110/249b017ccf2a14b7696884090dbf2110.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xa33acf2026bb9929ff9abc1ac5566fe20b6a2b83",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 7184
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "1226",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "1649",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #1649",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/5bd10d5ad4ff38c7e5ee948b9249e1/7b5bd10d5ad4ff38c7e5ee948b9249e1.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/5bd10d5ad4ff38c7e5ee948b9249e1/7b5bd10d5ad4ff38c7e5ee948b9249e1.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/02079c9bc3fd986f25db5110bd6fe9/bf02079c9bc3fd986f25db5110bd6fe9.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/1649?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:11:29.334686",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Prehistoric"
-        },
-        {
-          "traitType": "Crown",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bandana"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Digital"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Blush"
-        },
-        {
-          "traitType": "Artifact",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Vape (Blueberry Kush)"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/02079c9bc3fd986f25db5110bd6fe9/bf02079c9bc3fd986f25db5110bd6fe9.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xdb46c7bae3aed8bd740c1275c3717548954fc34b",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 6235
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "1649",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "2344",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #2344",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/0ee5ad26d890de3e4a36744edae357/590ee5ad26d890de3e4a36744edae357.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/0ee5ad26d890de3e4a36744edae357/590ee5ad26d890de3e4a36744edae357.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/5f059c828606ca0fef5e6be166150a/b45f059c828606ca0fef5e6be166150a.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/2344?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:43.404975",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Prehistoric"
-        },
-        {
-          "traitType": "Crown",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Purphat"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Prada"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Offwhite"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/5f059c828606ca0fef5e6be166150a/b45f059c828606ca0fef5e6be166150a.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xf0d6999725115e3ead3d927eb3329d63afaec09b",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 7640
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2344",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "2465",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #2465",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/850d79d51b2375472ce11c1c2cc54a/c6850d79d51b2375472ce11c1c2cc54a.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/850d79d51b2375472ce11c1c2cc54a/c6850d79d51b2375472ce11c1c2cc54a.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/fa2e43453027545c0174b42fb65c59/47fa2e43453027545c0174b42fb65c59.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/2465?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:44.589439",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bone"
-        },
-        {
-          "traitType": "Crown",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Oarsman's Band"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Eye Patch"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Offwhite"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/fa2e43453027545c0174b42fb65c59/47fa2e43453027545c0174b42fb65c59.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x7c0ec1a11cc89debd3a6bf35a5811833fb6af30a",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 9656
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2465",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "2710",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #2710",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/0c6aaa0deb9c8cf9f46fbae9045af3/1e0c6aaa0deb9c8cf9f46fbae9045af3.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/0c6aaa0deb9c8cf9f46fbae9045af3/1e0c6aaa0deb9c8cf9f46fbae9045af3.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/6e59324d5ddeb8c3b53540ae3f4b17/e36e59324d5ddeb8c3b53540ae3f4b17.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/2710?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:42.304942",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Prehistoric"
-        },
-        {
-          "traitType": "Cloak",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Death"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Relic",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gold"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Shades"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Lavender"
-        },
-        {
-          "traitType": "Artifact",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Vape (Dragon's Breath)"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/6e59324d5ddeb8c3b53540ae3f4b17/e36e59324d5ddeb8c3b53540ae3f4b17.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xa8c045e857c1c4550119b612f22c3b27ece10340",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 169
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2710",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "2740",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #2740",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/2e461140e9ff2d846d43464e04e3c1/7e2e461140e9ff2d846d43464e04e3c1.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/2e461140e9ff2d846d43464e04e3c1/7e2e461140e9ff2d846d43464e04e3c1.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/39bbaf52b25ab6f01d87f565158c88/b339bbaf52b25ab6f01d87f565158c88.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/2740?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:42.330006",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bone"
-        },
-        {
-          "traitType": "Crown",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Aegean Blue Beanie"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Chanel"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Blush"
-        },
-        {
-          "traitType": "Artifact",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Woodpipe"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/39bbaf52b25ab6f01d87f565158c88/b339bbaf52b25ab6f01d87f565158c88.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xf0d6999725115e3ead3d927eb3329d63afaec09b",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 7774
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "2740",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "3174",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #3174",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/d8695be4d29cf17cd24834988b63f7/6fd8695be4d29cf17cd24834988b63f7.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/d8695be4d29cf17cd24834988b63f7/6fd8695be4d29cf17cd24834988b63f7.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/3381b1fab5248641f39caa2e19792b/043381b1fab5248641f39caa2e19792b.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/3174?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:42.303371",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Prehistoric"
-        },
-        {
-          "traitType": "Crown",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Aegean Blue Beanie"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Glasses"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Blush"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/3381b1fab5248641f39caa2e19792b/043381b1fab5248641f39caa2e19792b.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xa8c045e857c1c4550119b612f22c3b27ece10340",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 8652
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "3174",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "3428",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #3428",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/eba13a81c3cd28fd454cb2559fbed1/d8eba13a81c3cd28fd454cb2559fbed1.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/eba13a81c3cd28fd454cb2559fbed1/d8eba13a81c3cd28fd454cb2559fbed1.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/542c6a28ef7ca7a0e20e1de1a6a836/91542c6a28ef7ca7a0e20e1de1a6a836.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/3428?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:45.807020",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Prehistoric"
-        },
-        {
-          "traitType": "Cloak",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Servant"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Relic",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gold"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Dior"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Offwhite"
-        },
-        {
-          "traitType": "Artifact",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Woodpipe"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/542c6a28ef7ca7a0e20e1de1a6a836/91542c6a28ef7ca7a0e20e1de1a6a836.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xce90a7949bb78892f159f428d0dc23a8e3584d75",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 138
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "3428",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "3512",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #3512",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/6ef7d77b1d4eee5c28e63b2fe2db24/616ef7d77b1d4eee5c28e63b2fe2db24.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/6ef7d77b1d4eee5c28e63b2fe2db24/616ef7d77b1d4eee5c28e63b2fe2db24.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/3bcd34e7f106f4467284b5862aa566/a73bcd34e7f106f4467284b5862aa566.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/3512?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:10:47.047128",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Floral"
-        },
-        {
-          "traitType": "Crown",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bandana"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Relic",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gold"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Offwhite"
-        },
-        {
-          "traitType": "Artifact",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Vape (Dragon's Breath)"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/3bcd34e7f106f4467284b5862aa566/a73bcd34e7f106f4467284b5862aa566.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xc6400a5584db71e41b0e5dfbdc769b54b91256cd",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 1426
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "3512",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "4017",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #4017",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/8567969371dd98b1deab6db723db44/9e8567969371dd98b1deab6db723db44.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/8567969371dd98b1deab6db723db44/9e8567969371dd98b1deab6db723db44.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/9c1c59923be91a30d371670722b0ed/559c1c59923be91a30d371670722b0ed.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/4017?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:43.416312",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bone"
-        },
-        {
-          "traitType": "Crown",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Purphat"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Offwhite"
-        },
-        {
-          "traitType": "Artifact",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Vape (Dragon's Breath)"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/9c1c59923be91a30d371670722b0ed/559c1c59923be91a30d371670722b0ed.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xbc32cd222f262f1dec529f13fd722a11880bacd3",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 8770
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "4017",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "4335",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #4335",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/e482669231d6f14224b8669e6e525c/0ae482669231d6f14224b8669e6e525c.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/e482669231d6f14224b8669e6e525c/0ae482669231d6f14224b8669e6e525c.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/f46ffb462be72ef327a6c214de5147/adf46ffb462be72ef327a6c214de5147.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/4335?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:43.423763",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Prehistoric"
-        },
-        {
-          "traitType": "Crown",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Oarsman's Band"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Relic",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gold"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gucci"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Sky"
-        },
-        {
-          "traitType": "Artifact",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Woodpipe"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/f46ffb462be72ef327a6c214de5147/adf46ffb462be72ef327a6c214de5147.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xe4797e3e062b799a203fda426f916878a9f669cb",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 2405
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "4335",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "4444",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #4444",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/3ec01b837f24b426ef4974b44466f3/123ec01b837f24b426ef4974b44466f3.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/3ec01b837f24b426ef4974b44466f3/123ec01b837f24b426ef4974b44466f3.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/26f1d4244c86122645b7a0ecec68c3/6826f1d4244c86122645b7a0ecec68c3.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/4444?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:44.639840",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bone"
-        },
-        {
-          "traitType": "Cloak",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Royalty"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Dior"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Offwhite"
-        },
-        {
-          "traitType": "Artifact",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Vape (Blueberry Kush)"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/26f1d4244c86122645b7a0ecec68c3/6826f1d4244c86122645b7a0ecec68c3.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x03ee832367e29a5cd001f65093283eabb5382b62",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 1388
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "4444",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "5083",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #5083",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/92eee1fd9c96230194515a80f45e85/1092eee1fd9c96230194515a80f45e85.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/92eee1fd9c96230194515a80f45e85/1092eee1fd9c96230194515a80f45e85.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/7233088d7e722ef021836951f4e6bc/c37233088d7e722ef021836951f4e6bc.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/5083?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:42.373366",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bone"
-        },
-        {
-          "traitType": "Cloak",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Death"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Shades"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Blush"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/7233088d7e722ef021836951f4e6bc/c37233088d7e722ef021836951f4e6bc.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xc1501775e8be6c1e33f9c98090856623c185b049",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 8404
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "5083",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "5191",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #5191",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/0e9a5d23a5cec10f78cd4850e33d61/f20e9a5d23a5cec10f78cd4850e33d61.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/0e9a5d23a5cec10f78cd4850e33d61/f20e9a5d23a5cec10f78cd4850e33d61.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/fed7d1b7490b7da60cebfd6f7acf93/cbfed7d1b7490b7da60cebfd6f7acf93.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/5191?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:44.577498",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Silver"
-        },
-        {
-          "traitType": "Crown",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Purphat"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Offwhite"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/fed7d1b7490b7da60cebfd6f7acf93/cbfed7d1b7490b7da60cebfd6f7acf93.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x21adb4aaddb2d02715ff51b1f0cdc839f72e3695",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 5238
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "5191",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "5276",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #5276",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/ac0656d58290fd61309d65e410dc80/06ac0656d58290fd61309d65e410dc80.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/ac0656d58290fd61309d65e410dc80/06ac0656d58290fd61309d65e410dc80.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/0650e8b250448ea20ff0ee11eaabb4/820650e8b250448ea20ff0ee11eaabb4.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/5276?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:11:02.801204",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Prehistoric"
-        },
-        {
-          "traitType": "Cloak",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Clergy"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Relic",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gold"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Digital"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Blush"
-        },
-        {
-          "traitType": "Artifact",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Vape (Blueberry Kush)"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/0650e8b250448ea20ff0ee11eaabb4/820650e8b250448ea20ff0ee11eaabb4.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xa6ec562f8828118d3e1bd9f74ebbb562a40c9e29",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 627
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "5276",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "5453",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #5453",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/1c586a320d7cd4324427abce339b7a/a91c586a320d7cd4324427abce339b7a.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/1c586a320d7cd4324427abce339b7a/a91c586a320d7cd4324427abce339b7a.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/11e1481cc9d5dcbfc9df3e4b78fac0/8a11e1481cc9d5dcbfc9df3e4b78fac0.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/5453?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:45.730986",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bone"
-        },
-        {
-          "traitType": "Crown",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Dawn Pink Beanie"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Chanel"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Punkblue"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/11e1481cc9d5dcbfc9df3e4b78fac0/8a11e1481cc9d5dcbfc9df3e4b78fac0.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x8abce92995e43f0a964ebb89ed1c9e8808fe6ad5",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 7544
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "5453",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "5569",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #5569",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/c3a66610b9808e59a5d3826d32c453/9ac3a66610b9808e59a5d3826d32c453.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/c3a66610b9808e59a5d3826d32c453/9ac3a66610b9808e59a5d3826d32c453.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/6a1e1ee9b8e8b6d0c8cb47aa6dd6a9/e06a1e1ee9b8e8b6d0c8cb47aa6dd6a9.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/5569?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:42.364496",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Petrified"
-        },
-        {
-          "traitType": "Crown",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Dawn Pink Beanie"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Chanel"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "MuseGreen"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/6a1e1ee9b8e8b6d0c8cb47aa6dd6a9/e06a1e1ee9b8e8b6d0c8cb47aa6dd6a9.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x02b5801f692ee6939edc90f0888dc2dab11c3841",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 879
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "5569",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "5752",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #5752",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/997a891987aad7fb64b6d2674e17f0/0f997a891987aad7fb64b6d2674e17f0.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/997a891987aad7fb64b6d2674e17f0/0f997a891987aad7fb64b6d2674e17f0.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/34a43655f55f3b8286ff71d2468db2/b834a43655f55f3b8286ff71d2468db2.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/5752?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:36.615607",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Petrified"
-        },
-        {
-          "traitType": "Cloak",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Royalty"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Lavender"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/34a43655f55f3b8286ff71d2468db2/b834a43655f55f3b8286ff71d2468db2.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x999473c81cd594fad8fed7900fda85ad69818999",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 45
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "5752",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "5780",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #5780",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/646a5acdc4d9cf512d4c626b7e8001/ec646a5acdc4d9cf512d4c626b7e8001.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/646a5acdc4d9cf512d4c626b7e8001/ec646a5acdc4d9cf512d4c626b7e8001.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/cd8532937d54b6fbb61e20465efe5d/5bcd8532937d54b6fbb61e20465efe5d.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/5780?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:43.474345",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Prehistoric"
-        },
-        {
-          "traitType": "Cloak",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Death"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Versace"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Sky"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/cd8532937d54b6fbb61e20465efe5d/5bcd8532937d54b6fbb61e20465efe5d.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xdb46c7bae3aed8bd740c1275c3717548954fc34b",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 5041
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "5780",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "5836",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #5836",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/1715e546d6398c28c172e7cd60b3c6/5a1715e546d6398c28c172e7cd60b3c6.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/1715e546d6398c28c172e7cd60b3c6/5a1715e546d6398c28c172e7cd60b3c6.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/ae209186518785a3a59c1f1247ff0e/76ae209186518785a3a59c1f1247ff0e.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/5836?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:45.803584",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bone"
-        },
-        {
-          "traitType": "Crown",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bandana"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Prada"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Sky"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/ae209186518785a3a59c1f1247ff0e/76ae209186518785a3a59c1f1247ff0e.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xc98a513970f320b11ab408c12eef176292e227bf",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 8572
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "5836",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "5865",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #5865",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/7aafa4cd6de9889c009afa0958b635/cc7aafa4cd6de9889c009afa0958b635.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/7aafa4cd6de9889c009afa0958b635/cc7aafa4cd6de9889c009afa0958b635.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/38d5b9622ed913d9c6a615976ea7ae/7e38d5b9622ed913d9c6a615976ea7ae.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/5865?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:45.727725",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Prehistoric"
-        },
-        {
-          "traitType": "Crown",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bandana"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Relic",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gold"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Balenciaga"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Lavender"
-        },
-        {
-          "traitType": "Artifact",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Woodpipe"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/38d5b9622ed913d9c6a615976ea7ae/7e38d5b9622ed913d9c6a615976ea7ae.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x3068e30a4ae02825ed5a51b0c070f04332642702",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 696
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "5865",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "6166",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #6166",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/a74ae33dc5d55cbd297f17145a913c/daa74ae33dc5d55cbd297f17145a913c.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/a74ae33dc5d55cbd297f17145a913c/daa74ae33dc5d55cbd297f17145a913c.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/31c2b3932923d0491495be67289ccc/8d31c2b3932923d0491495be67289ccc.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/6166?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:43.401274",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bone"
-        },
-        {
-          "traitType": "Cloak",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Royalty"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Chanel"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Storm"
-        },
-        {
-          "traitType": "Artifact",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Vape (Blueberry Kush)"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/31c2b3932923d0491495be67289ccc/8d31c2b3932923d0491495be67289ccc.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x24cd92cbb96ee2b60d1ad1dfdfd37ccb1110d790",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 466
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "6166",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "6597",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #6597",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/567491a7c5fae0d5ea617aa72850c2/54567491a7c5fae0d5ea617aa72850c2.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/567491a7c5fae0d5ea617aa72850c2/54567491a7c5fae0d5ea617aa72850c2.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/5fe659439835d019b6b8e53d2669e2/225fe659439835d019b6b8e53d2669e2.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/6597?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:09:46.999640",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Floral"
-        },
-        {
-          "traitType": "Cloak",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Servant"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "3D Glasses"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "MuseGreen"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/5fe659439835d019b6b8e53d2669e2/225fe659439835d019b6b8e53d2669e2.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0xf0d6999725115e3ead3d927eb3329d63afaec09b",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 254
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "6597",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    },
-    {
-      "identifier": "6967",
-      "collection": "argonauts",
-      "contract": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
-      "tokenStandard": "erc721",
-      "name": "Argonaut #6967",
-      "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
-      "imageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/6d16ffc3ddd962d370b5577fa719d1/a16d16ffc3ddd962d370b5577fa719d1.svg",
-      "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/6d16ffc3ddd962d370b5577fa719d1/a16d16ffc3ddd962d370b5577fa719d1.svg",
-      "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/b75063db35415f4b09d183b0a2284f/86b75063db35415f4b09d183b0a2284f.html",
-      "metadataUrl": null,
-      "openseaUrl": "https://opensea.io/assets/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/6967?os_ref=mcp-codex-mcp-client",
-      "updatedAt": "2026-10-28T16:14:44.572447",
-      "isDisabled": false,
-      "isNsfw": false,
-      "originalImageUrl": null,
-      "originalAnimationUrl": null,
-      "traits": [
-        {
-          "traitType": "Bones",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Bone"
-        },
-        {
-          "traitType": "Crown",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Aegean Blue Beanie"
-        },
-        {
-          "traitType": "Print",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Unclaimed"
-        },
-        {
-          "traitType": "Relic",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Gold"
-        },
-        {
-          "traitType": "Sight",
-          "displayType": null,
-          "maxValue": null,
-          "value": "3D Glasses"
-        },
-        {
-          "traitType": "Palette",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Punkblue"
-        },
-        {
-          "traitType": "Artifact",
-          "displayType": null,
-          "maxValue": null,
-          "value": "Vape (Dragon's Breath)"
-        }
-      ],
-      "estimatedValueUsd": null,
-      "decimals": null,
-      "animationUrl": "https://i2c.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/b75063db35415f4b09d183b0a2284f/86b75063db35415f4b09d183b0a2284f.html",
-      "isSuspicious": false,
-      "creator": "",
-      "owners": [
-        {
-          "address": "0x74ccf779d780acb91e9f2f30db2ffc0b73f28341",
-          "quantity": 1,
-          "quantityString": "1"
-        }
-      ],
-      "rarity": {
-        "strategyId": "openrarity",
-        "strategyVersion": "1.0",
-        "rank": 2420
-      },
-      "subscription": null,
-      "agentBinding": null,
-      "agentMetadata": null,
-      "tokenId": "6967",
-      "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c"
-    }
-  ]
-}
+[
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-182",
+    "name": "Argonaut #0182",
+    "tokenId": "#0182",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/c6d1cfa3322cd1ad78f7235d2405e6/5cc6d1cfa3322cd1ad78f7235d2405e6.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/ffce429e5ff02f629b68496774223c/85ffce429e5ff02f629b68496774223c.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #0182",
+    "priceEth": "0.50",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Crown", "Print", "Sight", "Palette", "Artifact"],
+    "rarityRank": 8857,
+    "releaseDate": "2023-09-04",
+    "salesCount": 313,
+    "reviewCount": 8,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 22
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-299",
+    "name": "Argonaut #0299",
+    "tokenId": "#0299",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/3cf82adf09c37a31212ce4eeb06d95/683cf82adf09c37a31212ce4eeb06d95.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/ac4f9e5ee246aaf3ed749eee1d1e7d/58ac4f9e5ee246aaf3ed749eee1d1e7d.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #0299",
+    "priceEth": "0.51",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Crown", "Print", "Relic", "Sight", "Palette", "Artifact"],
+    "rarityRank": 3385,
+    "releaseDate": "2024-11-22",
+    "salesCount": 77,
+    "reviewCount": 17,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 24
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-853",
+    "name": "Argonaut #0853",
+    "tokenId": "#0853",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/00689d49f74eac9784af54b2607567/f100689d49f74eac9784af54b2607567.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/8638abd54bf17404d2910d1603c6f8/3d8638abd54bf17404d2910d1603c6f8.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #0853",
+    "priceEth": "0.52",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Print", "Sight", "Palette"],
+    "rarityRank": 2850,
+    "releaseDate": "2024-04-17",
+    "salesCount": 53,
+    "reviewCount": 18,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 16
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-891",
+    "name": "Argonaut #0891",
+    "tokenId": "#0891",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/817e0f612761bc1c90fdefae1235fe/40817e0f612761bc1c90fdefae1235fe.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/554daa8bc12172673baec1e656e5a4/46554daa8bc12172673baec1e656e5a4.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #0891",
+    "priceEth": "0.53",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Print", "Palette"],
+    "rarityRank": 70,
+    "releaseDate": "2023-04-13",
+    "salesCount": 310,
+    "reviewCount": 10,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 23
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-1167",
+    "name": "Argonaut #1167",
+    "tokenId": "#1167",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/2a3b0ff537cf12c67cfc12769e6204/9a2a3b0ff537cf12c67cfc12769e6204.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/d03117f3b1a543964e824f18233475/87d03117f3b1a543964e824f18233475.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #1167",
+    "priceEth": "0.54",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Crown", "Print", "Sight", "Palette", "Artifact"],
+    "rarityRank": 6165,
+    "releaseDate": "2025-10-05",
+    "salesCount": 270,
+    "reviewCount": 9,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 13
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-1196",
+    "name": "Argonaut #1196",
+    "tokenId": "#1196",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/309670128dbf71a06d278e54a1f6c8/09309670128dbf71a06d278e54a1f6c8.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/bfe5dfd301c06d996e94e45be8bdbe/aabfe5dfd301c06d996e94e45be8bdbe.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #1196",
+    "priceEth": "0.55",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Cloak", "Print", "Relic", "Sight", "Palette", "Artifact"],
+    "rarityRank": 187,
+    "releaseDate": "2025-04-09",
+    "salesCount": 344,
+    "reviewCount": 11,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 6
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-1226",
+    "name": "Argonaut #1226",
+    "tokenId": "#1226",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/5a969e64ce633d67dc00a63e9e1030/245a969e64ce633d67dc00a63e9e1030.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/9b017ccf2a14b7696884090dbf2110/249b017ccf2a14b7696884090dbf2110.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #1226",
+    "priceEth": "0.56",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Crown", "Print", "Sight", "Palette"],
+    "rarityRank": 7184,
+    "releaseDate": "2026-01-09",
+    "salesCount": 238,
+    "reviewCount": 15,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 12
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-1649",
+    "name": "Argonaut #1649",
+    "tokenId": "#1649",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/5bd10d5ad4ff38c7e5ee948b9249e1/7b5bd10d5ad4ff38c7e5ee948b9249e1.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/02079c9bc3fd986f25db5110bd6fe9/bf02079c9bc3fd986f25db5110bd6fe9.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #1649",
+    "priceEth": "0.57",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Crown", "Print", "Sight", "Palette", "Artifact"],
+    "rarityRank": 6235,
+    "releaseDate": "2026-03-20",
+    "salesCount": 92,
+    "reviewCount": 12,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 21
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-2344",
+    "name": "Argonaut #2344",
+    "tokenId": "#2344",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/0ee5ad26d890de3e4a36744edae357/590ee5ad26d890de3e4a36744edae357.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/5f059c828606ca0fef5e6be166150a/b45f059c828606ca0fef5e6be166150a.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #2344",
+    "priceEth": "0.58",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Crown", "Print", "Sight", "Palette"],
+    "rarityRank": 7640,
+    "releaseDate": "2025-02-18",
+    "salesCount": 289,
+    "reviewCount": 16,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 5
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-2465",
+    "name": "Argonaut #2465",
+    "tokenId": "#2465",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/850d79d51b2375472ce11c1c2cc54a/c6850d79d51b2375472ce11c1c2cc54a.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/fa2e43453027545c0174b42fb65c59/47fa2e43453027545c0174b42fb65c59.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #2465",
+    "priceEth": "0.59",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Crown", "Print", "Sight", "Palette"],
+    "rarityRank": 9656,
+    "releaseDate": "2023-06-03",
+    "salesCount": 172,
+    "reviewCount": 16,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 16
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-2710",
+    "name": "Argonaut #2710",
+    "tokenId": "#2710",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/0c6aaa0deb9c8cf9f46fbae9045af3/1e0c6aaa0deb9c8cf9f46fbae9045af3.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/6e59324d5ddeb8c3b53540ae3f4b17/e36e59324d5ddeb8c3b53540ae3f4b17.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #2710",
+    "priceEth": "0.60",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Cloak", "Print", "Relic", "Sight", "Palette", "Artifact"],
+    "rarityRank": 169,
+    "releaseDate": "2023-08-20",
+    "salesCount": 38,
+    "reviewCount": 19,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 16
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-2740",
+    "name": "Argonaut #2740",
+    "tokenId": "#2740",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/2e461140e9ff2d846d43464e04e3c1/7e2e461140e9ff2d846d43464e04e3c1.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/39bbaf52b25ab6f01d87f565158c88/b339bbaf52b25ab6f01d87f565158c88.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #2740",
+    "priceEth": "0.61",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Crown", "Print", "Sight", "Palette", "Artifact"],
+    "rarityRank": 7774,
+    "releaseDate": "2023-12-03",
+    "salesCount": 34,
+    "reviewCount": 9,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 7
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-3174",
+    "name": "Argonaut #3174",
+    "tokenId": "#3174",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/d8695be4d29cf17cd24834988b63f7/6fd8695be4d29cf17cd24834988b63f7.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/3381b1fab5248641f39caa2e19792b/043381b1fab5248641f39caa2e19792b.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #3174",
+    "priceEth": "0.62",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Crown", "Print", "Sight", "Palette"],
+    "rarityRank": 8652,
+    "releaseDate": "2024-05-02",
+    "salesCount": 209,
+    "reviewCount": 9,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 8
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-3428",
+    "name": "Argonaut #3428",
+    "tokenId": "#3428",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/eba13a81c3cd28fd454cb2559fbed1/d8eba13a81c3cd28fd454cb2559fbed1.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/542c6a28ef7ca7a0e20e1de1a6a836/91542c6a28ef7ca7a0e20e1de1a6a836.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #3428",
+    "priceEth": "0.63",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Cloak", "Print", "Relic", "Sight", "Palette", "Artifact"],
+    "rarityRank": 138,
+    "releaseDate": "2024-06-23",
+    "salesCount": 262,
+    "reviewCount": 4,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 15
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-3512",
+    "name": "Argonaut #3512",
+    "tokenId": "#3512",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/6ef7d77b1d4eee5c28e63b2fe2db24/616ef7d77b1d4eee5c28e63b2fe2db24.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/3bcd34e7f106f4467284b5862aa566/a73bcd34e7f106f4467284b5862aa566.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #3512",
+    "priceEth": "0.64",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Crown", "Print", "Relic", "Palette", "Artifact"],
+    "rarityRank": 1426,
+    "releaseDate": "2025-01-02",
+    "salesCount": 178,
+    "reviewCount": 3,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 14
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-4017",
+    "name": "Argonaut #4017",
+    "tokenId": "#4017",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/8567969371dd98b1deab6db723db44/9e8567969371dd98b1deab6db723db44.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/9c1c59923be91a30d371670722b0ed/559c1c59923be91a30d371670722b0ed.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #4017",
+    "priceEth": "0.65",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Crown", "Print", "Palette", "Artifact"],
+    "rarityRank": 8770,
+    "releaseDate": "2025-02-25",
+    "salesCount": 300,
+    "reviewCount": 12,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 22
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-4335",
+    "name": "Argonaut #4335",
+    "tokenId": "#4335",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/e482669231d6f14224b8669e6e525c/0ae482669231d6f14224b8669e6e525c.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/f46ffb462be72ef327a6c214de5147/adf46ffb462be72ef327a6c214de5147.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #4335",
+    "priceEth": "0.66",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Crown", "Print", "Relic", "Sight", "Palette", "Artifact"],
+    "rarityRank": 2405,
+    "releaseDate": "2025-12-24",
+    "salesCount": 495,
+    "reviewCount": 5,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 11
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-4444",
+    "name": "Argonaut #4444",
+    "tokenId": "#4444",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/3ec01b837f24b426ef4974b44466f3/123ec01b837f24b426ef4974b44466f3.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/26f1d4244c86122645b7a0ecec68c3/6826f1d4244c86122645b7a0ecec68c3.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #4444",
+    "priceEth": "0.67",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Cloak", "Print", "Sight", "Palette", "Artifact"],
+    "rarityRank": 1388,
+    "releaseDate": "2023-04-27",
+    "salesCount": 246,
+    "reviewCount": 11,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 2
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-5083",
+    "name": "Argonaut #5083",
+    "tokenId": "#5083",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/92eee1fd9c96230194515a80f45e85/1092eee1fd9c96230194515a80f45e85.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/7233088d7e722ef021836951f4e6bc/c37233088d7e722ef021836951f4e6bc.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #5083",
+    "priceEth": "0.68",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Cloak", "Print", "Sight", "Palette"],
+    "rarityRank": 8404,
+    "releaseDate": "2023-06-17",
+    "salesCount": 287,
+    "reviewCount": 16,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 13
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-5191",
+    "name": "Argonaut #5191",
+    "tokenId": "#5191",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/0e9a5d23a5cec10f78cd4850e33d61/f20e9a5d23a5cec10f78cd4850e33d61.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/fed7d1b7490b7da60cebfd6f7acf93/cbfed7d1b7490b7da60cebfd6f7acf93.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #5191",
+    "priceEth": "0.69",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Crown", "Print", "Palette"],
+    "rarityRank": 5238,
+    "releaseDate": "2025-09-13",
+    "salesCount": 48,
+    "reviewCount": 17,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 24
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-5276",
+    "name": "Argonaut #5276",
+    "tokenId": "#5276",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/ac0656d58290fd61309d65e410dc80/06ac0656d58290fd61309d65e410dc80.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/0650e8b250448ea20ff0ee11eaabb4/820650e8b250448ea20ff0ee11eaabb4.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #5276",
+    "priceEth": "0.70",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Cloak", "Print", "Relic", "Sight", "Palette", "Artifact"],
+    "rarityRank": 627,
+    "releaseDate": "2025-08-24",
+    "salesCount": 305,
+    "reviewCount": 10,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 15
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-5453",
+    "name": "Argonaut #5453",
+    "tokenId": "#5453",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/1c586a320d7cd4324427abce339b7a/a91c586a320d7cd4324427abce339b7a.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/11e1481cc9d5dcbfc9df3e4b78fac0/8a11e1481cc9d5dcbfc9df3e4b78fac0.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #5453",
+    "priceEth": "0.71",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Crown", "Print", "Sight", "Palette"],
+    "rarityRank": 7544,
+    "releaseDate": "2023-01-28",
+    "salesCount": 218,
+    "reviewCount": 17,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 23
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-5569",
+    "name": "Argonaut #5569",
+    "tokenId": "#5569",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/c3a66610b9808e59a5d3826d32c453/9ac3a66610b9808e59a5d3826d32c453.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/6a1e1ee9b8e8b6d0c8cb47aa6dd6a9/e06a1e1ee9b8e8b6d0c8cb47aa6dd6a9.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #5569",
+    "priceEth": "0.72",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Crown", "Print", "Sight", "Palette"],
+    "rarityRank": 879,
+    "releaseDate": "2026-01-30",
+    "salesCount": 466,
+    "reviewCount": 3,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 22
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-5752",
+    "name": "Argonaut #5752",
+    "tokenId": "#5752",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/997a891987aad7fb64b6d2674e17f0/0f997a891987aad7fb64b6d2674e17f0.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/34a43655f55f3b8286ff71d2468db2/b834a43655f55f3b8286ff71d2468db2.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #5752",
+    "priceEth": "0.73",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Cloak", "Print", "Palette"],
+    "rarityRank": 45,
+    "releaseDate": "2023-11-14",
+    "salesCount": 189,
+    "reviewCount": 1,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 23
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-5780",
+    "name": "Argonaut #5780",
+    "tokenId": "#5780",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/646a5acdc4d9cf512d4c626b7e8001/ec646a5acdc4d9cf512d4c626b7e8001.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/cd8532937d54b6fbb61e20465efe5d/5bcd8532937d54b6fbb61e20465efe5d.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #5780",
+    "priceEth": "0.74",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Cloak", "Print", "Sight", "Palette"],
+    "rarityRank": 5041,
+    "releaseDate": "2026-03-30",
+    "salesCount": 447,
+    "reviewCount": 6,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 12
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-5836",
+    "name": "Argonaut #5836",
+    "tokenId": "#5836",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/1715e546d6398c28c172e7cd60b3c6/5a1715e546d6398c28c172e7cd60b3c6.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/ae209186518785a3a59c1f1247ff0e/76ae209186518785a3a59c1f1247ff0e.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #5836",
+    "priceEth": "0.75",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Crown", "Print", "Sight", "Palette"],
+    "rarityRank": 8572,
+    "releaseDate": "2025-03-08",
+    "salesCount": 100,
+    "reviewCount": 4,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 18
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-5865",
+    "name": "Argonaut #5865",
+    "tokenId": "#5865",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/7aafa4cd6de9889c009afa0958b635/cc7aafa4cd6de9889c009afa0958b635.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/38d5b9622ed913d9c6a615976ea7ae/7e38d5b9622ed913d9c6a615976ea7ae.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #5865",
+    "priceEth": "0.76",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Crown", "Print", "Relic", "Sight", "Palette", "Artifact"],
+    "rarityRank": 696,
+    "releaseDate": "2025-03-18",
+    "salesCount": 274,
+    "reviewCount": 1,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 15
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-6166",
+    "name": "Argonaut #6166",
+    "tokenId": "#6166",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/a74ae33dc5d55cbd297f17145a913c/daa74ae33dc5d55cbd297f17145a913c.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/31c2b3932923d0491495be67289ccc/8d31c2b3932923d0491495be67289ccc.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #6166",
+    "priceEth": "0.77",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Cloak", "Print", "Sight", "Palette", "Artifact"],
+    "rarityRank": 466,
+    "releaseDate": "2024-11-16",
+    "salesCount": 171,
+    "reviewCount": 14,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 16
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-6597",
+    "name": "Argonaut #6597",
+    "tokenId": "#6597",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/567491a7c5fae0d5ea617aa72850c2/54567491a7c5fae0d5ea617aa72850c2.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/5fe659439835d019b6b8e53d2669e2/225fe659439835d019b6b8e53d2669e2.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #6597",
+    "priceEth": "0.78",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Cloak", "Print", "Sight", "Palette"],
+    "rarityRank": 254,
+    "releaseDate": "2023-02-21",
+    "salesCount": 334,
+    "reviewCount": 0,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 23
+      }
+    ],
+    "version": 1
+  },
+  {
+    "id": "ethereum-0x387c41b0b2f1128de44db1bcf8baad085f26392c-6967",
+    "name": "Argonaut #6967",
+    "tokenId": "#6967",
+    "collection": "argonauts",
+    "network": "ethereum",
+    "description": "One of 9,999 signed, numbered textured prints on museum board. The digital lives here, inside the contract, forever. A Muse Facktory production.",
+    "contractAddress": "0x387c41b0b2f1128de44db1bcf8baad085f26392c",
+    "displayImageUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/6d16ffc3ddd962d370b5577fa719d1/a16d16ffc3ddd962d370b5577fa719d1.svg",
+    "displayAnimationUrl": "https://raw2.seadn.io/ethereum/0x387c41b0b2f1128de44db1bcf8baad085f26392c/b75063db35415f4b09d183b0a2284f/86b75063db35415f4b09d183b0a2284f.html",
+    "additionalImageUrls": [],
+    "imageAlt": "Argonaut #6967",
+    "priceEth": "0.79",
+    "previousPriceEth": null,
+    "traits": ["Bones", "Crown", "Print", "Relic", "Sight", "Palette", "Artifact"],
+    "rarityRank": 2420,
+    "releaseDate": "2023-08-28",
+    "salesCount": 70,
+    "reviewCount": 4,
+    "editions": [
+      {
+        "id": "original",
+        "name": "Original",
+        "available": 17
+      }
+    ],
+    "version": 1
+  }
+]
