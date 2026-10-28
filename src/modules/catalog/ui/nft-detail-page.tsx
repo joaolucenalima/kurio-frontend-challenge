@@ -5,50 +5,21 @@ import { isAxiosError } from 'axios'
 import { ChevronLeft, Heart, Minus, Plus, ZoomIn } from 'lucide-react'
 import { Header } from '#/shared/components/header'
 import { Button } from '#/shared/components/ui/button'
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from '#/shared/components/ui/carousel'
+import { Carousel, CarouselContent, CarouselItem } from '#/shared/components/ui/carousel'
 import type { CarouselApi } from '#/shared/components/ui/carousel'
 import { Dialog, DialogContent, DialogTitle, DialogTrigger } from '#/shared/components/ui/dialog'
 import { catalogQueries } from '../api/queries'
 import { collectionOptions } from '../model/contracts'
-import type { Nft, NftMedia } from '../model/contracts'
+import type { Nft } from '../model/contracts'
+import { NftCard } from './nft-card'
 
-function Artwork({ media, className }: { media: NftMedia; className: string }) {
+function Artwork({ nft, className }: { nft: Nft; className: string }) {
   const [failed, setFailed] = useState(false)
 
-  const isEmbedded = media.kind === 'animation' && /\.html?(?:[?#]|$)/i.test(media.url)
-  const isVideo = media.kind === 'animation' && /\.(mp4|webm)(?:[?#]|$)/i.test(media.url)
-
-  if (isEmbedded) {
-    return (
-      <iframe title={media.alt} src={media.url} sandbox="allow-scripts" className={className} />
-    )
-  }
-  if (isVideo) {
-    return (
-      <video
-        src={media.url}
-        controls
-        loop
-        muted
-        playsInline
-        poster={media.thumbnailUrl}
-        className={className}
-        aria-label={media.alt}
-      >
-        <track kind="captions" src="/captions/no-dialogue.vtt" srcLang="pt" label="Sem diálogo" />
-      </video>
-    )
-  }
   return (
     <img
-      src={failed ? '/images/nft-placeholder.svg' : media.url}
-      alt={failed ? `Imagem indisponível: ${media.alt}` : media.alt}
+      src={failed ? '/images/nft-placeholder.svg' : nft.displayImageUrl}
+      alt={failed ? `Imagem indisponível: ${nft.imageAlt}` : nft.imageAlt}
       onError={() => setFailed(true)}
       className={className}
     />
@@ -56,12 +27,7 @@ function Artwork({ media, className }: { media: NftMedia; className: string }) {
 }
 
 function Gallery({ nft }: { nft: Nft }) {
-  const [selectedId, setSelectedId] = useState(nft.media[0]?.id)
   const [zoomed, setZoomed] = useState(false)
-
-  const selected = nft.media.find((item) => item.id === selectedId) ?? nft.media[0]
-
-  if (!selected) return null
 
   return (
     <div className="flex min-w-0 flex-col-reverse gap-4 md:flex-row md:items-start md:gap-7">
@@ -69,30 +35,17 @@ function Gallery({ nft }: { nft: Nft }) {
         aria-label="Opções de mídia do NFT"
         className="flex gap-3 overflow-x-auto md:max-h-112 md:flex-col md:overflow-y-auto"
       >
-        {nft.media.map((media, index) => (
-          <button
-            key={media.id}
-            type="button"
-            aria-label={`Exibir ${media.kind === 'animation' ? 'animação' : 'imagem'} ${index + 1} de ${nft.name}`}
-            aria-pressed={selected.id === media.id}
-            onClick={() => setSelectedId(media.id)}
-            className="cursor-pointer relative size-18 shrink-0 overflow-hidden rounded-lg border border-transparent bg-card hover:border-accent focus-visible:outline-ring aria-pressed:border-primary md:size-25"
-          >
-            <img src={media.thumbnailUrl} alt="" className="size-full object-cover" />
-            {media.kind === 'animation' && (
-              <span className="absolute inset-x-0 bottom-0 bg-background/85 py-1 text-center text-[10px]">
-                ANIMAÇÃO
-              </span>
-            )}
-          </button>
-        ))}
+        <button
+          type="button"
+          aria-label={`Exibir imagem de ${nft.name}`}
+          aria-pressed="true"
+          className="relative size-18 shrink-0 cursor-pointer overflow-hidden rounded-lg border border-primary bg-card focus-visible:outline-ring md:size-25"
+        >
+          <Artwork nft={nft} className="size-full object-cover" />
+        </button>
       </div>
       <div className="relative flex aspect-square min-w-0 flex-1 items-center justify-center rounded-lg bg-card p-3 md:max-w-111 md:p-4">
-        <Artwork
-          key={selected.id}
-          media={selected}
-          className="size-full rounded-xl object-contain"
-        />
+        <Artwork nft={nft} className="size-full rounded-xl object-contain" />
         <Dialog
           onOpenChange={(open) => {
             if (!open) setZoomed(false)
@@ -103,15 +56,15 @@ function Gallery({ nft }: { nft: Nft }) {
               type="button"
               variant="secondary"
               size="icon"
-              aria-label={`Ampliar ${selected.kind === 'animation' ? 'animação' : 'imagem'} de ${nft.name}`}
-              className="absolute top-4 right-4 rounded-full"
+              aria-label={`Ampliar imagem de ${nft.name}`}
+              className="absolute top-2 right-2 rounded-full"
             >
               <ZoomIn aria-hidden="true" />
             </Button>
           </DialogTrigger>
           <DialogContent>
             <DialogTitle className="mb-3 max-w-[calc(100%-2rem)] truncate text-sm font-bold">
-              {nft.name} · {selected.kind === 'animation' ? 'Animação' : 'Imagem'}
+              {nft.name} · Imagem
             </DialogTitle>
             <Button
               type="button"
@@ -125,8 +78,7 @@ function Gallery({ nft }: { nft: Nft }) {
             </Button>
             <div className="max-h-[78vh] overflow-auto rounded-lg bg-card text-center">
               <Artwork
-                key={selected.id}
-                media={selected}
+                nft={nft}
                 className={`${zoomed ? 'mx-auto min-w-[150%] max-w-none' : 'mx-auto max-h-[72vh] max-w-full'} object-contain`}
               />
             </div>
@@ -199,28 +151,11 @@ function RelatedNfts({ id }: { id: string }) {
             <CarouselContent className="-ml-6">
               {query.data.map((nft) => (
                 <CarouselItem key={nft.id} className="basis-3/4 pl-6 md:basis-1/3 lg:basis-1/5">
-                  <Link
-                    to="/nfts/$nftId"
-                    params={{ nftId: nft.id }}
-                    className="group block focus-visible:outline-ring"
-                  >
-                    <div className="flex aspect-219/255 items-center rounded-lg bg-card p-2">
-                      <img
-                        src={nft.displayImageUrl}
-                        alt={nft.imageAlt}
-                        loading="lazy"
-                        draggable="false"
-                        className="size-full rounded-lg object-cover"
-                      />
-                    </div>
-                    <p className="mt-3 text-sm group-hover:text-accent">{nft.name}</p>
-                    <p className="mt-2 font-bold text-accent">{nft.priceEth} ETH</p>
-                  </Link>
+                  <NftCard nft={nft} />
                 </CarouselItem>
               ))}
             </CarouselContent>
             <div className="mt-7 flex items-center justify-center gap-5">
-              <CarouselPrevious />
               <div className="flex items-center gap-2" aria-label="Páginas do carrossel">
                 {Array.from({ length: snapCount }, (_, index) => (
                   <button
@@ -233,7 +168,6 @@ function RelatedNfts({ id }: { id: string }) {
                   />
                 ))}
               </div>
-              <CarouselNext />
             </div>
           </Carousel>
         ) : (
@@ -246,6 +180,8 @@ function RelatedNfts({ id }: { id: string }) {
 
 function NftReviews({ nft }: { nft: Nft }) {
   const query = useQuery(catalogQueries.reviews(nft.id))
+
+  console.log(query)
 
   if (query.isPending) {
     return (
@@ -295,7 +231,7 @@ function NftReviews({ nft }: { nft: Nft }) {
 
 function ReviewSummary({ count }: { count: number }) {
   return (
-    <span className="flex flex-wrap items-baseline gap-x-2 gap-y-1 text-sm font-normal text-foreground">
+    <span className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm font-normal text-foreground">
       <span aria-hidden="true" className="whitespace-nowrap tracking-wider text-xl text-accent">
         {count ? '★★★★☆' : '☆☆☆☆☆'}
       </span>

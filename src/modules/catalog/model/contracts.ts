@@ -25,14 +25,6 @@ export interface NftEdition {
   available: number
 }
 
-export interface NftMedia {
-  id: string
-  kind: 'image' | 'animation'
-  url: string
-  thumbnailUrl: string
-  alt: string
-}
-
 export interface NftDetails {
   network: string
   contract: string
@@ -46,8 +38,6 @@ export interface NftRecord {
   description: string
   contractAddress: string
   displayImageUrl: string
-  displayAnimationUrl: string | null
-  additionalImageUrls: string[]
   imageAlt: string
   collection: CollectionId
   network: Network
@@ -64,7 +54,6 @@ export interface NftRecord {
 
 export interface Nft extends NftRecord {
   details: NftDetails
-  media: NftMedia[]
 }
 
 export interface NftReview {
@@ -99,40 +88,18 @@ export const defaultCollectionDescriptions: Record<CollectionId, string> = {
 
 export const defaultNetworkDescriptions: Record<Network, string> = {
   ethereum: 'Cunhado na Ethereum com procedência imutável e metadados armazenados no IPFS.',
-  polygon: 'Este NFT está associado à rede Polygon. As operações nesta aplicação são simuladas.',
-  solana: 'Este NFT está associado à rede Solana. As operações nesta aplicação são simuladas.',
-  robinhood:
-    'Este NFT está associado à rede Robinhood. As operações nesta aplicação são simuladas.',
+  polygon: 'Cunhado na Polygon com procedência imutável e metadados armazenados no IPFS.',
+  solana: 'Cunhado na Solana com procedência imutável e metadados armazenados no IPFS.',
+  robinhood: 'Cunhado na Robinhood com procedência imutável e metadados armazenados no IPFS.',
 }
 
 export function normalizeNft(input: NftInput): Nft {
   const address = input.contractAddress
   const shortAddress =
     address.length > 10 ? `${address.slice(0, 6)}...${address.slice(-4)}` : address
-  const images = [...new Set([input.displayImageUrl, ...input.additionalImageUrls])]
   return {
     ...input,
     description: input.description?.trim() || defaultCollectionDescriptions[input.collection],
-    media: [
-      ...images.map((url, index): NftMedia => ({
-        id: `image-${index}`,
-        kind: 'image',
-        url,
-        thumbnailUrl: input.displayImageUrl,
-        alt: index === 0 ? input.imageAlt : `${input.name}, imagem ${index + 1}`,
-      })),
-      ...(input.displayAnimationUrl
-        ? [
-            {
-              id: 'animation',
-              kind: 'animation' as const,
-              url: input.displayAnimationUrl,
-              thumbnailUrl: input.displayImageUrl,
-              alt: `${input.name}, animação`,
-            },
-          ]
-        : []),
-    ],
     details: {
       network: input.details?.network?.trim() || defaultNetworkDescriptions[input.network],
       contract:
