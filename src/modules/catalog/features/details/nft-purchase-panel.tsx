@@ -3,6 +3,20 @@ import { Heart, Minus, Plus } from 'lucide-react'
 import { Button } from '#/shared/components/ui/button'
 import type { Nft, NftEdition } from '../../model/contracts'
 import { ReviewSummary } from '../../ui/review-summary'
+import { useState } from 'react'
+import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
+import { useNavigate } from '@tanstack/react-router'
+import { isAxiosError } from 'axios'
+import { sessionApi } from '#/modules/session/api'
+import { SessionPage } from '#/modules/session/page'
+import { cartApi } from '#/modules/cart/api'
+import { cartKey } from '#/modules/cart/model'
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogTitle,
+} from '#/shared/components/ui/dialog'
 
 interface Props {
   nft: Nft
@@ -21,6 +35,57 @@ export function PurchasePanel({
   setQuantity,
   selectEdition,
 }: Props) {
+  const queryClient = useQueryClient()
+  const navigate = useNavigate()
+  const session = useQuery({ queryKey: ['session'], queryFn: sessionApi.current, retry: false })
+  const [loginOpen, setLoginOpen] = useState(false)
+  const [notice, setNotice] = useState('')
+  const add = useMutation({
+    mutationFn: cartApi.add,
+    onSuccess: async () => {
+      const userId = queryClient.getQueryData<Awaited<ReturnType<typeof sessionApi.current>>>([
+        'session',
+      ])?.user.id
+      if (userId) await queryClient.invalidateQueries({ queryKey: cartKey(userId) })
+      await navigate({ to: '/cart' })
+    },
+    onError: (error) => {
+      if (isAxiosError(error) && error.response?.status === 401) {
+        queryClient.setQueryData(['session'], null)
+        setLoginOpen(true)
+      } else
+        setNotice(
+          isAxiosError(error)
+            ? (error.response?.data as { message?: string })?.message ||
+                'Não foi possível adicionar.'
+            : 'Não foi possível adicionar.',
+        )
+    },
+  })
+  const buy = () => {
+    if (!edition || quantity < 1) return
+    if (!session.data) {
+      setLoginOpen(true)
+      return
+    }
+    add.mutate({ nftId: nft.id, editionId: edition.id, quantity })
+  }
+  const authDialog = (
+    <Dialog open={loginOpen} onOpenChange={setLoginOpen}>
+      <DialogContent>
+        <DialogTitle className="sr-only">Acessar conta</DialogTitle>
+        <DialogDescription className="sr-only">
+          Entre para adicionar este NFT ao carrinho.
+        </DialogDescription>
+        <SessionPage
+          onSuccess={() => {
+            setLoginOpen(false)
+            if (edition) add.mutate({ nftId: nft.id, editionId: edition.id, quantity })
+          }}
+        />
+      </DialogContent>
+    </Dialog>
+  )
   return variant === 'desktop' ? (
     <>
       <fieldset className="mt-6">
@@ -76,11 +141,11 @@ export function PurchasePanel({
         <div className="flex gap-2">
           <Button
             type="button"
-            disabled
-            title="Compra disponível em uma próxima etapa"
+            disabled={!edition || add.isPending}
+            onClick={buy}
             className="h-10 w-32"
           >
-            COMPRAR
+            {add.isPending ? 'Adicionando…' : 'COMPRAR'}
           </Button>
           <Button
             type="button"
@@ -93,6 +158,8 @@ export function PurchasePanel({
           </Button>
         </div>
       </div>
+      <output className="mt-2 block text-sm text-destructive">{notice}</output>
+      {authDialog}
     </>
   ) : (
     <>
@@ -140,11 +207,11 @@ export function PurchasePanel({
         <div className="mx-auto mt-4 flex max-w-page gap-3">
           <Button
             type="button"
-            disabled
-            title="Compra disponível em uma próxima etapa"
+            disabled={!edition || add.isPending}
+            onClick={buy}
             className="h-12 flex-1 rounded-full"
           >
-            Comprar NFT
+            {add.isPending ? 'Adicionando…' : 'Comprar NFT'}
           </Button>
           <Button
             type="button"
@@ -157,6 +224,8 @@ export function PurchasePanel({
             <Heart aria-hidden="true" />
           </Button>
         </div>
+        <output className="mx-auto mt-2 block max-w-page text-sm text-destructive">{notice}</output>
+        {authDialog}
       </div>
     </>
   )

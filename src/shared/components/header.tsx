@@ -69,14 +69,15 @@ export function Header() {
           </Link>
         </Button>
         <Button
-          type="button"
+          asChild
           variant="icon"
           size="icon"
           className="size-5 rounded-none p-0"
-          aria-label="Carrinho indisponível nesta etapa"
-          disabled
+          aria-label="Carrinho de NFTs"
         >
-          <ShoppingCart className="size-5" aria-hidden="true" />
+          <Link to="/cart">
+            <ShoppingCart className="size-5" aria-hidden="true" />
+          </Link>
         </Button>
         {session.data ? (
           <Link

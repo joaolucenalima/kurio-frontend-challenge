@@ -69,6 +69,14 @@ function createSession(store: Store, user: Account) {
   return { token, expiresAt, user: { id: user.id, username: user.username, email: user.email } }
 }
 
+export function authenticatedUser(request: Request): SessionUser | null {
+  const store = read()
+  const token = request.headers.get('Authorization')?.replace(/^Bearer /, '') || ''
+  const session = store.sessions[token]
+  if (!session || session.expiresAt <= Date.now()) return null
+  return store.accounts.find((account) => account.id === session.userId) || null
+}
+
 export const sessionHandlers = [
   http.post('/api/accounts', async ({ request }) => {
     const parsed = signupSchema.safeParse(await request.json())

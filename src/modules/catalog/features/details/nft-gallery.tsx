@@ -73,8 +73,7 @@ export function Gallery({ nft }: { nft: Nft }) {
         </Button>
         {zoomed && position && (
           <div
-            role="img"
-            aria-label={`Detalhe ampliado de ${nft.name}`}
+            aria-hidden="true"
             className="pointer-events-none absolute top-0 left-full z-30 ml-4 aspect-square w-full max-w-111 overflow-hidden rounded-lg border border-primary bg-card shadow-xl max-lg:left-0 max-lg:top-full max-lg:ml-0 max-lg:mt-4"
             style={{
               backgroundImage: `url(${nft.displayImageUrl})`,
