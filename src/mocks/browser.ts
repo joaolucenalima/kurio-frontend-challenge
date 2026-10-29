@@ -2,8 +2,14 @@ import { setupWorker } from 'msw/browser'
 import { handlers, resetSimulation, selectScenario } from './handlers'
 import { sessionHandlers, resetAuth, seedAuth } from './session'
 import { cartHandlers, resetCarts } from './cart'
+import { favoriteHandlers, resetFavorites } from './favorites'
 
-export const worker = setupWorker(...handlers, ...sessionHandlers, ...cartHandlers)
+export const worker = setupWorker(
+  ...handlers,
+  ...sessionHandlers,
+  ...cartHandlers,
+  ...favoriteHandlers,
+)
 
 export async function startMocks() {
   await seedAuth()
@@ -17,6 +23,7 @@ export async function startMocks() {
       resetSimulation()
       resetAuth()
       resetCarts()
+      resetFavorites()
       void seedAuth()
     },
     scenario: selectScenario,

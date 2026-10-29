@@ -3,6 +3,7 @@ import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { Header } from '#/shared/components/header'
 import { Button } from '#/shared/components/ui/button'
 import { sessionApi } from '#/modules/session/api'
+import { FavoritesList } from '#/modules/favorites'
 import {
   AlertDialog,
   AlertDialogAction,
@@ -26,13 +27,48 @@ import {
 } from 'lucide-react'
 
 export const profileTabs = [
-  { id: 'profile', label: 'Dados do perfil' },
-  { id: 'wallets', label: 'Carteiras' },
-  { id: 'activity', label: 'Atividade' },
-  { id: 'watchlist', label: 'Lista de interesse' },
-  { id: 'offers', label: 'Ofertas' },
-  { id: 'downloads', label: 'Arquivos baixados' },
-  { id: 'support', label: 'Suporte' },
+  {
+    id: 'profile',
+    label: 'Dados do perfil',
+    title: 'Perfil do colecionador',
+    description: 'Gerencie as informações da sua conta de colecionador.',
+  },
+  {
+    id: 'wallets',
+    label: 'Carteiras',
+    title: 'Carteira principal',
+    description: 'Estas carteiras ficam disponíveis no pagamento e para receber NFTs comprados.',
+  },
+  {
+    id: 'activity',
+    label: 'Atividade',
+    title: 'Atividade',
+    description: 'Acompanhe as atividades da sua conta.',
+  },
+  {
+    id: 'watchlist',
+    label: 'Lista de interesse',
+    title: 'Lista de interesse',
+    description: 'Veja os NFTs que você salvou como favoritos.',
+  },
+  {
+    id: 'offers',
+    label: 'Ofertas',
+    title: 'Ofertas',
+    description: 'Consulte as ofertas relacionadas à sua conta.',
+  },
+  {
+    id: 'downloads',
+    label: 'Arquivos baixados',
+    title: 'Arquivos baixados',
+    description: 'Acesse os arquivos disponíveis para download.',
+  },
+  {
+    id: 'support',
+    label: 'Suporte',
+    title: 'Suporte',
+    description: 'Encontre ajuda para usar sua conta.',
+  },
 ] as const
 
 const tabIcons = [UserRound, MapPin, ShoppingBag, Heart, Activity, Download, TriangleAlert]
@@ -41,6 +77,7 @@ export type ProfileTab = (typeof profileTabs)[number]['id']
 
 export function ProfilePage({ tab }: { tab: ProfileTab }) {
   const queryClient = useQueryClient()
+  const activeTab = profileTabs.find((item) => item.id === tab) ?? profileTabs[0]
 
   const session = useQuery({ queryKey: ['session'], queryFn: sessionApi.current, retry: false })
 
@@ -115,11 +152,14 @@ export function ProfilePage({ tab }: { tab: ProfileTab }) {
                 </AlertDialog>
               </div>
             </nav>
-            <section
-              aria-label={profileTabs.find((item) => item.id === tab)?.label}
-              className="min-h-72 min-w-0 border border-border bg-card p-5 md:p-8"
-            >
-              <p className="text-sm text-muted-foreground">Olá, {session.data.user.username}.</p>
+            <section aria-labelledby="profile-section-title" className="min-h-72 min-w-0">
+              <div className="mb-8 space-y-2">
+                <h1 id="profile-section-title" className="text-[17px] leading-4 font-bold">
+                  {activeTab.title}
+                </h1>
+                <p className="text-sm leading-4 text-muted-foreground">{activeTab.description}</p>
+              </div>
+              {tab === 'watchlist' ? <FavoritesList userId={session.data.user.id} /> : null}
             </section>
           </div>
         ) : (

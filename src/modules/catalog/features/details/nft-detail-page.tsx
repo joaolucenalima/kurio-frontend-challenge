@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { Link } from '@tanstack/react-router'
 import { isAxiosError } from 'axios'
-import { ChevronLeft, Heart } from 'lucide-react'
+import { ChevronLeft } from 'lucide-react'
 import { Header } from '#/shared/components/header'
 import { Button } from '#/shared/components/ui/button'
 import { catalogQueries } from '../../api/queries'
@@ -57,16 +57,6 @@ function DetailContent({ nft }: { nft: Nft }) {
           <Link to="/" search={{ sort: 'featured', page: 1 }} hash="catalog">
             <ChevronLeft aria-hidden="true" />
           </Link>
-        </Button>
-        <Button
-          type="button"
-          variant="secondary"
-          size="icon"
-          className="rounded-full"
-          aria-label="Favoritar indisponível"
-          disabled
-        >
-          <Heart aria-hidden="true" />
         </Button>
       </div>
       <div className="grid min-w-0 gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">

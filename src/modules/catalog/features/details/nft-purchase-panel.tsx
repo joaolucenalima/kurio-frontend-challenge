@@ -1,5 +1,6 @@
 import type { Dispatch, SetStateAction } from 'react'
-import { Heart, Minus, Plus } from 'lucide-react'
+import { Minus, Plus } from 'lucide-react'
+import { FavoriteButton } from '#/modules/favorites'
 import { Button } from '#/shared/components/ui/button'
 import type { Nft, NftEdition } from '../../model/contracts'
 import { ReviewSummary } from '../../ui/review-summary'
@@ -37,9 +38,12 @@ export function PurchasePanel({
 }: Props) {
   const queryClient = useQueryClient()
   const navigate = useNavigate()
-  const session = useQuery({ queryKey: ['session'], queryFn: sessionApi.current, retry: false })
+
   const [loginOpen, setLoginOpen] = useState(false)
   const [notice, setNotice] = useState('')
+
+  const session = useQuery({ queryKey: ['session'], queryFn: sessionApi.current, retry: false })
+
   const add = useMutation({
     mutationFn: cartApi.add,
     onSuccess: async () => {
@@ -62,6 +66,7 @@ export function PurchasePanel({
         )
     },
   })
+
   const buy = () => {
     if (!edition || quantity < 1) return
     if (!session.data) {
@@ -70,6 +75,7 @@ export function PurchasePanel({
     }
     add.mutate({ nftId: nft.id, editionId: edition.id, quantity })
   }
+
   const authDialog = (
     <Dialog open={loginOpen} onOpenChange={setLoginOpen}>
       <DialogContent>
@@ -86,6 +92,7 @@ export function PurchasePanel({
       </DialogContent>
     </Dialog>
   )
+
   return variant === 'desktop' ? (
     <>
       <fieldset className="mt-6">
@@ -147,15 +154,7 @@ export function PurchasePanel({
           >
             {add.isPending ? 'Adicionando…' : 'COMPRAR'}
           </Button>
-          <Button
-            type="button"
-            variant="outline"
-            disabled
-            title="Favoritos disponíveis em uma próxima etapa"
-            className="h-10 w-32 border-primary text-accent"
-          >
-            <Heart aria-hidden="true" /> Favoritar
-          </Button>
+          <FavoriteButton nft={nft} showLabel className="h-10 w-36" />
         </div>
       </div>
       <output className="mt-2 block text-sm text-destructive">{notice}</output>
@@ -213,16 +212,7 @@ export function PurchasePanel({
           >
             {add.isPending ? 'Adicionando…' : 'Comprar NFT'}
           </Button>
-          <Button
-            type="button"
-            variant="outline"
-            size="icon-lg"
-            disabled
-            aria-label="Favoritar indisponível"
-            className="size-12 rounded-full"
-          >
-            <Heart aria-hidden="true" />
-          </Button>
+          <FavoriteButton nft={nft} className="size-12 rounded-full" />
         </div>
         <output className="mx-auto mt-2 block max-w-page text-sm text-destructive">{notice}</output>
         {authDialog}
