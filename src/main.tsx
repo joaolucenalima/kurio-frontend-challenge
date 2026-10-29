@@ -1,5 +1,4 @@
 import ReactDOM from 'react-dom/client'
-import { App } from './app/app'
 import './shared/styles/globals.css'
 
 const rootElement = document.getElementById('app')!
@@ -9,6 +8,7 @@ async function bootstrap() {
     const { startMocks } = await import('./mocks/browser')
     await startMocks()
   }
+  const { App } = await import('./app/app')
   if (rootElement.innerHTML) return
   const root = ReactDOM.createRoot(rootElement)
   root.render(<App />)

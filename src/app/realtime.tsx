@@ -41,32 +41,67 @@ export function Realtime() {
       versions.set(resource, version)
       return true
     }
+    let generation = 0
+    let retry: ReturnType<typeof setTimeout> | undefined
+    let authenticationTimeout: ReturnType<typeof setTimeout> | undefined
+    let authenticated = false
+    let failures = 0
     const status = (ready: boolean) => client.setQueryData(['realtime-ready'], ready)
-    const reconcile = async () => {
+    const stop = () => {
+      generation++
+      authenticated = false
+      clearTimeout(retry)
+      clearTimeout(authenticationTimeout)
       status(false)
-      await client.cancelQueries({
-        predicate: (q) =>
-          ['catalog', 'cart', 'cart-quote', 'order'].includes(String(q.queryKey[0])),
-      })
-      await client.invalidateQueries(
-        {
+    }
+    const reconcile = async () => {
+      const current = ++generation
+      clearTimeout(retry)
+      status(false)
+      try {
+        await client.cancelQueries({
           predicate: (q) =>
             ['catalog', 'cart', 'cart-quote', 'order'].includes(String(q.queryKey[0])),
-          refetchType: 'active',
-        },
-        { throwOnError: true },
-      )
-      if (active) status(true)
+        })
+        await client.invalidateQueries(
+          {
+            predicate: (q) =>
+              ['catalog', 'cart', 'cart-quote', 'order'].includes(String(q.queryKey[0])),
+            refetchType: 'active',
+          },
+          { throwOnError: true },
+        )
+        if (active && authenticated && socket.connected && current === generation) {
+          failures = 0
+          status(true)
+        }
+      } catch {
+        if (active && authenticated && socket.connected && current === generation) {
+          const delay = Math.min(1000 * 2 ** failures++, 5000)
+          retry = setTimeout(() => void reconcile(), delay)
+        }
+      }
     }
-    socket.on('connect', () => socket.emit('session.authenticate', { token: token || null }))
-    socket.on('session.ready', () => {
-      void reconcile().catch(() => status(false))
+    socket.on('connect', () => {
+      stop()
+      socket.emit('session.authenticate', { token: token || null })
+      authenticationTimeout = setTimeout(() => {
+        if (active && !authenticated) {
+          socket.disconnect()
+          socket.connect()
+        }
+      }, 10000)
     })
-    socket.on('disconnect', () => status(false))
-    socket.on('connect_error', () => status(false))
+    socket.on('session.ready', () => {
+      clearTimeout(authenticationTimeout)
+      authenticated = true
+      void reconcile()
+    })
+    socket.on('disconnect', stop)
+    socket.on('connect_error', stop)
     socket.on('session.invalid', () => {
       if (!active) return
-      status(false)
+      stop()
       socket.disconnect()
       void client.cancelQueries().then(() => {
         if (active) {
@@ -86,7 +121,7 @@ export function Realtime() {
         title: 'Preço ou disponibilidade atualizado. Revise sua compra.',
         variant: 'warning',
       })
-      void reconcile().catch(() => status(false))
+      void reconcile()
     })
     socket.on('order.updated', (input: unknown) => {
       const parsed = orderEvent.safeParse(input)
@@ -98,6 +133,7 @@ export function Realtime() {
     socket.connect()
     return () => {
       active = false
+      stop()
       socket.removeAllListeners()
       socket.disconnect()
       status(false)
