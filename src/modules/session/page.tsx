@@ -8,6 +8,7 @@ import { Button } from '#/shared/components/ui/button'
 import { Eye, EyeOff } from 'lucide-react'
 import { sessionApi } from './api'
 import { loginSchema, signupSchema, type LoginInput, type SignupInput } from './model'
+import { Input } from '#/shared/components/ui/input'
 
 function returnPath(value: string | undefined) {
   return value?.startsWith('/') && !value.startsWith('//') ? value : '/'
@@ -56,9 +57,6 @@ export function SessionPage({ redirect, onSuccess }: { redirect?: string; onSucc
   })
 
   const form = mode === 'login' ? login : signup
-  const fieldClass =
-    'h-10 w-full rounded-[5px] border border-border bg-transparent px-4 text-sm text-foreground placeholder:text-subtle focus:border-primary focus-visible:outline-ring'
-
   const field = (
     name: 'email' | 'password' | 'username' | 'confirmPassword',
     label: string,
@@ -79,7 +77,7 @@ export function SessionPage({ redirect, onSuccess }: { redirect?: string; onSucc
           {label}
         </label>
         <div className="relative">
-          <input
+          <Input
             id={name}
             type={isPassword ? (visible ? 'text' : 'password') : type}
             autoComplete={
@@ -104,7 +102,7 @@ export function SessionPage({ redirect, onSuccess }: { redirect?: string; onSucc
                     ? 'Confirmar senha'
                     : 'Senha'
             }
-            className={`${fieldClass} ${isPassword ? 'pr-12' : ''}`}
+            className={isPassword ? 'pr-12' : undefined}
             {...registration}
           />
           {isPassword && (

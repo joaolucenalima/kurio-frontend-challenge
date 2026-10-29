@@ -5,6 +5,7 @@ import { isAxiosError } from 'axios'
 import { ChevronLeft, Minus, Plus, Trash2 } from 'lucide-react'
 import { Header } from '#/shared/components/header'
 import { Button } from '#/shared/components/ui/button'
+import { Input } from '#/shared/components/ui/input'
 import {
   Table,
   TableHeader,
@@ -463,12 +464,12 @@ export function CartPage() {
                   <label className="sr-only" htmlFor="coupon">
                     Código promocional
                   </label>
-                  <input
+                  <Input
+                    variant="coupon"
                     id="coupon"
                     value={coupon}
                     onChange={(event) => setCoupon(event.target.value)}
                     placeholder="Digite o código promocional..."
-                    className="min-w-0 flex-1 rounded-full border border-input bg-transparent px-3 text-xs placeholder:text-subtle lg:h-10 lg:rounded-none lg:border-r-0 lg:px-2"
                   />
                   <Button
                     type="submit"
