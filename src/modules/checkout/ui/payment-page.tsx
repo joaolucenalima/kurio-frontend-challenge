@@ -12,7 +12,7 @@ import {
   type FormEvent,
   type ReactNode,
 } from 'react'
-import { Link } from '@tanstack/react-router'
+import { Link, useNavigate } from '@tanstack/react-router'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { isAxiosError } from 'axios'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -92,6 +92,7 @@ type OrderMutation = { userId: string; token: string; attempt: Attempt }
 
 export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean }) {
   const client = useQueryClient()
+  const navigate = useNavigate()
 
   const session = useQuery({ queryKey: ['session'], queryFn: sessionApi.current, retry: false })
 
@@ -279,18 +280,15 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
     if (!raw) return
     try {
       const saved = JSON.parse(raw) as { attempt: Attempt; order?: Order }
-      if (startCheckout && saved.order && saved.order.status !== 'pending') {
-        localStorage.removeItem(attemptStorageKey(userId))
-        setOrder(null)
-        setAttempt(null)
-        return
-      }
       setAttempt(saved.attempt)
       void checkoutApi
         .getByAttempt(saved.attempt.idempotencyKey)
-        .then((value) => {
+        .then(async (value) => {
           if (!active || identityRef.current !== identity) return
-          if (startCheckout && value.status !== 'pending') {
+          const currentCart =
+            startCheckout && value.status !== 'pending' ? await cartApi.get({}) : null
+          if (!active || identityRef.current !== identity) return
+          if (currentCart?.items.length) {
             localStorage.removeItem(attemptStorageKey(userId))
             setOrder(null)
             setAttempt(null)
@@ -318,6 +316,16 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
     }
   }, [userId, identity, startCheckout, client, setFeedback])
   useEffect(() => {
+    if (order && startCheckout) {
+      void navigate({
+        to: '/payment',
+        search: { intent: undefined },
+        replace: true,
+        resetScroll: false,
+      })
+    }
+  }, [order, startCheckout, navigate])
+  useEffect(() => {
     if (!order || !userId || order.status !== 'pending') return
     const token = localStorage.getItem(TOKEN_KEY)
     const activeIdentity = identity
@@ -334,6 +342,7 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
   }, [order, userId, identity])
   useEffect(() => {
     if (order?.status !== 'confirmed' || !userId) return
+    setCouponInput('')
     void client.invalidateQueries({ queryKey: cartKey(userId) })
     void client.invalidateQueries({ queryKey: quoteKey(userId) })
   }, [order?.status, userId, client])
@@ -357,7 +366,7 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
           ? 'Pedido confirmado com sucesso.'
           : created.status === 'declined'
             ? 'Pagamento recusado pela simulação.'
-            : 'Pedido pendente. Vamos atualizar o status automaticamente.',
+            : '',
       )
       localStorage.setItem(
         attemptStorageKey(context.userId),
@@ -1150,74 +1159,128 @@ function OrderResult({
   const confirmed = order.status === 'confirmed'
   const declined = order.status === 'declined'
 
-  if (confirmed) return <OrderConfirmation order={order} />
+  const [open, setOpen] = useState(true)
+  const terminal = confirmed || declined
+  const title = confirmed
+    ? 'Pedido confirmado'
+    : declined
+      ? 'Pagamento recusado'
+      : 'Pedido em processamento'
 
   return (
-    <section className="mx-auto max-w-3xl space-y-6 rounded bg-card p-5 sm:p-8">
-      <div className="flex items-start gap-3">
-        <span
-          className={`mt-1 rounded-full p-2 ${confirmed ? 'bg-accent/20 text-accent' : declined ? 'bg-destructive/15 text-destructive' : 'bg-secondary text-accent'}`}
-        >
-          {confirmed ? (
-            <Check />
-          ) : declined ? (
-            <AlertCircle />
-          ) : (
-            <LoaderCircle className="animate-spin" />
+    <>
+      <section className="mx-auto max-w-3xl space-y-4 rounded bg-card p-6">
+        <h1 className="text-xl font-bold">{title}</h1>
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <Button onClick={() => setOpen(true)}>Ver recibo do pedido</Button>
+          {terminal && (
+            <Button asChild variant="outline">
+              <Link
+                to="/"
+                search={{ ranking: 'all', sort: 'recently-listed', page: 1 }}
+                hash="catalog"
+              >
+                Voltar ao catálogo
+              </Link>
+            </Button>
           )}
-        </span>
-        <div>
-          <h1 className="font-mono text-xl font-bold">
-            {confirmed
-              ? 'Pedido confirmado'
-              : declined
-                ? 'Pagamento recusado'
-                : 'Pedido em processamento'}
-          </h1>
-          <p className="mt-2 text-sm text-muted-foreground">
-            {confirmed
-              ? 'Sua compra foi confirmada pela simulação.'
-              : declined
-                ? 'O pagamento foi recusado. Seus itens continuam no carrinho.'
-                : 'O estado será atualizado automaticamente e pode ser recuperado após recarregar.'}
-          </p>
         </div>
-      </div>
-      <dl className="space-y-3 border-y border-border py-4 text-sm">
-        <PriceRow label="Pedido" value={order.id} />
-        <PriceRow label="Estado" value={order.status} />
-        <PriceRow label="Colecionador" value={order.snapshot.collector.displayName} />
-        <PriceRow label="E-mail" value={order.snapshot.collector.email} />
-        {order.snapshot.wallets.map((wallet) => (
-          <PriceRow key={wallet.id} label={`Carteira ${wallet.network}`} value={wallet.address} />
-        ))}
-        {order.transactionReference && (
-          <PriceRow label="Referência simulada" value={order.transactionReference} />
-        )}
-        {order.snapshot.items.map((item) => (
-          <PriceRow
-            key={`${item.nftId}:${item.editionId}`}
-            label={`${item.name} · ${item.editionName} × ${item.quantity}`}
-            value={`${item.lineTotalEth} ETH`}
-          />
-        ))}
-        <PriceRow label="Taxa de rede" value={eth(order.snapshot.quote.networkFeeEth)} />
-        <PriceRow label="Total do pedido" value={eth(order.snapshot.quote.totalEth)} />
-      </dl>
-      {order.status === 'pending' && (
-        <p className="text-sm text-muted-foreground">Tentativa {order.idempotencyKey}</p>
-      )}
-      {declined && (
-        <Button variant="outline" onClick={onRecover} disabled={busy}>
-          {busy ? 'Preparando…' : 'Fazer uma nova tentativa'}
-        </Button>
-      )}
-      {confirmed && (
-        <Button asChild>
-          <Link to="/cart">Continuar</Link>
-        </Button>
-      )}
-    </section>
+      </section>
+      <Dialog
+        open={open}
+        onOpenChange={(next) => {
+          if (terminal) setOpen(next)
+        }}
+      >
+        <DialogContent
+          showCloseButton={terminal}
+          onInteractOutside={(event) => event.preventDefault()}
+          onEscapeKeyDown={(event) => {
+            if (!terminal) event.preventDefault()
+          }}
+          className="w-[min(95vw,578px)] p-0 pb-0"
+        >
+          <DialogTitle className="sr-only">{title}</DialogTitle>
+          <DialogDescription className="sr-only">
+            Acompanhamento e recibo do pedido {order.id}
+          </DialogDescription>
+          <output className="sr-only">{title}</output>
+          {confirmed ? (
+            <OrderConfirmation order={order} />
+          ) : (
+            <section className="mx-auto max-w-3xl space-y-6 rounded bg-card p-5 pt-10 sm:p-8">
+              <div className="flex items-start gap-3">
+                <span
+                  className={`mt-1 rounded-full p-2 ${confirmed ? 'bg-accent/20 text-accent' : declined ? 'bg-destructive/15 text-destructive' : 'bg-secondary text-accent'}`}
+                >
+                  {confirmed ? (
+                    <Check />
+                  ) : declined ? (
+                    <AlertCircle />
+                  ) : (
+                    <LoaderCircle className="animate-spin" />
+                  )}
+                </span>
+                <div>
+                  <h1 className="font-mono text-xl font-bold">
+                    {confirmed
+                      ? 'Pedido confirmado'
+                      : declined
+                        ? 'Pagamento recusado'
+                        : 'Pedido em processamento'}
+                  </h1>
+                  <p className="mt-2 text-sm text-muted-foreground">
+                    {confirmed
+                      ? 'Sua compra foi confirmada pela simulação.'
+                      : declined
+                        ? 'O pagamento foi recusado. Seus itens continuam no carrinho.'
+                        : 'O estado será atualizado automaticamente e pode ser recuperado após recarregar.'}
+                  </p>
+                </div>
+              </div>
+              <dl className="space-y-3 border-y border-border py-4 text-sm">
+                <PriceRow label="Pedido" value={order.id} />
+                <PriceRow label="Estado" value={order.status} />
+                <PriceRow label="Colecionador" value={order.snapshot.collector.displayName} />
+                <PriceRow label="E-mail" value={order.snapshot.collector.email} />
+                {order.snapshot.wallets.map((wallet) => (
+                  <PriceRow
+                    key={wallet.id}
+                    label={`Carteira ${wallet.network}`}
+                    value={wallet.address}
+                  />
+                ))}
+                {order.transactionReference && (
+                  <PriceRow label="Referência simulada" value={order.transactionReference} />
+                )}
+                {order.snapshot.items.map((item) => (
+                  <PriceRow
+                    key={`${item.nftId}:${item.editionId}`}
+                    label={`${item.name} · ${item.editionName} × ${item.quantity}`}
+                    value={`${item.lineTotalEth} ETH`}
+                  />
+                ))}
+                <PriceRow label="Taxa de rede" value={eth(order.snapshot.quote.networkFeeEth)} />
+                <PriceRow label="Total do pedido" value={eth(order.snapshot.quote.totalEth)} />
+              </dl>
+              {order.status === 'pending' && (
+                <p className="text-sm text-muted-foreground">Tentativa {order.idempotencyKey}</p>
+              )}
+              {declined && (
+                <Button variant="outline" onClick={onRecover} disabled={busy}>
+                  {busy ? 'Preparando…' : 'Fazer uma nova tentativa'}
+                </Button>
+              )}
+              {confirmed && (
+                <Button asChild>
+                  <Link to="/cart">Continuar</Link>
+                </Button>
+              )}
+            </section>
+          )}
+        </DialogContent>
+      </Dialog>
+    </>
   )
 }
 

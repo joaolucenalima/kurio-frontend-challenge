@@ -10,5 +10,5 @@ export const Route = createFileRoute('/payment')({
 
 function PaymentRoute() {
   const { intent } = Route.useSearch()
-  return <PaymentPage key={intent || 'resume'} startCheckout={intent === 'checkout'} />
+  return <PaymentPage startCheckout={intent === 'checkout'} />
 }

@@ -1,3 +1,4 @@
+import { couponProblem } from './coupon'
 import { http, HttpResponse } from 'msw'
 import { ethToWei } from '#/modules/catalog'
 import type { Cart, CartInput, Quote } from '#/modules/cart/model'
@@ -94,23 +95,29 @@ export function consumeCartLines(
     return line.quantity > bought ? [{ ...line, quantity: line.quantity - bought }] : []
   })
   const store = read()
-  store[userId] = { ...current, items }
+  store[userId] = { ...current, items, coupon: null }
   save(store)
 }
 export function mockQuoteForUser(userId: string) {
   const cart = output(userId)
   const scenario = currentScenario()
   const valid =
-    cart.items.every((line) => line.quantity <= line.available) && scenario !== 'stock-conflict'
+    cart.items.every((line) => line.quantity <= line.available) &&
+    scenario !== 'stock-conflict' &&
+    !couponProblem(userId, cart.coupon)
   const subtotal = cart.items.reduce(
     (sum, line) => sum + ethToWei(line.nft.priceEth) * BigInt(line.quantity),
     0n,
   )
-  const discount = cart.coupon === 'KURIO10' ? subtotal / 10n : 0n
+  const discount =
+    cart.coupon === 'KURIO10' && !couponProblem(userId, cart.coupon) ? subtotal / 10n : 0n
   const fee = cart.items.length ? ethToWei('0.016') : 0n
   const changed = scenario === 'price-changed'
   const payableSubtotal = subtotal
-  const payableDiscount = cart.coupon === 'KURIO10' ? payableSubtotal / 10n : discount
+  const payableDiscount =
+    cart.coupon === 'KURIO10' && !couponProblem(userId, cart.coupon)
+      ? payableSubtotal / 10n
+      : discount
   const fingerprint =
     cart.items
       .map((line) => `${line.nftId}:${line.editionId}:${line.quantity}`)
@@ -193,6 +200,8 @@ export const cartHandlers = [
     const normalized = code?.trim().toUpperCase() || null
     if (normalized === 'EXPIRED') return fail('Cupom expirado', 422)
     if (normalized && normalized !== 'KURIO10') return fail('Cupom inválido', 422)
+    const problem = couponProblem(id, normalized)
+    if (problem) return fail(problem, 409)
     return update(id, { ...state(id), coupon: normalized })
   }),
 

@@ -1,3 +1,4 @@
+import { couponProblem } from './coupon'
 import { http, HttpResponse } from 'msw'
 import { ethToWei } from '#/modules/catalog'
 import type { Order } from '#/modules/checkout/model'
@@ -165,6 +166,8 @@ export const checkoutHandlers = [
     if (currentScenario() === 'payment-error')
       return fail('Pagamento indisponível. Tente novamente.', 503)
     const cart = mockCartForUser(user.id)
+    const problem = couponProblem(user.id, cart.coupon)
+    if (problem) return fail(problem, 409)
     const quote = mockQuoteForUser(user.id)
     if (!cart.items.length) return fail('Seu carrinho está vazio', 409)
     if (input.quoteId !== quote.id || Date.now() > quote.expiresAt || !quote.valid)

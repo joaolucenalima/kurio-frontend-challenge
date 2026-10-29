@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import { Link } from '@tanstack/react-router'
-import { X } from 'lucide-react'
 import { Button } from '#/shared/components/ui/button'
 import {
   Dialog,
@@ -48,15 +46,8 @@ export function OrderConfirmation({ order }: { order: Order }) {
   return (
     <section
       aria-label="Confirmação de pedido"
-      className="relative mx-auto my-4 w-full max-w-[578px] border-b-10 border-primary bg-card font-mono"
+      className="relative mx-auto w-full max-w-[578px] border-b-10 border-primary bg-card font-mono"
     >
-      <Link
-        to="/cart"
-        aria-label="Fechar confirmação e voltar ao carrinho"
-        className="absolute top-2 right-2 flex size-8 items-center justify-center text-primary hover:text-accent"
-      >
-        <X className="size-4" />
-      </Link>
       <header className="flex min-h-39 flex-col items-center justify-center gap-4 px-5 py-8 md:px-8">
         <img src="/images/checkout/NgoEU.png" alt="" className="size-20" />
         <h1 className="text-center text-lg leading-[26px] font-bold text-foreground">
