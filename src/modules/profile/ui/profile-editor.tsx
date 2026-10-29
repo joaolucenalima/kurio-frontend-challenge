@@ -26,7 +26,7 @@ function Skeleton() {
   return (
     <div aria-label="Carregando dados do perfil" className="space-y-8" aria-busy="true">
       <div className="grid grid-cols-1 gap-x-7 gap-y-6 md:grid-cols-2">
-        {Array.from({ length: 5 }, (_, index) => (
+        {Array.from({ length: 4 }, (_, index) => (
           <div key={index} className="space-y-2">
             <div className="h-4 w-32 animate-[shimmer_1.6s_linear_infinite] bg-size-[200%_100%] bg-linear-to-r from-card via-border to-card motion-reduce:animate-none" />
             <div className="h-10 w-full animate-[shimmer_1.6s_linear_infinite] bg-size-[200%_100%] bg-linear-to-r from-card via-border to-card motion-reduce:animate-none" />
@@ -84,7 +84,7 @@ export function ProfileEditor({ userId }: { userId: string }) {
 
   const profileForm = useForm<ProfileInput>({
     resolver: zodResolver(profileSchema),
-    defaultValues: { displayName: '', username: '', email: '', ensName: '', walletAlias: '' },
+    defaultValues: { displayName: '', username: '', email: '', ensName: '' },
   })
 
   useEffect(() => {
@@ -211,18 +211,6 @@ export function ProfileEditor({ userId }: { userId: string }) {
                 .eth
               </span>
             </div>
-          </Field>
-          <Field
-            id="walletAlias"
-            label="Apelido da carteira"
-            error={profileError.walletAlias?.message}
-          >
-            <Input
-              id="walletAlias"
-              aria-invalid={!!profileError.walletAlias}
-              aria-describedby={profileError.walletAlias ? 'walletAlias-error' : undefined}
-              {...profileForm.register('walletAlias')}
-            />
           </Field>
         </div>
         <div className="flex flex-col items-end gap-3">

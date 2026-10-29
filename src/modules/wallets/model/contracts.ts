@@ -8,7 +8,6 @@ const solanaAddress = /^[1-9A-HJ-NP-Za-km-z]{32,44}$/
 
 export const walletSchema = z
   .object({
-    displayName: z.string().trim().min(2, 'Informe o nome de exibição').max(60),
     alias: z.string().trim().min(2, 'Informe o apelido da carteira').max(40),
     network: z.enum(walletNetworks, { error: 'Selecione uma rede' }),
     address: z.string().trim(),

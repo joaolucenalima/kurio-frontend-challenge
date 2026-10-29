@@ -1,5 +1,10 @@
 import { http, HttpResponse } from 'msw'
-import { walletSchema, type Wallet, type WalletInput } from '#/modules/wallets/model'
+import {
+  walletConflicts,
+  walletSchema,
+  type Wallet,
+  type WalletInput,
+} from '#/modules/wallets/model'
 import { authenticatedUser } from './session'
 
 const STORE_KEY = 'kurio.mock.wallets.v1'
@@ -32,7 +37,6 @@ function ensureUserWallets(user: { id: string; username: string }) {
     : '0x2222222222222222222222222222222222222222'
   const main: StoredWallet = {
     id: crypto.randomUUID(),
-    displayName: user.username,
     alias: 'Carteira principal',
     network: 'ethereum',
     address,
@@ -102,6 +106,8 @@ export const walletHandlers = [
       return HttpResponse.json({ message: parsed.error.issues[0]?.message }, { status: 400 })
     const store = ensureUserWallets(user)
     const input = parsed.data
+    const duplicates = walletConflicts(input, store.wallets[user.id] || [])
+    if (duplicates.length) return conflict(duplicates[0]!.message)
     if (input.isPrimary && (store.wallets[user.id] || []).some((item) => item.isPrimary))
       return conflict(
         input.isPrimary ? 'Já existe uma carteira principal' : 'Já existe uma carteira secundária',
@@ -130,12 +136,17 @@ export const walletHandlers = [
     if (index < 0) return HttpResponse.json({ message: 'Carteira não encontrada' }, { status: 404 })
     const current = wallets[index]!
     const next = parsed.data
+    const duplicates = walletConflicts(
+      next,
+      wallets.filter((wallet) => wallet.id !== current.id),
+    )
+    if (duplicates.length) return conflict(duplicates[0]!.message)
     const associated = nftCount(store, user.id, current.network, current.address)
     if (associated > 0 && (next.network !== current.network || next.address !== current.address))
       return conflict(
         `Esta carteira está associada a ${associated} NFT${associated === 1 ? '' : 's'} e não pode trocar de rede ou endereço.`,
       )
-    if (wallets.some((item, other) => other !== index && item.isPrimary === next.isPrimary))
+    if (next.isPrimary && wallets.some((item, other) => other !== index && item.isPrimary))
       return conflict(
         next.isPrimary ? 'Já existe uma carteira principal' : 'Já existe uma carteira secundária',
       )

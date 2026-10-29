@@ -5,7 +5,7 @@ import { Button } from '#/shared/components/ui/button'
 import { sessionApi } from '#/modules/session/api'
 import { FavoritesList } from '#/modules/favorites'
 import { ProfileEditor } from './ui/profile-editor'
-import { WalletsSection } from '#/modules/wallets/ui/wallets-section'
+import { WalletsSection } from '#/modules/wallets'
 import {
   AlertDialog,
   AlertDialogAction,

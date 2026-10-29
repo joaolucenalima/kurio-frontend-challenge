@@ -16,7 +16,6 @@ export const profileSchema = z.object({
     .regex(/^[a-z0-9-]*$/, 'Use letras minúsculas, números e hífen')
     .optional()
     .or(z.literal('')),
-  walletAlias: z.string().trim().min(2, 'Informe o apelido da carteira').max(40),
 })
 
 export const passwordChangeSchema = z
