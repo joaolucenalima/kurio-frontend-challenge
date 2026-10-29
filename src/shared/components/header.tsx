@@ -11,11 +11,20 @@ import {
   DialogTitle,
 } from '#/shared/components/ui/dialog'
 import { SessionPage } from '#/modules/session/page'
+import { cartApi } from '#/modules/cart/api'
+import { cartKey } from '#/modules/cart/model'
 
 export function Header() {
   const [loginOpen, setLoginOpen] = useState(false)
 
   const session = useQuery({ queryKey: ['session'], queryFn: sessionApi.current, retry: false })
+  const userId = session.data?.user.id
+  const cart = useQuery({
+    queryKey: cartKey(userId ?? ''),
+    queryFn: ({ signal }) => cartApi.get({ signal }),
+    enabled: !!userId,
+  })
+  const cartQuantity = cart.data?.items.reduce((total, item) => total + item.quantity, 0) ?? 0
 
   return (
     <header className="flex flex-wrap items-start justify-between gap-y-4">
@@ -68,15 +77,17 @@ export function Header() {
             <Search className="size-5" aria-hidden="true" />
           </Link>
         </Button>
-        <Button
-          asChild
-          variant="icon"
-          size="icon"
-          className="size-5 rounded-none p-0"
-          aria-label="Carrinho de NFTs"
-        >
-          <Link to="/cart">
+        <Button asChild variant="icon" size="icon" className="relative size-5 rounded-none p-0">
+          <Link to="/cart" aria-label={`Carrinho de NFTs, ${cartQuantity} itens`}>
             <ShoppingCart className="size-5" aria-hidden="true" />
+            {cartQuantity > 0 && (
+              <span
+                aria-hidden="true"
+                className="absolute -right-2 -top-2 flex min-h-4 min-w-4 items-center justify-center rounded-full bg-primary px-0.5 font-mono text-[10px] leading-none font-bold text-primary-foreground"
+              >
+                {cartQuantity}
+              </span>
+            )}
           </Link>
         </Button>
         {session.data ? (

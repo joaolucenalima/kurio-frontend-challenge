@@ -478,14 +478,6 @@ export function CartPage() {
                     Aplicar
                   </Button>
                 </form>
-                {cart.data?.coupon && (
-                  <button
-                    className="mt-2 text-xs text-accent underline"
-                    onClick={() => applyCoupon.mutate(null)}
-                  >
-                    Remover cupom {cart.data.coupon}
-                  </button>
-                )}
                 {quote.isPending ? (
                   <div className={`${shimmer} mt-5 h-32`} aria-label="Calculando resumo" />
                 ) : quote.isError ? (
@@ -502,10 +494,28 @@ export function CartPage() {
                         <dt>Subtotal</dt>
                         <dd>{quote.data.subtotalEth} ETH</dd>
                       </div>
-                      <div className="flex justify-between text-[15px] font-normal">
-                        <dt>Desconto do lançamento</dt>
-                        <dd>(-) {quote.data.discountEth} ETH</dd>
-                      </div>
+                      {cart.data?.coupon && (
+                        <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[15px] font-normal">
+                          <dt className="min-w-0 flex-1">
+                            Cupom{' '}
+                            <span className="font-semibold text-accent">{cart.data.coupon}</span>
+                          </dt>
+                          <dd>(-) {quote.data.discountEth} ETH</dd>
+                          <dd>
+                            <Button
+                              type="button"
+                              variant="icon"
+                              size="icon"
+                              disabled={applyCoupon.isPending}
+                              className="size-6 text-destructive hover:text-destructive/80 focus-visible:text-destructive"
+                              onClick={() => applyCoupon.mutate(null)}
+                              aria-label={`Remover cupom ${cart.data.coupon}`}
+                            >
+                              <Trash2 className="size-4" aria-hidden="true" />
+                            </Button>
+                          </dd>
+                        </div>
+                      )}
                       <div>
                         <div className="flex justify-between">
                           <dt>Taxa de rede</dt>
