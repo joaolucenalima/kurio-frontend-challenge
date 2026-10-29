@@ -1,6 +1,6 @@
 import { useAuthEntry } from '#/modules/session/use-auth-entry'
 import { LogIn, Search, ShoppingCart, User } from 'lucide-react'
-import { Link } from '@tanstack/react-router'
+import { Link, useNavigate } from '@tanstack/react-router'
 import { Button } from '#/shared/components/ui/button'
 import { useQuery } from '@tanstack/react-query'
 import { sessionApi } from '#/modules/session/api'
@@ -17,7 +17,16 @@ import { cartKey } from '#/modules/cart/model'
 
 export function Header() {
   const [loginOpen, setLoginOpen] = useState(false)
-  const openAuth = useAuthEntry(() => setLoginOpen(true))
+  const [loginRedirect, setLoginRedirect] = useState<'/cart'>()
+  const navigate = useNavigate()
+  const openAuth = useAuthEntry(() => {
+    setLoginRedirect(undefined)
+    setLoginOpen(true)
+  })
+  const openCartAuth = useAuthEntry(() => {
+    setLoginRedirect('/cart')
+    setLoginOpen(true)
+  }, '/cart')
 
   const session = useQuery({ queryKey: ['session'], queryFn: sessionApi.current, retry: false })
   const userId = session.data?.user.id
@@ -82,7 +91,23 @@ export function Header() {
           </Link>
         </Button>
         <Button asChild variant="icon" size="icon" className="relative size-5 rounded-none p-0">
-          <Link to="/cart" aria-label={`Carrinho de NFTs, ${cartQuantity} itens`}>
+          <Link
+            to="/cart"
+            aria-label={`Carrinho de NFTs, ${cartQuantity} itens`}
+            onClick={(event) => {
+              if (
+                session.data ||
+                event.button !== 0 ||
+                event.metaKey ||
+                event.ctrlKey ||
+                event.shiftKey ||
+                event.altKey
+              )
+                return
+              event.preventDefault()
+              openCartAuth()
+            }}
+          >
             <ShoppingCart className="size-5" aria-hidden="true" />
             {cartQuantity > 0 && (
               <span
@@ -119,7 +144,13 @@ export function Header() {
         <DialogContent className="w-[min(95vw,500px)] max-w-125 rounded-t-lg p-0 pb-0">
           <DialogTitle className="sr-only">Acessar conta</DialogTitle>
           <DialogDescription className="sr-only">Entre ou crie uma conta Kurio.</DialogDescription>
-          <SessionPage onSuccess={() => setLoginOpen(false)} />
+          <SessionPage
+            redirect={loginRedirect}
+            onSuccess={() => {
+              setLoginOpen(false)
+              if (loginRedirect) void navigate({ to: loginRedirect })
+            }}
+          />
         </DialogContent>
       </Dialog>
     </header>
