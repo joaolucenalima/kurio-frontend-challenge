@@ -73,7 +73,7 @@ export function FavoriteButton({
         disabled={mutation.isPending || (!!userId && favorites.isPending)}
         onClick={() => (userId ? mutation.mutate(selected) : openAuth())}
       >
-        <Heart className={selected ? 'fill-accent' : ''} aria-hidden="true" />
+        <Heart className={selected ? 'fill-destructive text-destructive' : ''} aria-hidden="true" />
         {showLabel && (selected ? 'Favoritado' : 'Favoritar')}
       </Button>
 

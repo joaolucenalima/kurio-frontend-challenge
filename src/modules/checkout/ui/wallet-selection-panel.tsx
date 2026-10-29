@@ -45,7 +45,7 @@ export function WalletSelectionPanel({
         </Button>
       </div>
       {networks.map((network) => {
-        const options = wallets.filter((wallet) => wallet.network === network)
+        const options = wallets
         return (
           <div key={network} className="border-t border-border pt-5">
             <fieldset aria-label={labels[network]} className="min-w-0 space-y-4">
@@ -58,11 +58,18 @@ export function WalletSelectionPanel({
                   {options.map((wallet) => (
                     <label
                       key={wallet.id}
-                      htmlFor={'payment-wallet-' + wallet.id}
-                      className="flex cursor-pointer items-center gap-2 border border-border p-3 text-sm has-data-[state=checked]:border-primary"
+                      htmlFor={'payment-wallet-' + network + '-' + wallet.id}
+                      className="flex cursor-pointer items-center gap-2 border border-border p-3 text-sm has-data-[state=checked]:border-primary has-[:disabled]:cursor-not-allowed"
                     >
-                      <RadioGroupItem id={'payment-wallet-' + wallet.id} value={wallet.id} />
-                      <span className="min-w-0">
+                      <RadioGroupItem
+                        id={'payment-wallet-' + network + '-' + wallet.id}
+                        value={wallet.id}
+                        disabled={wallet.network !== network}
+                        className={wallet.network !== network ? 'opacity-60' : undefined}
+                      />
+                      <span
+                        className={wallet.network !== network ? 'min-w-0 opacity-60' : 'min-w-0'}
+                      >
                         <span className="block font-semibold">
                           {wallet.alias}
                           {wallet.isPrimary ? ' · principal' : ''}
@@ -81,6 +88,11 @@ export function WalletSelectionPanel({
                           {wallet.address}
                         </span>
                       </span>
+                      {wallet.network !== network && (
+                        <span className="ml-auto shrink-0 text-right text-xs text-destructive">
+                          Incompatível com a rede {labels[network]}
+                        </span>
+                      )}
                     </label>
                   ))}
                 </RadioGroup>
@@ -97,8 +109,18 @@ export function WalletSelectionPanel({
                   <RadioGroupItem id={'use-other-wallet-' + network} value="other" />
                   Usar outra carteira?
                 </label>
+                <p className="text-xs text-muted-foreground">
+                  Informe uma carteira para esta compra. Ela não será salva no seu perfil.
+                </p>
               </RadioGroup>
-              <h3 className="text-sm font-semibold">{labels[network]}</h3>
+              <div className="space-y-1">
+                <h3 className="text-sm font-semibold text-accent">{labels[network]}</h3>
+                {!wallets.some((wallet) => wallet.network === network) && (
+                  <p className="text-xs text-muted-foreground">
+                    Uma carteira da rede {labels[network]} é necessária para esta compra.
+                  </p>
+                )}
+              </div>
               {choices[network]?.kind === 'temporary' && (
                 <TemporaryWalletForm
                   network={network as WalletNetwork}
@@ -141,9 +163,6 @@ function TemporaryWalletForm({
       : undefined
   return (
     <div className="grid gap-5 pt-2 md:grid-cols-2">
-      <p className="text-xs text-muted-foreground md:col-span-2">
-        Informe uma carteira para esta compra. Ela não será salva no seu perfil.
-      </p>
       <Field label={'Rede · ' + labels[network]}>
         <Input value={labels[network]} readOnly />
       </Field>
