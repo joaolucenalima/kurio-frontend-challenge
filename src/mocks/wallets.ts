@@ -102,14 +102,20 @@ export const walletHandlers = [
       return HttpResponse.json({ message: parsed.error.issues[0]?.message }, { status: 400 })
     const store = ensureUserWallets(user)
     const input = parsed.data
-    if ((store.wallets[user.id] || []).some((item) => item.isPrimary === input.isPrimary))
+    if (input.isPrimary && (store.wallets[user.id] || []).some((item) => item.isPrimary))
       return conflict(
         input.isPrimary ? 'Já existe uma carteira principal' : 'Já existe uma carteira secundária',
       )
     const wallet: StoredWallet = { ...input, id: crypto.randomUUID(), version: 1 }
     store.wallets[user.id] = [...(store.wallets[user.id] || []), wallet]
     write(store)
-    return HttpResponse.json({ ...wallet, nftCount: 0 } satisfies Wallet, { status: 201 })
+    return HttpResponse.json(
+      {
+        ...wallet,
+        nftCount: nftCount(store, user.id, wallet.network, wallet.address),
+      } satisfies Wallet,
+      { status: 201 },
+    )
   }),
 
   http.patch('/api/wallets/:id', async ({ request, params }) => {

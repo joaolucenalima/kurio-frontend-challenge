@@ -5,6 +5,7 @@ import { Button } from '#/shared/components/ui/button'
 import { sessionApi } from '#/modules/session/api'
 import { FavoritesList } from '#/modules/favorites'
 import { ProfileEditor } from './ui/profile-editor'
+import { WalletsSection } from '#/modules/wallets/ui/wallets-section'
 import {
   AlertDialog,
   AlertDialogAction,
@@ -153,6 +154,7 @@ export function ProfilePage({ tab }: { tab: ProfileTab }) {
                 </AlertDialog>
               </div>
             </nav>
+
             <section aria-labelledby="profile-section-title" className="min-h-72 min-w-0">
               <div className="mb-8 space-y-2">
                 <h1 id="profile-section-title" className="text-[17px] leading-4 font-bold">
@@ -161,6 +163,7 @@ export function ProfilePage({ tab }: { tab: ProfileTab }) {
                 <p className="text-sm leading-4 text-muted-foreground">{activeTab.description}</p>
               </div>
               {tab === 'profile' ? <ProfileEditor userId={session.data.user.id} /> : null}
+              {tab === 'wallets' ? <WalletsSection userId={session.data.user.id} /> : null}
               {tab === 'watchlist' ? <FavoritesList userId={session.data.user.id} /> : null}
             </section>
           </div>
