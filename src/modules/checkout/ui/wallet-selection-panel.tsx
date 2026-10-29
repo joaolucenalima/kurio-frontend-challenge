@@ -44,84 +44,94 @@ export function WalletSelectionPanel({
           Adicionar carteira
         </Button>
       </div>
-      {networks.map((network) => {
-        const options = wallets
+      {(() => {
+        const network = networks.length === 1 ? networks[0] : ''
         return (
-          <div key={network} className="border-t border-border pt-5">
-            <fieldset aria-label={labels[network]} className="min-w-0 space-y-4">
-              {options.length > 0 && (
-                <RadioGroup
-                  aria-label={'Carteiras de ' + labels[network]}
-                  value={choices[network]?.kind === 'saved' ? choices[network].walletId : ''}
-                  onValueChange={(value) => onChooseSaved(network, value)}
-                >
-                  {options.map((wallet) => (
-                    <label
-                      key={wallet.id}
-                      htmlFor={'payment-wallet-' + network + '-' + wallet.id}
-                      className="flex cursor-pointer items-center gap-2 border border-border p-3 text-sm has-data-[state=checked]:border-primary has-[:disabled]:cursor-not-allowed"
-                    >
-                      <RadioGroupItem
-                        id={'payment-wallet-' + network + '-' + wallet.id}
-                        value={wallet.id}
-                        disabled={wallet.network !== network}
-                        className={wallet.network !== network ? 'opacity-60' : undefined}
-                      />
-                      <span
-                        className={wallet.network !== network ? 'min-w-0 opacity-60' : 'min-w-0'}
-                      >
-                        <span className="block font-semibold">
-                          {wallet.alias}
-                          {wallet.isPrimary ? ' · principal' : ''}
-                        </span>
-                        <span className="block text-xs text-muted-foreground">
-                          {labels[wallet.network]} ·{' '}
-                          {
-                            {
-                              extension: 'Extensão',
-                              hardware: 'Hardware',
-                              custodial: 'Custodial',
-                            }[wallet.kind]
-                          }
-                        </span>
-                        <span className="block break-all text-xs text-muted-foreground">
-                          {wallet.address}
-                        </span>
-                      </span>
-                      {wallet.network !== network && (
-                        <span className="ml-auto shrink-0 text-right text-xs text-destructive">
-                          Incompatível com a rede {labels[network]}
-                        </span>
-                      )}
-                    </label>
-                  ))}
-                </RadioGroup>
-              )}
+          <div className="border-t border-border pt-5">
+            <fieldset aria-label="Seleção de carteira" className="min-w-0 space-y-4">
               <RadioGroup
-                aria-label={'Usar outra carteira de ' + labels[network] + '?'}
-                value={choices[network]?.kind === 'temporary' ? 'other' : ''}
-                onValueChange={() => onChooseTemporary(network)}
+                aria-label="Carteira para a compra"
+                value={
+                  choices[network]?.kind === 'saved'
+                    ? choices[network].walletId
+                    : choices[network]?.kind === 'temporary'
+                      ? 'temporary-wallet'
+                      : ''
+                }
+                onValueChange={(value) =>
+                  value === 'temporary-wallet'
+                    ? onChooseTemporary(network)
+                    : onChooseSaved(network, value)
+                }
               >
-                <label
-                  htmlFor={'use-other-wallet-' + network}
-                  className="flex min-h-11 cursor-pointer items-center gap-2 py-2 text-sm"
-                >
-                  <RadioGroupItem id={'use-other-wallet-' + network} value="other" />
-                  Usar outra carteira?
-                </label>
-                <p className="text-xs text-muted-foreground">
-                  Informe uma carteira para esta compra. Ela não será salva no seu perfil.
-                </p>
-              </RadioGroup>
-              <div className="space-y-1">
-                <h3 className="text-sm font-semibold text-accent">{labels[network]}</h3>
-                {!wallets.some((wallet) => wallet.network === network) && (
-                  <p className="text-xs text-muted-foreground">
-                    Uma carteira da rede {labels[network]} é necessária para esta compra.
-                  </p>
+                {wallets.map((wallet) => (
+                  <label
+                    key={wallet.id}
+                    htmlFor={'payment-wallet-' + network + '-' + wallet.id}
+                    className="flex cursor-pointer items-center gap-2 border border-border p-3 text-sm has-data-[state=checked]:border-primary has-[:disabled]:cursor-not-allowed"
+                  >
+                    <RadioGroupItem
+                      id={'payment-wallet-' + network + '-' + wallet.id}
+                      value={wallet.id}
+                      disabled={!network || wallet.network !== network}
+                      className={!network || wallet.network !== network ? 'opacity-60' : undefined}
+                    />
+                    <span
+                      className={
+                        !network || wallet.network !== network ? 'min-w-0 opacity-60' : 'min-w-0'
+                      }
+                    >
+                      <span className="block font-semibold">
+                        {wallet.alias}
+                        {wallet.isPrimary ? ' · principal' : ''}
+                      </span>
+                      <span className="block text-xs text-muted-foreground">
+                        {labels[wallet.network]} ·{' '}
+                        {
+                          {
+                            extension: 'Extensão',
+                            hardware: 'Hardware',
+                            custodial: 'Custodial',
+                          }[wallet.kind]
+                        }
+                      </span>
+                      <span className="block break-all text-xs text-muted-foreground">
+                        {wallet.address}
+                      </span>
+                    </span>
+                    {network && wallet.network !== network && (
+                      <span className="ml-auto shrink-0 text-right text-xs text-destructive">
+                        Incompatível com a rede {labels[network]}
+                      </span>
+                    )}
+                  </label>
+                ))}
+                {network && (
+                  <div>
+                    <label
+                      htmlFor={'use-other-wallet-' + network}
+                      className="flex min-h-11 cursor-pointer items-center gap-2 py-2 text-sm"
+                    >
+                      <RadioGroupItem id={'use-other-wallet-' + network} value="temporary-wallet" />
+                      Usar outra carteira?
+                    </label>
+                    <p className="text-xs text-muted-foreground">
+                      Informe uma carteira para esta compra. Ela não será salva no seu perfil.
+                    </p>
+                  </div>
                 )}
-              </div>
-              {choices[network]?.kind === 'temporary' && (
+              </RadioGroup>
+              {network && choices[network]?.kind === 'temporary' && (
+                <div className="space-y-1">
+                  <h3 className="text-sm font-semibold text-accent">{labels[network]}</h3>
+                  {!wallets.some((wallet) => wallet.network === network) && (
+                    <p className="text-xs text-muted-foreground">
+                      Uma carteira da rede {labels[network]} é necessária para esta compra.
+                    </p>
+                  )}
+                </div>
+              )}
+              {network && choices[network]?.kind === 'temporary' && (
                 <TemporaryWalletForm
                   network={network as WalletNetwork}
                   labels={labels}
@@ -132,7 +142,7 @@ export function WalletSelectionPanel({
             </fieldset>
           </div>
         )
-      })}
+      })()}
     </section>
   )
 }

@@ -42,7 +42,7 @@ export function useWalletSelection({
     })
   }, [wallets, networkKey, loaded])
 
-  const chosen = networks.flatMap<CheckoutWallet>((network) => {
+  const chosen = (networks.length === 1 ? networks : []).flatMap<CheckoutWallet>((network) => {
     const choice = choices[network]
     const saved =
       choice?.kind === 'saved'
@@ -60,7 +60,7 @@ export function useWalletSelection({
     setChoices,
     chosen,
     allReady:
-      networks.length > 0 &&
+      networks.length === 1 &&
       networks.every((network) => chosen.some((wallet) => wallet.network === network)),
   }
 }

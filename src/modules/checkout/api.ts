@@ -29,6 +29,8 @@ export const checkoutApi = {
         headers: { 'Idempotency-Key': input.idempotencyKey },
       })
     ).data,
+  listOrders: async (signal?: AbortSignal) =>
+    (await httpClient.get<Order[]>('/orders', { signal })).data,
   getOrder: async (id: string, signal?: AbortSignal) =>
     (await httpClient.get<Order>(`/orders/${encodeURIComponent(id)}`, { signal })).data,
   getByAttempt: async (key: string, signal?: AbortSignal) =>

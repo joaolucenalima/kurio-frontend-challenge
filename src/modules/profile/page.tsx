@@ -5,6 +5,7 @@ import { Header } from '#/shared/components/header'
 import { Button } from '#/shared/components/ui/button'
 import { sessionApi } from '#/modules/session/api'
 import { FavoritesList } from '#/modules/favorites'
+import { OrderHistory } from '#/modules/checkout'
 import { ProfileEditor } from './ui/profile-editor'
 import { WalletsSection } from '#/modules/wallets'
 import {
@@ -163,6 +164,7 @@ export function ProfilePage({ tab }: { tab: ProfileTab }) {
               </div>
               {tab === 'profile' ? <ProfileEditor userId={session.data.user.id} /> : null}
               {tab === 'wallets' ? <WalletsSection userId={session.data.user.id} /> : null}
+              {tab === 'activity' ? <OrderHistory userId={session.data.user.id} /> : null}
               {tab === 'watchlist' ? <FavoritesList userId={session.data.user.id} /> : null}
             </section>
           </div>

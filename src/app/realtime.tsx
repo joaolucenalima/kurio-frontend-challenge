@@ -61,12 +61,12 @@ export function Realtime() {
       try {
         await client.cancelQueries({
           predicate: (q) =>
-            ['catalog', 'cart', 'cart-quote', 'order'].includes(String(q.queryKey[0])),
+            ['catalog', 'cart', 'cart-quote', 'order', 'orders'].includes(String(q.queryKey[0])),
         })
         await client.invalidateQueries(
           {
             predicate: (q) =>
-              ['catalog', 'cart', 'cart-quote', 'order'].includes(String(q.queryKey[0])),
+              ['catalog', 'cart', 'cart-quote', 'order', 'orders'].includes(String(q.queryKey[0])),
             refetchType: 'active',
           },
           { throwOnError: true },
@@ -129,6 +129,7 @@ export function Realtime() {
       const event = parsed.data
       if (!accept(event.eventId, `order:${event.orderId}`, event.version)) return
       void client.invalidateQueries({ queryKey: ['order', userId, event.orderId] })
+      void client.invalidateQueries({ queryKey: ['orders', userId] })
     })
     socket.connect()
     return () => {

@@ -175,6 +175,8 @@ export const checkoutHandlers = [
     if (!cart.items.length) return fail('Seu carrinho está vazio', 409)
     if (input.quoteId !== quote.id || Date.now() > quote.expiresAt || !quote.valid)
       return fail('Cotação desatualizada ou disponibilidade insuficiente', 409)
+    if (quote.networks.length !== 1 || !Array.isArray(input.wallets) || input.wallets.length !== 1)
+      return fail('Separe os NFTs por rede e selecione uma carteira para esta compra.', 422)
     const connected = JSON.parse(localStorage.getItem(CONNECTED_KEY) || '{}') as Record<
       string,
       string[]
@@ -189,7 +191,7 @@ export const checkoutHandlers = [
             walletMapHasNetwork(user.id, wallet.id, network),
         ),
     )
-    if (missing) return fail('Conecte uma carteira compatível para cada rede dos NFTs.', 422)
+    if (missing) return fail('Conecte uma carteira compatível com a rede dos NFTs.', 422)
     const walletMap = checkoutWallets(user.id)
     if (
       input.wallets.some(
@@ -255,6 +257,16 @@ export const checkoutHandlers = [
       return fail('Tempo esgotado após criação do pedido. Recupere a tentativa.', 504)
     saveOrders(orders)
     return HttpResponse.json(publicOrder(order), { status: 201 })
+  }),
+  http.get('/api/orders', ({ request }) => {
+    const user = authenticatedUser(request)
+    if (!user) return fail('Sessão inválida', 401)
+    return HttpResponse.json(
+      Object.values(readOrders())
+        .filter((order) => order.owner === user.id && order.status === 'confirmed')
+        .sort((a, b) => b.createdAt - a.createdAt)
+        .map(publicOrder),
+    )
   }),
   http.get('/api/orders/attempt/:key', ({ request, params }) => {
     const user = authenticatedUser(request)

@@ -26,7 +26,7 @@ import { sessionApi } from '#/modules/session/api'
 import { SessionPage } from '#/modules/session/page'
 import { cartApi } from './api'
 import { cartKey, quoteKey, type Cart, type CartInput } from './model'
-import { ethToWei } from '#/modules/catalog'
+import { ethToWei, networkOptions } from '#/modules/catalog'
 import { CartDiscovery } from './ui/cart-discovery'
 
 const shimmer =
@@ -68,6 +68,8 @@ export function CartPage() {
     refetchOnMount: 'always',
     refetchOnWindowFocus: true,
   })
+
+  const mixedNetworks = new Set(cart.data?.items.map(({ nft }) => nft.network) || []).size > 1
 
   const refresh = async () => {
     if (!userId) return
@@ -240,6 +242,12 @@ export function CartPage() {
                                       {line.nft.editions.find((item) => item.id === line.editionId)
                                         ?.name || line.editionId}
                                     </p>
+                                    <p className="mt-1 text-xs text-muted-foreground">
+                                      Rede:{' '}
+                                      {networkOptions.find(
+                                        (network) => network.id === line.nft.network,
+                                      )?.name || line.nft.network}
+                                    </p>
                                     {line.quantity > line.available && (
                                       <p className="text-xs text-destructive">
                                         Estoque alterado: {line.available} disponível
@@ -358,6 +366,11 @@ export function CartPage() {
                                 {eth(ethToWei(line.nft.priceEth) * BigInt(line.quantity))} ETH
                               </span>
                             </div>
+                            <p className="mt-1 text-xs text-muted-foreground">
+                              Rede:{' '}
+                              {networkOptions.find((network) => network.id === line.nft.network)
+                                ?.name || line.nft.network}
+                            </p>
                             {line.quantity > line.available && (
                               <p className="mt-1 text-xs text-destructive">
                                 Estoque alterado: {line.available} disponível
@@ -532,11 +545,26 @@ export function CartPage() {
                     </dl>
                   )
                 )}
-                <Button asChild className="mt-6 h-12 w-full rounded-full lg:h-10 lg:rounded-none">
-                  <Link to="/payment" search={{ intent: 'checkout' }}>
+                {mixedNetworks && (
+                  <p role="alert" className="mt-6 text-sm text-destructive">
+                    Seu carrinho contém NFTs de redes diferentes. Separe-os em compras por rede para
+                    continuar.
+                  </p>
+                )}
+                {mixedNetworks ? (
+                  <Button
+                    disabled
+                    className="mt-6 h-12 w-full rounded-full lg:h-10 lg:rounded-none"
+                  >
                     Conectar e finalizar
-                  </Link>
-                </Button>
+                  </Button>
+                ) : (
+                  <Button asChild className="mt-6 h-12 w-full rounded-full lg:h-10 lg:rounded-none">
+                    <Link to="/payment" search={{ intent: 'checkout' }}>
+                      Conectar e finalizar
+                    </Link>
+                  </Button>
+                )}
                 <Button
                   asChild
                   variant="link"

@@ -220,6 +220,19 @@ function PaymentContent({
     }
   }, [userId, identity, startCheckout, client, setFeedback])
   useEffect(() => {
+    if (
+      !userId ||
+      !cart.data ||
+      orderId ||
+      attempt ||
+      checkoutStorage.readAttempt(attemptStorageKey(userId))
+    )
+      return
+    if (new Set(cart.data.items.map(({ nft }) => nft.network)).size > 1) {
+      void navigate({ to: '/cart', replace: true })
+    }
+  }, [userId, cart.data, orderId, attempt, navigate])
+  useEffect(() => {
     if (order && startCheckout) {
       void navigate({
         to: '/payment',
@@ -327,7 +340,7 @@ function PaymentContent({
       return
     }
     if (!allReady) {
-      setFeedback('Selecione uma carteira compatível para cada rede dos NFTs.')
+      setFeedback('Selecione uma carteira compatível com a rede dos NFTs.')
       return
     }
     if (!purchaseFlow.start('reviewing')) return

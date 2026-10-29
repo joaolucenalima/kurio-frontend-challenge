@@ -27,7 +27,7 @@ export function CheckoutSummary({
   onRemoveCoupon: () => void
 }) {
   return (
-    <section className="space-y-4 p-4 md:p-6">
+    <section className="space-y-4">
       <h2 className="font-mono text-[17px] font-bold">Seus NFTs</h2>
       <p className="text-xs text-muted-foreground">
         {totalQuantity} {totalQuantity === 1 ? 'item' : 'itens'}
