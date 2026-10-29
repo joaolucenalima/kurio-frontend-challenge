@@ -42,6 +42,7 @@ import {
 import { cartApi, cartKey, quoteKey } from '#/modules/cart'
 import { ethToWei } from '#/modules/catalog'
 import { checkoutApi } from '../api'
+import { OrderConfirmation } from './order-confirmation'
 import {
   Select,
   SelectContent,
@@ -119,6 +120,7 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
   const [couponInput, setCouponInput] = useState('')
   const [noteLength, setNoteLength] = useState(0)
   const [feedback, setFeedback] = useState('')
+
   const form = useForm<CheckoutInput>({
     resolver: zodResolver(checkoutSchema),
     defaultValues: { email: '', note: '' },
@@ -165,6 +167,7 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
   const networkKey = (
     quote.data?.networks || [...new Set(cart.data?.items.map(({ nft }) => nft.network) || [])]
   ).join('|')
+
   const networks = networkKey ? networkKey.split('|') : []
   const lines = cart.data?.items || []
   const totalQuantity = lines.reduce((sum, line) => sum + line.quantity, 0)
@@ -208,6 +211,7 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
     form.reset({ email: profile.data.email, note: '' })
     setNoteLength(0)
   }, [profile.data, form, form.formState.isDirty, userId])
+
   useEffect(() => {
     const previousUserId = previousIdentityRef.current.split(':')[0]
     previousIdentityRef.current = identity
@@ -239,6 +243,7 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
     else if (!userId) form.reset({ email: '', note: '' })
     if (!userId || (previousUserId && previousUserId !== userId)) setNoteLength(0)
   }, [form, identity, userId])
+
   useEffect(() => {
     if (!wallets.data?.length) return
     setSelected((current) => {
@@ -537,8 +542,8 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
             />
           ) : cart.isPending || quote.isPending || profile.isPending || wallets.isPending ? (
             <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_405px]">
-              <div className={`${shimmer} h-[620px]`} />
-              <div className={`${shimmer} h-[620px]`} />
+              <div className={`${shimmer} h-155`} />
+              <div className={`${shimmer} h-155`} />
             </div>
           ) : cart.isError || quote.isError || profile.isError || wallets.isError ? (
             <section role="alert" className="rounded-lg bg-card p-8">
@@ -1141,6 +1146,9 @@ function OrderResult({
 }) {
   const confirmed = order.status === 'confirmed'
   const declined = order.status === 'declined'
+
+  if (confirmed) return <OrderConfirmation order={order} />
+
   return (
     <section className="mx-auto max-w-3xl space-y-6 rounded bg-card p-5 sm:p-8">
       <div className="flex items-start gap-3">
