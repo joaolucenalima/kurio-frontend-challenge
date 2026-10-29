@@ -29,7 +29,7 @@ export function Header() {
   const cartQuantity = cart.data?.items.reduce((total, item) => total + item.quantity, 0) ?? 0
 
   return (
-    <header className="flex flex-wrap items-start justify-between gap-y-4">
+    <header className="hidden flex-wrap items-start justify-between gap-y-4 md:flex">
       <a
         href="/"
         className="cursor-pointer transition-colors duration-200 ease-out hover:text-accent focus-visible:text-accent flex h-9 items-center font-mono text-sm leading-5 font-bold tracking-widest lg:w-40"

@@ -1,19 +1,5 @@
-import {
-  ArrowRight,
-  Heart,
-  House,
-  Search,
-  ShoppingCart,
-  SlidersHorizontal,
-  UserRound,
-  ScanLine,
-} from 'lucide-react'
-import { Link } from '@tanstack/react-router'
+import { ArrowRight, Search, SlidersHorizontal } from 'lucide-react'
 import { useState } from 'react'
-import { useQuery } from '@tanstack/react-query'
-import { sessionApi } from '#/modules/session/api'
-import { cartApi } from '#/modules/cart/api'
-import { cartKey } from '#/modules/cart/model'
 import {
   Dialog,
   DialogContent,
@@ -114,70 +100,5 @@ export function MobileHero() {
         ))}
       </div>
     </section>
-  )
-}
-
-export function MobileNavigation() {
-  const session = useQuery({ queryKey: ['session'], queryFn: sessionApi.current, retry: false })
-  const userId = session.data?.user.id
-  const cart = useQuery({
-    queryKey: cartKey(userId ?? ''),
-    queryFn: ({ signal }) => cartApi.get({ signal }),
-    enabled: !!userId,
-  })
-  const cartQuantity = userId
-    ? (cart.data?.items.reduce((total, line) => total + line.quantity, 0) ?? 0)
-    : 0
-  const item =
-    'flex min-h-11 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-accent focus-visible:text-accent'
-  return (
-    <nav
-      aria-label="Navegação mobile"
-      className="fixed inset-x-0 bottom-0 z-20 h-[calc(102px+env(safe-area-inset-bottom))] md:hidden"
-    >
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 top-5.75 bottom-0 rounded-t-[28px] bg-card [mask-image:radial-gradient(circle_at_50%_5px,transparent_35px,black_36px)]"
-      />
-      <div className="relative grid h-25.5 grid-cols-[1fr_1fr_1.3fr_1fr_1fr] items-start px-6 pt-9.75">
-        <Link
-          to="/"
-          search={{ ranking: 'all', sort: 'featured', page: 1 }}
-          aria-label="Início"
-          aria-current="page"
-          className={`${item} text-accent!`}
-        >
-          <House className="size-5 fill-current" />
-        </Link>
-        <Link to="/profile" search={{ tab: 'watchlist' }} aria-label="Favoritos" className={item}>
-          <Heart className="size-5 fill-current" />
-        </Link>
-        <div className="flex justify-center">
-          <a
-            href="#catalog"
-            aria-label="Explorar catálogo"
-            className="absolute top-0 left-1/2 flex size-14 -translate-x-1/2 items-center justify-center rounded-full bg-linear-to-b from-primary/40 to-primary text-foreground transition-[filter] hover:brightness-110"
-          >
-            <ScanLine className="size-7" />
-          </a>
-        </div>
-        <Link to="/cart" aria-label={`Carrinho de NFTs, ${cartQuantity} itens`} className={item}>
-          <span className="relative">
-            <ShoppingCart className="size-5" aria-hidden="true" />
-            {cartQuantity > 0 && (
-              <span
-                aria-hidden="true"
-                className="absolute -top-2 -right-2 flex min-h-4 min-w-4 items-center justify-center rounded-full bg-primary px-1 text-[10px] leading-4 font-bold text-primary-foreground"
-              >
-                {cartQuantity}
-              </span>
-            )}
-          </span>
-        </Link>
-        <Link to="/profile" search={{ tab: 'profile' }} aria-label="Perfil" className={item}>
-          <UserRound className="size-5" />
-        </Link>
-      </div>
-    </nav>
   )
 }

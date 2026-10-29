@@ -1,3 +1,4 @@
+import { MobileNavigation } from '#/shared/components/mobile-navigation'
 import { Link } from '@tanstack/react-router'
 import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { Header } from '#/shared/components/header'
@@ -84,7 +85,7 @@ export function ProfilePage({ tab }: { tab: ProfileTab }) {
   const session = useQuery({ queryKey: ['session'], queryFn: sessionApi.current, retry: false })
 
   return (
-    <div className="mx-auto max-w-page px-4 py-6 sm:px-6 xl:px-0">
+    <div className="mx-auto max-w-page px-4 py-6 pb-[calc(8rem+env(safe-area-inset-bottom))] md:pb-6 sm:px-6 xl:px-0">
       <Header />
       <main className="py-8">
         {session.isPending ? (
@@ -180,6 +181,7 @@ export function ProfilePage({ tab }: { tab: ProfileTab }) {
           </p>
         )}
       </main>
+      <MobileNavigation />
     </div>
   )
 }
