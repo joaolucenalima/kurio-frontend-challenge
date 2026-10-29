@@ -537,16 +537,9 @@ export function CartPage() {
                     </dl>
                   )
                 )}
-                <Button
-                  disabled
-                  className="mt-6 h-12 w-full rounded-full lg:h-10 lg:rounded-none"
-                  title="Pagamento disponível em uma próxima etapa"
-                >
-                  Conectar e finalizar
+                <Button asChild className="mt-6 h-12 w-full rounded-full lg:h-10 lg:rounded-none">
+                  <Link to="/payment">Conectar e finalizar</Link>
                 </Button>
-                <p className="mt-2 text-center text-xs text-muted-foreground lg:sr-only">
-                  Pagamento disponível em uma próxima etapa
-                </p>
               </aside>
             </div>
           )}

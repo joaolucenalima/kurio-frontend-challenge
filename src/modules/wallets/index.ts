@@ -1,4 +1,5 @@
 export { walletsApi, walletsKey } from './api'
 export { WalletsSection } from './ui/wallets-section'
+export { WalletCreateDialog } from './ui/wallet-create-dialog'
 export { walletKinds, walletNetworks, walletSchema } from './model'
 export type { Wallet, WalletInput, WalletKind, WalletNetwork } from './model'

@@ -1,8 +1,9 @@
 import { http, HttpResponse } from 'msw'
 import { ethToWei } from '#/modules/catalog'
 import type { Cart, CartInput, Quote } from '#/modules/cart/model'
-import { initialNfts } from './fixtures'
+import { initialNfts, withScenarioPrice } from './fixtures'
 import { authenticatedUser } from './session'
+import { currentScenario } from './handlers'
 
 const KEY = 'kurio.mock.carts.v1'
 type Stored = Record<string, { items: CartInput[]; coupon: string | null }>
@@ -39,7 +40,8 @@ function output(id: string): Cart {
   return {
     coupon: current.coupon,
     items: current.items.flatMap((line) => {
-      const nft = initialNfts.find((item) => item.id === line.nftId)
+      const found = initialNfts.find((item) => item.id === line.nftId)
+      const nft = found ? withScenarioPrice(found) : undefined
       if (!nft) return []
       return [
         {
@@ -75,6 +77,59 @@ const decimal = (wei: bigint) => {
   const whole = wei / 10n ** 18n
   const fraction = (wei % 10n ** 18n).toString().padStart(18, '0').replace(/0+$/, '')
   return fraction ? `${whole}.${fraction}` : `${whole}`
+}
+
+export function mockCartForUser(userId: string) {
+  return output(userId)
+}
+export function consumeCartLines(
+  userId: string,
+  lines: Array<{ nftId: string; editionId: string; quantity: number }>,
+) {
+  const current = state(userId)
+  const items = current.items.flatMap((line) => {
+    const bought =
+      lines.find((item) => item.nftId === line.nftId && item.editionId === line.editionId)
+        ?.quantity || 0
+    return line.quantity > bought ? [{ ...line, quantity: line.quantity - bought }] : []
+  })
+  const store = read()
+  store[userId] = { ...current, items }
+  save(store)
+}
+export function mockQuoteForUser(userId: string) {
+  const cart = output(userId)
+  const scenario = currentScenario()
+  const valid =
+    cart.items.every((line) => line.quantity <= line.available) && scenario !== 'stock-conflict'
+  const subtotal = cart.items.reduce(
+    (sum, line) => sum + ethToWei(line.nft.priceEth) * BigInt(line.quantity),
+    0n,
+  )
+  const discount = cart.coupon === 'KURIO10' ? subtotal / 10n : 0n
+  const fee = cart.items.length ? ethToWei('0.016') : 0n
+  const changed = scenario === 'price-changed'
+  const payableSubtotal = subtotal
+  const payableDiscount = cart.coupon === 'KURIO10' ? payableSubtotal / 10n : discount
+  const fingerprint =
+    cart.items
+      .map((line) => `${line.nftId}:${line.editionId}:${line.quantity}`)
+      .sort()
+      .join('|') + `:${cart.coupon || ''}`
+  let hash = 0
+  for (const character of fingerprint) hash = (Math.imul(hash, 31) + character.charCodeAt(0)) | 0
+  return {
+    subtotalEth: decimal(payableSubtotal),
+    discountEth: decimal(payableDiscount),
+    networkFeeEth: decimal(fee),
+    totalEth: decimal(payableSubtotal - payableDiscount + fee),
+    coupon: cart.coupon,
+    valid,
+    id: `quote-${userId}-${changed ? 2 : 1}-${Math.abs(hash)}`,
+    version: changed ? 2 : 1,
+    expiresAt: Date.now() + 60_000,
+    networks: [...new Set(cart.items.map((line) => line.nft.network))],
+  }
 }
 
 export const cartHandlers = [
@@ -144,21 +199,6 @@ export const cartHandlers = [
   http.get('/api/cart/quote', ({ request }) => {
     const id = authorized(request)
     if (!id) return fail('Sessão inválida', 401)
-    const cart = output(id)
-    const valid = cart.items.every((line) => line.quantity <= line.available)
-    const subtotal = cart.items.reduce(
-      (sum, line) => sum + ethToWei(line.nft.priceEth) * BigInt(line.quantity),
-      0n,
-    )
-    const discount = cart.coupon === 'KURIO10' ? subtotal / 10n : 0n
-    const fee = cart.items.length ? ethToWei('0.016') : 0n
-    return HttpResponse.json({
-      subtotalEth: decimal(subtotal),
-      discountEth: decimal(discount),
-      networkFeeEth: decimal(fee),
-      totalEth: decimal(subtotal - discount + fee),
-      coupon: cart.coupon,
-      valid,
-    } satisfies Quote)
+    return HttpResponse.json(mockQuoteForUser(id) satisfies Quote)
   }),
 ]

@@ -6,6 +6,7 @@ import { cartHandlers, resetCarts } from './cart'
 import { favoriteHandlers, resetFavorites } from './favorites'
 import { profileHandlers } from './profile'
 import { resetWallets, walletHandlers } from './wallets'
+import { checkoutHandlers } from './checkout'
 
 export const worker = setupWorker(
   ...handlers,
@@ -14,6 +15,7 @@ export const worker = setupWorker(
   ...favoriteHandlers,
   ...profileHandlers,
   ...walletHandlers,
+  ...checkoutHandlers,
 )
 
 let recoveryInstalled = false
@@ -88,6 +90,9 @@ export async function startMocks() {
       resetCarts()
       resetFavorites()
       resetWallets()
+      localStorage.removeItem('kurio.mock.orders.v1')
+      localStorage.removeItem('kurio.mock.checkout-wallets.v1')
+      localStorage.removeItem('kurio.mock.wallet-connections.v1')
       await seedAuth()
     },
     scenario: selectScenario,

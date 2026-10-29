@@ -1,4 +1,4 @@
-import { normalizeNft } from '#/modules/catalog'
+import { ethToWei, normalizeNft } from '#/modules/catalog'
 import type { Nft, NftRecord, NftReview } from '#/modules/catalog'
 import kurio from './snapshots/kurio.json'
 import bayc from './snapshots/boredapeyachtclub.json'
@@ -19,6 +19,19 @@ const nftRecords = [
 ] as NftRecord[]
 
 export const initialNfts: Nft[] = nftRecords.map(normalizeNft)
+let simulatePriceChange = false
+export function setPriceChangeScenario(enabled: boolean) {
+  simulatePriceChange = enabled
+}
+export function withScenarioPrice<T extends Nft>(nft: T): T {
+  return simulatePriceChange
+    ? ({ ...nft, priceEth: weiToEth(ethToWei(nft.priceEth) + ethToWei('0.01')) } as T)
+    : nft
+}
+function weiToEth(value: bigint) {
+  const fraction = (value % 10n ** 18n).toString().padStart(18, '0').replace(/0+$/, '')
+  return `${value / 10n ** 18n}${fraction ? `.${fraction}` : ''}`
+}
 
 export const reviewPool: NftReview[] = [
   {
