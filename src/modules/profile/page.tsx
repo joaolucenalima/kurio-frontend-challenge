@@ -173,7 +173,7 @@ export function ProfilePage({ tab }: { tab: ProfileTab }) {
             Entre na sua conta para acessar o perfil.{' '}
             <Link
               to="/"
-              search={{ ranking: 'all', sort: 'featured', page: 1 }}
+              search={{ ranking: 'all', sort: 'recently-listed', page: 1 }}
               className="text-accent underline"
             >
               Voltar ao início

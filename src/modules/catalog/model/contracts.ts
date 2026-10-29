@@ -8,7 +8,13 @@ export const collectionOptions = [
   { id: 'galactic-geckos-solana', name: 'Galactic Geckos' },
 ] as const
 
-export const catalogSorts = ['featured', 'price-asc', 'price-desc', 'name'] as const
+export const catalogSorts = [
+  'recently-listed',
+  'featured',
+  'price-asc',
+  'price-desc',
+  'name',
+] as const
 export type CatalogSort = (typeof catalogSorts)[number]
 export const catalogRankings = ['all', 'new-releases', 'trending'] as const
 export type CatalogRanking = (typeof catalogRankings)[number]
@@ -215,7 +221,7 @@ export function ethToWei(value: string): bigint {
 }
 
 export function parseCatalogSearch(input: Record<string, unknown>): CatalogSearch {
-  const result: CatalogSearch = { ranking: 'all', sort: 'featured', page: 1 }
+  const result: CatalogSearch = { ranking: 'all', sort: 'recently-listed', page: 1 }
 
   if (input.q !== undefined) {
     if (typeof input.q !== 'string' || input.q.length > 200) throw new Error('Busca inválida')

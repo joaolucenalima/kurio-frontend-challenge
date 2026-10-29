@@ -4,6 +4,7 @@ import { Button } from '#/shared/components/ui/button'
 import { Header } from '#/shared/components/header'
 import { CatalogFilters } from './catalog-filters'
 import { CatalogResults } from './catalog-results'
+import { HeroCarousel } from './hero-carousel'
 import type { CatalogSearch } from '../../model/contracts'
 
 export function CatalogPage({
@@ -22,7 +23,7 @@ export function CatalogPage({
         <MobileCatalogHeader search={search} onChange={onSearchChange} />
         <main>
           <MobileHero />
-          <section className="hidden md:flex mt-4 items-center overflow-hidden rounded-xl bg-card md:mt-8 md:bg-transparent lg:min-h-hero-section">
+          <section className="relative hidden md:flex mt-4 items-center overflow-hidden rounded-xl bg-card md:mt-8 md:bg-transparent lg:min-h-hero-section">
             <div className="min-w-0 flex-1 p-4 lg:p-10">
               <p className="font-mono text-sm leading-4 font-medium tracking-widest">
                 Bem-vindo à Kurio
@@ -38,13 +39,7 @@ export function CatalogPage({
                 <a href="#catalog">EXPLORAR</a>
               </Button>
             </div>
-            <img
-              src="/images/nfts/emerald-ape.png"
-              alt="Emerald Ape #042, macaco de jaqueta verde e óculos de sol"
-              width="450"
-              height="450"
-              className="aspect-square w-2/5 shrink-0 rounded-xl object-cover lg:w-hero-image lg:rounded-3xl"
-            />
+            <HeroCarousel />
           </section>
           <section
             id="catalog"

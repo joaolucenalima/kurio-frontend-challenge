@@ -8,6 +8,7 @@ import {
 } from '#/shared/components/ui/dialog'
 import type { CatalogSearch } from '../../model/contracts'
 import { CatalogFilters } from './catalog-filters'
+import { HeroCarousel } from './hero-carousel'
 
 export function MobileCatalogHeader({
   search,
@@ -63,7 +64,7 @@ export function MobileHero() {
         aria-hidden="true"
         className="pointer-events-none absolute -left-20 -top-8 size-62 rounded-full bg-linear-to-br from-[#dd9a5f]/40 to-primary/0"
       />
-      <div className="relative flex min-w-0 items-center gap-2">
+      <div className="isolate flex min-w-0 items-center gap-2">
         <div className="min-w-0 flex-1">
           <p className="text-xs leading-4 font-medium">Bem-vindo à Kurio</p>
           <h1 className="mt-1.5 text-lg leading-7 font-bold">
@@ -81,23 +82,7 @@ export function MobileHero() {
             EXPLORAR <ArrowRight className="size-4" />
           </a>
         </div>
-        <div className="relative h-36.5 w-34.5 shrink-0">
-          <img
-            src="/images/nfts/emerald-ape.png"
-            alt="Emerald Ape"
-            className="size-34.5 rounded-2xl object-cover"
-          />
-          <img
-            src="/images/nfts/sage-nomad.png"
-            alt="Sage Nomad"
-            className="absolute left-3.5 bottom-0 size-14.5 rounded-2xl object-cover"
-          />
-        </div>
-      </div>
-      <div aria-hidden="true" className="absolute bottom-2 left-1/2 flex -translate-x-1/2 gap-1.5">
-        {[0, 1, 2].map((i) => (
-          <span key={i} className="size-1.75 rounded-full bg-primary" />
-        ))}
+        <HeroCarousel mobile />
       </div>
     </section>
   )

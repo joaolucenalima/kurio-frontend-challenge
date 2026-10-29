@@ -103,6 +103,11 @@ export const handlers = [
             : 0
       if (rankingComparison !== 0) return rankingComparison
 
+      if (search.sort === 'recently-listed') {
+        const dateComparison = b.releaseDate.localeCompare(a.releaseDate)
+        if (dateComparison !== 0) return dateComparison
+      }
+
       if (search.sort === 'name') {
         const nameComparison = a.name.localeCompare(b.name, 'pt-BR')
         if (nameComparison !== 0) return nameComparison

@@ -21,7 +21,7 @@ function AccountRoute() {
     <main className="mx-auto  w-full max-w-125 px-7 pt-20 pb-6 font-mono">
       <Link
         to="/"
-        search={{ ranking: 'all', sort: 'featured', page: 1 }}
+        search={{ ranking: 'all', sort: 'recently-listed', page: 1 }}
         className="mx-auto mb-10 flex h-34 w-full items-center justify-center text-[32px] font-bold tracking-[3.2px]"
       >
         KURIO

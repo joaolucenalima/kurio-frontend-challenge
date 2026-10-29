@@ -38,7 +38,7 @@ export function MobileNavigation() {
       <div className="relative grid h-25.5 grid-cols-[1fr_1fr_1.3fr_1fr_1fr] items-start px-6 pt-9.75">
         <Link
           to="/"
-          search={{ ranking: 'all', sort: 'featured', page: 1 }}
+          search={{ ranking: 'all', sort: 'recently-listed', page: 1 }}
           aria-label="Início"
           aria-current={isHome ? 'page' : undefined}
           className={`${item} ${isHome ? 'text-accent!' : ''}`}

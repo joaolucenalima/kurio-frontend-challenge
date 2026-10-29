@@ -43,7 +43,7 @@ function DetailContent({ nft }: { nft: Nft }) {
       <nav aria-label="Caminho de navegação" className="mb-6 hidden text-sm font-bold md:block">
         <Link
           to="/"
-          search={{ ranking: 'all', sort: 'featured', page: 1 }}
+          search={{ ranking: 'all', sort: 'recently-listed', page: 1 }}
           className="hover:text-accent"
         >
           Início
@@ -51,7 +51,7 @@ function DetailContent({ nft }: { nft: Nft }) {
         <span aria-hidden="true"> / </span>
         <Link
           to="/"
-          search={{ ranking: 'all', sort: 'featured', page: 1 }}
+          search={{ ranking: 'all', sort: 'recently-listed', page: 1 }}
           hash="catalog"
           className="hover:text-accent"
         >
@@ -67,7 +67,7 @@ function DetailContent({ nft }: { nft: Nft }) {
           className="rounded-full"
           aria-label="Voltar ao mercado"
         >
-          <Link to="/" search={{ ranking: 'all', sort: 'featured', page: 1 }} hash="catalog">
+          <Link to="/" search={{ ranking: 'all', sort: 'recently-listed', page: 1 }} hash="catalog">
             <ChevronLeft aria-hidden="true" />
           </Link>
         </Button>
@@ -211,7 +211,7 @@ export function NftDetailPage({ id }: { id: string }) {
                   </Button>
                 )}
                 <Button asChild variant="outline">
-                  <Link to="/" search={{ ranking: 'all', sort: 'featured', page: 1 }}>
+                  <Link to="/" search={{ ranking: 'all', sort: 'recently-listed', page: 1 }}>
                     Voltar ao catálogo
                   </Link>
                 </Button>

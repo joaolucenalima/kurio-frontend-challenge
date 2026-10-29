@@ -10,7 +10,7 @@ export const Route = createRootRoute({
       </h1>
       <Link
         to="/"
-        search={{ ranking: 'all', sort: 'featured', page: 1 }}
+        search={{ ranking: 'all', sort: 'recently-listed', page: 1 }}
         className="text-base leading-5 font-normal tracking-normal text-accent underline"
       >
         Voltar ao início

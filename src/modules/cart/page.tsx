@@ -140,7 +140,7 @@ export function CartPage() {
               className="absolute left-0 rounded-full"
               aria-label="Voltar"
             >
-              <Link to="/" search={{ ranking: 'all', sort: 'featured', page: 1 }}>
+              <Link to="/" search={{ ranking: 'all', sort: 'recently-listed', page: 1 }}>
                 <ChevronLeft />
               </Link>
             </Button>
@@ -150,7 +150,7 @@ export function CartPage() {
             aria-label="Caminho de navegação"
             className="mb-3 hidden text-sm text-foreground md:block"
           >
-            <Link to="/" search={{ ranking: 'all', sort: 'featured', page: 1 }}>
+            <Link to="/" search={{ ranking: 'all', sort: 'recently-listed', page: 1 }}>
               Início
             </Link>{' '}
             / Mercado / Carrinho
@@ -436,7 +436,7 @@ export function CartPage() {
                     <Button asChild className="mt-5">
                       <Link
                         to="/"
-                        search={{ ranking: 'all', sort: 'featured', page: 1 }}
+                        search={{ ranking: 'all', sort: 'recently-listed', page: 1 }}
                         hash="catalog"
                       >
                         Explorar NFTs
@@ -544,7 +544,7 @@ export function CartPage() {
                 >
                   <Link
                     to="/"
-                    search={{ ranking: 'all', sort: 'featured', page: 1 }}
+                    search={{ ranking: 'all', sort: 'recently-listed', page: 1 }}
                     hash="catalog"
                   >
                     Continuar explorando

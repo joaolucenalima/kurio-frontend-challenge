@@ -2,6 +2,13 @@ import { useQuery } from '@tanstack/react-query'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button } from '#/shared/components/ui/button'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '#/shared/components/ui/tabs'
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '#/shared/components/ui/select'
 import { catalogQueries } from '../../api/queries'
 import type { CatalogRanking, CatalogSearch } from '../../model/contracts'
 import { NftCard } from '../../ui/nft-card'
@@ -70,7 +77,7 @@ export function CatalogResults({
                 <Button
                   className="mt-4"
                   variant="outline"
-                  onClick={() => onChange({ ranking: 'all', sort: 'featured', page: 1 })}
+                  onClick={() => onChange({ ranking: 'all', sort: 'recently-listed', page: 1 })}
                 >
                   Voltar ao catálogo
                 </Button>
@@ -149,21 +156,26 @@ export function CatalogResults({
             Em alta
           </TabsTrigger>
         </TabsList>
-        <label className="hidden md:flex max-w-full flex-wrap items-center gap-2 text-xs text-muted-foreground">
-          Ordenar por:
-          <select
+        <div className="hidden md:flex max-w-full flex-wrap items-center gap-2 text-xs text-muted-foreground">
+          <label htmlFor="catalog-sort">Ordenar por:</label>
+          <Select
             value={search.sort}
-            onChange={(event) =>
-              onChange({ ...search, sort: event.target.value as CatalogSearch['sort'], page: 1 })
+            onValueChange={(value) =>
+              onChange({ ...search, sort: value as CatalogSearch['sort'], page: 1 })
             }
-            className="min-w-0 rounded-md border border-input bg-background p-2 text-foreground"
           >
-            <option value="featured">Destaques</option>
-            <option value="price-asc">Menor preço</option>
-            <option value="price-desc">Maior preço</option>
-            <option value="name">Nome</option>
-          </select>
-        </label>
+            <SelectTrigger id="catalog-sort" className="min-w-0 bg-background text-foreground">
+              <SelectValue />
+            </SelectTrigger>
+            <SelectContent position="popper" align="end">
+              <SelectItem value="recently-listed">Listados recentemente</SelectItem>
+              <SelectItem value="featured">Destaques</SelectItem>
+              <SelectItem value="price-asc">Menor preço</SelectItem>
+              <SelectItem value="price-desc">Maior preço</SelectItem>
+              <SelectItem value="name">Nome</SelectItem>
+            </SelectContent>
+          </Select>
+        </div>
       </div>
       <TabsContent value="all">{search.ranking === 'all' ? panel : null}</TabsContent>
       <TabsContent value="new-releases">

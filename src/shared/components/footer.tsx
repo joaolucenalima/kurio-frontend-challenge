@@ -101,7 +101,7 @@ export function SiteFooter() {
           <div className="mx-auto grid max-w-page gap-8 px-6 py-6 md:grid-cols-2 md:items-center lg:grid-cols-4">
             <Link
               to="/"
-              search={{ ranking: 'all', sort: 'featured', page: 1 }}
+              search={{ ranking: 'all', sort: 'recently-listed', page: 1 }}
               className="inline-flex min-h-11 w-fit items-center text-lg font-bold tracking-widest hover:text-accent"
             >
               KURIO

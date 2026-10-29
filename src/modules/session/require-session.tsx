@@ -55,7 +55,7 @@ export function RequireSession({ children }: { children: ReactNode }) {
         onOpenChange={(value) => {
           setOpen(value)
           if (!value && needsLogin)
-            void navigate({ to: '/', search: { ranking: 'all', sort: 'featured', page: 1 } })
+            void navigate({ to: '/', search: { ranking: 'all', sort: 'recently-listed', page: 1 } })
         }}
       >
         <DialogContent>
