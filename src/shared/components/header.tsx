@@ -1,5 +1,6 @@
+import { NftSearch } from '#/modules/catalog/search'
 import { useAuthEntry } from '#/modules/session/use-auth-entry'
-import { LogIn, Search, ShoppingCart, User } from 'lucide-react'
+import { LogIn, ShoppingCart, User } from 'lucide-react'
 import { Link, useNavigate, useRouterState } from '@tanstack/react-router'
 import { Button } from '#/shared/components/ui/button'
 import { useQuery } from '@tanstack/react-query'
@@ -100,17 +101,7 @@ export function Header() {
         </span>
       </nav>
       <div className="flex h-9 items-center gap-7" aria-label="Ações da conta">
-        <Button
-          asChild
-          variant="icon"
-          size="icon"
-          className="size-5 rounded-none p-0"
-          aria-label="Buscar NFTs"
-        >
-          <Link to="/" search={{ ranking: 'all', sort: 'recently-listed', page: 1 }} hash="catalog">
-            <Search className="size-5" aria-hidden="true" />
-          </Link>
-        </Button>
+        <NftSearch />
         <Button asChild variant="icon" size="icon" className="relative size-5 rounded-none p-0">
           <Link
             to="/cart"

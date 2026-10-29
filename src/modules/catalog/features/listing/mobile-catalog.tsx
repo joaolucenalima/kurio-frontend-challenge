@@ -1,4 +1,5 @@
-import { ArrowRight, Search, SlidersHorizontal } from 'lucide-react'
+import { NftSearch } from '../../search'
+import { ArrowRight, SlidersHorizontal } from 'lucide-react'
 import { useState } from 'react'
 import {
   Dialog,
@@ -20,17 +21,7 @@ export function MobileCatalogHeader({
   const [open, setOpen] = useState(false)
   return (
     <div className="flex gap-2 md:hidden">
-      <label className="flex h-11.25 min-w-0 flex-1 items-center gap-2 rounded-[10px] bg-card px-3 text-subtle">
-        <Search className="size-5.5 shrink-0" aria-hidden="true" />
-        <span className="sr-only">Explorar coleções</span>
-        <input
-          type="search"
-          value={search.q ?? ''}
-          onChange={(event) => onChange({ ...search, q: event.target.value || undefined, page: 1 })}
-          placeholder="Explorar coleções"
-          className="min-w-0 w-full bg-transparent text-sm font-bold placeholder:text-subtle outline-none"
-        />
-      </label>
+      <NftSearch field />
       <button
         type="button"
         aria-label="Filtrar NFTs"

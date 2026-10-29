@@ -1,3 +1,4 @@
+import { NftSearch } from '#/modules/catalog/search'
 import { Heart, House, ShoppingCart, UserRound, ScanLine } from 'lucide-react'
 import { Link, useRouterState } from '@tanstack/react-router'
 import { useQuery } from '@tanstack/react-query'
@@ -31,6 +32,11 @@ export function MobileNavigation() {
       aria-label="Navegação mobile"
       className="fixed inset-x-0 bottom-0 z-20 h-[calc(102px+env(safe-area-inset-bottom))] md:hidden"
     >
+      {!isHome && (
+        <div className="absolute right-6 -top-8 rounded bg-card p-2">
+          <NftSearch />
+        </div>
+      )}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-x-0 top-5.75 bottom-0 rounded-t-[28px] bg-card [mask-image:radial-gradient(circle_at_50%_5px,transparent_35px,black_36px)]"
