@@ -19,7 +19,7 @@ function CatalogRoute() {
     <CatalogPage
       search={search}
       onSearchChange={(next) => {
-        void navigate({ search: next, resetScroll: false })
+        void navigate({ search: next, hash: true, resetScroll: false })
       }}
     />
   )

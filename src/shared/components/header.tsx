@@ -1,6 +1,6 @@
 import { useAuthEntry } from '#/modules/session/use-auth-entry'
 import { LogIn, Search, ShoppingCart, User } from 'lucide-react'
-import { Link, useNavigate } from '@tanstack/react-router'
+import { Link, useNavigate, useRouterState } from '@tanstack/react-router'
 import { Button } from '#/shared/components/ui/button'
 import { useQuery } from '@tanstack/react-query'
 import { sessionApi } from '#/modules/session/api'
@@ -19,6 +19,11 @@ export function Header() {
   const [loginOpen, setLoginOpen] = useState(false)
   const [loginRedirect, setLoginRedirect] = useState<'/cart'>()
   const navigate = useNavigate()
+  const location = useRouterState({ select: (state) => state.location })
+  const isMarketFlow =
+    location.pathname.startsWith('/nfts/') ||
+    location.pathname === '/cart' ||
+    location.pathname === '/payment'
   const openAuth = useAuthEntry(() => {
     setLoginRedirect(undefined)
     setLoginOpen(true)
@@ -41,12 +46,15 @@ export function Header() {
 
   return (
     <header className="hidden flex-wrap items-start justify-between gap-y-4 md:flex">
-      <a
-        href="/"
+      <Link
+        to="/"
+        search={{ ranking: 'all', sort: 'recently-listed', page: 1 }}
+        hash=""
+        resetScroll
         className="cursor-pointer transition-colors duration-200 ease-out hover:text-accent focus-visible:text-accent flex h-9 items-center font-mono text-sm leading-5 font-bold tracking-widest lg:w-40"
       >
         KURIO
-      </a>
+      </Link>
       <nav
         aria-label="Navegação principal"
         className="order-last flex w-full justify-center h-11 gap-6 font-mono text-base leading-6 font-normal tracking-normal lg:order-0 lg:w-auto lg:gap-10"
@@ -54,16 +62,29 @@ export function Header() {
         <Link
           to="/"
           search={{ ranking: 'all', sort: 'recently-listed', page: 1 }}
-          activeOptions={{ exact: true, includeSearch: false }}
-          className="cursor-pointer transition-colors duration-200 ease-out hover:text-accent focus-visible:text-accent aria-[current=page]:border-b-4 aria-[current=page]:border-primary aria-[current=page]:font-bold aria-[current=page]:text-accent aria-[current=page]:hover:text-primary"
+          hash=""
+          resetScroll
+          activeOptions={{ exact: true, includeSearch: false, includeHash: true }}
+          className="cursor-pointer transition-colors duration-200 ease-out hover:text-accent focus-visible:text-accent aria-[current]:border-b-4 aria-[current]:border-primary aria-[current]:font-bold aria-[current]:text-accent aria-[current]:hover:text-primary"
         >
           Início
         </Link>
         <Link
           to="/"
-          search={{ ranking: 'all', sort: 'recently-listed', page: 1 }}
           hash="catalog"
-          className="cursor-pointer transition-colors duration-200 ease-out hover:text-accent focus-visible:text-accent aria-[current=page]:border-b-4 aria-[current=page]:border-primary aria-[current=page]:font-bold aria-[current=page]:text-accent aria-[current=page]:hover:text-primary"
+          search={(previous) =>
+            location.pathname === '/'
+              ? {
+                  ...previous,
+                  ranking: previous.ranking ?? 'all',
+                  sort: previous.sort ?? 'recently-listed',
+                  page: previous.page ?? 1,
+                }
+              : { ranking: 'all', sort: 'recently-listed', page: 1 }
+          }
+          activeOptions={{ exact: true, includeSearch: false, includeHash: true }}
+          aria-current={isMarketFlow ? 'location' : undefined}
+          className="cursor-pointer transition-colors duration-200 ease-out hover:text-accent focus-visible:text-accent aria-[current]:border-b-4 aria-[current]:border-primary aria-[current]:font-bold aria-[current]:text-accent aria-[current]:hover:text-primary"
         >
           Mercado
         </Link>

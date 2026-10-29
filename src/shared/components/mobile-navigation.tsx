@@ -55,13 +55,24 @@ export function MobileNavigation() {
           <Heart className={icon(isFavorites)} aria-hidden="true" />
         </Link>
         <div className="flex justify-center">
-          <a
-            href="/#catalog"
+          <Link
+            to="/"
+            hash="catalog"
+            search={(previous) =>
+              location.pathname === '/'
+                ? {
+                    ...previous,
+                    ranking: previous.ranking ?? 'all',
+                    sort: previous.sort ?? 'recently-listed',
+                    page: previous.page ?? 1,
+                  }
+                : { ranking: 'all', sort: 'recently-listed', page: 1 }
+            }
             aria-label="Explorar catálogo"
             className="absolute top-0 left-1/2 flex size-14 -translate-x-1/2 items-center justify-center rounded-full bg-linear-to-b from-primary/40 to-primary text-foreground transition-[filter] hover:brightness-110"
           >
             <ScanLine className="size-7" />
-          </a>
+          </Link>
         </div>
         <Link
           to="/cart"
