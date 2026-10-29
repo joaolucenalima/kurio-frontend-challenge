@@ -4,6 +4,7 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
+  DialogHeader,
   DialogTitle,
 } from '#/shared/components/ui/dialog'
 import type { Order } from '../model'
@@ -46,11 +47,11 @@ export function OrderConfirmation({ order }: { order: Order }) {
   return (
     <section
       aria-label="Confirmação de pedido"
-      className="relative mx-auto w-full max-w-[578px] border-b-10 border-primary bg-card font-mono"
+      className="relative mx-auto w-full max-w-144.5 border-b-10 border-primary bg-card font-mono"
     >
       <header className="flex min-h-39 flex-col items-center justify-center gap-4 px-5 py-8 md:px-8">
         <img src="/images/checkout/NgoEU.png" alt="" className="size-20" />
-        <h1 className="text-center text-lg leading-[26px] font-bold text-foreground">
+        <h1 className="text-center text-lg leading-6.5 font-bold text-foreground">
           Seus NFTs agora estão na sua carteira
         </h1>
       </header>
@@ -98,7 +99,7 @@ export function OrderConfirmation({ order }: { order: Order }) {
                     />
                     <div className="min-w-0 space-y-1.5">
                       <p className="wrap-anywhere text-sm leading-5 font-semibold">{item.name}</p>
-                      <p className="wrap-anywhere text-xs leading-[18px] text-subtle">
+                      <p className="wrap-anywhere text-xs leading-4.5 text-subtle">
                         {item.editionName}
                       </p>
                     </div>
@@ -151,11 +152,13 @@ export function OrderConfirmation({ order }: { order: Order }) {
 
       <Dialog open={explorerOpen} onOpenChange={setExplorerOpen}>
         <DialogContent>
-          <DialogTitle>Explorador simulado</DialogTitle>
-          <DialogDescription>
-            Esta compra é uma simulação. A referência abaixo não corresponde a uma transação real na
-            blockchain.
-          </DialogDescription>
+          <DialogHeader>
+            <DialogTitle>Explorador simulado</DialogTitle>
+            <DialogDescription>
+              Esta compra é uma simulação. A referência abaixo não corresponde a uma transação real
+              na blockchain.
+            </DialogDescription>
+          </DialogHeader>
           <p className="break-all text-sm text-muted-foreground">{reference}</p>
         </DialogContent>
       </Dialog>

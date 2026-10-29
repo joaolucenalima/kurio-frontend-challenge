@@ -6,8 +6,42 @@ import { cn } from '#/shared/lib/utils'
 const Dialog = DialogPrimitive.Root
 const DialogTrigger = DialogPrimitive.Trigger
 const DialogClose = DialogPrimitive.Close
-const DialogTitle = DialogPrimitive.Title
-const DialogDescription = DialogPrimitive.Description
+function DialogHeader({ className, ...props }: React.ComponentProps<'div'>) {
+  return (
+    <div
+      data-slot="dialog-header"
+      className={cn('group/dialog-header mb-6 space-y-2 pr-6 text-left', className)}
+      {...props}
+    />
+  )
+}
+
+function DialogTitle({ className, ...props }: React.ComponentProps<typeof DialogPrimitive.Title>) {
+  return (
+    <DialogPrimitive.Title
+      className={cn(
+        'group-data-[slot=dialog-header]/dialog-header:font-mono group-data-[slot=dialog-header]/dialog-header:text-lg group-data-[slot=dialog-header]/dialog-header:leading-6 group-data-[slot=dialog-header]/dialog-header:font-bold group-data-[slot=dialog-header]/dialog-header:text-foreground',
+        className,
+      )}
+      {...props}
+    />
+  )
+}
+
+function DialogDescription({
+  className,
+  ...props
+}: React.ComponentProps<typeof DialogPrimitive.Description>) {
+  return (
+    <DialogPrimitive.Description
+      className={cn(
+        'group-data-[slot=dialog-header]/dialog-header:text-sm group-data-[slot=dialog-header]/dialog-header:leading-6 group-data-[slot=dialog-header]/dialog-header:text-muted-foreground',
+        className,
+      )}
+      {...props}
+    />
+  )
+}
 
 function DialogContent({
   className,
@@ -39,4 +73,12 @@ function DialogContent({
   )
 }
 
-export { Dialog, DialogTrigger, DialogClose, DialogContent, DialogTitle, DialogDescription }
+export {
+  Dialog,
+  DialogTrigger,
+  DialogClose,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+}

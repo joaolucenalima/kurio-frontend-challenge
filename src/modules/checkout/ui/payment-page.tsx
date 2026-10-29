@@ -27,6 +27,7 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
+  DialogHeader,
   DialogTitle,
 } from '#/shared/components/ui/dialog'
 import { SessionPage } from '#/modules/session/page'
@@ -113,7 +114,7 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
   const [walletNetwork, setWalletNetwork] = useState<WalletNetwork>('ethereum')
   const [authorizing, setAuthorizing] = useState(false)
   const [selected, setSelected] = useState<Record<string, string>>({})
-  const [preferOtherWallet, setPreferOtherWallet] = useState(false)
+  const [newWalletNetworks, setNewWalletNetworks] = useState<Record<string, boolean>>({})
   const [temporaryWallets, setTemporaryWallets] = useState<Record<string, WalletInput>>({})
   const [application, setApplication] = useState('metamask')
   const [review, setReview] = useState(false)
@@ -211,19 +212,12 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
     const saved = wallets.data?.find(
       (wallet) => wallet.id === selected[network] && wallet.network === network,
     )
-    if (saved) return [saved]
+    if (saved && !newWalletNetworks[network]) return [saved]
     const parsed = walletSchema.safeParse(temporaryWallets[network])
     return parsed.success
       ? [{ ...parsed.data, id: 'temporary:' + userId + ':' + network, temporary: true }]
       : []
   })
-  const primaryWallet = wallets.data?.find((wallet) => wallet.isPrimary)
-  const requiresOtherNetwork =
-    !!primaryWallet && networks.some((network) => network !== primaryWallet.network)
-  const usesOtherWallet =
-    requiresOtherNetwork ||
-    preferOtherWallet ||
-    chosen.some((wallet) => wallet.id !== primaryWallet?.id)
   const allReady =
     networks.length > 0 &&
     networks.every((network) => {
@@ -261,7 +255,7 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
       setReviewed(null)
       setReview(false)
       setSelected({})
-      setPreferOtherWallet(false)
+      setNewWalletNetworks({})
       setTemporaryWallets({})
       setFeedback('')
       return
@@ -272,7 +266,7 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
     setReviewed(null)
     setReview(false)
     setSelected({})
-    setPreferOtherWallet(false)
+    setNewWalletNetworks({})
     setTemporaryWallets({})
     setFeedback('')
     if (previousUserId && userId && previousUserId !== userId) form.reset({ email: '', note: '' })
@@ -414,13 +408,20 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
       await client.invalidateQueries({ queryKey: quoteKey(context.userId) })
     },
     onError: (error, context) => {
-      if (isCurrent(context.userId, context.token)) setFeedback(errorMessage(error))
+      if (isCurrent(context.userId, context.token)) {
+        setPersistentFeedback('')
+        notifyFeedback(errorMessage(error))
+      }
     },
   })
   const beginReview = async () => {
     setFeedback('')
     if (!userId) {
       setLoginOpen(true)
+      return
+    }
+    if (!realtime.data) {
+      setFeedback('Conexão indisponível. Aguarde a reconexão e tente novamente.')
       return
     }
     if (attempt) {
@@ -454,7 +455,15 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
     }
   }
   const confirm = async () => {
-    if (!userId || !reviewed || !allReady || !realtime.data || confirmLock.current) return
+    if (confirmLock.current) return
+    if (!allReady || !realtime.data || !reviewed) {
+      setFeedback('Revise as carteiras e aguarde a conexão antes de confirmar a compra.')
+      return
+    }
+    if (!userId) {
+      setLoginOpen(true)
+      return
+    }
     confirmLock.current = true
     setAuthorizing(true)
     setFeedback('')
@@ -634,38 +643,12 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
                             Adicionar carteira
                           </Button>
                         </div>
-                        {networks.map((network, index) => {
+                        {networks.map((network) => {
                           const options = wallets.data.filter(
                             (wallet) => wallet.network === network,
                           )
                           return (
                             <div key={network} className="space-y-4">
-                              {index === 1 && (
-                                <div className="space-y-2">
-                                  <RadioGroup
-                                    aria-label="Usar outra carteira?"
-                                    value={usesOtherWallet ? 'other' : 'primary'}
-                                    onValueChange={() => {
-                                      setPreferOtherWallet(true)
-                                      setReviewed(null)
-                                    }}
-                                  >
-                                    <label
-                                      htmlFor="use-other-wallet"
-                                      className="flex items-center gap-2 text-sm"
-                                    >
-                                      <RadioGroupItem id="use-other-wallet" value="other" />
-                                      Usar outra carteira?
-                                    </label>
-                                  </RadioGroup>
-                                  {requiresOtherNetwork && (
-                                    <p className="text-xs text-muted-foreground">
-                                      Outra carteira é obrigatória porque a compra inclui uma rede
-                                      diferente da carteira principal.
-                                    </p>
-                                  )}
-                                </div>
-                              )}
                               <fieldset className={options.length ? 'space-y-3' : 'space-y-1'}>
                                 <legend
                                   className={`${options.length ? 'mb-3' : 'mb-1'} text-sm font-semibold`}
@@ -675,10 +658,15 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
                                 {options.length > 0 && (
                                   <RadioGroup
                                     aria-label={'Carteiras de ' + walletLabel[network]}
-                                    value={selected[network] || ''}
+                                    value={
+                                      newWalletNetworks[network] ? '' : selected[network] || ''
+                                    }
                                     onValueChange={(value) => {
                                       setSelected((current) => ({ ...current, [network]: value }))
-                                      setPreferOtherWallet(value !== primaryWallet?.id)
+                                      setNewWalletNetworks((current) => ({
+                                        ...current,
+                                        [network]: false,
+                                      }))
                                       setReviewed(null)
                                     }}
                                   >
@@ -686,7 +674,7 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
                                       <label
                                         key={wallet.id}
                                         htmlFor={'payment-wallet-' + wallet.id}
-                                        className="flex cursor-pointer items-center gap-3 border border-border p-3 text-sm has-[[data-state=checked]]:border-primary"
+                                        className="flex cursor-pointer items-center gap-3 border border-border p-3 text-sm has-data-[state=checked]:border-primary"
                                       >
                                         <RadioGroupItem
                                           id={'payment-wallet-' + wallet.id}
@@ -715,7 +703,31 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
                                     ))}
                                   </RadioGroup>
                                 )}
-                                {!options.length && (
+                                <RadioGroup
+                                  aria-label={
+                                    'Usar outra carteira de ' + walletLabel[network] + '?'
+                                  }
+                                  value={newWalletNetworks[network] ? 'other' : ''}
+                                  onValueChange={() => {
+                                    setNewWalletNetworks((current) => ({
+                                      ...current,
+                                      [network]: true,
+                                    }))
+                                    setReviewed(null)
+                                  }}
+                                >
+                                  <label
+                                    htmlFor={'use-other-wallet-' + network}
+                                    className="flex items-center gap-2 text-sm"
+                                  >
+                                    <RadioGroupItem
+                                      id={'use-other-wallet-' + network}
+                                      value="other"
+                                    />
+                                    Usar outra carteira?
+                                  </label>
+                                </RadioGroup>
+                                {(!options.length || newWalletNetworks[network]) && (
                                   <TemporaryWalletForm
                                     network={network as WalletNetwork}
                                     value={temporaryWallets[network]}
@@ -732,32 +744,6 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
                             </div>
                           )
                         })}
-                        {networks.length < 2 && (
-                          <div className="space-y-2">
-                            <RadioGroup
-                              aria-label="Usar outra carteira?"
-                              value={usesOtherWallet ? 'other' : 'primary'}
-                              onValueChange={() => {
-                                setPreferOtherWallet(true)
-                                setReviewed(null)
-                              }}
-                            >
-                              <label
-                                htmlFor="use-other-wallet"
-                                className="flex items-center gap-2 text-sm"
-                              >
-                                <RadioGroupItem id="use-other-wallet" value="other" />
-                                Usar outra carteira?
-                              </label>
-                            </RadioGroup>
-                            {requiresOtherNetwork && (
-                              <p className="text-xs text-muted-foreground">
-                                Outra carteira é obrigatória porque a compra inclui uma rede
-                                diferente da carteira principal.
-                              </p>
-                            )}
-                          </div>
-                        )}
                       </section>
                       <Field
                         label="Observação do colecionador (opcional)"
@@ -798,7 +784,7 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
                           <img
                             src={line.nft.displayImageUrl}
                             alt={line.nft.imageAlt}
-                            className="size-[70px] shrink-0 rounded-sm object-cover"
+                            className="size-17.5 shrink-0 rounded-sm object-cover"
                           />
                           <div className="min-w-0 flex-1">
                             <h3 className="truncate text-sm font-bold">{line.nft.name}</h3>
@@ -812,7 +798,7 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
                             </p>
                           </div>
                         </div>
-                        <span className="max-w-24 break-words text-right text-xs font-bold text-accent">
+                        <span className="max-w-24 wrap-break-word text-right text-xs font-bold text-accent">
                           {lineSubtotal(line.nft.priceEth, line.quantity)} ETH
                         </span>
                       </article>
@@ -918,7 +904,7 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
                         <label
                           key={app.id}
                           htmlFor={'app-' + app.id}
-                          className="flex cursor-pointer items-center gap-3 border border-border p-3 text-sm has-[[data-state=checked]]:border-primary"
+                          className="flex cursor-pointer items-center gap-3 border border-border p-3 text-sm has-data-[state=checked]:border-primary"
                         >
                           <RadioGroupItem id={'app-' + app.id} value={app.id} />
                           {app.name}
@@ -948,14 +934,7 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
                     form="checkout-form"
                     variant="cta"
                     className="h-12 w-full"
-                    disabled={
-                      !realtime.data ||
-                      !!attempt ||
-                      authorizing ||
-                      createOrder.isPending ||
-                      !quote.data?.valid ||
-                      !allReady
-                    }
+                    disabled={authorizing || createOrder.isPending}
                   >
                     Confirmar compra
                   </Button>
@@ -971,10 +950,6 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
               </aside>
             </div>
           )}
-
-          <output aria-live="polite" className="mt-4 block text-sm text-accent">
-            {feedback}
-          </output>
         </main>
       </div>
       <Dialog open={loginOpen} onOpenChange={setLoginOpen}>
@@ -997,18 +972,20 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
           onOpenChange={setWalletOpen}
           onCreated={(wallet) => {
             setSelected((current) => ({ ...current, [wallet.network]: wallet.id }))
+            setNewWalletNetworks((current) => ({ ...current, [wallet.network]: false }))
+            setReviewed(null)
             void client.invalidateQueries({ queryKey: walletsKey(userId) })
           }}
         />
       )}
       <Dialog open={review} onOpenChange={setReview}>
         <DialogContent className="flex max-h-[90dvh] w-[min(95vw,672px)] flex-col gap-0 overflow-hidden border border-border border-b-4 border-b-primary p-0 pb-0">
-          <header className="space-y-2 border-b border-border px-5 py-5 pr-12 md:px-7 md:pr-12">
-            <DialogTitle className="font-mono text-xl font-bold">Confirmar compra</DialogTitle>
-            <DialogDescription className="text-xs leading-relaxed text-muted-foreground">
+          <DialogHeader className="mb-0 border-b border-border px-5 py-5 pr-12 md:px-7 md:pr-12">
+            <DialogTitle>Confirmar compra</DialogTitle>
+            <DialogDescription>
               Revise os itens, as carteiras de destino e o total antes de finalizar.
             </DialogDescription>
-          </header>
+          </DialogHeader>
           <div
             className="min-h-0 space-y-6 overflow-y-auto px-5 py-5 md:px-7"
             aria-busy={authorizing || createOrder.isPending}
@@ -1032,14 +1009,14 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
                       className="size-12 shrink-0 rounded-sm object-cover"
                     />
                     <div className="min-w-0 flex-1">
-                      <p className="break-words text-sm font-semibold">{line.nft.name}</p>
+                      <p className="wrap-break-word text-sm font-semibold">{line.nft.name}</p>
                       <p className="mt-1 text-xs text-muted-foreground">
                         {line.nft.editions.find((edition) => edition.id === line.editionId)?.name ||
                           line.editionId}{' '}
                         · Qtd. {line.quantity}
                       </p>
                     </div>
-                    <span className="max-w-[40%] break-words text-right text-xs font-semibold text-accent">
+                    <span className="max-w-[40%] wrap-break-word text-right text-xs font-semibold text-accent">
                       {lineSubtotal(line.nft.priceEth, line.quantity)} ETH
                     </span>
                   </li>
@@ -1049,10 +1026,10 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
             <div className="grid gap-5 border-y border-border py-5 md:grid-cols-2">
               <section className="min-w-0 space-y-2">
                 <h3 className="text-sm font-semibold">Colecionador</h3>
-                <p className="break-words text-sm">{profile.data?.displayName}</p>
+                <p className="wrap-break-word text-sm">{profile.data?.displayName}</p>
                 <p className="break-all text-xs text-muted-foreground">{form.getValues('email')}</p>
                 {form.getValues('note') && (
-                  <p className="whitespace-pre-wrap break-words text-xs leading-relaxed text-muted-foreground">
+                  <p className="whitespace-pre-wrap wrap-break-word text-xs leading-relaxed text-muted-foreground">
                     {form.getValues('note')}
                   </p>
                 )}
@@ -1101,7 +1078,7 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
               <Button
                 variant="cta"
                 className="h-10 md:min-w-44"
-                disabled={authorizing || createOrder.isPending || !allReady}
+                disabled={authorizing || createOrder.isPending}
                 onClick={() => void confirm()}
               >
                 {(authorizing || createOrder.isPending) && (

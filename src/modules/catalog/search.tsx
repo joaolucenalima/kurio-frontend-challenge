@@ -11,6 +11,7 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
+  DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from '#/shared/components/ui/dialog'
@@ -122,7 +123,9 @@ export function NftSearch({ field = false }: { field?: boolean }) {
         }}
         placeholder="Buscar NFTs"
       />
-      <p className="text-xs text-muted-foreground">Digite o nome do NFT</p>
+      <p className="text-center text-xs text-muted-foreground">
+        Digite o nome do NFT para pesquisar
+      </p>
       <div role="status" aria-live="polite">
         {draft.trim() && waiting && (
           <div className="space-y-2">
@@ -187,8 +190,10 @@ export function NftSearch({ field = false }: { field?: boolean }) {
     <Dialog open={open} onOpenChange={changeOpen}>
       <DialogTrigger asChild>{trigger}</DialogTrigger>
       <DialogContent>
-        <DialogTitle>Buscar NFTs</DialogTitle>
-        <DialogDescription>Pesquise em todo o site.</DialogDescription>
+        <DialogHeader>
+          <DialogTitle>Buscar NFTs</DialogTitle>
+          <DialogDescription>Pesquise em todo o site.</DialogDescription>
+        </DialogHeader>
         {content}
       </DialogContent>
     </Dialog>

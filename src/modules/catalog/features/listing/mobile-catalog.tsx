@@ -4,6 +4,7 @@ import { useState } from 'react'
 import {
   Dialog,
   DialogContent,
+  DialogHeader,
   DialogTitle,
   DialogDescription,
 } from '#/shared/components/ui/dialog'
@@ -32,10 +33,10 @@ export function MobileCatalogHeader({
       </button>
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="max-h-[85dvh] overflow-y-auto p-6">
-          <DialogTitle className="pr-6 text-lg leading-6 font-bold">Filtrar NFTs</DialogTitle>
-          <DialogDescription className="mt-3 text-sm leading-6 text-muted-foreground">
-            Combine os filtros para explorar o catálogo.
-          </DialogDescription>
+          <DialogHeader>
+            <DialogTitle>Filtrar NFTs</DialogTitle>
+            <DialogDescription>Combine os filtros para explorar o catálogo.</DialogDescription>
+          </DialogHeader>
           <div className="mt-6 [&>div]:p-0">
             <CatalogFilters search={search} onChange={onChange} />
           </div>

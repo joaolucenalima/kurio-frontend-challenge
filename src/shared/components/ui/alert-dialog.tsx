@@ -5,8 +5,28 @@ import { Button } from '#/shared/components/ui/button'
 
 const AlertDialog = AlertDialogPrimitive.Root
 const AlertDialogTrigger = AlertDialogPrimitive.Trigger
-const AlertDialogTitle = AlertDialogPrimitive.Title
-const AlertDialogDescription = AlertDialogPrimitive.Description
+function AlertDialogTitle({
+  className,
+  ...props
+}: React.ComponentProps<typeof AlertDialogPrimitive.Title>) {
+  return (
+    <AlertDialogPrimitive.Title
+      className={cn('font-mono text-lg leading-6 font-bold text-foreground', className)}
+      {...props}
+    />
+  )
+}
+function AlertDialogDescription({
+  className,
+  ...props
+}: React.ComponentProps<typeof AlertDialogPrimitive.Description>) {
+  return (
+    <AlertDialogPrimitive.Description
+      className={cn('text-sm leading-6 text-muted-foreground', className)}
+      {...props}
+    />
+  )
+}
 
 function AlertDialogContent({
   className,
@@ -27,7 +47,7 @@ function AlertDialogContent({
 }
 
 function AlertDialogHeader({ className, ...props }: React.ComponentProps<'div'>) {
-  return <div className={cn('space-y-3', className)} {...props} />
+  return <div className={cn('space-y-2', className)} {...props} />
 }
 
 function AlertDialogFooter({ className, ...props }: React.ComponentProps<'div'>) {

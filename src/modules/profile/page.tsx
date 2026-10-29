@@ -131,10 +131,8 @@ export function ProfilePage({ tab }: { tab: ProfileTab }) {
                   </AlertDialogTrigger>
                   <AlertDialogContent>
                     <AlertDialogHeader>
-                      <AlertDialogTitle className="text-lg font-bold">
-                        Sair da conta?
-                      </AlertDialogTitle>
-                      <AlertDialogDescription className="text-sm text-muted-foreground">
+                      <AlertDialogTitle>Sair da conta?</AlertDialogTitle>
+                      <AlertDialogDescription>
                         Sua sessão será encerrada neste dispositivo.
                       </AlertDialogDescription>
                     </AlertDialogHeader>

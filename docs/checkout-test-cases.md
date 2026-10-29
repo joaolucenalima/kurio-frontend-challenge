@@ -20,3 +20,12 @@ Automação futura; Playwright não instalado nesta etapa. Usar mocks MSW e esta
 | Reset                 | Resetar mocks após cupom consumido                                                | Elegibilidade restaurada                                                       |
 | Formulários           | Preencher pagamento e abrir revisão                                               | Etapas anteriores ao envio preservadas                                         |
 | Acessibilidade        | Usar teclado e viewports 390, 768 e 1440 px                                       | Foco contido e restaurado, estados anunciados, conteúdo acessível sem overflow |
+
+## Checkout: validação e escolha de carteira
+
+- Clicar em Confirmar compra com dados inválidos: exibir erros sem abrir revisão nem criar pedido. Repetir sem carteira, com cotação inválida, desconectado e com tentativa salva.
+- Selecionar uma carteira secundária cadastrada: manter o formulário de nova carteira fechado.
+- Acionar Usar outra carteira?: abrir formulário exclusivo da compra na rede correspondente; não usar a carteira salva enquanto o cadastro estiver incompleto.
+- Preencher carteira temporária: revisar e enviar a compra com esse endereço, sem salvar no perfil. Selecionar uma carteira cadastrada novamente deve fechar o formulário e usá-la no pedido.
+- Repetir com duas redes: a escolha de uma rede não altera a outra.
+- Aplicar cupom inválido ou expirado: mostrar somente o toast de erro, sem aviso duplicado na página.

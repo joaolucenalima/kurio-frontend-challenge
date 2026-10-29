@@ -7,6 +7,7 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
+  DialogHeader,
   DialogTitle,
 } from '#/shared/components/ui/dialog'
 
@@ -54,11 +55,13 @@ export function WalletCreateDialog({
   const wallets = query.data || []
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="space-y-5 sm:w-[min(95vw,672px)]">
-        <DialogTitle>Adicionar carteira</DialogTitle>
-        <DialogDescription>
-          Cadastre uma carteira para a rede dos NFTs do seu pedido.
-        </DialogDescription>
+      <DialogContent className="space-y-6 sm:w-[min(95vw,672px)]">
+        <DialogHeader>
+          <DialogTitle>Adicionar carteira</DialogTitle>
+          <DialogDescription>
+            Cadastre uma carteira para a rede dos NFTs do seu pedido.
+          </DialogDescription>
+        </DialogHeader>
         {query.isError ? (
           <div role="alert" className="space-y-3 text-sm">
             Não foi possível carregar as carteiras.{' '}
