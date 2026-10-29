@@ -55,10 +55,16 @@ Após mudar o cenário ou resetar, recarregue a página para descartar o cache d
 
 Os handlers consultam diretamente as fixtures locais. O catálogo não utiliza localStorage nem mantém alterações de preço ou estoque. O reset restaura o cenário de rede padrão e seu contador de requisições.
 
-Autenticação, favoritos, compra, tela de detalhe, integração Socket.IO e testes Playwright serão desenvolvidos nas próximas etapas. Não há credenciais de usuário nesta etapa.
+As contas de demonstração incluem `admin@kurio.test` e `test@kurio.test`, ambas com senha `Kurio123!`.
 
 ## Tempo real
 
-Socket.IO usa WebSocket com MSW no desenvolvimento e build demo. Configure VITE_SOCKET_URL somente para um servidor externo compatível. Consulte ARCHITECTURE.md e docs/realtime-test-cases.md para contratos, limitações e validação manual. Playwright não foi adicionado nesta etapa.
+Socket.IO usa WebSocket com MSW no desenvolvimento e build demo. Configure VITE_SOCKET_URL somente para um servidor externo compatível. Consulte ARCHITECTURE.md e docs/realtime-test-cases.md para contratos, limitações e validação manual. Os testes automatizados disponíveis usam Playwright e os mocks do build de demonstração.
 
 No console, use window.kurioMocks.changeNft(id, { priceEth: '2.5' }) para alterar preço; disconnect() interrompe o transporte e exercita reconexão. O retorno de changeNft pode ser reenviado com publish('nft.updated', evento) para testar duplicatas. reset() seguido de recarga restaura os dados.
+
+## Testes automatizados
+
+Instale o navegador com `pnpm exec playwright install chromium` e execute `pnpm test:e2e`. O comando gera o build de demonstração e executa os testes em Chromium desktop e mobile. Use `pnpm test:e2e:ui` para a interface interativa e `pnpm test:e2e:report` para abrir o relatório HTML. Falhas incluem traces em `test-results/`. Cada teste recebe um contexto isolado; os testes de contratos usam requisições do navegador interceptadas pelo MSW.
+
+A cobertura atual inclui catálogo, pesquisa, login, sessão, isolamento de favoritos, carrinho, cupom, cotação, idempotência, timeout, liquidação e atualização de NFT por Socket.IO. A cobertura completa descrita em `scope/README.md` e nos documentos de casos ainda está em desenvolvimento; regressão visual e auditorias Lighthouse ainda não foram implementadas.
