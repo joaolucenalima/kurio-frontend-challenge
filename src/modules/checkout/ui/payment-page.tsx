@@ -87,17 +87,23 @@ type Attempt = {
 }
 type OrderMutation = { userId: string; token: string; attempt: Attempt }
 
-export function PaymentPage() {
+export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean }) {
   const client = useQueryClient()
+
   const session = useQuery({ queryKey: ['session'], queryFn: sessionApi.current, retry: false })
+
   const userId = session.data?.user.id
   const identity = `${userId || ''}:${localStorage.getItem(TOKEN_KEY) || ''}`
+
   const identityRef = useRef(identity)
   const previousIdentityRef = useRef(identity)
+
   useLayoutEffect(() => {
     identityRef.current = identity
   }, [identity])
+
   const confirmLock = useRef(false)
+
   const [loginOpen, setLoginOpen] = useState(false)
   const [walletOpen, setWalletOpen] = useState(false)
   const [walletNetwork, setWalletNetwork] = useState<WalletNetwork>('ethereum')
@@ -250,29 +256,52 @@ export function PaymentPage() {
       return next
     })
   }, [wallets.data, networkKey])
+
   useEffect(() => {
-    if (!userId || !wallets.data) return
+    if (!userId) return
     let active = true
     const raw = localStorage.getItem(attemptStorageKey(userId))
     if (!raw) return
     try {
       const saved = JSON.parse(raw) as { attempt: Attempt; order?: Order }
+      if (startCheckout && saved.order && saved.order.status !== 'pending') {
+        localStorage.removeItem(attemptStorageKey(userId))
+        setOrder(null)
+        setAttempt(null)
+        return
+      }
       setAttempt(saved.attempt)
-      if (saved.order) setOrder(saved.order)
-      else
-        void checkoutApi
-          .getByAttempt(saved.attempt.idempotencyKey)
-          .then((value) => {
-            if (active && identityRef.current === identity) setOrder(value)
-          })
-          .catch(() => undefined)
+      void checkoutApi
+        .getByAttempt(saved.attempt.idempotencyKey)
+        .then((value) => {
+          if (!active || identityRef.current !== identity) return
+          if (startCheckout && value.status !== 'pending') {
+            localStorage.removeItem(attemptStorageKey(userId))
+            setOrder(null)
+            setAttempt(null)
+            void client.invalidateQueries({ queryKey: cartKey(userId) })
+            void client.invalidateQueries({ queryKey: quoteKey(userId) })
+            return
+          }
+          setOrder(value)
+          localStorage.setItem(
+            attemptStorageKey(userId),
+            JSON.stringify({ attempt: saved.attempt, order: value }),
+          )
+        })
+        .catch(() => {
+          if (!active || identityRef.current !== identity) return
+          setFeedback(
+            'Não foi possível recuperar a tentativa anterior. Tente recuperá-la antes de continuar.',
+          )
+        })
     } catch {
       localStorage.removeItem(attemptStorageKey(userId))
     }
     return () => {
       active = false
     }
-  }, [userId, wallets.data, identity])
+  }, [userId, identity, startCheckout, client])
   useEffect(() => {
     if (!order || !userId || order.status !== 'pending') return
     const token = localStorage.getItem(TOKEN_KEY)

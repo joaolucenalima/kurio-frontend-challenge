@@ -538,7 +538,22 @@ export function CartPage() {
                   )
                 )}
                 <Button asChild className="mt-6 h-12 w-full rounded-full lg:h-10 lg:rounded-none">
-                  <Link to="/payment">Conectar e finalizar</Link>
+                  <Link to="/payment" search={{ intent: 'checkout' }}>
+                    Conectar e finalizar
+                  </Link>
+                </Button>
+                <Button
+                  asChild
+                  variant="link"
+                  className="mt-3 hidden h-5 w-full p-0 text-[15px] font-normal text-accent md:inline-flex"
+                >
+                  <Link
+                    to="/"
+                    search={{ ranking: 'all', sort: 'featured', page: 1 }}
+                    hash="catalog"
+                  >
+                    Continuar explorando
+                  </Link>
                 </Button>
               </aside>
             </div>
