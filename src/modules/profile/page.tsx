@@ -170,7 +170,11 @@ export function ProfilePage({ tab }: { tab: ProfileTab }) {
         ) : (
           <p>
             Entre na sua conta para acessar o perfil.{' '}
-            <Link to="/" search={{ sort: 'featured', page: 1 }} className="text-accent underline">
+            <Link
+              to="/"
+              search={{ ranking: 'all', sort: 'featured', page: 1 }}
+              className="text-accent underline"
+            >
               Voltar ao início
             </Link>
           </p>
