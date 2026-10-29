@@ -1,3 +1,4 @@
+import { useToastFeedback } from '#/shared/components/ui/toast'
 import { authRedirect } from './auth-redirect'
 import { useAuthEntry } from './use-auth-entry'
 import { useState } from 'react'
@@ -29,7 +30,7 @@ export function SessionPage({
 
   const [mode, setMode] = useState<'login' | 'signup'>(initialMode)
   const openAuth = useAuthEntry(setMode, redirect)
-  const [serverError, setServerError] = useState('')
+  const setServerError = useToastFeedback()
   const [visiblePasswords, setVisiblePasswords] = useState({
     password: false,
     confirmPassword: false,
@@ -217,9 +218,7 @@ export function SessionPage({
               Esqueceu a senha?
             </button>
           )}
-          <p role="alert" className="text-sm text-destructive empty:hidden">
-            {serverError}
-          </p>
+
           <Button
             disabled={mutation.isPending}
             type="submit"

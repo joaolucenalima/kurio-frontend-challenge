@@ -1,3 +1,4 @@
+import { useToastFeedback } from '#/shared/components/ui/toast'
 import { useId, useState } from 'react'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { isAxiosError } from 'axios'
@@ -49,7 +50,7 @@ export function WalletsSection({ userId }: { userId: string }) {
   const [editing, setEditing] = useState<Wallet | null>(null)
   const [adding, setAdding] = useState(false)
   const [newWallet, setNewWallet] = useState<WalletInput>(empty)
-  const [feedback, setFeedback] = useState('')
+  const setFeedback = useToastFeedback()
 
   const query = useQuery({ queryKey: key, queryFn: ({ signal }) => walletsApi.list(signal) })
 
@@ -214,11 +215,7 @@ export function WalletsSection({ userId }: { userId: string }) {
           </p>
         )}
       </section>
-      {feedback && (
-        <output className="block" aria-live="polite">
-          {feedback}
-        </output>
-      )}
+
       {[adding, !!editing].some(Boolean) && (
         <Dialog
           open

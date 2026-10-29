@@ -1,3 +1,4 @@
+import { useToastFeedback } from '#/shared/components/ui/toast'
 import { useAuthEntry } from '#/modules/session/use-auth-entry'
 import { useState } from 'react'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
@@ -28,7 +29,7 @@ export function FavoriteButton({
 
   const [loginOpen, setLoginOpen] = useState(false)
   const openAuth = useAuthEntry(() => setLoginOpen(true))
-  const [error, setError] = useState('')
+  const setError = useToastFeedback()
 
   const session = useQuery({ queryKey: ['session'], queryFn: sessionApi.current, retry: false })
   const userId = session.data?.user.id
@@ -75,11 +76,7 @@ export function FavoriteButton({
         <Heart className={selected ? 'fill-accent' : ''} aria-hidden="true" />
         {showLabel && (selected ? 'Favoritado' : 'Favoritar')}
       </Button>
-      {error && (
-        <span role="alert" className="text-xs text-destructive">
-          {error}
-        </span>
-      )}
+
       <Dialog open={loginOpen} onOpenChange={setLoginOpen}>
         <DialogContent>
           <DialogTitle className="sr-only">Acessar conta</DialogTitle>

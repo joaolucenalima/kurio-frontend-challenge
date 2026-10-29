@@ -1,3 +1,4 @@
+import { useToastFeedback } from '#/shared/components/ui/toast'
 import { useEffect, useState } from 'react'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -69,8 +70,8 @@ function Field({
 export function ProfileEditor({ userId }: { userId: string }) {
   const queryClient = useQueryClient()
 
-  const [feedback, setFeedback] = useState('')
-  const [passwordFeedback, setPasswordFeedback] = useState('')
+  const setFeedback = useToastFeedback()
+  const setPasswordFeedback = useToastFeedback()
   const [showPasswords, setShowPasswords] = useState({
     currentPassword: false,
     newPassword: false,
@@ -214,11 +215,6 @@ export function ProfileEditor({ userId }: { userId: string }) {
           </Field>
         </div>
         <div className="flex flex-col items-end gap-3">
-          {feedback && (
-            <p aria-live="polite" className="min-h-5 w-full text-sm text-muted-foreground">
-              {feedback}
-            </p>
-          )}
           <Button type="submit" disabled={updateProfile.isPending} className="min-h-10 min-w-32">
             {updateProfile.isPending ? 'Salvando…' : 'Salvar alterações'}
           </Button>
@@ -279,11 +275,6 @@ export function ProfileEditor({ userId }: { userId: string }) {
             })}
           </div>
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-            {passwordFeedback && (
-              <p aria-live="polite" className="min-h-5 text-sm text-muted-foreground">
-                {passwordFeedback}
-              </p>
-            )}
             <Button
               type="submit"
               disabled={updatePassword.isPending}

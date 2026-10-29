@@ -1,5 +1,6 @@
+import { useToastFeedback } from '#/shared/components/ui/toast'
 import { useAuthEntry } from '#/modules/session/use-auth-entry'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { Link } from '@tanstack/react-router'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { isAxiosError } from 'axios'
@@ -50,13 +51,7 @@ export function CartPage() {
   const [loginOpen, setLoginOpen] = useState(false)
   const openAuth = useAuthEntry(() => setLoginOpen(true))
   const [coupon, setCoupon] = useState('')
-  const [notice, setNotice] = useState('')
-
-  useEffect(() => {
-    if (notice !== 'Carrinho atualizado.') return
-    const timeout = window.setTimeout(() => setNotice(''), 4000)
-    return () => window.clearTimeout(timeout)
-  }, [notice])
+  const setNotice = useToastFeedback()
 
   const cart = useQuery({
     queryKey: cartKey(userId || ''),
@@ -558,9 +553,6 @@ export function CartPage() {
               </aside>
             </div>
           )}
-          <output aria-live="polite" className="mt-4 block text-sm text-accent">
-            {notice}
-          </output>
         </main>
         <CartDiscovery />
       </div>

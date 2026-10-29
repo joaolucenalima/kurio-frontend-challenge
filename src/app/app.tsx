@@ -1,3 +1,4 @@
+import { ToastProvider } from '#/shared/components/ui/toast'
 import { RouterProvider } from '@tanstack/react-router'
 import { getRouter } from './router'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
@@ -19,7 +20,9 @@ const queryClient = new QueryClient({
 export function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <RouterProvider router={router} />
+      <ToastProvider>
+        <RouterProvider router={router} />
+      </ToastProvider>
     </QueryClientProvider>
   )
 }

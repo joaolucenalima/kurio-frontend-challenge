@@ -1,3 +1,5 @@
+import { useCallback } from 'react'
+import { useToastFeedback } from '#/shared/components/ui/toast'
 /* eslint-disable react/set-state-in-effect */
 import {
   cloneElement,
@@ -119,7 +121,15 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
   const [attempt, setAttempt] = useState<Attempt | null>(null)
   const [couponInput, setCouponInput] = useState('')
   const [noteLength, setNoteLength] = useState(0)
-  const [feedback, setFeedback] = useState('')
+  const [feedback, setPersistentFeedback] = useState('')
+  const notifyFeedback = useToastFeedback('warning')
+  const setFeedback = useCallback(
+    (message: string) => {
+      setPersistentFeedback(message)
+      notifyFeedback(message)
+    },
+    [notifyFeedback],
+  )
 
   const form = useForm<CheckoutInput>({
     resolver: zodResolver(checkoutSchema),
@@ -242,7 +252,7 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
     if (previousUserId && userId && previousUserId !== userId) form.reset({ email: '', note: '' })
     else if (!userId) form.reset({ email: '', note: '' })
     if (!userId || (previousUserId && previousUserId !== userId)) setNoteLength(0)
-  }, [form, identity, userId])
+  }, [form, identity, userId, setFeedback])
 
   useEffect(() => {
     if (!wallets.data?.length) return
@@ -306,7 +316,7 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
     return () => {
       active = false
     }
-  }, [userId, identity, startCheckout, client])
+  }, [userId, identity, startCheckout, client, setFeedback])
   useEffect(() => {
     if (!order || !userId || order.status !== 'pending') return
     const token = localStorage.getItem(TOKEN_KEY)
@@ -941,6 +951,7 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
               </aside>
             </div>
           )}
+
           <output aria-live="polite" className="mt-4 block text-sm text-accent">
             {feedback}
           </output>
@@ -1052,14 +1063,6 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
                 </dd>
               </div>
             </dl>
-            {feedback && (
-              <output
-                aria-live="polite"
-                className="block border-l-2 border-accent bg-secondary px-3 py-2 text-xs leading-relaxed text-foreground"
-              >
-                {feedback}
-              </output>
-            )}
           </div>
           <footer className="space-y-4 border-t border-border bg-card px-5 py-4 md:px-7">
             <p className="text-xs leading-relaxed text-muted-foreground">
@@ -1135,7 +1138,7 @@ function PriceRow({ label, value }: { label: string; value: string }) {
 }
 function OrderResult({
   order,
-  feedback,
+  feedback: _feedback,
   onRecover,
   busy,
 }: {
@@ -1213,11 +1216,6 @@ function OrderResult({
         <Button asChild>
           <Link to="/cart">Continuar</Link>
         </Button>
-      )}
-      {feedback && (
-        <p aria-live="polite" className="text-sm text-muted-foreground">
-          {feedback}
-        </p>
       )}
     </section>
   )

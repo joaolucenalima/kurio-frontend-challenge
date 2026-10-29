@@ -1,3 +1,4 @@
+import { useToastFeedback } from '#/shared/components/ui/toast'
 import { useAuthEntry } from '#/modules/session/use-auth-entry'
 import type { Dispatch, SetStateAction } from 'react'
 import { Minus, Plus } from 'lucide-react'
@@ -41,7 +42,7 @@ export function PurchasePanel({
 
   const [loginOpen, setLoginOpen] = useState(false)
   const openAuth = useAuthEntry(() => setLoginOpen(true))
-  const [notice, setNotice] = useState('')
+  const setNotice = useToastFeedback()
 
   const session = useQuery({ queryKey: ['session'], queryFn: sessionApi.current, retry: false })
 
@@ -158,7 +159,7 @@ export function PurchasePanel({
           <FavoriteButton nft={nft} showLabel className="h-10 w-36" />
         </div>
       </div>
-      <output className="mt-2 block text-sm text-destructive">{notice}</output>
+
       {authDialog}
     </>
   ) : (
@@ -211,7 +212,7 @@ export function PurchasePanel({
             {add.isPending ? 'Adicionando…' : 'Comprar NFT'}
           </Button>
         </div>
-        <output className="mx-auto mt-2 block max-w-page text-sm text-destructive">{notice}</output>
+
         {authDialog}
       </div>
     </>

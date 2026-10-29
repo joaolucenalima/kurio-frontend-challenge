@@ -1,3 +1,4 @@
+import { useToastFeedback } from '#/shared/components/ui/toast'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { walletsApi, walletsKey } from '../api'
 import type { Wallet, WalletInput, WalletNetwork } from '../model'
@@ -31,6 +32,7 @@ export function WalletCreateDialog({
   onCreated: (wallet: Wallet) => void
   initialNetwork?: WalletNetwork
 }) {
+  const feedback = useToastFeedback()
   const client = useQueryClient()
   const key = walletsKey(userId)
   const query = useQuery({
@@ -39,9 +41,12 @@ export function WalletCreateDialog({
     enabled: open,
   })
   const save = useMutation({
+    onError: () =>
+      feedback('N?o foi poss?vel salvar a carteira. Revise os dados e tente novamente.'),
     mutationFn: (input: WalletInput) => walletsApi.create(input),
     onSuccess: async (wallet) => {
       await client.invalidateQueries({ queryKey: key })
+      feedback('Carteira salva.')
       onCreated(wallet)
       onOpenChange(false)
     },
