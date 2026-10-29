@@ -1,8 +1,9 @@
 import { http, HttpResponse } from 'msw'
 import { loginSchema, signupSchema, type SessionUser } from '#/modules/session/model'
+import { passwordChangeSchema, profileSchema, type Profile } from '#/modules/profile/model'
 
 const STORE_KEY = 'kurio.mock.auth.v1'
-type Account = SessionUser & { salt: string; passwordHash: string }
+type Account = SessionUser & { salt: string; passwordHash: string; profile: Profile }
 type Store = {
   accounts: Account[]
   sessions: Record<string, { userId: string; expiresAt: number }>
@@ -54,11 +55,69 @@ export async function seedAuth() {
       id: crypto.randomUUID(),
       username,
       email,
+      profile: {
+        displayName: username,
+        username,
+        email,
+        ensName: '',
+        walletAlias: 'Minha carteira',
+      },
       salt,
       passwordHash: await hash('Kurio123!', salt),
     })
   }
   write({ accounts, sessions: {} })
+}
+
+export function accountProfile(userId: string): Profile | null {
+  return read().accounts.find((account) => account.id === userId)?.profile || null
+}
+
+export function updateAccountProfile(userId: string, input: unknown) {
+  const parsed = profileSchema.safeParse(input)
+  if (!parsed.success) return { error: parsed.error.issues[0]?.message || 'Dados inválidos' }
+  const store = read()
+  const account = store.accounts.find((item) => item.id === userId)
+  if (!account) return { error: 'Conta não encontrada', status: 404 }
+  const value = parsed.data
+  if (
+    store.accounts.some(
+      (item) =>
+        item.id !== userId &&
+        (item.email.toLowerCase() === value.email ||
+          item.username.toLowerCase() === value.username.toLowerCase() ||
+          (value.ensName &&
+            (item.profile.ensName || '').toLowerCase() === value.ensName.toLowerCase())),
+    )
+  )
+    return { error: 'E-mail, nome de usuário ou ENS já está em uso', status: 409 }
+  account.username = value.username
+  account.email = value.email
+  account.profile = value
+  write(store)
+  return { data: value }
+}
+
+export async function updateAccountPassword(userId: string, input: unknown) {
+  const parsed = passwordChangeSchema.safeParse(input)
+  if (!parsed.success)
+    return { error: parsed.error.issues[0]?.message || 'Dados inválidos', status: 400 }
+  const value = parsed.data
+  const store = read()
+  const account = store.accounts.find((item) => item.id === userId)
+  if (!account) return { error: 'Conta não encontrada', status: 404 }
+  if (
+    !value.currentPassword ||
+    account.passwordHash !== (await hash(value.currentPassword, account.salt))
+  )
+    return { error: 'A senha atual não confere', status: 422 }
+  if (!value.newPassword || value.newPassword.length < 8)
+    return { error: 'Use pelo menos 8 caracteres na nova senha', status: 400 }
+  const salt = crypto.randomUUID()
+  account.salt = salt
+  account.passwordHash = await hash(value.newPassword, salt)
+  write(store)
+  return { data: true }
 }
 
 function createSession(store: Store, user: Account) {
@@ -95,10 +154,17 @@ export const sessionHandlers = [
         { status: 409 },
       )
     const salt = crypto.randomUUID()
-    const user = {
+    const user: Account = {
       id: crypto.randomUUID(),
       username,
       email,
+      profile: {
+        displayName: username,
+        username,
+        email,
+        ensName: '',
+        walletAlias: 'Minha carteira',
+      },
       salt,
       passwordHash: await hash(password, salt),
     }
