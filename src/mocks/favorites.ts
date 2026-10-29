@@ -4,6 +4,17 @@ import { authenticatedUser } from './session'
 
 const KEY = 'kurio.mock.favorites.v1'
 type Store = Record<string, string[]>
+let failNextMutation = false
+
+export function failNextFavoriteMutation() {
+  failNextMutation = true
+}
+
+function mutationFailure() {
+  if (!failNextMutation) return null
+  failNextMutation = false
+  return HttpResponse.json({ message: 'Falha temporária' }, { status: 503 })
+}
 
 function read(): Store {
   try {
@@ -15,6 +26,7 @@ function read(): Store {
 
 export function resetFavorites() {
   localStorage.removeItem(KEY)
+  failNextMutation = false
 }
 
 export const favoriteHandlers = [
@@ -27,6 +39,8 @@ export const favoriteHandlers = [
   http.put('/api/favorites/:id', ({ request, params }) => {
     const user = authenticatedUser(request)
     if (!user) return HttpResponse.json({ message: 'Sessão inválida' }, { status: 401 })
+    const failure = mutationFailure()
+    if (failure) return failure
     const nft = initialNfts.find((item) => item.id === params.id)
     if (!nft) return HttpResponse.json({ message: 'NFT não encontrado' }, { status: 404 })
     const store = read()
@@ -37,6 +51,8 @@ export const favoriteHandlers = [
   http.delete('/api/favorites/:id', ({ request, params }) => {
     const user = authenticatedUser(request)
     if (!user) return HttpResponse.json({ message: 'Sessão inválida' }, { status: 401 })
+    const failure = mutationFailure()
+    if (failure) return failure
     const store = read()
     store[user.id] = (store[user.id] || []).filter((id) => id !== params.id)
     localStorage.setItem(KEY, JSON.stringify(store))

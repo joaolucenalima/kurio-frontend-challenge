@@ -6,7 +6,7 @@ import { httpClient } from '#/shared/api/http'
 import { handlers, resetSimulation, selectScenario } from './handlers'
 import { sessionHandlers, resetAuth, seedAuth } from './session'
 import { cartHandlers, resetCarts } from './cart'
-import { favoriteHandlers, resetFavorites } from './favorites'
+import { favoriteHandlers, resetFavorites, failNextFavoriteMutation } from './favorites'
 import { profileHandlers } from './profile'
 import { resetWallets, walletHandlers } from './wallets'
 import { checkoutHandlers } from './checkout'
@@ -90,6 +90,7 @@ export async function startMocks() {
   // Explicit development/demo controls; these never replace REST or socket events.
   window.kurioMocks = {
     changeNft,
+    failNextFavoriteMutation,
     disconnect: disconnectSockets,
     publish,
     reset: async () => {
@@ -114,6 +115,7 @@ declare global {
     kurioMocks?: {
       reset: () => void
       changeNft: typeof changeNft
+      failNextFavoriteMutation: typeof failNextFavoriteMutation
       disconnect: typeof disconnectSockets
       publish: typeof publish
       scenario: typeof selectScenario
