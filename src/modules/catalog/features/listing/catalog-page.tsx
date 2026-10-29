@@ -5,6 +5,7 @@ import { Header } from '#/shared/components/header'
 import { CatalogFilters } from './catalog-filters'
 import { CatalogResults } from './catalog-results'
 import { HeroCarousel } from './hero-carousel'
+import { CatalogEditorial } from './catalog-editorial'
 import type { CatalogSearch } from '../../model/contracts'
 
 export function CatalogPage({
@@ -80,6 +81,7 @@ export function CatalogPage({
             </aside>
             <CatalogResults search={search} onChange={onSearchChange} />
           </section>
+          <CatalogEditorial onSearchChange={onSearchChange} />
         </main>
         <MobileNavigation />
       </div>
