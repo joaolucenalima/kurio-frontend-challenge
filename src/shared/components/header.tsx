@@ -1,3 +1,4 @@
+import { useAuthEntry } from '#/modules/session/use-auth-entry'
 import { LogIn, Search, ShoppingCart, User } from 'lucide-react'
 import { Link } from '@tanstack/react-router'
 import { Button } from '#/shared/components/ui/button'
@@ -16,6 +17,7 @@ import { cartKey } from '#/modules/cart/model'
 
 export function Header() {
   const [loginOpen, setLoginOpen] = useState(false)
+  const openAuth = useAuthEntry(() => setLoginOpen(true))
 
   const session = useQuery({ queryKey: ['session'], queryFn: sessionApi.current, retry: false })
   const userId = session.data?.user.id
@@ -104,13 +106,7 @@ export function Header() {
         ) : (
           <Button
             type="button"
-            onClick={() => {
-              if (window.matchMedia('(max-width: 767px)').matches)
-                window.location.assign(
-                  '/login?redirect=' + encodeURIComponent(location.pathname + location.search),
-                )
-              else setLoginOpen(true)
-            }}
+            onClick={() => openAuth()}
             className="font-mono text-base leading-6 font-medium tracking-normal text-primary-foreground"
           >
             <LogIn aria-hidden="true" />

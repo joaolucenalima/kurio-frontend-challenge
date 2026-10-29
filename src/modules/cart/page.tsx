@@ -1,3 +1,4 @@
+import { useAuthEntry } from '#/modules/session/use-auth-entry'
 import { useEffect, useState } from 'react'
 import { Link } from '@tanstack/react-router'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
@@ -47,6 +48,7 @@ export function CartPage() {
   const userId = session.data?.user.id
 
   const [loginOpen, setLoginOpen] = useState(false)
+  const openAuth = useAuthEntry(() => setLoginOpen(true))
   const [coupon, setCoupon] = useState('')
   const [notice, setNotice] = useState('')
 
@@ -164,7 +166,7 @@ export function CartPage() {
             <section className="rounded-xl bg-card p-8 text-center">
               <h1 className="text-xl font-bold">Entre para acessar seu carrinho</h1>
               <p className="mt-3 text-muted-foreground">Seus itens ficam salvos na sua conta.</p>
-              <Button className="mt-6" onClick={() => setLoginOpen(true)}>
+              <Button className="mt-6" onClick={() => openAuth()}>
                 Entrar ou criar conta
               </Button>
             </section>

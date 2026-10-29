@@ -1,3 +1,4 @@
+import { useAuthEntry } from '#/modules/session/use-auth-entry'
 import type { Dispatch, SetStateAction } from 'react'
 import { Minus, Plus } from 'lucide-react'
 import { FavoriteButton } from '#/modules/favorites'
@@ -39,6 +40,7 @@ export function PurchasePanel({
   const navigate = useNavigate()
 
   const [loginOpen, setLoginOpen] = useState(false)
+  const openAuth = useAuthEntry(() => setLoginOpen(true))
   const [notice, setNotice] = useState('')
 
   const session = useQuery({ queryKey: ['session'], queryFn: sessionApi.current, retry: false })
@@ -55,7 +57,7 @@ export function PurchasePanel({
     onError: (error) => {
       if (isAxiosError(error) && error.response?.status === 401) {
         queryClient.setQueryData(['session'], null)
-        setLoginOpen(true)
+        openAuth()
       } else
         setNotice(
           isAxiosError(error)
@@ -69,7 +71,7 @@ export function PurchasePanel({
   const buy = () => {
     if (!edition || quantity < 1) return
     if (!session.data) {
-      setLoginOpen(true)
+      openAuth()
       return
     }
     add.mutate({ nftId: nft.id, editionId: edition.id, quantity })
