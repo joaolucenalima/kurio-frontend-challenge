@@ -28,7 +28,21 @@ async function hash(password: string, salt: string) {
 
 function read(): Store {
   try {
-    return JSON.parse(localStorage.getItem(STORE_KEY) || '') as Store
+    const store = JSON.parse(localStorage.getItem(STORE_KEY) || '') as Store
+    let migrated = false
+    for (const account of store.accounts) {
+      if (!account.profile) {
+        account.profile = {
+          displayName: account.username,
+          username: account.username,
+          email: account.email,
+          ensName: '',
+        }
+        migrated = true
+      }
+    }
+    if (migrated) write(store)
+    return store
   } catch {
     return { accounts: [], sessions: {} }
   }

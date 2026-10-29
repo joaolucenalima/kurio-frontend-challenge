@@ -42,5 +42,25 @@ export type Order = {
   transactionReference?: string
 }
 
+export type CheckoutReview = {
+  quote: CheckoutQuote
+  collector: CheckoutInput
+  wallets: CheckoutWallet[]
+  application: string
+}
+
+export type WalletChoice =
+  | { network: string; kind: 'saved'; walletId: string }
+  | { network: string; kind: 'temporary' }
+
+export type CheckoutAttempt = {
+  idempotencyKey: string
+  quoteId: string
+  collector: CheckoutInput
+  wallets: CheckoutWallet[]
+}
+
+export type PersistedAttempt = { attempt: CheckoutAttempt }
+
 export const orderKey = (userId: string, id: string) => ['order', userId, id] as const
 export const orderAttemptKey = (userId: string) => ['order-attempt', userId] as const
