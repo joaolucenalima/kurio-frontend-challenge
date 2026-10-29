@@ -10,11 +10,17 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as PerfilRouteImport } from './routes/perfil'
 import { Route as NftsNftIdRouteImport } from './routes/nfts.$nftId'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PerfilRoute = PerfilRouteImport.update({
+  id: '/perfil',
+  path: '/perfil',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NftsNftIdRoute = NftsNftIdRouteImport.update({
@@ -25,27 +31,31 @@ const NftsNftIdRoute = NftsNftIdRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/perfil': typeof PerfilRoute
   '/nfts/$nftId': typeof NftsNftIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/perfil': typeof PerfilRoute
   '/nfts/$nftId': typeof NftsNftIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/perfil': typeof PerfilRoute
   '/nfts/$nftId': typeof NftsNftIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/nfts/$nftId'
+  fullPaths: '/' | '/perfil' | '/nfts/$nftId'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/nfts/$nftId'
-  id: '__root__' | '/' | '/nfts/$nftId'
+  to: '/' | '/perfil' | '/nfts/$nftId'
+  id: '__root__' | '/' | '/perfil' | '/nfts/$nftId'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  PerfilRoute: typeof PerfilRoute
   NftsNftIdRoute: typeof NftsNftIdRoute
 }
 
@@ -56,6 +66,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/perfil': {
+      id: '/perfil'
+      path: '/perfil'
+      fullPath: '/perfil'
+      preLoaderRoute: typeof PerfilRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/nfts/$nftId': {
@@ -70,6 +87,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  PerfilRoute: PerfilRoute,
   NftsNftIdRoute: NftsNftIdRoute,
 }
 export const routeTree = rootRouteImport
