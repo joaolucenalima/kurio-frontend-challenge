@@ -25,11 +25,11 @@ function errorMessage(error: unknown) {
 function Skeleton() {
   return (
     <div aria-label="Carregando dados do perfil" className="space-y-8" aria-busy="true">
-      <div className="grid grid-cols-1 gap-x-7 gap-y-6 sm:grid-cols-2">
+      <div className="grid grid-cols-1 gap-x-7 gap-y-6 md:grid-cols-2">
         {Array.from({ length: 5 }, (_, index) => (
           <div key={index} className="space-y-2">
-            <div className="h-4 w-32 animate-[shimmer_1.6s_linear_infinite] bg-[length:200%_100%] bg-gradient-to-r from-card via-border to-card motion-reduce:animate-none" />
-            <div className="h-10 w-full animate-[shimmer_1.6s_linear_infinite] bg-[length:200%_100%] bg-gradient-to-r from-card via-border to-card motion-reduce:animate-none" />
+            <div className="h-4 w-32 animate-[shimmer_1.6s_linear_infinite] bg-size-[200%_100%] bg-linear-to-r from-card via-border to-card motion-reduce:animate-none" />
+            <div className="h-10 w-full animate-[shimmer_1.6s_linear_infinite] bg-size-[200%_100%] bg-linear-to-r from-card via-border to-card motion-reduce:animate-none" />
           </div>
         ))}
       </div>
@@ -68,24 +68,34 @@ function Field({
 
 export function ProfileEditor({ userId }: { userId: string }) {
   const queryClient = useQueryClient()
+
   const [feedback, setFeedback] = useState('')
   const [passwordFeedback, setPasswordFeedback] = useState('')
-  const [showPasswords, setShowPasswords] = useState(false)
+  const [showPasswords, setShowPasswords] = useState({
+    currentPassword: false,
+    newPassword: false,
+    confirmPassword: false,
+  })
+
   const profileQuery = useQuery({
     queryKey: profileKey(userId),
     queryFn: ({ signal }) => profileApi.get(signal),
   })
+
   const profileForm = useForm<ProfileInput>({
     resolver: zodResolver(profileSchema),
     defaultValues: { displayName: '', username: '', email: '', ensName: '', walletAlias: '' },
   })
+
   useEffect(() => {
     if (profileQuery.data && !profileForm.formState.isDirty) profileForm.reset(profileQuery.data)
   }, [profileForm, profileQuery.data])
+
   const passwordForm = useForm<PasswordChange>({
     resolver: zodResolver(passwordChangeSchema),
     defaultValues: { currentPassword: '', newPassword: '', confirmPassword: '' },
   })
+
   const updateProfile = useMutation({
     mutationFn: (values: ProfileInput) => profileApi.update(values),
     onSuccess: (profile) => {
@@ -113,6 +123,7 @@ export function ProfileEditor({ userId }: { userId: string }) {
         setFeedback(errorMessage(error))
     },
   })
+
   const updatePassword = useMutation({
     mutationFn: (values: PasswordChange) => profileApi.changePassword(values),
     onSuccess: () => {
@@ -145,16 +156,16 @@ export function ProfileEditor({ userId }: { userId: string }) {
   const passwordError = passwordForm.formState.errors
 
   return (
-    <div className="space-y-9">
+    <div className="grid grid-cols-1 gap-x-7 gap-y-9 md:grid-cols-2">
       <form
         noValidate
         onSubmit={profileForm.handleSubmit((values) => {
           setFeedback('')
           updateProfile.mutate(values)
         })}
-        className="space-y-7"
+        className="space-y-7 md:col-span-2"
       >
-        <div className="grid grid-cols-1 gap-x-7 gap-y-6 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-x-7 gap-y-6 md:grid-cols-2">
           <Field
             id="displayName"
             label="Nome de exibição"
@@ -215,16 +226,18 @@ export function ProfileEditor({ userId }: { userId: string }) {
           </Field>
         </div>
         <div className="flex flex-col items-end gap-3">
-          <p aria-live="polite" className="min-h-5 w-full text-sm text-muted-foreground">
-            {feedback}
-          </p>
+          {feedback && (
+            <p aria-live="polite" className="min-h-5 w-full text-sm text-muted-foreground">
+              {feedback}
+            </p>
+          )}
           <Button type="submit" disabled={updateProfile.isPending} className="min-h-10 min-w-32">
             {updateProfile.isPending ? 'Salvando…' : 'Salvar alterações'}
           </Button>
         </div>
       </form>
 
-      <section aria-labelledby="password-heading" className="border-t border-primary/30 pt-7">
+      <section aria-labelledby="password-heading">
         <h2 id="password-heading" className="mb-6 text-base font-medium">
           Alterar senha
         </h2>
@@ -250,7 +263,7 @@ export function ProfileEditor({ userId }: { userId: string }) {
                   <div className="relative">
                     <Input
                       id={name}
-                      type={showPasswords ? 'text' : 'password'}
+                      type={showPasswords[name] ? 'text' : 'password'}
                       autoComplete={autoComplete}
                       className="pr-11"
                       aria-invalid={!!error}
@@ -259,12 +272,14 @@ export function ProfileEditor({ userId }: { userId: string }) {
                     />
                     <button
                       type="button"
-                      className="absolute inset-y-0 right-0 flex w-10 items-center justify-center text-subtle hover:text-accent focus-visible:text-accent"
-                      aria-label={`${showPasswords ? 'Ocultar' : 'Mostrar'} ${label.toLowerCase()}`}
-                      aria-pressed={showPasswords}
-                      onClick={() => setShowPasswords((shown) => !shown)}
+                      className="absolute inset-y-0 right-0 flex w-10 cursor-pointer items-center justify-center text-subtle hover:text-accent focus-visible:text-accent"
+                      aria-label={`${showPasswords[name] ? 'Ocultar' : 'Mostrar'} ${label.toLowerCase()}`}
+                      aria-pressed={showPasswords[name]}
+                      onClick={() =>
+                        setShowPasswords((shown) => ({ ...shown, [name]: !shown[name] }))
+                      }
                     >
-                      {showPasswords ? (
+                      {showPasswords[name] ? (
                         <EyeOff className="size-4" aria-hidden="true" />
                       ) : (
                         <Eye className="size-4" aria-hidden="true" />
@@ -275,11 +290,17 @@ export function ProfileEditor({ userId }: { userId: string }) {
               )
             })}
           </div>
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-            <p aria-live="polite" className="min-h-5 text-sm text-muted-foreground">
-              {passwordFeedback}
-            </p>
-            <Button type="submit" disabled={updatePassword.isPending} className="min-h-10 min-w-32">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            {passwordFeedback && (
+              <p aria-live="polite" className="min-h-5 text-sm text-muted-foreground">
+                {passwordFeedback}
+              </p>
+            )}
+            <Button
+              type="submit"
+              disabled={updatePassword.isPending}
+              className="min-h-10 min-w-32 self-start"
+            >
               {updatePassword.isPending ? 'Salvando…' : 'Salvar'}
             </Button>
           </div>

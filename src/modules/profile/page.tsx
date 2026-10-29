@@ -4,6 +4,7 @@ import { Header } from '#/shared/components/header'
 import { Button } from '#/shared/components/ui/button'
 import { sessionApi } from '#/modules/session/api'
 import { FavoritesList } from '#/modules/favorites'
+import { ProfileEditor } from './ui/profile-editor'
 import {
   AlertDialog,
   AlertDialogAction,
@@ -88,7 +89,7 @@ export function ProfilePage({ tab }: { tab: ProfileTab }) {
         {session.isPending ? (
           <p>Carregando sessão…</p>
         ) : session.data ? (
-          <div className="grid min-w-0 gap-6 md:grid-cols-[19.375rem_minmax(0,1fr)] md:gap-7">
+          <div className="grid items-start min-w-0 gap-6 md:grid-cols-[19.5rem_minmax(0,1fr)] md:gap-7">
             <nav aria-label="Navegação do perfil" className="min-w-0 bg-card py-2">
               <h2 className="px-6 py-4 text-lg font-bold">Meu perfil</h2>
               <ul className="flex flex-col">
@@ -159,6 +160,7 @@ export function ProfilePage({ tab }: { tab: ProfileTab }) {
                 </h1>
                 <p className="text-sm leading-4 text-muted-foreground">{activeTab.description}</p>
               </div>
+              {tab === 'profile' ? <ProfileEditor userId={session.data.user.id} /> : null}
               {tab === 'watchlist' ? <FavoritesList userId={session.data.user.id} /> : null}
             </section>
           </div>
