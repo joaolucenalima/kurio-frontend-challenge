@@ -1,3 +1,5 @@
+import { MobileNavigation } from '#/shared/components/mobile-navigation'
+import { MobileCatalogHeader, MobileHero } from './mobile-catalog'
 import { Button } from '#/shared/components/ui/button'
 import { Header } from '#/shared/components/header'
 import { CatalogFilters } from './catalog-filters'
@@ -12,12 +14,16 @@ export function CatalogPage({
   onSearchChange: (search: CatalogSearch) => void
 }) {
   return (
-    <div className="px-6 py-6">
+    <div className="px-6 pt-10 md:pt-6 pb-36 md:pb-6">
       <div className="mx-auto max-w-page">
-        <Header />
+        <div className="hidden md:block">
+          <Header />
+        </div>
+        <MobileCatalogHeader search={search} onChange={onSearchChange} />
         <main>
-          <section className="mt-8 flex items-center lg:min-h-hero-section">
-            <div className="min-w-0 flex-1 py-4 pr-4 lg:p-10">
+          <MobileHero />
+          <section className="hidden md:flex mt-4 items-center overflow-hidden rounded-xl bg-card md:mt-8 md:bg-transparent lg:min-h-hero-section">
+            <div className="min-w-0 flex-1 p-4 lg:p-10">
               <p className="font-mono text-sm leading-4 font-medium tracking-widest">
                 Bem-vindo à Kurio
               </p>
@@ -28,7 +34,7 @@ export function CatalogPage({
                 Descubra NFTs selecionados de criadores emergentes e consagrados. Colecione arte
                 digital rara, apoie artistas e tenha uma parte da cultura da internet.
               </p>
-              <Button asChild variant="cta" size="cta" className="mt-8">
+              <Button asChild variant="cta" size="cta" className="mt-3 md:mt-8">
                 <a href="#catalog">EXPLORAR</a>
               </Button>
             </div>
@@ -43,9 +49,12 @@ export function CatalogPage({
           <section
             id="catalog"
             aria-labelledby="catalog-title"
-            className="mt-10 flex scroll-mt-6 flex-col gap-8 lg:mt-24 lg:flex-row lg:gap-12"
+            className="mt-4 md:mt-10 flex scroll-mt-6 flex-col gap-8 lg:mt-24 lg:flex-row lg:gap-12"
           >
-            <aside aria-label="Filtros do catálogo" className="min-w-0 lg:w-sidebar lg:shrink-0">
+            <aside
+              aria-label="Filtros do catálogo"
+              className="hidden md:block min-w-0 lg:w-sidebar lg:shrink-0"
+            >
               <details className="lg:hidden">
                 <summary className="cursor-pointer rounded-md border border-border p-3 text-sm">
                   Filtrar NFTs
@@ -77,6 +86,7 @@ export function CatalogPage({
             <CatalogResults search={search} onChange={onSearchChange} />
           </section>
         </main>
+        <MobileNavigation />
         <footer className="mt-24 border-t border-border py-8 text-xs leading-4 text-muted-foreground">
           © 2026 Kurio. Propriedade digital para todos.
         </footer>

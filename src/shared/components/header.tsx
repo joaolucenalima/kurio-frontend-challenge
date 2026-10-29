@@ -1,3 +1,4 @@
+import { useAuthEntry } from '#/modules/session/use-auth-entry'
 import { LogIn, Search, ShoppingCart, User } from 'lucide-react'
 import { Link } from '@tanstack/react-router'
 import { Button } from '#/shared/components/ui/button'
@@ -16,18 +17,21 @@ import { cartKey } from '#/modules/cart/model'
 
 export function Header() {
   const [loginOpen, setLoginOpen] = useState(false)
+  const openAuth = useAuthEntry(() => setLoginOpen(true))
 
   const session = useQuery({ queryKey: ['session'], queryFn: sessionApi.current, retry: false })
   const userId = session.data?.user.id
+
   const cart = useQuery({
     queryKey: cartKey(userId ?? ''),
     queryFn: ({ signal }) => cartApi.get({ signal }),
     enabled: !!userId,
   })
+
   const cartQuantity = cart.data?.items.reduce((total, item) => total + item.quantity, 0) ?? 0
 
   return (
-    <header className="flex flex-wrap items-start justify-between gap-y-4">
+    <header className="hidden flex-wrap items-start justify-between gap-y-4 md:flex">
       <a
         href="/"
         className="cursor-pointer transition-colors duration-200 ease-out hover:text-accent focus-visible:text-accent flex h-9 items-center font-mono text-sm leading-5 font-bold tracking-widest lg:w-40"
@@ -102,7 +106,7 @@ export function Header() {
         ) : (
           <Button
             type="button"
-            onClick={() => setLoginOpen(true)}
+            onClick={() => openAuth()}
             className="font-mono text-base leading-6 font-medium tracking-normal text-primary-foreground"
           >
             <LogIn aria-hidden="true" />

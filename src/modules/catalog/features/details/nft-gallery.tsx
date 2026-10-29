@@ -40,7 +40,7 @@ export function Gallery({ nft }: { nft: Nft }) {
     <div className="flex min-w-0 flex-col-reverse gap-4 md:flex-row md:items-start md:gap-7">
       <div
         aria-label="Opções de mídia do NFT"
-        className="flex gap-3 overflow-x-auto md:max-h-112 md:flex-col md:overflow-y-auto"
+        className="hidden gap-3 overflow-x-auto md:flex md:max-h-112 md:flex-col md:overflow-y-auto"
       >
         <button
           type="button"
@@ -52,7 +52,7 @@ export function Gallery({ nft }: { nft: Nft }) {
         </button>
       </div>
       <div
-        className={`relative flex aspect-square min-w-0 flex-1 items-center justify-center rounded-lg bg-card p-3 md:max-w-111 md:p-4 ${zoomed ? 'cursor-crosshair' : ''}`}
+        className={`relative flex aspect-square min-w-0 flex-1 items-center justify-center rounded-xl bg-card p-0 md:max-w-111 md:p-4 ${zoomed ? 'cursor-crosshair' : ''}`}
         onPointerMove={zoomed ? moveZoom : undefined}
         onPointerLeave={() => setPosition(null)}
       >

@@ -1,3 +1,4 @@
+import { RequireSession } from '#/modules/session/require-session'
 import { createFileRoute } from '@tanstack/react-router'
 import { ProfilePage, profileTabs, type ProfileTab } from '#/modules/profile/page'
 
@@ -12,5 +13,9 @@ export const Route = createFileRoute('/profile')({
 
 function ProfileRoute() {
   const { tab } = Route.useSearch()
-  return <ProfilePage tab={tab} />
+  return (
+    <RequireSession>
+      <ProfilePage tab={tab} />
+    </RequireSession>
+  )
 }

@@ -1,3 +1,4 @@
+import { MobileNavigation } from '#/shared/components/mobile-navigation'
 import { Link } from '@tanstack/react-router'
 import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { Header } from '#/shared/components/header'
@@ -84,20 +85,20 @@ export function ProfilePage({ tab }: { tab: ProfileTab }) {
   const session = useQuery({ queryKey: ['session'], queryFn: sessionApi.current, retry: false })
 
   return (
-    <div className="mx-auto max-w-page px-4 py-6 sm:px-6 xl:px-0">
+    <div className="mx-auto max-w-page px-4 py-6 pb-[calc(8rem+env(safe-area-inset-bottom))] md:pb-6 sm:px-6 xl:px-0">
       <Header />
       <main className="py-8">
         {session.isPending ? (
           <p>Carregando sessão…</p>
         ) : session.data ? (
-          <div className="grid items-start min-w-0 gap-6 md:grid-cols-[19.5rem_minmax(0,1fr)] md:gap-7">
+          <div className="grid items-start min-w-0 gap-6 lg:grid-cols-[19.5rem_minmax(0,1fr)] lg:gap-7">
             <nav aria-label="Navegação do perfil" className="min-w-0 bg-card py-2">
               <h2 className="px-6 py-4 text-lg font-bold">Meu perfil</h2>
-              <ul className="flex flex-col">
+              <ul className="flex flex-row overflow-x-auto lg:flex-col">
                 {profileTabs.map((item, index) => {
                   const Icon = tabIcons[index]
                   return (
-                    <li key={item.id}>
+                    <li key={item.id} className="shrink-0">
                       <Link
                         to="/profile"
                         search={{ tab: item.id }}
@@ -180,6 +181,7 @@ export function ProfilePage({ tab }: { tab: ProfileTab }) {
           </p>
         )}
       </main>
+      <MobileNavigation />
     </div>
   )
 }

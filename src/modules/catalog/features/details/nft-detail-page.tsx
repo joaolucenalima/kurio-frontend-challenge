@@ -2,7 +2,8 @@ import { useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { Link } from '@tanstack/react-router'
 import { isAxiosError } from 'axios'
-import { ChevronLeft } from 'lucide-react'
+import { FavoriteButton } from '#/modules/favorites'
+import { ChevronLeft, Star } from 'lucide-react'
 import { Header } from '#/shared/components/header'
 import { Button } from '#/shared/components/ui/button'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '#/shared/components/ui/tabs'
@@ -16,6 +17,14 @@ import { RelatedNfts } from './related-nfts'
 import { PurchasePanel } from './nft-purchase-panel'
 
 function DetailContent({ nft }: { nft: Nft }) {
+  const reviews = useQuery(catalogQueries.reviews(nft.id))
+  const rating = reviews.data?.length
+    ? (reviews.data.reduce((sum, review) => sum + review.rating, 0) / reviews.data.length).toFixed(
+        1,
+      )
+    : reviews.data
+      ? '0.0'
+      : '—'
   const [editionId, setEditionId] = useState(nft.editions[0]?.id)
   const [quantity, setQuantity] = useState(1)
   const edition =
@@ -62,11 +71,23 @@ function DetailContent({ nft }: { nft: Nft }) {
             <ChevronLeft aria-hidden="true" />
           </Link>
         </Button>
+        <FavoriteButton nft={nft} className="size-9 rounded-full bg-secondary" />
       </div>
       <div className="grid min-w-0 gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)]">
         <Gallery key={nft.id} nft={nft} />
         <div className="min-w-0">
-          <h1 className="text-2xl font-bold md:text-[28px]">{nft.name}</h1>
+          <div className="flex items-center justify-between gap-3">
+            <h1 className="min-w-0 text-lg font-bold wrap-break-word md:text-[28px]">{nft.name}</h1>
+            <span
+              aria-label={`${rating} de 5 estrelas, ${nft.reviewCount} avaliações`}
+              className="flex shrink-0 items-center gap-1 whitespace-nowrap text-xs text-accent md:hidden"
+            >
+              <Star aria-hidden="true" className="size-3.5 fill-current" />
+              <span>
+                {rating} ({nft.reviewCount})
+              </span>
+            </span>
+          </div>
           <div className="mt-3 hidden flex-wrap items-center justify-between gap-3 border-b border-border pb-2 md:flex">
             <p className="text-xl font-bold text-accent md:text-[22px]">{nft.priceEth} ETH</p>
             <ReviewSummary count={nft.reviewCount} />

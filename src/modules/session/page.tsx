@@ -1,3 +1,5 @@
+import { authRedirect } from './auth-redirect'
+import { useAuthEntry } from './use-auth-entry'
 import { useState } from 'react'
 import { useNavigate } from '@tanstack/react-router'
 import { useMutation, useQueryClient } from '@tanstack/react-query'
@@ -10,15 +12,23 @@ import { sessionApi } from './api'
 import { loginSchema, signupSchema, type LoginInput, type SignupInput } from './model'
 import { Input } from '#/shared/components/ui/input'
 
-function returnPath(value: string | undefined) {
-  return value?.startsWith('/') && !value.startsWith('//') ? value : '/'
-}
-
-export function SessionPage({ redirect, onSuccess }: { redirect?: string; onSuccess: () => void }) {
+export function SessionPage({
+  redirect,
+  onSuccess,
+  initialMode = 'login',
+  presentation = 'modal',
+}: {
+  redirect?: string
+  onSuccess?: () => void
+  initialMode?: 'login' | 'signup'
+  presentation?: 'modal' | 'page'
+}) {
+  const isPage = presentation === 'page'
   const navigate = useNavigate()
   const queryClient = useQueryClient()
 
-  const [mode, setMode] = useState<'login' | 'signup'>('login')
+  const [mode, setMode] = useState<'login' | 'signup'>(initialMode)
+  const openAuth = useAuthEntry(setMode, redirect)
   const [serverError, setServerError] = useState('')
   const [visiblePasswords, setVisiblePasswords] = useState({
     password: false,
@@ -41,10 +51,14 @@ export function SessionPage({ redirect, onSuccess }: { redirect?: string; onSucc
         ? sessionApi.login(data as LoginInput)
         : sessionApi.signup(data as SignupInput),
     onSuccess: async (session) => {
+      await queryClient.cancelQueries()
       queryClient.clear()
       queryClient.setQueryData(['session'], session)
-      onSuccess()
-      if (redirect) await navigate({ to: returnPath(redirect) })
+      if (isPage) {
+        await navigate({ href: authRedirect(redirect), replace: true })
+      } else {
+        onSuccess?.()
+      }
     },
     onError: (error) => {
       const data = isAxiosError(error)
@@ -102,7 +116,7 @@ export function SessionPage({ redirect, onSuccess }: { redirect?: string; onSucc
                     ? 'Confirmar senha'
                     : 'Senha'
             }
-            className={isPassword ? 'pr-12' : undefined}
+            className={`${isPage ? 'h-12.5 rounded-[10px]' : ''} ${isPassword ? 'pr-12' : ''}`}
             {...registration}
           />
           {isPassword && (
@@ -125,7 +139,7 @@ export function SessionPage({ redirect, onSuccess }: { redirect?: string; onSucc
         </div>
         <p
           id={`${name}-error`}
-          className="text-xs text-destructive mt-2"
+          className="text-xs text-destructive not-empty:mt-2"
           role={message ? 'alert' : undefined}
         >
           {String(message || '')}
@@ -137,44 +151,58 @@ export function SessionPage({ redirect, onSuccess }: { redirect?: string; onSucc
   return (
     <div className="w-full font-mono">
       <section className="w-full">
-        <nav
-          className="flex justify-center gap-3 pt-12 text-xl leading-4 font-medium"
-          aria-label="Conta"
-        >
-          <button
-            type="button"
-            onClick={() => {
-              setMode('login')
-              setServerError('')
-            }}
-            className={`cursor-pointer px-2 transition-colors hover:text-accent ${mode === 'login' ? 'text-accent' : 'text-foreground'}`}
+        {isPage ? (
+          <h1
+            className={`text-center leading-6 font-bold ${mode === 'login' ? 'text-xl' : 'text-lg'}`}
           >
-            Entrar
-          </button>
-          <span className="h-4 w-px bg-destructive" aria-hidden="true" />
-          <button
-            type="button"
-            onClick={() => {
-              setMode('signup')
-              setServerError('')
-            }}
-            className={`cursor-pointer px-2 transition-colors hover:text-accent ${mode === 'signup' ? 'text-accent' : 'text-foreground'}`}
-          >
-            Criar conta
-          </button>
-        </nav>
-        <p className="mx-12 mt-10 h-8 text-[13px] leading-4 text-center text-foreground">
-          {mode === 'login'
-            ? 'Entre para gerenciar sua carteira, coleção e perfil de criador.'
-            : 'Crie seu perfil de colecionador e conecte uma carteira quando quiser.'}
-        </p>
+            {mode === 'login' ? 'Entrar' : 'Criar perfil de colecionador'}
+          </h1>
+        ) : (
+          <>
+            <nav
+              className="flex justify-center gap-3 pt-12 text-xl leading-4 font-medium"
+              aria-label="Conta"
+            >
+              <button
+                type="button"
+                onClick={() => {
+                  openAuth('login')
+                  setServerError('')
+                }}
+                className={`cursor-pointer px-2 transition-colors hover:text-accent ${mode === 'login' ? 'text-accent' : 'text-foreground'}`}
+              >
+                Entrar
+              </button>
+              <span className="h-4 w-px bg-destructive" aria-hidden="true" />
+              <button
+                type="button"
+                onClick={() => {
+                  openAuth('signup')
+                  setServerError('')
+                }}
+                className={`cursor-pointer px-2 transition-colors hover:text-accent ${mode === 'signup' ? 'text-accent' : 'text-foreground'}`}
+              >
+                Criar conta
+              </button>
+            </nav>
+            <p className="mx-6 mt-10 min-h-8 text-[13px] leading-4 text-center text-foreground">
+              {mode === 'login'
+                ? 'Entre para gerenciar sua carteira, coleção e perfil de criador.'
+                : 'Crie seu perfil de colecionador e conecte uma carteira quando quiser.'}
+            </p>
+          </>
+        )}
         <form
           onSubmit={form.handleSubmit((values) => {
             setServerError('')
             mutation.mutate(values)
           })}
           noValidate
-          className="mx-auto mt-6 w-[calc(100%-32px)] max-w-85 space-y-3"
+          className={
+            isPage
+              ? 'mt-10 w-full space-y-3'
+              : 'mx-auto mt-6 w-[calc(100%-32px)] max-w-85 space-y-3'
+          }
         >
           {mode === 'signup' && field('username', 'Nome de usuário')}
           {field('email', 'E-mail', 'email')}
@@ -189,24 +217,36 @@ export function SessionPage({ redirect, onSuccess }: { redirect?: string; onSucc
               Esqueceu a senha?
             </button>
           )}
-          <p role="alert" className="text-sm text-destructive">
+          <p role="alert" className="text-sm text-destructive empty:hidden">
             {serverError}
           </p>
           <Button
             disabled={mutation.isPending}
             type="submit"
             variant="cta"
-            className="mt-6 h-11.25 w-full cursor-pointer rounded-[5px] bg-primary text-base font-bold text-primary-foreground transition-colors hover:bg-accent disabled:cursor-not-allowed disabled:opacity-60"
+            className={`${isPage ? 'mt-10 h-15 rounded-[10px]' : 'mt-6 h-11.25 rounded-[5px]'} w-full cursor-pointer bg-primary text-base font-bold text-primary-foreground transition-colors hover:bg-accent disabled:cursor-not-allowed disabled:opacity-60`}
           >
-            {mutation.isPending ? 'Aguarde…' : mode === 'login' ? 'Entrar' : 'Criar conta'}
+            {mutation.isPending
+              ? 'Aguarde…'
+              : mode === 'login'
+                ? 'Entrar'
+                : isPage
+                  ? 'Criar perfil'
+                  : 'Criar conta'}
           </Button>
         </form>
-        <div className="mt-6 flex items-center gap-3 text-[13px]">
+        <div className={`${isPage ? 'mt-10' : 'mt-6'} flex items-center gap-3 text-[13px]`}>
           <span className="h-px flex-1 bg-border" />
           <span>Ou continue com</span>
           <span className="h-px flex-1 bg-border" />
         </div>
-        <div className="mx-auto mt-3 grid w-[calc(100%-32px)] max-w-85 gap-3 pb-24.25">
+        <div
+          className={
+            isPage
+              ? 'mt-3 grid w-full gap-4'
+              : 'mx-auto mt-3 grid w-[calc(100%-32px)] max-w-85 gap-3 pb-8 md:pb-24.25'
+          }
+        >
           <Button
             disabled
             type="button"

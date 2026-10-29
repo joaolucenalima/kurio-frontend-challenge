@@ -1,9 +1,9 @@
+import { useAuthEntry } from '#/modules/session/use-auth-entry'
 import type { Dispatch, SetStateAction } from 'react'
 import { Minus, Plus } from 'lucide-react'
 import { FavoriteButton } from '#/modules/favorites'
 import { Button } from '#/shared/components/ui/button'
 import type { Nft, NftEdition } from '../../model/contracts'
-import { ReviewSummary } from '../../ui/review-summary'
 import { useState } from 'react'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { useNavigate } from '@tanstack/react-router'
@@ -40,6 +40,7 @@ export function PurchasePanel({
   const navigate = useNavigate()
 
   const [loginOpen, setLoginOpen] = useState(false)
+  const openAuth = useAuthEntry(() => setLoginOpen(true))
   const [notice, setNotice] = useState('')
 
   const session = useQuery({ queryKey: ['session'], queryFn: sessionApi.current, retry: false })
@@ -56,7 +57,7 @@ export function PurchasePanel({
     onError: (error) => {
       if (isAxiosError(error) && error.response?.status === 401) {
         queryClient.setQueryData(['session'], null)
-        setLoginOpen(true)
+        openAuth()
       } else
         setNotice(
           isAxiosError(error)
@@ -70,7 +71,7 @@ export function PurchasePanel({
   const buy = () => {
     if (!edition || quantity < 1) return
     if (!session.data) {
-      setLoginOpen(true)
+      openAuth()
       return
     }
     add.mutate({ nftId: nft.id, editionId: edition.id, quantity })
@@ -162,13 +163,13 @@ export function PurchasePanel({
     </>
   ) : (
     <>
-      <div className="fixed inset-x-0 bottom-0 z-20 rounded-t-[2.5rem] border-t border-border bg-card px-6 pt-5 pb-6 shadow-2xl md:hidden">
+      <div className="fixed inset-x-0 bottom-0 z-20 rounded-t-[2.5rem] border-t border-border bg-card px-6 pt-5 pb-[max(1.5rem,env(safe-area-inset-bottom))] shadow-2xl md:hidden">
         <div className="mx-auto flex max-w-page items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <span className="text-sm text-muted-foreground">Qtd.</span>
             <Button
               type="button"
-              variant="outline"
+              className="rounded-full"
               size="icon-sm"
               aria-label="Diminuir quantidade"
               disabled={quantity <= 1}
@@ -181,7 +182,7 @@ export function PurchasePanel({
             </output>
             <Button
               type="button"
-              variant="outline"
+              className="rounded-full"
               size="icon-sm"
               aria-label="Aumentar quantidade"
               disabled={!edition || quantity >= edition.available}
@@ -200,9 +201,6 @@ export function PurchasePanel({
           <span className="font-bold text-accent">{nft.priceEth} ETH</span>
         </div>
 
-        <div className="mx-auto mt-3 max-w-page">
-          <ReviewSummary count={nft.reviewCount} />
-        </div>
         <div className="mx-auto mt-4 flex max-w-page gap-3">
           <Button
             type="button"
@@ -212,7 +210,6 @@ export function PurchasePanel({
           >
             {add.isPending ? 'Adicionando…' : 'Comprar NFT'}
           </Button>
-          <FavoriteButton nft={nft} className="size-12 rounded-full" />
         </div>
         <output className="mx-auto mt-2 block max-w-page text-sm text-destructive">{notice}</output>
         {authDialog}
