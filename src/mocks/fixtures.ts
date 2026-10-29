@@ -1,4 +1,4 @@
-import { ethToWei, normalizeNft } from '#/modules/catalog'
+import { normalizeNft } from '#/modules/catalog'
 import type { Nft, NftRecord, NftReview } from '#/modules/catalog'
 import kurio from './snapshots/kurio.json'
 import bayc from './snapshots/boredapeyachtclub.json'
@@ -19,18 +19,34 @@ const nftRecords = [
 ] as NftRecord[]
 
 export const initialNfts: Nft[] = nftRecords.map(normalizeNft)
-let simulatePriceChange = false
-export function setPriceChangeScenario(enabled: boolean) {
-  simulatePriceChange = enabled
+const NFT_STATE_KEY = 'kurio.mock.nfts.v1'
+type NftState = Record<string, Nft>
+function readNftState(): NftState {
+  try {
+    return JSON.parse(localStorage.getItem(NFT_STATE_KEY) || '{}') as NftState
+  } catch {
+    return {}
+  }
+}
+export function resetNftState() {
+  localStorage.removeItem(NFT_STATE_KEY)
+}
+export function currentNfts(): Nft[] {
+  const state = readNftState()
+  return initialNfts.map((nft) => state[nft.id] || nft)
+}
+export function updateMockNft(
+  id: string,
+  update: { priceEth?: string; editions?: Nft['editions'] },
+) {
+  const nft = currentNfts().find((item) => item.id === id)
+  if (!nft) throw new Error('NFT não encontrado')
+  const next = { ...nft, ...update, version: nft.version + 1 }
+  localStorage.setItem(NFT_STATE_KEY, JSON.stringify({ ...readNftState(), [id]: next }))
+  return next
 }
 export function withScenarioPrice<T extends Nft>(nft: T): T {
-  return simulatePriceChange
-    ? ({ ...nft, priceEth: weiToEth(ethToWei(nft.priceEth) + ethToWei('0.01')) } as T)
-    : nft
-}
-function weiToEth(value: bigint) {
-  const fraction = (value % 10n ** 18n).toString().padStart(18, '0').replace(/0+$/, '')
-  return `${value / 10n ** 18n}${fraction ? `.${fraction}` : ''}`
+  return nft
 }
 
 export const reviewPool: NftReview[] = [

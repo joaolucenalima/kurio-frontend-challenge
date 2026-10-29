@@ -1,7 +1,7 @@
 import { delay, http, HttpResponse } from 'msw'
 import { ethToWei, parseCatalogSearch } from '#/modules/catalog'
 import type { CatalogApiError, CatalogResponse } from '#/modules/catalog'
-import { initialNfts, reviewsForNft, setPriceChangeScenario, withScenarioPrice } from './fixtures'
+import { currentNfts, initialNfts, reviewsForNft, withScenarioPrice } from './fixtures'
 
 const fixtureOrder = new Map(initialNfts.map(({ id }, index) => [id, index]))
 
@@ -26,7 +26,6 @@ let requestCount = 0
 export function selectScenario(value: string) {
   if (!scenarios.includes(value as Scenario)) throw new Error('Cenário desconhecido')
   scenario = value as Scenario
-  setPriceChangeScenario(scenario === 'price-changed')
   requestCount = 0
 }
 export function currentScenario() {
@@ -67,7 +66,7 @@ export const handlers = [
     if (condition.failed)
       return error('TRANSIENT_ERROR', 'Não foi possível carregar os NFTs. Tente novamente.', 503)
 
-    let items = condition.empty ? [] : initialNfts.map(withScenarioPrice)
+    let items = condition.empty ? [] : currentNfts().map(withScenarioPrice)
     const counts: CatalogResponse['counts'] = {
       collections: {
         kurio: 0,
@@ -142,14 +141,14 @@ export const handlers = [
   http.get('/api/nfts/:id', async ({ params }) => {
     const condition = await simulateNetwork()
     if (condition.failed) return error('TRANSIENT_ERROR', 'Falha temporária. Tente novamente.', 503)
-    const found = initialNfts.find(({ id }) => id === params.id)
+    const found = currentNfts().find(({ id }) => id === params.id)
     const nft = found ? withScenarioPrice(found) : undefined
     return nft ? HttpResponse.json(nft) : error('NOT_FOUND', 'NFT não encontrado', 404)
   }),
   http.get('/api/nfts/:id/reviews', async ({ params }) => {
     const condition = await simulateNetwork()
     if (condition.failed) return error('TRANSIENT_ERROR', 'Falha temporária. Tente novamente.', 503)
-    const found = initialNfts.find(({ id }) => id === params.id)
+    const found = currentNfts().find(({ id }) => id === params.id)
     const nft = found ? withScenarioPrice(found) : undefined
     return nft
       ? HttpResponse.json(reviewsForNft(nft))
@@ -158,10 +157,10 @@ export const handlers = [
   http.get('/api/nfts/:id/related', async ({ params }) => {
     const condition = await simulateNetwork()
     if (condition.failed) return error('TRANSIENT_ERROR', 'Falha temporária. Tente novamente.', 503)
-    const found = initialNfts.find(({ id }) => id === params.id)
+    const found = currentNfts().find(({ id }) => id === params.id)
     const nft = found ? withScenarioPrice(found) : undefined
     if (!nft) return error('NOT_FOUND', 'NFT não encontrado', 404)
-    const related = initialNfts
+    const related = currentNfts()
       .filter((item) => item.collection === nft.collection && item.id !== nft.id)
       .map(withScenarioPrice)
     for (let index = related.length - 1; index > 0; index--) {

@@ -19,6 +19,7 @@ export type CheckoutQuote = Quote & {
   networks: string[]
 }
 export type Order = {
+  version: number
   id: string
   idempotencyKey: string
   status: 'pending' | 'confirmed' | 'declined'

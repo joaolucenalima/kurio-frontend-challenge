@@ -2,7 +2,7 @@ import { couponProblem } from './coupon'
 import { http, HttpResponse } from 'msw'
 import { ethToWei } from '#/modules/catalog'
 import type { Cart, CartInput, Quote } from '#/modules/cart/model'
-import { initialNfts, withScenarioPrice } from './fixtures'
+import { currentNfts, withScenarioPrice } from './fixtures'
 import { authenticatedUser } from './session'
 import { currentScenario } from './handlers'
 
@@ -41,7 +41,7 @@ function output(id: string): Cart {
   return {
     coupon: current.coupon,
     items: current.items.flatMap((line) => {
-      const found = initialNfts.find((item) => item.id === line.nftId)
+      const found = currentNfts().find((item) => item.id === line.nftId)
       const nft = found ? withScenarioPrice(found) : undefined
       if (!nft) return []
       return [
@@ -63,7 +63,7 @@ function update(id: string, next: Stored[string]) {
 }
 
 function validLine(input: CartInput, previous = 0) {
-  const nft = initialNfts.find((item) => item.id === input.nftId)
+  const nft = currentNfts().find((item) => item.id === input.nftId)
   if (!nft) return fail('NFT não encontrado', 404)
   const edition = nft.editions.find((item) => item.id === input.editionId)
   if (!edition) return fail('Edição não encontrada', 404)
@@ -120,7 +120,7 @@ export function mockQuoteForUser(userId: string) {
       : discount
   const fingerprint =
     cart.items
-      .map((line) => `${line.nftId}:${line.editionId}:${line.quantity}`)
+      .map((line) => `${line.nftId}:${line.editionId}:${line.quantity}:${line.nft.version}`)
       .sort()
       .join('|') + `:${cart.coupon || ''}`
   let hash = 0

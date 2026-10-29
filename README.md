@@ -56,3 +56,9 @@ Após mudar o cenário ou resetar, recarregue a página para descartar o cache d
 Os handlers consultam diretamente as fixtures locais. O catálogo não utiliza localStorage nem mantém alterações de preço ou estoque. O reset restaura o cenário de rede padrão e seu contador de requisições.
 
 Autenticação, favoritos, compra, tela de detalhe, integração Socket.IO e testes Playwright serão desenvolvidos nas próximas etapas. Não há credenciais de usuário nesta etapa.
+
+## Tempo real
+
+Socket.IO usa WebSocket com MSW no desenvolvimento e build demo. Configure VITE_SOCKET_URL somente para um servidor externo compatível. Consulte ARCHITECTURE.md e docs/realtime-test-cases.md para contratos, limitações e validação manual. Playwright não foi adicionado nesta etapa.
+
+No console, use window.kurioMocks.changeNft(id, { priceEth: '2.5' }) para alterar preço; disconnect() interrompe o transporte e exercita reconexão. O retorno de changeNft pode ser reenviado com publish('nft.updated', evento) para testar duplicatas. reset() seguido de recarga restaura os dados.

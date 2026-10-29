@@ -1,3 +1,4 @@
+import { publish } from './realtime'
 import { couponProblem } from './coupon'
 import { http, HttpResponse } from 'msw'
 import { ethToWei } from '#/modules/catalog'
@@ -73,6 +74,8 @@ function settle(
   order: Order & { owner: string; fingerprint: string; consumed?: boolean },
   status: 'confirmed' | 'declined',
 ) {
+  if (order.status !== 'pending') return
+  order.version = (order.version || 1) + 1
   order.status = status
   if (status === 'confirmed' && !order.consumed) {
     consumeCartLines(
@@ -218,6 +221,7 @@ export const checkoutHandlers = [
     const order: Order & { owner: string; fingerprint: string; consumed?: boolean } = {
       id: crypto.randomUUID(),
       idempotencyKey: key,
+      version: 1,
       status: 'pending',
       createdAt: Date.now(),
       snapshot: {
@@ -246,10 +250,9 @@ export const checkoutHandlers = [
     }
     orders[key] = order
     saveOrders(orders)
+    resumeOrders()
     if (currentScenario() === 'timeout-after-create')
       return fail('Tempo esgotado após criação do pedido. Recupere a tentativa.', 504)
-    if (currentScenario() === 'payment-success') settle(order, 'confirmed')
-    if (currentScenario() === 'payment-declined') settle(order, 'declined')
     saveOrders(orders)
     return HttpResponse.json(publicOrder(order), { status: 201 })
   }),
@@ -269,9 +272,36 @@ export const checkoutHandlers = [
       (item) => item.id === params.id && item.owner === user.id,
     )
     if (!order) return fail('Pedido não encontrado', 404)
-    if (order.status === 'pending' && currentScenario() !== 'payment-pending')
-      settle(order, currentScenario() === 'payment-declined' ? 'declined' : 'confirmed')
+
     saveOrders(orders)
     return HttpResponse.json(publicOrder(order))
   }),
 ]
+
+export function resumeOrders() {
+  const pending = Object.values(readOrders()).filter((order) => order.status === 'pending')
+  for (const item of pending) {
+    if (currentScenario() === 'payment-pending') continue
+    setTimeout(
+      () => {
+        const orders = readOrders()
+        const order = orders[item.idempotencyKey]
+        if (!order || order.status !== 'pending') return
+        settle(order, currentScenario() === 'payment-declined' ? 'declined' : 'confirmed')
+        saveOrders(orders)
+        publish(
+          'order.updated',
+          {
+            eventId: crypto.randomUUID(),
+            orderId: order.id,
+            userId: order.owner,
+            version: order.version,
+            status: order.status,
+          },
+          order.owner,
+        )
+      },
+      Math.max(0, item.createdAt + 3000 - Date.now()),
+    )
+  }
+}

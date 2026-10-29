@@ -1,3 +1,6 @@
+import { realtimeHandlers, changeNft, disconnectSockets, publish } from './realtime'
+import { resetNftState } from './fixtures'
+import { resumeOrders } from './checkout'
 import { setupWorker } from 'msw/browser'
 import { httpClient } from '#/shared/api/http'
 import { handlers, resetSimulation, selectScenario } from './handlers'
@@ -9,6 +12,7 @@ import { resetWallets, walletHandlers } from './wallets'
 import { checkoutHandlers } from './checkout'
 
 export const worker = setupWorker(
+  ...realtimeHandlers,
   ...handlers,
   ...sessionHandlers,
   ...cartHandlers,
@@ -82,9 +86,15 @@ export async function startMocks() {
     onUnhandledFrame: 'bypass',
   })
   installMockRecovery()
+  resumeOrders()
   // Explicit development/demo controls; these never replace REST or socket events.
   window.kurioMocks = {
+    changeNft,
+    disconnect: disconnectSockets,
+    publish,
     reset: async () => {
+      disconnectSockets()
+      resetNftState()
       resetSimulation()
       resetAuth()
       resetCarts()
@@ -103,6 +113,9 @@ declare global {
   interface Window {
     kurioMocks?: {
       reset: () => void
+      changeNft: typeof changeNft
+      disconnect: typeof disconnectSockets
+      publish: typeof publish
       scenario: typeof selectScenario
     }
   }

@@ -119,6 +119,22 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
   const [review, setReview] = useState(false)
   const [reviewed, setReviewed] = useState<CheckoutQuote | null>(null)
   const [order, setOrder] = useState<Order | null>(null)
+  const realtime = useQuery<boolean>({ queryKey: ['realtime-ready'], enabled: false })
+  const trackedOrder = useQuery({
+    queryKey: ['order', userId, order?.id],
+    queryFn: ({ signal }) => checkoutApi.getOrder(order!.id, signal),
+    enabled: !!userId && !!order,
+  })
+  useEffect(() => {
+    const value = trackedOrder.data
+    if (
+      value &&
+      value.id === order?.id &&
+      value.version >= order.version &&
+      order.status === 'pending'
+    )
+      setOrder(value)
+  }, [trackedOrder.data, order])
   const [attempt, setAttempt] = useState<Attempt | null>(null)
   const [couponInput, setCouponInput] = useState('')
   const [noteLength, setNoteLength] = useState(0)
@@ -132,6 +148,15 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
     [notifyFeedback],
   )
 
+  useEffect(() => {
+    const stale = () => {
+      setReviewed(null)
+      setReview(false)
+      setPersistentFeedback('Preço ou disponibilidade atualizado. Revise sua compra.')
+    }
+    window.addEventListener('kurio:quote-stale', stale)
+    return () => window.removeEventListener('kurio:quote-stale', stale)
+  }, [])
   const form = useForm<CheckoutInput>({
     resolver: zodResolver(checkoutSchema),
     defaultValues: { email: '', note: '' },
@@ -326,21 +351,6 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
     }
   }, [order, startCheckout, navigate])
   useEffect(() => {
-    if (!order || !userId || order.status !== 'pending') return
-    const token = localStorage.getItem(TOKEN_KEY)
-    const activeIdentity = identity
-    const timer = window.setInterval(() => {
-      void checkoutApi
-        .getOrder(order.id)
-        .then((value) => {
-          if (identityRef.current === activeIdentity && localStorage.getItem(TOKEN_KEY) === token)
-            setOrder(value)
-        })
-        .catch(() => undefined)
-    }, 5000)
-    return () => window.clearInterval(timer)
-  }, [order, userId, identity])
-  useEffect(() => {
     if (order?.status !== 'confirmed' || !userId) return
     setCouponInput('')
     void client.invalidateQueries({ queryKey: cartKey(userId) })
@@ -444,7 +454,7 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
     }
   }
   const confirm = async () => {
-    if (!userId || !reviewed || !allReady || confirmLock.current) return
+    if (!userId || !reviewed || !allReady || !realtime.data || confirmLock.current) return
     confirmLock.current = true
     setAuthorizing(true)
     setFeedback('')
@@ -939,6 +949,7 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
                     variant="cta"
                     className="h-12 w-full"
                     disabled={
+                      !realtime.data ||
                       !!attempt ||
                       authorizing ||
                       createOrder.isPending ||
