@@ -92,7 +92,8 @@ export function Header() {
         </Button>
         {session.data ? (
           <Link
-            to="/perfil"
+            to="/profile"
+            search={{ tab: 'profile' }}
             className="flex h-9 items-center gap-2 font-mono text-base font-medium text-foreground transition-colors hover:text-accent focus-visible:text-accent"
           >
             <User className="size-5" aria-hidden="true" />
