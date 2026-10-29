@@ -34,4 +34,15 @@ Executar com `pnpm dev` ou `pnpm build:demo` e `pnpm preview`, em desktop e mobi
 4. Navegar repetidamente entre catálogo, detalhe e pagamento. Cada evento deve produzir apenas um efeito.
 5. Executar reset com pedido pendente e recarregar: nenhum pedido ou alteração anterior deve reaparecer.
 
+## Isolamento na troca de usuário
+
+Automatizar este cenário no Playwright com mocks MSW, em desktop e mobile:
+
+1. Após o reset, entrar com o usuário A; favoritar um NFT, adicionar outro ao carrinho, alterar perfil e carteira e criar um pedido. Registrar os dados e o identificador do pedido.
+2. Deixar consultas e eventos privados de A pendentes, encerrar a sessão e entrar com o usuário B. Liberar as respostas e eventos de A após o login de B.
+3. Verificar que favoritos, carrinho, perfil, carteiras, pedidos, rascunho de checkout e avisos exibidos pertencem somente a B; nenhum dado de A deve aparecer ou atualizar a interface de B. Tentar acessar diretamente o pedido de A e confirmar que a API nega o acesso.
+4. Criar dados distintos para B, atualizar a página e confirmar que seus dados persistem. Voltar à conta A e confirmar que seus próprios dados foram preservados e que os de B não aparecem.
+
+O teste verifica o isolamento da interface e das respostas da API simulada; os dados de ambas as contas permanecem acessíveis no localStorage do mesmo navegador.
+
 Registrar viewport, cenário, passos, resultados, requisições REST e frames Socket.IO. Conferir avisos com leitor de tela e teclado. Os futuros testes automatizados devem atravessar os handlers MSW e o cliente Socket.IO, sem alterar cache diretamente.
