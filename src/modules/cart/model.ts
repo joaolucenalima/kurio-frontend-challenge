@@ -15,6 +15,10 @@ export type Quote = {
   totalEth: string
   coupon: string | null
   valid: boolean
+  id?: string
+  version?: number
+  expiresAt?: number
+  networks?: string[]
 }
 export type CartInput = { nftId: string; editionId: string; quantity: number }
 export const cartKey = (userId: string) => ['cart', userId] as const
