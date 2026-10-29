@@ -135,19 +135,19 @@ export function CartPage() {
           <Header />
         </div>
         <main className="mt-4 md:mt-8">
-          <div className="mb-6 flex items-center gap-4 md:hidden">
+          <div className="relative mb-6 flex min-h-9 items-center justify-center md:hidden">
             <Button
               asChild
               size="icon"
               variant="secondary"
-              className="rounded-full lg:h-10 lg:rounded-none lg:px-5"
+              className="absolute left-0 rounded-full"
               aria-label="Voltar"
             >
               <Link to="/" search={{ ranking: 'all', sort: 'featured', page: 1 }}>
                 <ChevronLeft />
               </Link>
             </Button>
-            <h1 className="font-bold">Carrinho de NFTs</h1>
+            <h1 className="px-11 text-lg leading-6 font-bold">Carrinho de NFTs</h1>
           </div>
           <nav
             aria-label="Caminho de navegação"
@@ -181,7 +181,7 @@ export function CartPage() {
               </Button>
             </section>
           ) : (
-            <div className="grid items-start gap-8 xl:grid-cols-[minmax(0,1fr)_332px] xl:gap-21.5">
+            <div className="flex flex-col gap-8 pb-[calc(28rem+env(safe-area-inset-bottom))] md:grid md:items-start md:pb-0 xl:grid-cols-[minmax(0,1fr)_332px] xl:gap-21.5">
               <section aria-label="Itens do carrinho" className="min-w-0">
                 {lines.length ? (
                   <>
@@ -450,7 +450,7 @@ export function CartPage() {
               </section>
               <aside
                 aria-label="Resumo da carteira"
-                className="rounded-3xl bg-card p-6 lg:rounded-none lg:bg-transparent lg:p-0"
+                className="fixed inset-x-0 bottom-0 z-20 max-h-[75dvh] overflow-y-auto rounded-t-[2.5rem] border-t border-border bg-card px-6 pt-5 pb-[max(1.5rem,env(safe-area-inset-bottom))] shadow-2xl md:static md:max-h-none md:overflow-visible md:rounded-3xl md:border-0 md:p-6 md:shadow-none lg:rounded-none lg:bg-transparent lg:p-0"
               >
                 <h2 className="mb-6 hidden border-b border-border pb-3 text-lg font-medium lg:block">
                   Resumo da carteira
@@ -463,7 +463,7 @@ export function CartPage() {
                     event.preventDefault()
                     applyCoupon.mutate(coupon)
                   }}
-                  className="flex gap-2 lg:gap-0"
+                  className="flex items-center justify-center gap-2 lg:gap-0"
                 >
                   <label className="sr-only" htmlFor="coupon">
                     Código promocional
@@ -545,14 +545,6 @@ export function CartPage() {
                 <p className="mt-2 text-center text-xs text-muted-foreground lg:sr-only">
                   Pagamento disponível em uma próxima etapa
                 </p>
-                <Link
-                  to="/"
-                  search={{ ranking: 'all', sort: 'featured', page: 1 }}
-                  hash="catalog"
-                  className="mt-4 block text-center text-sm text-accent hover:underline"
-                >
-                  Continuar explorando
-                </Link>
               </aside>
             </div>
           )}

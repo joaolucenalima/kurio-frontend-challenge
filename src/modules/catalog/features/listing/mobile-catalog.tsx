@@ -10,6 +10,10 @@ import {
 } from 'lucide-react'
 import { Link } from '@tanstack/react-router'
 import { useState } from 'react'
+import { useQuery } from '@tanstack/react-query'
+import { sessionApi } from '#/modules/session/api'
+import { cartApi } from '#/modules/cart/api'
+import { cartKey } from '#/modules/cart/model'
 import {
   Dialog,
   DialogContent,
@@ -114,6 +118,16 @@ export function MobileHero() {
 }
 
 export function MobileNavigation() {
+  const session = useQuery({ queryKey: ['session'], queryFn: sessionApi.current, retry: false })
+  const userId = session.data?.user.id
+  const cart = useQuery({
+    queryKey: cartKey(userId ?? ''),
+    queryFn: ({ signal }) => cartApi.get({ signal }),
+    enabled: !!userId,
+  })
+  const cartQuantity = userId
+    ? (cart.data?.items.reduce((total, line) => total + line.quantity, 0) ?? 0)
+    : 0
   const item =
     'flex min-h-11 items-center justify-center rounded-lg text-muted-foreground transition-colors hover:text-accent focus-visible:text-accent'
   return (
@@ -147,8 +161,18 @@ export function MobileNavigation() {
             <ScanLine className="size-7" />
           </a>
         </div>
-        <Link to="/cart" aria-label="Carrinho" className={item}>
-          <ShoppingCart className="size-5" />
+        <Link to="/cart" aria-label={`Carrinho de NFTs, ${cartQuantity} itens`} className={item}>
+          <span className="relative">
+            <ShoppingCart className="size-5" aria-hidden="true" />
+            {cartQuantity > 0 && (
+              <span
+                aria-hidden="true"
+                className="absolute -top-2 -right-2 flex min-h-4 min-w-4 items-center justify-center rounded-full bg-primary px-1 text-[10px] leading-4 font-bold text-primary-foreground"
+              >
+                {cartQuantity}
+              </span>
+            )}
+          </span>
         </Link>
         <Link to="/profile" search={{ tab: 'profile' }} aria-label="Perfil" className={item}>
           <UserRound className="size-5" />
