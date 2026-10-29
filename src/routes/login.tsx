@@ -18,7 +18,7 @@ export const Route = createFileRoute('/login')({
 function AccountRoute() {
   const { redirect } = Route.useSearch()
   return (
-    <main className="mx-auto min-h-dvh w-full max-w-125 px-7 pt-20 pb-6 font-mono">
+    <main className="mx-auto  w-full max-w-125 px-7 pt-20 pb-6 font-mono">
       <Link
         to="/"
         search={{ ranking: 'all', sort: 'featured', page: 1 }}

@@ -85,7 +85,7 @@ export function ProfilePage({ tab }: { tab: ProfileTab }) {
   const session = useQuery({ queryKey: ['session'], queryFn: sessionApi.current, retry: false })
 
   return (
-    <div className="mx-auto max-w-page px-4 py-6 pb-[calc(8rem+env(safe-area-inset-bottom))] md:pb-6 sm:px-6 xl:px-0">
+    <div className="mx-auto max-w-page px-4 py-6 pb-6 sm:px-6 xl:px-0">
       <Header />
       <main className="py-8">
         {session.isPending ? (

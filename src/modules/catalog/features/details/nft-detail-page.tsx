@@ -184,7 +184,7 @@ export function NftDetailPage({ id }: { id: string }) {
   const missing = isAxiosError(query.error) && query.error.response?.status === 404
 
   return (
-    <div className="px-6 pt-6 pb-52 md:py-6">
+    <div className="px-6 pt-6 pb-6 md:py-6">
       <div className="mx-auto max-w-page">
         <div className="hidden md:block">
           <Header />

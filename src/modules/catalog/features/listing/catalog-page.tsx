@@ -14,7 +14,7 @@ export function CatalogPage({
   onSearchChange: (search: CatalogSearch) => void
 }) {
   return (
-    <div className="px-6 pt-10 md:pt-6 pb-36 md:pb-6">
+    <div className="px-6 pt-10 pb-36 md:pt-6 md:pb-6">
       <div className="mx-auto max-w-page">
         <div className="hidden md:block">
           <Header />
@@ -87,9 +87,6 @@ export function CatalogPage({
           </section>
         </main>
         <MobileNavigation />
-        <footer className="mt-24 border-t border-border py-8 text-xs leading-4 text-muted-foreground">
-          © 2026 Kurio. Propriedade digital para todos.
-        </footer>
       </div>
     </div>
   )

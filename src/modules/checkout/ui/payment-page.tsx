@@ -507,7 +507,7 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
   }
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className=" bg-background text-foreground">
       <div className="mx-auto max-w-page px-4 pt-6 pb-24 sm:px-6 xl:px-0">
         <Header />
         <main className="mt-8">
