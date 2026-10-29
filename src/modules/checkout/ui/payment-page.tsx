@@ -2,6 +2,7 @@ import { useCallback } from 'react'
 import { useToastFeedback } from '#/shared/components/ui/toast'
 /* eslint-disable react/set-state-in-effect */
 import {
+  Children,
   cloneElement,
   isValidElement,
   useEffect,
@@ -13,7 +14,7 @@ import {
   type ReactNode,
 } from 'react'
 import { Link, useNavigate } from '@tanstack/react-router'
-import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
+import { skipToken, useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { isAxiosError } from 'axios'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
@@ -120,7 +121,7 @@ export function PaymentPage({ startCheckout = false }: { startCheckout?: boolean
   const [review, setReview] = useState(false)
   const [reviewed, setReviewed] = useState<CheckoutQuote | null>(null)
   const [order, setOrder] = useState<Order | null>(null)
-  const realtime = useQuery<boolean>({ queryKey: ['realtime-ready'], enabled: false })
+  const realtime = useQuery<boolean>({ queryKey: ['realtime-ready'], queryFn: skipToken })
   const trackedOrder = useQuery({
     queryKey: ['order', userId, order?.id],
     queryFn: ({ signal }) => checkoutApi.getOrder(order!.id, signal),
@@ -1110,7 +1111,7 @@ function Field({
     isValidElement<{ id?: string; 'aria-describedby'?: string }>(child)
       ? cloneElement(child, { id, 'aria-describedby': error ? `${id}-error` : undefined })
       : child
-  const child = Array.isArray(children) ? children.map(applyId) : applyId(children)
+  const child = Children.map(children, (child, index) => (index === 0 ? applyId(child) : child))
   return (
     <div className={`min-w-0 space-y-2 ${className}`}>
       <label htmlFor={id} className="block text-sm">

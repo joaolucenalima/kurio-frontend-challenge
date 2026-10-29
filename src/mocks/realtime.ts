@@ -5,7 +5,14 @@ import { updateMockNft } from './fixtures'
 
 type Connection = ReturnType<typeof toSocketIo>
 const connections = new Map<Connection, { token: string | null }>()
-const endpoint = ws.link(`${location.origin.replace(/^http/, 'ws')}/socket.io/*`)
+// MSW 3 strips /socket.io/ when matching connection events, but the
+// HTTP upgrade handler still matches the full transport path.
+const socketUrl = new URL(location.origin)
+socketUrl.protocol = socketUrl.protocol === 'https:' ? 'wss:' : 'ws:'
+const socketOrigin = Array.from(socketUrl.origin, (character) =>
+  '^$.*+?()[]{}|'.includes(character) ? String.fromCharCode(92) + character : character,
+).join('')
+const endpoint = ws.link(new RegExp(`^${socketOrigin}(?:/socket[.]io)?/?$`))
 function owner(token: string | null) {
   return token
     ? authenticatedUser(

@@ -2,7 +2,7 @@ import { createContext, useCallback, useContext, useEffect, useState } from 'rea
 import type { ReactNode } from 'react'
 import { Toast } from 'radix-ui'
 import { CheckCircle, AlertCircle, Info, X } from 'lucide-react'
-import { useQuery } from '@tanstack/react-query'
+import { skipToken, useQuery } from '@tanstack/react-query'
 
 type Notice = {
   id?: string
@@ -16,7 +16,7 @@ export function ToastProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<Entry[]>([])
   const session = useQuery<{ user?: { id: string } } | null>({
     queryKey: ['session'],
-    enabled: false,
+    queryFn: skipToken,
   })
   const clear = useCallback(() => setItems([]), [])
   const identity = session.data?.user?.id
