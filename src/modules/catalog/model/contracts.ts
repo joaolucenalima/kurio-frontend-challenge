@@ -131,9 +131,10 @@ export function normalizeNft(input: NftInput): Nft {
     description: input.description?.trim() || defaultCollectionDescriptions[input.collection],
     details: {
       network: input.details?.network?.trim() || defaultNetworkDescriptions[input.network],
-      contract:
+      contract: input.details?.contract?.trim() || shortAddress,
+      copyright:
+        input.details?.copyright?.trim() ||
         'Direitos autorais do criador: 5% nas vendas secundárias, pagos automaticamente pelos mercados compatíveis.',
-      copyright: `${shortAddress} • Contrato inteligente ERC-721 verificado.`,
     },
   }
 }

@@ -2,9 +2,9 @@ import { useQuery } from '@tanstack/react-query'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button } from '#/shared/components/ui/button'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '#/shared/components/ui/tabs'
-import { catalogQueries } from '../api/queries'
-import type { CatalogRanking, CatalogSearch } from '../model/contracts'
-import { NftCard } from './nft-card'
+import { catalogQueries } from '../../api/queries'
+import type { CatalogRanking, CatalogSearch } from '../../model/contracts'
+import { NftCard } from '../../ui/nft-card'
 
 const catalogTabClassName = 'flex-1 cursor-pointer px-2 text-[15px] md:flex-none md:px-3'
 

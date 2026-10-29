@@ -1,8 +1,8 @@
 import { useId } from 'react'
 import { useQuery } from '@tanstack/react-query'
-import { collectionOptions, networkOptions } from '../model/contracts'
-import type { CatalogSearch } from '../model/contracts'
-import { catalogQueries } from '../api/queries'
+import { collectionOptions, networkOptions } from '../../model/contracts'
+import type { CatalogSearch } from '../../model/contracts'
+import { catalogQueries } from '../../api/queries'
 import { PriceFilter } from './price-filter'
 
 function FilterList({
