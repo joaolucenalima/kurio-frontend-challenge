@@ -3,7 +3,6 @@ import { Minus, Plus } from 'lucide-react'
 import { FavoriteButton } from '#/modules/favorites'
 import { Button } from '#/shared/components/ui/button'
 import type { Nft, NftEdition } from '../../model/contracts'
-import { ReviewSummary } from '../../ui/review-summary'
 import { useState } from 'react'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { useNavigate } from '@tanstack/react-router'
@@ -168,7 +167,7 @@ export function PurchasePanel({
             <span className="text-sm text-muted-foreground">Qtd.</span>
             <Button
               type="button"
-              variant="outline"
+              className="rounded-full"
               size="icon-sm"
               aria-label="Diminuir quantidade"
               disabled={quantity <= 1}
@@ -181,7 +180,7 @@ export function PurchasePanel({
             </output>
             <Button
               type="button"
-              variant="outline"
+              className="rounded-full"
               size="icon-sm"
               aria-label="Aumentar quantidade"
               disabled={!edition || quantity >= edition.available}
@@ -200,9 +199,6 @@ export function PurchasePanel({
           <span className="font-bold text-accent">{nft.priceEth} ETH</span>
         </div>
 
-        <div className="mx-auto mt-3 max-w-page">
-          <ReviewSummary count={nft.reviewCount} />
-        </div>
         <div className="mx-auto mt-4 flex max-w-page gap-3">
           <Button
             type="button"
@@ -212,7 +208,6 @@ export function PurchasePanel({
           >
             {add.isPending ? 'Adicionando…' : 'Comprar NFT'}
           </Button>
-          <FavoriteButton nft={nft} className="size-12 rounded-full" />
         </div>
         <output className="mx-auto mt-2 block max-w-page text-sm text-destructive">{notice}</output>
         {authDialog}
