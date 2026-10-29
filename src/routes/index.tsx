@@ -6,7 +6,7 @@ export const Route = createFileRoute('/')({
     try {
       return parseCatalogSearch(input)
     } catch {
-      return { sort: 'featured' as const, page: 1 }
+      return { ranking: 'all' as const, sort: 'featured' as const, page: 1 }
     }
   },
   component: CatalogRoute,

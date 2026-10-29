@@ -10,6 +10,8 @@ export const collectionOptions = [
 
 export const catalogSorts = ['featured', 'price-asc', 'price-desc', 'name'] as const
 export type CatalogSort = (typeof catalogSorts)[number]
+export const catalogRankings = ['all', 'new-releases', 'trending'] as const
+export type CatalogRanking = (typeof catalogRankings)[number]
 export type CollectionId = (typeof collectionOptions)[number]['id']
 export const networkOptions = [
   { id: 'ethereum', name: 'Ethereum' },
@@ -143,6 +145,7 @@ export interface CatalogSearch {
   network?: Network
   minPrice?: string
   maxPrice?: string
+  ranking: CatalogRanking
   sort: CatalogSort
   page: number
 }
@@ -212,7 +215,7 @@ export function ethToWei(value: string): bigint {
 }
 
 export function parseCatalogSearch(input: Record<string, unknown>): CatalogSearch {
-  const result: CatalogSearch = { sort: 'featured', page: 1 }
+  const result: CatalogSearch = { ranking: 'all', sort: 'featured', page: 1 }
 
   if (input.q !== undefined) {
     if (typeof input.q !== 'string' || input.q.length > 200) throw new Error('Busca inválida')
@@ -244,6 +247,12 @@ export function parseCatalogSearch(input: Record<string, unknown>): CatalogSearc
   if (input.sort !== undefined) {
     if (!catalogSorts.includes(input.sort as CatalogSort)) throw new Error('Ordenação inválida')
     result.sort = input.sort as CatalogSort
+  }
+
+  if (input.ranking !== undefined) {
+    if (!catalogRankings.includes(input.ranking as CatalogRanking))
+      throw new Error('Ranking inválido')
+    result.ranking = input.ranking as CatalogRanking
   }
 
   if (input.page !== undefined) {
