@@ -162,7 +162,7 @@ export function PurchasePanel({
     </>
   ) : (
     <>
-      <div className="fixed inset-x-0 bottom-0 z-20 rounded-t-[2.5rem] border-t border-border bg-card px-6 pt-5 pb-6 shadow-2xl md:hidden">
+      <div className="fixed inset-x-0 bottom-0 z-20 rounded-t-[2.5rem] border-t border-border bg-card px-6 pt-5 pb-[max(1.5rem,env(safe-area-inset-bottom))] shadow-2xl md:hidden">
         <div className="mx-auto flex max-w-page items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <span className="text-sm text-muted-foreground">Qtd.</span>

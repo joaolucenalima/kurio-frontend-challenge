@@ -130,7 +130,7 @@ export function CartPage() {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <div className="mx-auto max-w-page px-4 pt-6 pb-24 sm:px-6 xl:px-0">
+      <div className="mx-auto max-w-page px-6 pt-6 pb-[max(2rem,env(safe-area-inset-bottom))] sm:px-6 xl:px-0">
         <div className="hidden md:block">
           <Header />
         </div>

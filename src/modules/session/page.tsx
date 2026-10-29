@@ -14,11 +14,19 @@ function returnPath(value: string | undefined) {
   return value?.startsWith('/') && !value.startsWith('//') ? value : '/'
 }
 
-export function SessionPage({ redirect, onSuccess }: { redirect?: string; onSuccess: () => void }) {
+export function SessionPage({
+  redirect,
+  onSuccess,
+  initialMode = 'login',
+}: {
+  redirect?: string
+  onSuccess: () => void
+  initialMode?: 'login' | 'signup'
+}) {
   const navigate = useNavigate()
   const queryClient = useQueryClient()
 
-  const [mode, setMode] = useState<'login' | 'signup'>('login')
+  const [mode, setMode] = useState<'login' | 'signup'>(initialMode)
   const [serverError, setServerError] = useState('')
   const [visiblePasswords, setVisiblePasswords] = useState({
     password: false,
@@ -163,7 +171,7 @@ export function SessionPage({ redirect, onSuccess }: { redirect?: string; onSucc
             Criar conta
           </button>
         </nav>
-        <p className="mx-12 mt-10 h-8 text-[13px] leading-4 text-center text-foreground">
+        <p className="mx-6 mt-10 min-h-8 text-[13px] leading-4 text-center text-foreground">
           {mode === 'login'
             ? 'Entre para gerenciar sua carteira, coleção e perfil de criador.'
             : 'Crie seu perfil de colecionador e conecte uma carteira quando quiser.'}
@@ -206,7 +214,7 @@ export function SessionPage({ redirect, onSuccess }: { redirect?: string; onSucc
           <span>Ou continue com</span>
           <span className="h-px flex-1 bg-border" />
         </div>
-        <div className="mx-auto mt-3 grid w-[calc(100%-32px)] max-w-85 gap-3 pb-24.25">
+        <div className="mx-auto mt-3 grid w-[calc(100%-32px)] max-w-85 gap-3 pb-8 md:pb-24.25">
           <Button
             disabled
             type="button"

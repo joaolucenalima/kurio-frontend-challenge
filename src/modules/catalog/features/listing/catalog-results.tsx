@@ -6,7 +6,8 @@ import { catalogQueries } from '../../api/queries'
 import type { CatalogRanking, CatalogSearch } from '../../model/contracts'
 import { NftCard } from '../../ui/nft-card'
 
-const catalogTabClassName = 'flex-1 cursor-pointer px-2 text-[15px] md:flex-none md:px-3'
+const catalogTabClassName =
+  'flex-1 cursor-pointer whitespace-nowrap px-0 text-[11px] md:text-[15px] md:flex-none md:px-3'
 
 export function CatalogResults({
   search,
@@ -78,7 +79,7 @@ export function CatalogResults({
             {pages > 1 && (
               <nav
                 aria-label="Paginação do catálogo"
-                className="mt-22 flex items-center justify-end gap-2"
+                className="mt-8 flex items-center justify-end gap-2 md:mt-22"
               >
                 {search.page > 1 && (
                   <Button
@@ -137,7 +138,7 @@ export function CatalogResults({
         <h2 id="catalog-title" className="sr-only">
           Catálogo de NFTs
         </h2>
-        <TabsList aria-label="Visualização do catálogo" className="w-full md:w-auto">
+        <TabsList aria-label="Visualização do catálogo" className="w-full gap-2 md:w-auto">
           <TabsTrigger value="all" className={catalogTabClassName}>
             Todos os NFTs
           </TabsTrigger>
@@ -148,7 +149,7 @@ export function CatalogResults({
             Em alta
           </TabsTrigger>
         </TabsList>
-        <label className="flex max-w-full flex-wrap items-center gap-2 text-xs text-muted-foreground">
+        <label className="hidden md:flex max-w-full flex-wrap items-center gap-2 text-xs text-muted-foreground">
           Ordenar por:
           <select
             value={search.sort}

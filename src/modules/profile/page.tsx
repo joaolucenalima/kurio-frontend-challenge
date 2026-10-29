@@ -90,14 +90,14 @@ export function ProfilePage({ tab }: { tab: ProfileTab }) {
         {session.isPending ? (
           <p>Carregando sessão…</p>
         ) : session.data ? (
-          <div className="grid items-start min-w-0 gap-6 md:grid-cols-[19.5rem_minmax(0,1fr)] md:gap-7">
+          <div className="grid items-start min-w-0 gap-6 lg:grid-cols-[19.5rem_minmax(0,1fr)] lg:gap-7">
             <nav aria-label="Navegação do perfil" className="min-w-0 bg-card py-2">
               <h2 className="px-6 py-4 text-lg font-bold">Meu perfil</h2>
-              <ul className="flex flex-col">
+              <ul className="flex flex-row overflow-x-auto lg:flex-col">
                 {profileTabs.map((item, index) => {
                   const Icon = tabIcons[index]
                   return (
-                    <li key={item.id}>
+                    <li key={item.id} className="shrink-0">
                       <Link
                         to="/profile"
                         search={{ tab: item.id }}

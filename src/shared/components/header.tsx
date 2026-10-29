@@ -19,11 +19,13 @@ export function Header() {
 
   const session = useQuery({ queryKey: ['session'], queryFn: sessionApi.current, retry: false })
   const userId = session.data?.user.id
+
   const cart = useQuery({
     queryKey: cartKey(userId ?? ''),
     queryFn: ({ signal }) => cartApi.get({ signal }),
     enabled: !!userId,
   })
+
   const cartQuantity = cart.data?.items.reduce((total, item) => total + item.quantity, 0) ?? 0
 
   return (
@@ -102,7 +104,13 @@ export function Header() {
         ) : (
           <Button
             type="button"
-            onClick={() => setLoginOpen(true)}
+            onClick={() => {
+              if (window.matchMedia('(max-width: 767px)').matches)
+                window.location.assign(
+                  '/login?redirect=' + encodeURIComponent(location.pathname + location.search),
+                )
+              else setLoginOpen(true)
+            }}
             className="font-mono text-base leading-6 font-medium tracking-normal text-primary-foreground"
           >
             <LogIn aria-hidden="true" />
