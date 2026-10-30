@@ -101,3 +101,16 @@ Máquina, rede e versão do navegador podem alterar os resultados. Evite compara
 - [Escopo e critérios de performance](SCOPE.md)
 - [Comandos de testes](TESTING.md)
 - [Dados, imagens e fontes](DATA.md)
+
+## Reauditoria após correções de SEO
+
+Execução em 2026-10-30T01:14:41.806Z (UTC), no ambiente e condições registrados em `lighthouse-reports/summary.json`. Foram adicionadas descrições, títulos específicos do NFT, `robots.txt` e corrigido o idioma para `pt-BR`.
+
+| Página / perfil | Performance | Acessibilidade | Boas práticas | SEO |
+| --------------- | ----------: | -------------: | ------------: | --: |
+| inicio mobile   |          81 |            100 |           100 | 100 |
+| inicio desktop  |          99 |             99 |           100 | 100 |
+| detalhe mobile  |          80 |             97 |           100 | 100 |
+| detalhe desktop |          94 |            100 |           100 | 100 |
+
+SEO atingiu 100 nas 12 medições. Acessibilidade também atingiu a meta nos quatro grupos; performance mobile permanece abaixo de 90. Os relatórios HTML/JSON da pasta representam esta reauditoria.

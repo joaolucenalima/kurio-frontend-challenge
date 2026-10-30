@@ -1,3 +1,4 @@
+import { usePageTitle } from '#/shared/hooks/use-page-title'
 import { useCallback } from 'react'
 import { useToastFeedback } from '#/shared/components/ui/toast'
 /* eslint-disable react/set-state-in-effect */
@@ -105,6 +106,15 @@ function PaymentContent({
     enabled: !!userId && !!orderId,
   })
   const order = trackedOrder.data
+  usePageTitle(
+    order
+      ? {
+          pending: 'Pedido pendente',
+          confirmed: 'Pedido confirmado',
+          declined: 'Pagamento recusado',
+        }[order.status]
+      : 'Pagamento',
+  )
 
   const [attempt, setAttempt] = useState<Attempt | null>(null)
   const [couponInput, setCouponInput] = useState('')

@@ -1,3 +1,4 @@
+import { usePageTitle } from '#/shared/hooks/use-page-title'
 import { useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
 import { Link } from '@tanstack/react-router'
@@ -182,6 +183,13 @@ function DetailContent({ nft }: { nft: Nft }) {
 export function NftDetailPage({ id }: { id: string }) {
   const query = useQuery(catalogQueries.detail(id))
   const missing = isAxiosError(query.error) && query.error.response?.status === 404
+
+  usePageTitle(
+    query.data?.name ?? (missing ? 'NFT não encontrado' : 'Detalhes do NFT'),
+    query.data
+      ? `${query.data.name}: ${query.data.description}`
+      : 'Confira informações, edições e disponibilidade de NFTs no marketplace Kurio.',
+  )
 
   return (
     <div className="px-6 pt-6 pb-6 md:py-6">

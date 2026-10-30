@@ -1,9 +1,15 @@
+import { usePageTitle } from '#/shared/hooks/use-page-title'
 import { Link, createRootRoute } from '@tanstack/react-router'
 import { RootLayout } from '../app/root-layout'
 
 export const Route = createRootRoute({
   component: RootLayout,
-  notFoundComponent: () => (
+  notFoundComponent: NotFoundPage,
+})
+
+function NotFoundPage() {
+  usePageTitle('Página não encontrada')
+  return (
     <main className="mx-auto max-w-page p-6">
       <h1 className="font-mono text-[1.75rem] leading-9 font-bold tracking-normal">
         Página não encontrada
@@ -16,5 +22,5 @@ export const Route = createRootRoute({
         Voltar ao início
       </Link>
     </main>
-  ),
-})
+  )
+}

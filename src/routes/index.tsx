@@ -1,3 +1,4 @@
+import { usePageTitle } from '#/shared/hooks/use-page-title'
 import { createFileRoute } from '@tanstack/react-router'
 import { CatalogPage, parseCatalogSearch } from '../modules/catalog'
 
@@ -13,6 +14,7 @@ export const Route = createFileRoute('/')({
 })
 
 function CatalogRoute() {
+  usePageTitle('Marketplace de NFTs')
   const search = Route.useSearch()
   const navigate = Route.useNavigate()
   return (
