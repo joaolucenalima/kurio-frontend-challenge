@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { TOKEN_KEY } from '#/modules/session/model'
+import { TOKEN_KEY } from '#/modules/session/contracts'
 
 export const httpClient = axios.create({
   baseURL: import.meta.env.VITE_API_URL || '/api',

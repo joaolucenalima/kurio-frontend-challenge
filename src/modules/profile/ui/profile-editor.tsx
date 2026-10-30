@@ -14,8 +14,8 @@ import {
   type PasswordChange,
   type ProfileInput,
 } from '../model/contracts'
-import type { Session } from '#/modules/session/model'
-import { TOKEN_KEY } from '#/modules/session/model'
+import type { Session } from '#/modules/session/contracts'
+import { TOKEN_KEY } from '#/modules/session/contracts'
 
 function errorMessage(error: unknown) {
   return isAxiosError(error) && typeof error.response?.data?.message === 'string'

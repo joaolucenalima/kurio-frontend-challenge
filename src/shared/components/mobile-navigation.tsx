@@ -4,7 +4,7 @@ import { Link, useRouterState } from '@tanstack/react-router'
 import { useQuery } from '@tanstack/react-query'
 import { sessionApi } from '#/modules/session/api'
 import { cartApi } from '#/modules/cart/api'
-import { cartKey } from '#/modules/cart/model'
+import { cartKey } from '#/modules/cart/contracts'
 
 export function MobileNavigation() {
   const location = useRouterState({ select: (state) => state.location })

@@ -1,4 +1,4 @@
-import type { Nft } from '#/modules/catalog'
+import type { Nft } from '#/modules/catalog/contracts'
 
 export type CartLine = {
   nftId: string

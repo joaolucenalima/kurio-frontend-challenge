@@ -1,5 +1,7 @@
 {
   "buildCommand": "pnpm build:demo",
   "outputDirectory": "dist",
-  "rewrites": [{ "source": "/((?!mockServiceWorker\\.js).*)", "destination": "/index.html" }]
+  "rewrites": [
+    { "source": "/((?!robots\\.txt|mockServiceWorker\\.js).*)", "destination": "/index.html" }
+  ]
 }

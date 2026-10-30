@@ -1,3 +1,4 @@
+import { usePageTitle } from '#/shared/hooks/use-page-title'
 import { authRedirect } from '#/modules/session/auth-redirect'
 import { createFileRoute, Link, redirect as routerRedirect } from '@tanstack/react-router'
 import { SessionPage } from '#/modules/session/page'
@@ -16,6 +17,7 @@ export const Route = createFileRoute('/login')({
 })
 
 function AccountRoute() {
+  usePageTitle('Entrar')
   const { redirect } = Route.useSearch()
   return (
     <main className="mx-auto  w-full max-w-125 px-7 pt-20 pb-6 font-mono">

@@ -1,5 +1,5 @@
-import { normalizeNft } from '#/modules/catalog'
-import type { Nft, NftRecord, NftReview } from '#/modules/catalog'
+import { normalizeNft } from '#/modules/catalog/contracts'
+import type { Nft, NftRecord, NftReview } from '#/modules/catalog/contracts'
 import kurio from './snapshots/kurio.json'
 import bayc from './snapshots/boredapeyachtclub.json'
 import argonauts from './snapshots/argonauts.json'

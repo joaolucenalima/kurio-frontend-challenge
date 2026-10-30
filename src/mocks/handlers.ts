@@ -1,6 +1,6 @@
 import { delay, http, HttpResponse } from 'msw'
-import { ethToWei, parseCatalogSearch } from '#/modules/catalog'
-import type { CatalogApiError, CatalogResponse } from '#/modules/catalog'
+import { ethToWei, parseCatalogSearch } from '#/modules/catalog/contracts'
+import type { CatalogApiError, CatalogResponse } from '#/modules/catalog/contracts'
 import { currentNfts, initialNfts, reviewsForNft, withScenarioPrice } from './fixtures'
 
 const fixtureOrder = new Map(initialNfts.map(({ id }, index) => [id, index]))

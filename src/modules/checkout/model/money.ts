@@ -1,4 +1,4 @@
-import { ethToWei } from '#/modules/catalog'
+import { ethToWei } from '#/modules/catalog/contracts'
 
 export const formatEth = (value: string) => `${value} ETH`
 

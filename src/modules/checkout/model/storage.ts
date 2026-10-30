@@ -1,6 +1,6 @@
 import { z } from 'zod'
 import { checkoutSchema, type CheckoutAttempt, type CheckoutInput } from '../model'
-import { walletKinds, walletNetworks } from '#/modules/wallets'
+import { walletKinds, walletNetworks } from '#/modules/wallets/contracts'
 
 const attemptSchema = z.object({
   idempotencyKey: z.string().min(1),

@@ -3,7 +3,7 @@ import type { Nft } from '../model/contracts'
 import { Link } from '@tanstack/react-router'
 import { FavoriteButton } from '#/modules/favorites'
 
-export function NftCard({ nft }: { nft: Nft }) {
+export function NftCard({ nft, priority = false }: { nft: Nft; priority?: boolean }) {
   const [failed, setFailed] = useState(false)
   const isRare =
     nft.rarityRank !== null &&
@@ -25,7 +25,8 @@ export function NftCard({ nft }: { nft: Nft }) {
             alt={failed ? `Imagem indisponível: ${nft.name}` : nft.imageAlt}
             width="250"
             height="250"
-            loading="lazy"
+            loading={priority ? 'eager' : 'lazy'}
+            fetchPriority={priority ? 'high' : undefined}
             decoding="async"
             referrerPolicy="no-referrer"
             onError={() => setFailed(true)}

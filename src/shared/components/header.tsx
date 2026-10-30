@@ -14,13 +14,15 @@ import {
 } from '#/shared/components/ui/dialog'
 import { SessionPage } from '#/modules/session/page'
 import { cartApi } from '#/modules/cart/api'
-import { cartKey } from '#/modules/cart/model'
+import { cartKey } from '#/modules/cart/contracts'
 
 export function Header() {
   const [loginOpen, setLoginOpen] = useState(false)
   const [loginRedirect, setLoginRedirect] = useState<'/cart'>()
+
   const navigate = useNavigate()
   const location = useRouterState({ select: (state) => state.location })
+
   const isMarketFlow =
     location.pathname.startsWith('/nfts/') ||
     location.pathname === '/cart' ||

@@ -2,8 +2,8 @@
 
 ## Fontes de referência e prioridades
 
-- Leia `scope/README.md` antes de desenvolver. Ele define os requisitos funcionais, a stack, os critérios de avaliação e a entrega; este documento destaca as regras e não substitui o enunciado completo.
-- A referência visual é o **Figma, acessado pelo MCP do Figma**, conforme o layout indicado em `scope/README.md`. Consulte as telas e os componentes correspondentes pelo MCP do Figma antes de implementar ou alterar a apresentação. Se o acesso estiver indisponível, informe a limitação; não invente uma referência alternativa.
+- Leia `docs/SCOPE.md` antes de desenvolver. Ele define os requisitos funcionais, a stack, os critérios de avaliação e a entrega; este documento destaca as regras e não substitui o enunciado completo.
+- A referência visual é o **Figma, acessado pelo MCP do Figma**, conforme o layout indicado em `docs/SCOPE.md`. Consulte as telas e os componentes correspondentes pelo MCP do Figma antes de implementar ou alterar a apresentação. Se o acesso estiver indisponível, informe a limitação; não invente uma referência alternativa.
 - Instruções explícitas do usuário prevalecem sobre as orientações deste arquivo.
 
 ## Arquitetura modular por domínio
@@ -24,7 +24,7 @@ Adote arquitetura modular por domínio. A escolha prioriza coesão das regras de
 - Mocks reutilizam contratos dos domínios. Código de produção não deve importar implementações dos mocks; a inicialização pode carregar a camada de simulação condicionalmente por configuração.
 - Mantenha as rotas enxutas e preserve o roteamento baseado em arquivos. Não edite manualmente `src/routeTree.gen.ts`.
 - Use pnpm e preserve o lockfile. Consulte `package.json` antes de executar comandos; comandos exigidos na entrega podem ainda não existir no scaffold.
-- Use Oxlint (`pnpm lint`, `pnpm lint:fix`) e Oxfmt (`pnpm format`, `pnpm format:check`). Respeite `.oxlintrc.json` e `.oxfmtrc.json`; mantenha aspas simples e ausência de ponto e vírgula no código. Não formate manualmente rotas geradas, lockfile ou o enunciado em `scope/`.
+- Use Oxlint (`pnpm lint`, `pnpm lint:fix`) e Oxfmt (`pnpm format`, `pnpm format:check`). Respeite `.oxlintrc.json` e `.oxfmtrc.json`; mantenha aspas simples e ausência de ponto e vírgula no código. Não formate manualmente rotas geradas, lockfile ou o enunciado em `docs/SCOPE.md`.
 - Leia e grave arquivos de texto em UTF-8 explicitamente, inclusive em scripts e comandos no Windows/PowerShell. Não dependa da codificação padrão do sistema nem faça conversões entre UTF-8, Latin-1 ou Windows-1252 em arquivos já corretos. Preserve acentos e símbolos; ao editar textos, confira o conteúdo real dos arquivos para distinguir corrupção de codificação de problemas de exibição do terminal. Após corrigir corrupção, verifique também os textos no build gerado.
 
 ## Commits

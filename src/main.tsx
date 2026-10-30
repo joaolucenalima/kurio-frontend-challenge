@@ -8,7 +8,9 @@ async function bootstrap() {
     const { startMocks } = await import('./mocks/browser')
     await startMocks()
   }
+
   const { App } = await import('./app/app')
+
   if (rootElement.innerHTML) return
   const root = ReactDOM.createRoot(rootElement)
   root.render(<App />)

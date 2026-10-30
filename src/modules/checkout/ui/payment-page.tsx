@@ -1,3 +1,4 @@
+import { usePageTitle } from '#/shared/hooks/use-page-title'
 import { useCallback } from 'react'
 import { useToastFeedback } from '#/shared/components/ui/toast'
 /* eslint-disable react/set-state-in-effect */
@@ -15,9 +16,9 @@ import {
   DialogDescription,
   DialogTitle,
 } from '#/shared/components/ui/dialog'
-import { SessionPage } from '#/modules/session/page'
+import { SessionPage } from '#/modules/session/lazy-page'
 import { sessionApi } from '#/modules/session/api'
-import { TOKEN_KEY } from '#/modules/session/model'
+import { TOKEN_KEY } from '#/modules/session/contracts'
 import { profileApi, profileKey } from '#/modules/profile'
 import { walletsApi, walletsKey, WalletCreateDialog, type WalletInput } from '#/modules/wallets'
 import { cartApi, cartKey, quoteKey } from '#/modules/cart'
@@ -105,6 +106,15 @@ function PaymentContent({
     enabled: !!userId && !!orderId,
   })
   const order = trackedOrder.data
+  usePageTitle(
+    order
+      ? {
+          pending: 'Pedido pendente',
+          confirmed: 'Pedido confirmado',
+          declined: 'Pagamento recusado',
+        }[order.status]
+      : 'Pagamento',
+  )
 
   const [attempt, setAttempt] = useState<Attempt | null>(null)
   const [couponInput, setCouponInput] = useState('')

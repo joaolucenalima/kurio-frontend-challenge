@@ -71,7 +71,7 @@ export function CatalogEditorial({
               decoding="async"
               className="aspect-[4/3] h-full w-full object-cover md:aspect-auto"
             />
-            <div className="flex flex-col items-end gap-4 p-6 text-right">
+            <div className="relative z-10 flex flex-col items-end gap-4 bg-card p-6 text-right min-[32rem]:bg-transparent">
               <h2 className="text-lg leading-6 font-bold">{promotion.title}</h2>
               <p className="text-sm leading-6 text-muted-foreground">{promotion.description}</p>
               <Button asChild className="mt-auto min-h-11 gap-3">

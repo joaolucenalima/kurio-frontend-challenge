@@ -5,5 +5,5 @@
   "tabWidth": 2,
   "trailingComma": "all",
   "endOfLine": "lf",
-  "ignorePatterns": ["src/routeTree.gen.ts", "pnpm-lock.yaml", "scope/**"]
+  "ignorePatterns": ["src/routeTree.gen.ts", "pnpm-lock.yaml", "docs/SCOPE.md"]
 }
