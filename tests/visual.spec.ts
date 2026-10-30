@@ -41,9 +41,16 @@ test('início', async ({ page }) => {
   await expect(page).toHaveScreenshot('inicio.png')
 })
 
-test('detalhe', async ({ page }) => {
+test('detalhe', async ({ page }, testInfo) => {
+  const reviewsResponse = page.waitForResponse(
+    (response) => new URL(response.url()).pathname === '/api/nfts/emerald-ape/reviews',
+  )
   await page.goto('/nfts/emerald-ape')
   await expect(page.getByRole('heading', { name: 'Emerald Ape #042' })).toBeVisible()
+  expect((await reviewsResponse).ok()).toBe(true)
+  if (testInfo.project.name === 'mobile') {
+    await expect(page.getByLabel('4.2 de 5 estrelas, 13 avaliações')).toBeVisible()
+  }
   await stable(page)
   await expect(page).toHaveScreenshot('detalhe.png')
 })
