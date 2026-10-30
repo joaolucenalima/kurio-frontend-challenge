@@ -51,6 +51,15 @@ function write(store: Store) {
   localStorage.setItem(STORE_KEY, JSON.stringify(store))
 }
 
+export function expireCurrentSession() {
+  const token = localStorage.getItem('kurio.session.token.v1')
+  const store = read()
+  if (token && store.sessions[token]) {
+    store.sessions[token].expiresAt = 0
+    write(store)
+  }
+}
+
 export function resetAuth() {
   localStorage.removeItem(STORE_KEY)
   localStorage.removeItem('kurio.session.token.v1')

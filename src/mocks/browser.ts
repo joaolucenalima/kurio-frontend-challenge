@@ -1,10 +1,10 @@
 import { realtimeHandlers, changeNft, disconnectSockets, publish } from './realtime'
 import { resetNftState } from './fixtures'
-import { resumeOrders } from './checkout'
+import { resumeOrders, resetOrders } from './checkout'
 import { setupWorker } from 'msw/browser'
 import { httpClient } from '#/shared/api/http'
-import { handlers, resetSimulation, selectScenario } from './handlers'
-import { sessionHandlers, resetAuth, seedAuth } from './session'
+import { handlers, resetSimulation, selectScenario, networkRequestCount } from './handlers'
+import { sessionHandlers, resetAuth, seedAuth, expireCurrentSession } from './session'
 import { cartHandlers, resetCarts } from './cart'
 import { favoriteHandlers, resetFavorites, failNextFavoriteMutation } from './favorites'
 import { profileHandlers } from './profile'
@@ -91,6 +91,8 @@ export async function startMocks() {
   window.kurioMocks = {
     changeNft,
     failNextFavoriteMutation,
+    expireCurrentSession,
+    networkRequestCount,
     disconnect: disconnectSockets,
     publish,
     reset: async () => {
@@ -101,9 +103,7 @@ export async function startMocks() {
       resetCarts()
       resetFavorites()
       resetWallets()
-      localStorage.removeItem('kurio.mock.orders.v1')
-      localStorage.removeItem('kurio.mock.checkout-wallets.v1')
-      localStorage.removeItem('kurio.mock.wallet-connections.v1')
+      resetOrders()
       await seedAuth()
     },
     scenario: selectScenario,
@@ -116,6 +116,8 @@ declare global {
       reset: () => void
       changeNft: typeof changeNft
       failNextFavoriteMutation: typeof failNextFavoriteMutation
+      expireCurrentSession: typeof expireCurrentSession
+      networkRequestCount: typeof networkRequestCount
       disconnect: typeof disconnectSockets
       publish: typeof publish
       scenario: typeof selectScenario

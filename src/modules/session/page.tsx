@@ -53,7 +53,7 @@ export function SessionPage({
         : sessionApi.signup(data as SignupInput),
     onSuccess: async (session) => {
       await queryClient.cancelQueries()
-      queryClient.clear()
+      queryClient.removeQueries({ predicate: (query) => query.queryKey[0] !== 'session' })
       queryClient.setQueryData(['session'], session)
       if (isPage) {
         await navigate({ href: authRedirect(redirect), replace: true })

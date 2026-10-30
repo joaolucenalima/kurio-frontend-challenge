@@ -28,6 +28,10 @@ export function selectScenario(value: string) {
   scenario = value as Scenario
   requestCount = 0
 }
+export function networkRequestCount() {
+  return requestCount
+}
+
 export function currentScenario() {
   return scenario
 }

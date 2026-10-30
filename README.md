@@ -65,6 +65,21 @@ No console, use window.kurioMocks.changeNft(id, { priceEth: '2.5' }) para altera
 
 ## Testes automatizados
 
-Instale o navegador com `pnpm exec playwright install chromium` e execute `pnpm test:e2e`. O comando gera o build de demonstração e executa os testes em Chromium desktop e mobile. Use `pnpm test:e2e:ui` para a interface interativa e `pnpm test:e2e:report` para abrir o relatório HTML. Falhas incluem traces em `test-results/`. Cada teste recebe um contexto isolado; os testes de contratos usam requisições do navegador interceptadas pelo MSW.
+Instale o navegador com `pnpm exec playwright install chromium` e execute `pnpm test:e2e`. O comando gera o build de demonstração e executa os testes em Chromium desktop e mobile. Use `pnpm test:e2e:ui` para a interface interativa e `pnpm test:e2e:report` para abrir o relatório HTML. Falhas incluem traces em `test-results/`. Cada teste recebe um contexto isolado; os testes de contratos usam requisições do navegador interceptadas pelo MSW. Os testes visuais fazem parte da mesma execução; use `pnpm test:visual` para executá-los isoladamente e `pnpm test:visual:update` para atualizar as baselines. Revise as imagens antes de versioná-las. As baselines são organizadas por plataforma e podem variar conforme navegador, fontes e sistema operacional.
 
-A cobertura atual inclui catálogo, pesquisa, login, sessão, isolamento de favoritos, carrinho, cupom, cotação, idempotência, timeout, liquidação e atualização de NFT por Socket.IO. A cobertura completa descrita em `scope/README.md` e nos documentos de casos ainda está em desenvolvimento; regressão visual e auditorias Lighthouse ainda não foram implementadas.
+A cobertura atual inclui catálogo, pesquisa, login, sessão, isolamento de favoritos, carrinho, cupom, cotação, idempotência, timeout, liquidação e atualização de NFT por Socket.IO. A cobertura completa descrita em `scope/README.md` e nos documentos de casos ainda está em desenvolvimento; a cobertura dos casos adicionais continua em desenvolvimento.
+
+### Auditoria Lighthouse
+
+Execute `pnpm exec playwright install chromium` e `pnpm audit:lighthouse` para gerar o build de demonstração, iniciar o preview e auditar início e detalhe. O comando salva três medições por página e perfil em `lighthouse-reports/`, com HTML, JSON e `summary.json` contendo medianas, versões e ambiente. As medições são sequenciais e usam os perfis padrão do Lighthouse; imagens e fontes da aplicação permanecem habilitadas. `CHROME_PATH` permite indicar outro Chromium. O workflow de PR para `main` publica esses relatórios como artefato em um job separado.
+
+A execução local de 29/10/2026 (macOS Darwin 25.6 arm64, Node 24.21, Chrome for Testing 156.0.8078.4, Lighthouse 13.6.0) obteve as seguintes medianas. LCP e TBT estão em milissegundos.
+
+| Página / perfil | Performance | Acessibilidade | Boas práticas | SEO |  LCP |    CLS |  TBT |
+| --------------- | ----------: | -------------: | ------------: | --: | ---: | -----: | ---: |
+| Início mobile   |          84 |             97 |           100 |  83 | 4467 |      0 |  105 |
+| Início desktop  |          99 |             95 |           100 |  83 |  931 | 0.0002 |    0 |
+| Detalhe mobile  |          80 |             94 |           100 |  83 | 4127 | 0.1495 | 97.5 |
+| Detalhe desktop |          94 |             97 |           100 |  83 |  897 | 0.1355 |    0 |
+
+A performance mobile ficou abaixo de 90 com LCP acima de quatro segundos; no detalhe, o CLS também prejudica a pontuação. A acessibilidade mobile do detalhe ficou abaixo de 95, com problemas de tamanho de alvos e `lang="pt_BR"` inválido. O SEO ficou abaixo de 90 nas quatro combinações porque falta meta description e o fallback de rotas retorna HTML para `robots.txt`. Os resultados variam conforme máquina e rede; os relatórios completos identificam os elementos e diagnósticos de cada execução.

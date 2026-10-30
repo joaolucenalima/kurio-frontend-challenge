@@ -10,6 +10,19 @@ import { currentScenario } from './handlers'
 import { accountProfile, authenticatedUser } from './session'
 
 const ORDER_KEY = 'kurio.mock.orders.v1'
+const settlementTimers = new Set<ReturnType<typeof setTimeout>>()
+
+export function resetOrders() {
+  for (const timer of settlementTimers) clearTimeout(timer)
+  settlementTimers.clear()
+  localStorage.removeItem(ORDER_KEY)
+  localStorage.removeItem(TEMPORARY_KEY)
+  localStorage.removeItem(CONNECTED_KEY)
+  for (const key of Object.keys(localStorage)) {
+    if (key.startsWith('kurio.checkout.draft.') || key.startsWith('kurio.checkout.attempt.'))
+      localStorage.removeItem(key)
+  }
+}
 const TEMPORARY_KEY = 'kurio.mock.checkout-wallets.v1'
 const temporaryStore = (): Record<string, Record<string, Order['snapshot']['wallets'][number]>> => {
   try {
@@ -294,8 +307,9 @@ export function resumeOrders() {
   const pending = Object.values(readOrders()).filter((order) => order.status === 'pending')
   for (const item of pending) {
     if (currentScenario() === 'payment-pending') continue
-    setTimeout(
+    const timer = setTimeout(
       () => {
+        settlementTimers.delete(timer)
         const orders = readOrders()
         const order = orders[item.idempotencyKey]
         if (!order || order.status !== 'pending') return
@@ -315,5 +329,6 @@ export function resumeOrders() {
       },
       Math.max(0, item.createdAt + 3000 - Date.now()),
     )
+    settlementTimers.add(timer)
   }
 }
