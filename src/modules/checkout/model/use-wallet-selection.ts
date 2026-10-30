@@ -1,7 +1,7 @@
 /* eslint-disable react/set-state-in-effect */
 import { useEffect, useState } from 'react'
-import type { Wallet, WalletInput } from '#/modules/wallets'
-import { walletSchema } from '#/modules/wallets'
+import type { Wallet, WalletInput } from '#/modules/wallets/contracts'
+import { walletSchema } from '#/modules/wallets/contracts'
 import type { CheckoutWallet, WalletChoice } from '../model'
 
 export function useWalletSelection({

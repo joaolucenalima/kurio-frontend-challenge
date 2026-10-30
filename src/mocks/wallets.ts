@@ -4,7 +4,7 @@ import {
   walletSchema,
   type Wallet,
   type WalletInput,
-} from '#/modules/wallets/model'
+} from '#/modules/wallets/contracts'
 import { authenticatedUser } from './session'
 
 const STORE_KEY = 'kurio.mock.wallets.v1'

@@ -16,9 +16,9 @@ import {
   DialogDescription,
   DialogTitle,
 } from '#/shared/components/ui/dialog'
-import { SessionPage } from '#/modules/session/page'
+import { SessionPage } from '#/modules/session/lazy-page'
 import { sessionApi } from '#/modules/session/api'
-import { TOKEN_KEY } from '#/modules/session/model'
+import { TOKEN_KEY } from '#/modules/session/contracts'
 import { profileApi, profileKey } from '#/modules/profile'
 import { walletsApi, walletsKey, WalletCreateDialog, type WalletInput } from '#/modules/wallets'
 import { cartApi, cartKey, quoteKey } from '#/modules/cart'

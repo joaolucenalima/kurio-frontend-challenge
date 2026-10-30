@@ -52,7 +52,7 @@ O workflow de pull requests para `main` também disponibiliza os relatórios com
 
 ## Resultados registrados
 
-Medição local de **29/10/2026**. Os números abaixo são o registro dessa execução; não representam uma nova auditoria após alterações no código.
+Medição local em **2026-10-30 às 02:09:08.490 UTC**. Os números são medianas das três medições por página e perfil.
 
 | Ambiente           | Versão                  |
 | ------------------ | ----------------------- |
@@ -61,12 +61,12 @@ Medição local de **29/10/2026**. Os números abaixo são o registro dessa exec
 | Chrome for Testing | 156.0.8078.4            |
 | Lighthouse         | 13.6.0                  |
 
-| Página / perfil | Performance | Acessibilidade | Boas práticas | SEO |  LCP |    CLS |  TBT |
-| --------------- | ----------: | -------------: | ------------: | --: | ---: | -----: | ---: |
-| Início mobile   |          84 |             97 |           100 |  83 | 4467 |      0 |  105 |
-| Início desktop  |          99 |             95 |           100 |  83 |  931 | 0.0002 |    0 |
-| Detalhe mobile  |          80 |             94 |           100 |  83 | 4127 | 0.1495 | 97.5 |
-| Detalhe desktop |          94 |             97 |           100 |  83 |  897 | 0.1355 |    0 |
+| Página / perfil | Performance | Acessibilidade | Boas práticas | SEO | LCP (ms) |     CLS | TBT (ms) |
+| --------------- | ----------: | -------------: | ------------: | --: | -------: | ------: | -------: |
+| Início mobile   |          84 |            100 |           100 | 100 |     4197 | 0.00000 |      102 |
+| Início desktop  |          99 |             99 |           100 | 100 |      924 | 0.00022 |        0 |
+| Detalhe mobile  |          91 |             97 |           100 | 100 |     3388 | 0.00006 |       84 |
+| Detalhe desktop |         100 |            100 |           100 | 100 |      805 | 0.00000 |        0 |
 
 ### Como ler as métricas
 
@@ -76,15 +76,13 @@ Medição local de **29/10/2026**. Os números abaixo são o registro dessa exec
 
 LCP e TBT estão em milissegundos. CLS não tem unidade.
 
-## Pontos abaixo das metas
+## Metas não atingidas
 
-| Área                             | Resultado registrado         | Diagnóstico registrado                                                             |
-| -------------------------------- | ---------------------------- | ---------------------------------------------------------------------------------- |
-| Performance mobile               | Início: 84; detalhe: 80      | LCP acima de quatro segundos; deslocamentos de layout também afetam o detalhe      |
-| Acessibilidade do detalhe mobile | 94                           | Alvos de interação pequenos e atributo `lang="pt_BR"` inválido                     |
-| SEO                              | 83 nos dois perfis e páginas | Falta de meta description e resposta HTML para `robots.txt` pelo fallback de rotas |
+- **Performance do início mobile: 84 de 90.** O LCP foi de 4197 ms. A imagem de um card demorou a aparecer porque o navegador só recebe seu endereço após carregar a aplicação e consultar o catálogo.
+- **Consulta do catálogo:** o cenário padrão dos mocks inclui 300 ms de latência, somados à espera pelos dados antes de solicitar a imagem.
+- **Carregamento inicial:** o relatório aponta cerca de 88 KiB de JavaScript não utilizado em uma das medições. A rede e a CPU mais lentas simuladas no mobile aumentam o tempo de carregamento.
 
-Os relatórios completos identificam os elementos afetados. Esses diagnósticos pertencem à execução registrada e devem ser conferidos em uma nova auditoria após as correções.
+Esses fatores ajudam a explicar o resultado; o impacto individual de cada um não foi medido separadamente.
 
 ## Comparar novas execuções
 
@@ -101,16 +99,3 @@ Máquina, rede e versão do navegador podem alterar os resultados. Evite compara
 - [Escopo e critérios de performance](SCOPE.md)
 - [Comandos de testes](TESTING.md)
 - [Dados, imagens e fontes](DATA.md)
-
-## Reauditoria após correções de SEO
-
-Execução em 2026-10-30T01:14:41.806Z (UTC), no ambiente e condições registrados em `lighthouse-reports/summary.json`. Foram adicionadas descrições, títulos específicos do NFT, `robots.txt` e corrigido o idioma para `pt-BR`.
-
-| Página / perfil | Performance | Acessibilidade | Boas práticas | SEO |
-| --------------- | ----------: | -------------: | ------------: | --: |
-| inicio mobile   |          81 |            100 |           100 | 100 |
-| inicio desktop  |          99 |             99 |           100 | 100 |
-| detalhe mobile  |          80 |             97 |           100 | 100 |
-| detalhe desktop |          94 |            100 |           100 | 100 |
-
-SEO atingiu 100 nas 12 medições. Acessibilidade também atingiu a meta nos quatro grupos; performance mobile permanece abaixo de 90. Os relatórios HTML/JSON da pasta representam esta reauditoria.

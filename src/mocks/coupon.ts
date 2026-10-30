@@ -1,4 +1,4 @@
-import type { Order } from '#/modules/checkout/model'
+import type { Order } from '#/modules/checkout/contracts'
 
 export function couponProblem(userId: string, code: string | null) {
   if (!code) return null

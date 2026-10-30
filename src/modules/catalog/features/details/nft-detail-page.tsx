@@ -1,3 +1,4 @@
+import { NftDetailSkeleton } from './nft-detail-skeleton'
 import { usePageTitle } from '#/shared/hooks/use-page-title'
 import { useState } from 'react'
 import { useQuery } from '@tanstack/react-query'
@@ -199,14 +200,7 @@ export function NftDetailPage({ id }: { id: string }) {
         </div>
         <main className="md:mt-8">
           {query.isPending ? (
-            <div aria-hidden="true" className="grid gap-8 lg:grid-cols-2">
-              <div className="aspect-square rounded-lg bg-linear-to-r from-card via-secondary to-card bg-size-[200%_100%] motion-safe:animate-[shimmer_1.5s_linear_infinite]" />
-              <div className="space-y-5">
-                <div className="h-10 w-3/4 rounded bg-card" />
-                <div className="h-8 w-1/3 rounded bg-secondary" />
-                <div className="h-36 rounded bg-card" />
-              </div>
-            </div>
+            <NftDetailSkeleton />
           ) : query.isError ? (
             <div role="alert" className="rounded-lg border border-border p-6">
               <h1 className="text-xl font-bold">

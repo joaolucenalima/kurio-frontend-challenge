@@ -23,10 +23,10 @@ import {
   DialogTitle,
 } from '#/shared/components/ui/dialog'
 import { sessionApi } from '#/modules/session/api'
-import { SessionPage } from '#/modules/session/page'
+import { SessionPage } from '#/modules/session/lazy-page'
 import { cartApi } from './api'
 import { cartKey, quoteKey, type Cart, type CartInput } from './model'
-import { ethToWei, networkOptions } from '#/modules/catalog'
+import { ethToWei, networkOptions } from '#/modules/catalog/contracts'
 import { CartDiscovery } from './ui/cart-discovery'
 
 const shimmer =

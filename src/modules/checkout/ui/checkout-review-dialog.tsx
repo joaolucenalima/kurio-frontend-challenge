@@ -7,7 +7,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from '#/shared/components/ui/dialog'
-import type { CartLine } from '#/modules/cart'
+import type { CartLine } from '#/modules/cart/contracts'
 import type { CheckoutReview } from '../model'
 import { formatEth, formatLineSubtotal } from '../model/money'
 import { PriceRow } from './form-primitives'

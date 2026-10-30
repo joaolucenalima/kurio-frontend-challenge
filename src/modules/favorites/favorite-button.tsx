@@ -10,9 +10,9 @@ import {
   DialogDescription,
   DialogTitle,
 } from '#/shared/components/ui/dialog'
-import { SessionPage } from '#/modules/session/page'
+import { SessionPage } from '#/modules/session/lazy-page'
 import { sessionApi } from '#/modules/session/api'
-import type { Nft } from '#/modules/catalog'
+import type { Nft } from '#/modules/catalog/contracts'
 import { favoritesApi, favoritesKey } from './index'
 import { cn } from '#/shared/lib/utils'
 

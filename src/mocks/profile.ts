@@ -1,5 +1,5 @@
 import { http, HttpResponse } from 'msw'
-import { profileSchema, passwordChangeSchema } from '#/modules/profile/model'
+import { profileSchema, passwordChangeSchema } from '#/modules/profile/contracts'
 import {
   accountProfile,
   authenticatedUser,

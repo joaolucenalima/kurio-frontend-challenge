@@ -63,8 +63,12 @@ export function CatalogResults({
           <>
             {query.data.items.length ? (
               <div className="mt-5 grid grid-cols-2 gap-x-4 gap-y-10 md:grid-cols-3 lg:gap-x-8 lg:gap-y-18">
-                {query.data.items.map((nft) => (
-                  <NftCard key={`${nft.id}:${nft.displayImageUrl}`} nft={nft} />
+                {query.data.items.map((nft, index) => (
+                  <NftCard
+                    key={`${nft.id}:${nft.displayImageUrl}`}
+                    nft={nft}
+                    priority={index < 2}
+                  />
                 ))}
               </div>
             ) : (

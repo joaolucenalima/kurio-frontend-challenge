@@ -9,8 +9,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from '#/shared/components/ui/select'
-import type { Wallet, WalletInput, WalletNetwork } from '#/modules/wallets'
-import { walletSchema } from '#/modules/wallets'
+import type { Wallet, WalletInput, WalletNetwork } from '#/modules/wallets/contracts'
+import { walletSchema } from '#/modules/wallets/contracts'
 import type { WalletChoice } from '../model'
 import { Field } from './form-primitives'
 

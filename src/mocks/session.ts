@@ -1,6 +1,6 @@
 import { http, HttpResponse } from 'msw'
-import { loginSchema, signupSchema, type SessionUser } from '#/modules/session/model'
-import { passwordChangeSchema, profileSchema, type Profile } from '#/modules/profile/model'
+import { loginSchema, signupSchema, type SessionUser } from '#/modules/session/contracts'
+import { passwordChangeSchema, profileSchema, type Profile } from '#/modules/profile/contracts'
 
 const STORE_KEY = 'kurio.mock.auth.v1'
 type Account = SessionUser & { salt: string; passwordHash: string; profile: Profile }
@@ -68,12 +68,26 @@ export function resetAuth() {
 export async function seedAuth() {
   if (localStorage.getItem(STORE_KEY)) return
   const accounts: Account[] = []
-  for (const [username, email] of [
-    ['Admin', 'admin@kurio.test'],
-    ['UserTest', 'test@kurio.test'],
-    ['João', 'joao@kurio.test'],
+  for (const [username, email, salt, passwordHash] of [
+    [
+      'Admin',
+      'admin@kurio.test',
+      'kurio-demo-account-1',
+      'e7c2c122d3e3ca66b42acdd27d7bfd33b0a2b22bec348738c1bea6e5722c7029',
+    ],
+    [
+      'UserTest',
+      'test@kurio.test',
+      'kurio-demo-account-2',
+      '444e088d094a444ac1196c112827c91a6cc4511d2135ceeaec435ad9a4f28ba1',
+    ],
+    [
+      'João',
+      'joao@kurio.test',
+      'kurio-demo-account-3',
+      '52e72cabde01a054bedc4b79d72102b3ba0c10f18cc7032182cf9fc6bd40de30',
+    ],
   ]) {
-    const salt = crypto.randomUUID()
     accounts.push({
       id: crypto.randomUUID(),
       username,
@@ -85,7 +99,7 @@ export async function seedAuth() {
         ensName: '',
       },
       salt,
-      passwordHash: await hash('Kurio123!', salt),
+      passwordHash,
     })
   }
   write({ accounts, sessions: {} })

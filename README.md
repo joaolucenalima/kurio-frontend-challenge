@@ -1,15 +1,15 @@
-<h1 align="center">Kuroi</h1>
+<h1 align="center"><img src="docs/images/readme-title.svg" alt="Kuroi" width="220"></h1>
 
 <p align="center">
   Explore coleções de NFTs, salve favoritos e simule uma compra, do catálogo ao recibo.
 </p>
 
 <p align="center">
-  <img src="docs/images/inicio.png" alt="Catálogo desktop do Kuroi" width="100%">
+  <img src="docs/images/inicio.png" alt="Catálogo desktop do Kuroi" width="85%">
 </p>
 
 <p align="center">
-  <img src="docs/images/pagamento.png" alt="Pagamento desktop do Kuroi" width="100%">
+  <img src="docs/images/pagamento.png" alt="Pagamento desktop do Kuroi" width="85%">
 </p>
 
 Projeto desenvolvido para um desafio frontend com React e TypeScript. O layout segue o Figma e as regras estão no escopo. APIs, autenticação, pagamentos e carteiras são simulados com MSW. Não há transações reais de blockchain.
@@ -62,7 +62,9 @@ As variáveis `VITE_*` ficam públicas. Não inclua segredos ou credenciais Open
 
 ## Publicação
 
-A configuração da Vercel usa `pnpm build:demo`, publica `dist` e permite refresh das rotas. A hospedagem precisa de HTTPS para os mocks. A URL pública e o commit publicado ainda precisam ser registrados aqui na entrega.
+Acesse a demonstração em [kurio-joaolucenalima.vercel.app](https://kurio-joaolucenalima.vercel.app).
+
+A configuração da Vercel usa `pnpm build:demo`, publica `dist` e permite refresh das rotas. A hospedagem precisa de HTTPS para os mocks. O commit publicado ainda precisa ser registrado aqui na entrega.
 
 ## Documentação e referências
 

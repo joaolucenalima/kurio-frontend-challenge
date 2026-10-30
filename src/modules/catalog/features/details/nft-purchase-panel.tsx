@@ -10,9 +10,9 @@ import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import { useNavigate } from '@tanstack/react-router'
 import { isAxiosError } from 'axios'
 import { sessionApi } from '#/modules/session/api'
-import { SessionPage } from '#/modules/session/page'
+import { SessionPage } from '#/modules/session/lazy-page'
 import { cartApi } from '#/modules/cart/api'
-import { cartKey } from '#/modules/cart/model'
+import { cartKey } from '#/modules/cart/contracts'
 import {
   Dialog,
   DialogContent,

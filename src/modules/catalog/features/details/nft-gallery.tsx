@@ -3,11 +3,21 @@ import { ZoomIn } from 'lucide-react'
 import { Button } from '#/shared/components/ui/button'
 import type { Nft } from '../../model/contracts'
 
-function Artwork({ nft, className }: { nft: Nft; className: string }) {
+function Artwork({
+  nft,
+  className,
+  priority = false,
+}: {
+  nft: Nft
+  className: string
+  priority?: boolean
+}) {
   const [failed, setFailed] = useState(false)
 
   return (
     <img
+      fetchPriority={priority ? 'high' : undefined}
+      loading={priority ? 'eager' : 'lazy'}
       src={failed ? '/images/nft-placeholder.svg' : nft.displayImageUrl}
       alt={failed ? `Imagem indisponível: ${nft.imageAlt}` : nft.imageAlt}
       onError={() => setFailed(true)}
@@ -56,7 +66,7 @@ export function Gallery({ nft }: { nft: Nft }) {
         onPointerMove={zoomed ? moveZoom : undefined}
         onPointerLeave={() => setPosition(null)}
       >
-        <Artwork nft={nft} className="size-full rounded-xl object-contain" />
+        <Artwork nft={nft} priority className="size-full rounded-xl object-contain" />
         <Button
           type="button"
           variant="secondary"

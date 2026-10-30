@@ -1,6 +1,6 @@
 import { z } from 'zod'
-import type { Quote } from '#/modules/cart/model'
-import type { Wallet } from '#/modules/wallets'
+import type { Quote } from '#/modules/cart/contracts'
+import type { Wallet } from '#/modules/wallets/contracts'
 
 export const checkoutSchema = z.object({
   email: z.email('Informe um e-mail válido'),

@@ -1,7 +1,7 @@
 import { Trash2 } from 'lucide-react'
 import { Button } from '#/shared/components/ui/button'
 import { Input } from '#/shared/components/ui/input'
-import type { CartLine, Quote } from '#/modules/cart'
+import type { CartLine, Quote } from '#/modules/cart/contracts'
 import { formatLineSubtotal, formatEth } from '../model/money'
 import { PriceRow } from './form-primitives'
 
