@@ -1,15 +1,15 @@
-<h1 align="center"><img src="docs/images/readme-title.svg" alt="Kuroi" width="220"></h1>
+<h1 align="center"><img src="docs/images/readme-title.svg" alt="Kurio" width="220"></h1>
 
 <p align="center">
   Explore coleções de NFTs, salve favoritos e simule uma compra, do catálogo ao recibo.
 </p>
 
 <p align="center">
-  <img src="docs/images/inicio.png" alt="Catálogo desktop do Kuroi" width="85%">
+  <img src="docs/images/inicio.png" alt="Catálogo desktop do Kurio" width="85%">
 </p>
 
 <p align="center">
-  <img src="docs/images/pagamento.png" alt="Pagamento desktop do Kuroi" width="85%">
+  <img src="docs/images/pagamento.png" alt="Pagamento desktop do Kurio" width="85%">
 </p>
 
 Projeto desenvolvido para um desafio frontend com React e TypeScript. O layout segue o Figma e as regras estão no escopo. APIs, autenticação, pagamentos e carteiras são simulados com MSW. Não há transações reais de blockchain.
